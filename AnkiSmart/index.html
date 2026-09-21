@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnkiSmart · Política de privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de la app AnkiSmart para iPhone y iPad. Privacy policy for the AnkiSmart iPhone and iPad app.">
+<style>
+  :root {
+    --bg: #fbfbfa;
+    --ink: #1c2230;
+    --muted: #5b6373;
+    --line: #dcdfe5;
+    --accent: #1f4e8c;
+    --soft: #eef2f8;
+    --todo-bg: #fff1b8;
+    --todo-ink: #5a4300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151c;
+      --ink: #e6e9ef;
+      --muted: #9aa3b5;
+      --line: #2c3342;
+      --accent: #8fb4ea;
+      --soft: #1a2030;
+      --todo-bg: #4a3b0a;
+      --todo-ink: #ffe28a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.4rem 0 .6rem; }
+  h3 { font-size: 1.1rem; line-height: 1.3; margin: 1.9rem 0 .5rem; }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .lang {
+    display: flex; gap: .5rem; margin-top: 1.1rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .lang button {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    background: transparent; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 6px;
+    padding: .35rem .8rem;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .summary {
+    background: var(--soft); border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+  }
+  .summary p:last-child, .summary ul:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1.25rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .98rem; line-height: 1.5; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--line); }
+  th { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: .9rem; color: var(--muted); font-weight: 600; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  mark.todo { background: var(--todo-bg); color: var(--todo-ink); padding: 0 .25rem; border-radius: 3px; }
+  section[hidden] { display: none; }
+  hr.split { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 480px) { h1 { font-size: 1.65rem; } td:first-child { white-space: normal; } }
+  @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AnkiSmart</h1>
+  <p class="meta"><span lang="es">Política de privacidad · Última actualización: 21 de septiembre de 2026</span><br><span lang="en">Privacy Policy · Last updated: September 21, 2026</span></p>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">Español</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<section id="es" lang="es">
+
+<h2 style="margin-top:0">Resumen</h2>
+<div class="summary">
+  <p>AnkiSmart no recopila, vende ni comparte datos personales: tus mazos y tarjetas viven en tu dispositivo y, si lo activas, en tu propio iCloud.</p>
+  <ul>
+    <li>No hay cuentas ni inicio de sesión.</li>
+    <li>No hay analítica, publicidad ni rastreo de terceros.</li>
+    <li>La generación de tarjetas con IA corre en tu dispositivo con Apple Intelligence; tu contenido no se envía a ningún servidor del desarrollador.</li>
+    <li>El desarrollador (<mark class="todo">COMPLETAR: nombre o razón social</mark>) no tiene servidores propios ni acceso a tu contenido.</li>
+  </ul>
+</div>
+<p>Esta política aplica a la app AnkiSmart para iPhone y iPad, versión 1.0.</p>
+
+<h2>1. Datos que maneja la app y dónde viven</h2>
+<p>Toda la información que creas en AnkiSmart se guarda en el almacenamiento local de tu iPhone o iPad. El desarrollador no la recibe.</p>
+<ul>
+  <li><strong>Contenido de estudio:</strong> mazos, tarjetas (pregunta, respuesta y etiquetas) y tipos de tarjeta.</li>
+  <li><strong>Historial de repaso:</strong> la calificación de cada repaso, la fecha, el tiempo de respuesta y los valores del algoritmo de repetición espaciada (FSRS o SM2). Sirve solo para programar tus próximos repasos.</li>
+  <li><strong>Ajustes:</strong> gestos personalizados, hora del recordatorio diario, duración del Pomodoro, búsqueda avanzada, preferencia de iCloud y si ya viste la bienvenida.</li>
+  <li><strong>Dibujos con Apple Pencil:</strong> lo que escribes sobre una tarjeta durante el repaso no se guarda; se descarta al pasar a la siguiente.</li>
+</ul>
+<p>No pedimos nombre, correo, teléfono, ubicación, contactos ni identificadores publicitarios, y la app no incluye SDKs de analítica, publicidad ni redes sociales.</p>
+
+<h2>2. Sincronización con iCloud (opcional)</h2>
+<p>AnkiSmart puede sincronizar tus datos entre tus dispositivos con CloudKit, la tecnología de iCloud de Apple, y lo hace en tu base de datos privada.</p>
+<ul>
+  <li><strong>Qué se sincroniza:</strong> mazos, tarjetas, tipos de tarjeta e historial de repaso.</li>
+  <li><strong>Quién puede verlo:</strong> solo tú, con tu cuenta de Apple. El desarrollador no puede acceder a tu base de datos privada de iCloud.</li>
+  <li><strong>Cómo se controla:</strong> el interruptor "Sincronizar con iCloud" está en el menú de ajustes de la pantalla Mazos y viene activado por defecto. El cambio se aplica la próxima vez que abras la app.</li>
+  <li><strong>Si lo apagas:</strong> tus datos siguen en el dispositivo y dejan de subirse. Lo que ya estaba en iCloud permanece hasta que lo borres desde los ajustes de iCloud de tu dispositivo.</li>
+</ul>
+<p>Apple procesa esos datos según su <a href="https://www.apple.com/legal/privacy/">Política de privacidad</a>. CloudKit también usa notificaciones de Apple para avisar a la app de que hay cambios; el desarrollador no opera ningún servidor de notificaciones.</p>
+
+<h2>3. IA en el dispositivo y contenido que importas</h2>
+<p>Las tarjetas con IA se generan con Apple Intelligence (el modelo del sistema), directamente en tu dispositivo y sin conexión a internet. Ningún texto, PDF, audio ni imagen que importes se envía a un servidor del desarrollador ni a un proveedor de IA externo.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Origen</th><th>Cómo se procesa</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>El texto se extrae en el dispositivo con PDFKit. Máximo 5.1 MB.</td></tr>
+    <tr><td>Imagen</td><td>Eliges una foto con el selector del sistema; la app solo recibe esa foto. El texto se lee en el dispositivo con OCR de Apple (Vision).</td></tr>
+    <tr><td>Audio (.m4a, .mp3)</td><td>Se transcribe con el reconocimiento de voz de Apple (ver sección 5).</td></tr>
+    <tr><td>YouTube</td><td>Se descargan los subtítulos públicos del video (ver sección 5).</td></tr>
+  </tbody>
+</table>
+</div>
+<p>La app no guarda copia de tus archivos: solo conserva las tarjetas que se generan, que puedes editar o borrar. Las tarjetas creadas por IA pueden contener errores; revísalas antes de estudiarlas.</p>
+
+<h2>4. Permisos que solicita la app</h2>
+<p>AnkiSmart pide solo dos permisos, y cada uno se solicita únicamente cuando usas la función que lo necesita. Puedes revocarlos en Ajustes del sistema.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permiso</th><th>Para qué se usa</th></tr></thead>
+  <tbody>
+    <tr><td>Reconocimiento de voz</td><td>Transcribir un memo de voz o MP3 que importes para convertirlo en tarjetas. La app no graba con el micrófono.</td></tr>
+    <tr><td>Notificaciones</td><td>Enviar el recordatorio diario de estudio. Es una notificación local programada en tu dispositivo, a la hora que elijas.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Las fotos se eligen con el selector del sistema, que no da a la app acceso a toda tu biblioteca. Los archivos PDF y de audio se abren con el selector de archivos, y solo se lee el que eliges. Si conectas un control de juego, la app lo usa únicamente para calificar tarjetas y no guarda información sobre él.</p>
+
+<h2>5. Servicios de terceros</h2>
+<p>AnkiSmart no envía tu información a servicios propios. Estas son las únicas funciones que involucran a terceros:</p>
+<ul>
+  <li><strong>Apple, reconocimiento de voz:</strong> al transcribir un audio, el sistema puede procesarlo en los servidores de Apple, según tu dispositivo y el idioma. La app pide la transcripción en español. Aplica la <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>.</li>
+  <li><strong>Apple, iCloud:</strong> solo si dejas activada la sincronización (sección 2).</li>
+  <li><strong>YouTube (Google):</strong> al pedir la transcripción de un video, la app envía a YouTube el identificador del video que sacó de tu enlace. YouTube recibe además tu dirección IP, como en cualquier conexión a internet. Es la única conexión de red que hace la app por su cuenta. Aplica la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</li>
+</ul>
+<p>El código de la app usa dos bibliotecas de código abierto que funcionan dentro del dispositivo, SwiftMath (fórmulas) y ZIPFoundation (importación de archivos .apkg), y ninguna envía datos a terceros.</p>
+
+<h2>6. Conservación, menores, tus derechos y contacto</h2>
+<p><strong>Conservación y eliminación.</strong> Tus datos permanecen hasta que los borres. Puedes eliminar tarjetas y mazos dentro de la app, o archivar un mazo para ocultarlo sin borrarlo. Al desinstalar la app se elimina lo guardado en el dispositivo; lo que esté en iCloud se borra desde los ajustes de iCloud de tu dispositivo.</p>
+<p><strong>Tus derechos.</strong> Como el desarrollador no recibe ni almacena tus datos, no tiene información tuya que consultar, corregir o eliminar. Tienes control total desde la app y desde los ajustes de tu dispositivo. Esta política se rige por las leyes de <mark class="todo">COMPLETAR: jurisdicción, por ejemplo la República de Panamá</mark>.</p>
+<p><strong>Menores de edad.</strong> AnkiSmart no está dirigida a menores de 13 años y no recopila datos personales de nadie, incluidos los menores.</p>
+<p><strong>Cambios en esta política.</strong> Si la app cambia la forma en que trata los datos, actualizaremos esta política y la fecha de arriba. Los cambios importantes se avisarán en la descripción de la actualización en App Store.</p>
+<p><strong>Contacto.</strong> Para dudas sobre privacidad, escribe a <mark class="todo">COMPLETAR: correo de contacto</mark>.</p>
+
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section id="en" lang="en">
+
+<h2 style="margin-top:0">Summary</h2>
+<div class="summary">
+  <p>AnkiSmart does not collect, sell or share personal data: your decks and cards stay on your device and, if you turn it on, in your own iCloud.</p>
+  <ul>
+    <li>There are no accounts or sign-in.</li>
+    <li>There is no analytics, advertising or third-party tracking.</li>
+    <li>AI card generation runs on your device with Apple Intelligence. Your content is never sent to a server operated by the developer.</li>
+    <li>The developer (<mark class="todo">COMPLETE: name or company name</mark>) runs no servers and has no access to your content.</li>
+  </ul>
+</div>
+<p>This policy applies to the AnkiSmart app for iPhone and iPad, version 1.0.</p>
+
+<h2>1. Data the app handles and where it lives</h2>
+<p>Everything you create in AnkiSmart is stored locally on your iPhone or iPad. The developer does not receive it.</p>
+<ul>
+  <li><strong>Study content:</strong> decks, cards (question, answer and tags) and card types.</li>
+  <li><strong>Review history:</strong> the rating, date and response time of each review, plus the values of the spaced repetition algorithm (FSRS or SM2). It is used only to schedule your next reviews.</li>
+  <li><strong>Settings:</strong> custom gestures, daily reminder time, Pomodoro durations, advanced search, iCloud preference and whether you have seen the welcome screens.</li>
+  <li><strong>Apple Pencil drawings:</strong> what you write over a card during review is not saved and is discarded when you move to the next card.</li>
+</ul>
+<p>We do not ask for your name, email, phone number, location or contacts, and we do not use advertising identifiers. The app contains no analytics, advertising or social media SDKs.</p>
+
+<h2>2. iCloud sync (optional)</h2>
+<p>AnkiSmart can sync your data across your devices using CloudKit, Apple's iCloud technology, in your private database.</p>
+<ul>
+  <li><strong>What syncs:</strong> decks, cards, card types and review history.</li>
+  <li><strong>Who can see it:</strong> only you, with your Apple account. The developer cannot access your private iCloud database.</li>
+  <li><strong>How to control it:</strong> the "Sync with iCloud" switch is in the settings menu of the Decks screen and is on by default. A change takes effect the next time you open the app.</li>
+  <li><strong>If you turn it off:</strong> your data stays on the device and stops uploading. Data already in iCloud remains until you delete it in your device's iCloud settings.</li>
+</ul>
+<p>Apple processes this data under its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>. CloudKit also uses Apple notifications to tell the app that changes are available; the developer runs no notification server.</p>
+
+<h2>3. On-device AI and the content you import</h2>
+<p>AI cards are generated with Apple Intelligence (the system model), directly on your device and without an internet connection. No text, PDF, audio or image you import is sent to a developer server or to an external AI provider.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Source</th><th>How it is processed</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>Text is extracted on the device with PDFKit. Maximum 5.1 MB.</td></tr>
+    <tr><td>Image</td><td>You pick a photo with the system picker and the app receives only that photo. Text is read on the device with Apple's OCR (Vision).</td></tr>
+    <tr><td>Audio (.m4a, .mp3)</td><td>Transcribed with Apple's speech recognition (see section 5).</td></tr>
+    <tr><td>YouTube</td><td>The video's public captions are downloaded (see section 5).</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The app keeps no copy of your files, only the cards that are generated, which you can edit or delete. AI-generated cards may contain mistakes; review them before studying.</p>
+
+<h2>4. Permissions the app requests</h2>
+<p>AnkiSmart asks for only two permissions, each requested only when you use the feature that needs it. You can revoke them in system Settings.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permission</th><th>What it is used for</th></tr></thead>
+  <tbody>
+    <tr><td>Speech recognition</td><td>Transcribing a voice memo or MP3 you import so it can become cards. The app does not record with the microphone.</td></tr>
+    <tr><td>Notifications</td><td>Sending the daily study reminder. It is a local notification scheduled on your device at the time you choose.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Photos are chosen with the system picker, which does not give the app access to your whole library. PDF and audio files are opened with the file picker and only the file you choose is read. If you connect a game controller, the app uses it only to rate cards and stores no information about it.</p>
+
+<h2>5. Third-party services</h2>
+<p>AnkiSmart does not send your information to services of its own. These are the only features that involve third parties:</p>
+<ul>
+  <li><strong>Apple, speech recognition:</strong> when transcribing audio, the system may process it on Apple's servers, depending on your device and language. The app requests Spanish transcription. Apple's <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> applies.</li>
+  <li><strong>Apple, iCloud:</strong> only if you leave sync on (section 2).</li>
+  <li><strong>YouTube (Google):</strong> when you request a video's transcript, the app sends YouTube the video identifier taken from your link. YouTube also receives your IP address, as in any internet connection. This is the only network connection the app makes on its own. <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> applies.</li>
+</ul>
+<p>The app uses two open-source libraries that run inside the device, SwiftMath (formulas) and ZIPFoundation (.apkg import), and neither sends data to third parties.</p>
+
+<h2>6. Retention, children, your rights and contact</h2>
+<p><strong>Retention and deletion.</strong> Your data stays until you delete it. You can delete cards and decks inside the app, or archive a deck to hide it without deleting it. Uninstalling the app removes what is stored on the device; what is in iCloud is deleted from your device's iCloud settings.</p>
+<p><strong>Your rights.</strong> Because the developer neither receives nor stores your data, there is no information about you to access, correct or delete. You have full control from the app and from your device settings. This policy is governed by the laws of <mark class="todo">COMPLETE: jurisdiction, for example the Republic of Panama</mark>.</p>
+<p><strong>Children.</strong> AnkiSmart is not directed to children under 13 and does not collect personal data from anyone, including children.</p>
+<p><strong>Changes to this policy.</strong> If the app changes how it handles data, we will update this policy and the date at the top. Significant changes will be noted in the App Store release notes.</p>
+<p><strong>Contact.</strong> For privacy questions, write to <mark class="todo">COMPLETE: contact email</mark>.</p>
+
+</section>
+
+<footer>AnkiSmart · <span lang="es">Política de privacidad</span> / <span lang="en">Privacy Policy</span></footer>
+</div>
+
+<script>
+(function () {
+  var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var buttons = document.querySelectorAll('.lang button');
+  function show(lang) {
+    document.documentElement.lang = lang;
+    Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  var hash = (location.hash || '').replace('#', '');
+  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
+  show(hash === 'en' || hash === 'es' ? hash : pref);
+})();
+</script>
+</body>
+</html>
