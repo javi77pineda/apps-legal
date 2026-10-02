@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnkiSmart · Soporte / Support</title>
+<meta name="description" content="Soporte de la app AnkiSmart para iPhone y iPad: preguntas frecuentes y contacto. Support for the AnkiSmart iPhone and iPad app: FAQ and contact.">
+<style>
+  :root {
+    --bg: #fbfbfa;
+    --ink: #1c2230;
+    --muted: #5b6373;
+    --line: #dcdfe5;
+    --accent: #1f4e8c;
+    --soft: #eef2f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151c;
+      --ink: #e6e9ef;
+      --muted: #9aa3b5;
+      --line: #2c3342;
+      --accent: #8fb4ea;
+      --soft: #1a2030;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.4rem 0 .6rem; }
+  h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.6rem 0 .45rem; }
+  p { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .lang {
+    display: flex; gap: .5rem; margin-top: 1.1rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .lang button {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    background: transparent; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 6px;
+    padding: .35rem .8rem;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .contact {
+    background: var(--soft); border-left: 4px solid var(--accent);
+    padding: 1.1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .contact a.mail {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600; font-size: 1.05rem;
+  }
+  details {
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: .85rem 1rem; margin-bottom: .7rem;
+  }
+  details[open] { padding-bottom: 1rem; }
+  summary {
+    cursor: pointer; font-weight: 600;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: .98rem;
+  }
+  summary::-webkit-details-marker { color: var(--accent); }
+  details p, details ul { margin-top: .7rem; margin-bottom: 0; }
+  details ul { margin-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .92em; background: var(--soft); padding: .1em .35em; border-radius: 4px;
+  }
+  section[hidden] { display: none; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 480px) { h1 { font-size: 1.65rem; } }
+  @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } details { border: none; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AnkiSmart</h1>
+  <p class="meta"><span lang="es">Soporte</span><br><span lang="en">Support</span></p>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">Español</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<section id="es" lang="es">
+
+<div class="contact">
+  <p>¿Tienes un problema, una pregunta o una sugerencia? Escríbeme directamente:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+  <p>Respondo yo mismo, normalmente en 1 o 2 días hábiles. Si es un error, cuéntame qué pasó, qué dispositivo usas y, si puedes, adjunta una captura de pantalla.</p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>Generación con IA</h3>
+
+<details>
+<summary>La generación de tarjetas con IA no está disponible</summary>
+<p>Esta función necesita Apple Intelligence, y solo funciona en:</p>
+<ul>
+  <li>iPhone 15 Pro o más nuevo</li>
+  <li>iPad con chip M (M1 o superior) o A17 Pro</li>
+</ul>
+<p>Además de tener uno de esos dispositivos, revisa en Ajustes del iPhone o iPad &gt; Apple Intelligence y Siri que esté activado y que el modelo ya se haya descargado (puede tardar unos minutos la primera vez, y necesita wifi). Dentro de AnkiSmart, el menú de engranaje &gt; "Apple Intelligence" te muestra el estado exacto.</p>
+</details>
+
+<details>
+<summary>Las tarjetas que genera la IA tienen errores o no tienen sentido</summary>
+<p>Puede pasar, sobre todo con contenido muy técnico, mal escaneado o en un idioma distinto al español. Antes de estudiar, siempre puedes revisar, editar o borrar las tarjetas generadas en la misma pantalla de importación. Si notas un patrón de error repetido, cuéntamelo por correo con un ejemplo.</p>
+</details>
+
+<details>
+<summary>Importé un PDF o una imagen y no generó ninguna tarjeta</summary>
+<p>Revisa esto:</p>
+<ul>
+  <li>El PDF debe pesar menos de 5.1 MB y tener texto real, no ser solo una imagen escaneada (todavía no hay OCR para PDF).</li>
+  <li>En una foto, el texto tiene que verse claro y sin mucha inclinación; la app lee el texto con la cámara (OCR), no interpreta dibujos o diagramas sin texto.</li>
+</ul>
+</details>
+
+<details>
+<summary>Importé un video de YouTube y no trajo nada</summary>
+<p>Esa función depende de que el video tenga subtítulos públicos disponibles. Si el video no tiene subtítulos, están desactivados por el creador, o es privado o de solo edad, no va a funcionar. Prueba con otro video o pégale el texto directamente.</p>
+</details>
+
+<h3>iCloud y sincronización</h3>
+
+<details>
+<summary>Mis tarjetas no aparecen en mi otro iPhone o iPad</summary>
+<p>Verifica, en los dos dispositivos, que:</p>
+<ul>
+  <li>Hayas iniciado sesión con la misma cuenta de Apple (Ajustes &gt; tu nombre, arriba).</li>
+  <li>El interruptor "Sincronizar con iCloud", dentro de AnkiSmart (menú de engranaje), esté activado.</li>
+  <li>Tengas conexión a internet; la sincronización no es instantánea, puede tardar uno o dos minutos.</li>
+</ul>
+<p>Si cambiaste el interruptor, el cambio se aplica recién la próxima vez que abras la app, así que ciérrala completamente y vuelve a abrirla.</p>
+</details>
+
+<details>
+<summary>Desinstalé la app y perdí mis tarjetas</summary>
+<p>Si tenías iCloud activado antes de desinstalar, tus datos siguen en tu cuenta de iCloud: al reinstalar la app y entrar con la misma cuenta de Apple, deberían volver a aparecer. Si no tenías iCloud activado, los datos vivían solo en ese dispositivo y no hay forma de recuperarlos.</p>
+</details>
+
+<h3>Mazos y repaso</h3>
+
+<details>
+<summary>¿Cómo importo mis mazos de Anki?</summary>
+<p>Desde el menú de engranaje en la pantalla de Mazos, elige "Importar .apkg" y selecciona el archivo exportado desde Anki. El contenido y tu progreso de estudio se importan; por ahora no se importan el audio ni las imágenes incluidas en las tarjetas de Anki.</p>
+</details>
+
+<details>
+<summary>¿Por qué una tarjeta no aparece cuando debería tocarle repaso?</summary>
+<p>Revisa que no esté suspendida (se marca y se quita desde el buscador de tarjetas) y que esté en un mazo que no esté archivado. Si usas "Solo prioritarias" o una sesión mixta, el filtro aplicado también puede estar dejándola afuera.</p>
+</details>
+
+<details>
+<summary>¿Cómo deshago una calificación que di por error?</summary>
+<p>Durante el repaso hay un botón de deshacer, que guarda hasta 20 pasos hacia atrás. Esa historia se pierde si cierras la app, así que deshazlo antes de salir de la sesión de estudio.</p>
+</details>
+
+<h3>Notificaciones</h3>
+
+<details>
+<summary>No me llega el recordatorio diario</summary>
+<p>Revisa en Ajustes del sistema &gt; Notificaciones &gt; AnkiSmart que las notificaciones estén permitidas, y dentro de la app, en el menú de engranaje &gt; "Recordatorio diario", que esté activado con la hora que quieras. Si el iPhone está en modo No Molestar o Enfoque a esa hora, puede silenciarla igual.</p>
+</details>
+
+<h2>Antes de escribirme</h2>
+<p>Si vas a reportar un error, me ayuda mucho que incluyas:</p>
+<ul>
+  <li>Qué estabas haciendo cuando pasó</li>
+  <li>Modelo de iPhone o iPad y versión de iOS</li>
+  <li>Una captura de pantalla, si aplica</li>
+</ul>
+
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section id="en" lang="en" hidden>
+
+<div class="contact">
+  <p>Have a problem, a question, or a suggestion? Email me directly:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+  <p>I answer personally, usually within 1-2 business days. If it's a bug, tell me what happened, which device you're using, and attach a screenshot if you can.</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<h3>AI generation</h3>
+
+<details>
+<summary>AI card generation is not available</summary>
+<p>This feature needs Apple Intelligence, and only works on:</p>
+<ul>
+  <li>iPhone 15 Pro or newer</li>
+  <li>iPad with an M-series chip (M1 or later) or A17 Pro</li>
+</ul>
+<p>Besides having one of those devices, check Settings &gt; Apple Intelligence & Siri, make sure it's turned on and that the model has finished downloading (it can take a few minutes the first time, and needs Wi-Fi). Inside AnkiSmart, the gear menu &gt; "Apple Intelligence" shows the exact status.</p>
+</details>
+
+<details>
+<summary>The AI-generated cards have mistakes or don't make sense</summary>
+<p>This can happen, especially with very technical content, poorly scanned text, or a language other than Spanish. Before studying, you can always review, edit, or delete the generated cards on the same import screen. If you notice a repeated pattern of errors, email me with an example.</p>
+</details>
+
+<details>
+<summary>I imported a PDF or an image and no cards were generated</summary>
+<p>Check this:</p>
+<ul>
+  <li>The PDF must be under 5.1 MB and contain real text, not just a scanned image (there's no OCR for PDFs yet).</li>
+  <li>In a photo, the text needs to be clear and not too tilted; the app reads text with the camera (OCR), it doesn't interpret drawings or diagrams with no text.</li>
+</ul>
+</details>
+
+<details>
+<summary>I imported a YouTube video and nothing came through</summary>
+<p>This feature depends on the video having public captions available. If the video has no captions, the creator disabled them, or it's private or age-restricted, it won't work. Try another video, or paste the text in directly instead.</p>
+</details>
+
+<h3>iCloud and sync</h3>
+
+<details>
+<summary>My cards aren't showing up on my other iPhone or iPad</summary>
+<p>On both devices, check that:</p>
+<ul>
+  <li>You're signed in with the same Apple Account (Settings &gt; your name, at the top).</li>
+  <li>The "Sync with iCloud" switch inside AnkiSmart (gear menu) is turned on.</li>
+  <li>You have an internet connection; sync isn't instant and can take a minute or two.</li>
+</ul>
+<p>If you just changed the switch, the change only takes effect the next time you open the app, so fully close it and reopen it.</p>
+</details>
+
+<details>
+<summary>I deleted the app and lost my cards</summary>
+<p>If you had iCloud sync on before deleting, your data is still in your iCloud account: reinstalling the app and signing in with the same Apple Account should bring it back. If iCloud sync was off, the data only lived on that device and there's no way to recover it.</p>
+</details>
+
+<h3>Decks and review</h3>
+
+<details>
+<summary>How do I import my Anki decks?</summary>
+<p>From the gear menu on the Decks screen, choose "Import .apkg" and pick the file exported from Anki. Your content and study progress are imported; audio and images embedded in Anki cards aren't imported yet.</p>
+</details>
+
+<details>
+<summary>Why isn't a card showing up when it should be due?</summary>
+<p>Check that it isn't suspended (toggled from the card browser) and that it's in a deck that isn't archived. If you're using "Priority only" or a mixed session, the active filter may also be leaving it out.</p>
+</details>
+
+<details>
+<summary>How do I undo a rating I gave by mistake?</summary>
+<p>There's an undo button during review, which keeps up to 20 steps of history. That history is lost when you close the app, so undo before leaving the study session.</p>
+</details>
+
+<h3>Notifications</h3>
+
+<details>
+<summary>I'm not getting my daily reminder</summary>
+<p>Check Settings &gt; Notifications &gt; AnkiSmart to make sure notifications are allowed, and inside the app, gear menu &gt; "Daily reminder", to make sure it's turned on at the time you want. If your iPhone is in Do Not Disturb or a Focus mode at that time, it can still be silenced.</p>
+</details>
+
+<h2>Before you email me</h2>
+<p>If you're reporting a bug, it helps a lot if you include:</p>
+<ul>
+  <li>What you were doing when it happened</li>
+  <li>iPhone or iPad model and iOS version</li>
+  <li>A screenshot, if applicable</li>
+</ul>
+
+</section>
+
+<footer>
+  AnkiSmart · <span lang="es">Soporte</span> / <span lang="en">Support</span>
+  · <a href="privacidad.html"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
+</footer>
+</div>
+
+<script>
+(function () {
+  var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var buttons = document.querySelectorAll('.lang button');
+  var footerEs = document.querySelector('footer a span[lang="es"]');
+  var footerEn = document.querySelector('footer a span[lang="en"]');
+  function show(lang) {
+    document.documentElement.lang = lang;
+    Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
+    if (footerEs && footerEn) { footerEs.hidden = (lang !== 'es'); footerEn.hidden = (lang !== 'en'); }
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  var hash = (location.hash || '').replace('#', '');
+  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
+  show(hash === 'en' || hash === 'es' ? hash : pref);
+})();
+</script>
+</body>
+</html>
