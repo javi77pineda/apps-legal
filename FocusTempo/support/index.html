@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte — Focus Tempo</title>
+<style>
+  :root { --bg:#0b0f11; --card:#12171a; --fg:#eef2f3; --muted:#9aa7ac; --accent:#35e58c; --line:#1f2a2e; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f6f7f5; --card:#ffffff; --fg:#14181a; --muted:#5c6a6e; --accent:#0a8f52; --line:#e1e6e3; } }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--bg); color:var(--fg); }
+  body { font:16px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; display:flex; justify-content:center; padding:3rem 1.25rem; }
+  main { max-width:38rem; width:100%; }
+  .badge { display:inline-flex; align-items:center; gap:.4em; font-size:.8rem; font-weight:600; color:var(--accent); letter-spacing:.02em; text-transform:uppercase; margin-bottom:.8rem; }
+  .badge::before { content:""; width:.5em; height:.5em; border-radius:50%; background:var(--accent); display:inline-block; }
+  h1 { font-size:2rem; margin:.1em 0 .2em; letter-spacing:-.01em; }
+  p.lead { color:var(--muted); margin:0 0 2.2rem; font-size:1.05rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.5rem 1.6rem; margin-bottom:1.1rem; }
+  .card h2 { font-size:1rem; margin:0 0 .5rem; }
+  .card p { margin:0; color:var(--muted); }
+  a.contact { color:var(--accent); font-weight:600; text-decoration:none; word-break:break-all; }
+  a.contact:hover { text-decoration:underline; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.6rem; margin-bottom:.7rem; }
+  summary { cursor:pointer; font-weight:600; list-style:none; }
+  summary::-webkit-details-marker { display:none; }
+  summary::after { content:"+"; float:right; color:var(--accent); font-weight:700; }
+  details[open] summary::after { content:"–"; }
+  details p { color:var(--muted); margin:.7rem 0 0; }
+  footer { margin-top:2.5rem; color:var(--muted); font-size:.85rem; text-align:center; }
+</style>
+</head>
+<body>
+<main>
+  <span class="badge">Soporte</span>
+  <h1>Focus Tempo</h1>
+  <p class="lead">Concentración, cronómetro, temporizador, carreras con GPS, despertador y horario, todo en una sola app para iPhone.</p>
+
+  <div class="card">
+    <h2>Contacto</h2>
+    <p>¿Tienes un problema, una duda o una sugerencia? Escríbeme directamente:</p>
+    <p style="margin-top:.8rem"><a class="contact" href="mailto:jpineda0000@gmail.com">jpineda0000@gmail.com</a></p>
+    <p style="margin-top:.8rem">Respondo normalmente en 1 a 2 días.</p>
+  </div>
+
+  <details>
+    <summary>¿Dónde se guardan mis datos?</summary>
+    <p>Todo lo que registras (sesiones, carreras, alarmas, horario y tu perfil) se guarda únicamente en tu dispositivo. La app no tiene cuentas, no usa servidores propios ni analíticas.</p>
+  </details>
+
+  <details>
+    <summary>¿Cómo borro mis datos?</summary>
+    <p>Ve a Ajustes dentro de la app y toca "Reiniciar todos los datos". Esto borra tu historial, carreras, alarmas y horario, y restablece tus preferencias.</p>
+  </details>
+
+  <details>
+    <summary>¿Por qué la app pide permiso de Ubicación?</summary>
+    <p>Solo se usa en la pestaña Correr para trazar tu ruta y calcular distancia y ritmo. Puedes elegir "Mientras se usa" o "Siempre" si quieres que siga registrando con la pantalla bloqueada.</p>
+  </details>
+
+  <details>
+    <summary>¿Por qué pide permiso de Notificaciones?</summary>
+    <p>Para avisarte cuando termina un período de concentración, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales, programadas en tu propio dispositivo.</p>
+  </details>
+
+  <details>
+    <summary>Reportar un error (bug)</summary>
+    <p>Escríbeme al correo de arriba contándome qué pasó, en qué pantalla y, si puedes, con una captura de pantalla. Ayuda mucho saber el modelo de tu iPhone y la versión de iOS.</p>
+  </details>
+
+  <footer>Focus Tempo · Política de privacidad disponible en la ficha de la App Store</footer>
+</main>
+</body>
+</html>
