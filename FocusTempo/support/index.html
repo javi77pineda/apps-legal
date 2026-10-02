@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Soporte — Focus Tempo</title>
+<title>Soporte / Support — Focus Tempo</title>
 <style>
   :root { --bg:#0b0f11; --card:#12171a; --fg:#eef2f3; --muted:#9aa7ac; --accent:#35e58c; --line:#1f2a2e; }
   @media (prefers-color-scheme: light) { :root { --bg:#f6f7f5; --card:#ffffff; --fg:#14181a; --muted:#5c6a6e; --accent:#0a8f52; --line:#e1e6e3; } }
@@ -11,6 +11,9 @@
   html,body { margin:0; background:var(--bg); color:var(--fg); }
   body { font:16px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; display:flex; justify-content:center; padding:3rem 1.25rem; }
   main { max-width:38rem; width:100%; }
+  nav.lang { margin-bottom:1.6rem; }
+  nav.lang a { color:var(--accent); font-weight:600; font-size:.9rem; text-decoration:none; margin-right:1.2rem; }
+  nav.lang a:hover { text-decoration:underline; }
   .badge { display:inline-flex; align-items:center; gap:.4em; font-size:.8rem; font-weight:600; color:var(--accent); letter-spacing:.02em; text-transform:uppercase; margin-bottom:.8rem; }
   .badge::before { content:""; width:.5em; height:.5em; border-radius:50%; background:var(--accent); display:inline-block; }
   h1 { font-size:2rem; margin:.1em 0 .2em; letter-spacing:-.01em; }
@@ -27,47 +30,96 @@
   details[open] summary::after { content:"–"; }
   details p { color:var(--muted); margin:.7rem 0 0; }
   footer { margin-top:2.5rem; color:var(--muted); font-size:.85rem; text-align:center; }
+  section.lang { padding-top:2.5rem; }
+  section.lang:first-of-type { padding-top:0; }
+  hr.big { border:0; border-top:1px solid var(--line); margin:3rem 0 0; }
 </style>
 </head>
 <body>
 <main>
-  <span class="badge">Soporte</span>
-  <h1>Focus Tempo</h1>
-  <p class="lead">Concentración, cronómetro, temporizador, carreras con GPS, despertador y horario, todo en una sola app para iPhone.</p>
+  <nav class="lang"><a href="#es">Español</a><a href="#en">English</a></nav>
 
-  <div class="card">
-    <h2>Contacto</h2>
-    <p>¿Tienes un problema, una duda o una sugerencia? Escríbeme directamente:</p>
-    <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
-    <p style="margin-top:.8rem">Respondo normalmente en 1 a 2 días.</p>
-  </div>
+  <section class="lang" id="es" lang="es">
+    <span class="badge">Soporte</span>
+    <h1>Focus Tempo</h1>
+    <p class="lead">Concentración, cronómetro, temporizador, carreras con GPS, despertador y horario, todo en una sola app para iPhone.</p>
 
-  <details>
-    <summary>¿Dónde se guardan mis datos?</summary>
-    <p>Todo lo que registras (sesiones, carreras, alarmas, horario y tu perfil) se guarda únicamente en tu dispositivo. La app no tiene cuentas, no usa servidores propios ni analíticas.</p>
-  </details>
+    <div class="card">
+      <h2>Contacto</h2>
+      <p>¿Tienes un problema, una duda o una sugerencia? Escríbeme directamente:</p>
+      <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">Respondo normalmente en 1 a 2 días.</p>
+    </div>
 
-  <details>
-    <summary>¿Cómo borro mis datos?</summary>
-    <p>Ve a Ajustes dentro de la app y toca "Reiniciar todos los datos". Esto borra tu historial, carreras, alarmas y horario, y restablece tus preferencias.</p>
-  </details>
+    <details>
+      <summary>¿Dónde se guardan mis datos?</summary>
+      <p>Todo lo que registras (sesiones, carreras, alarmas, horario y tu perfil) se guarda únicamente en tu dispositivo. La app no tiene cuentas, no usa servidores propios ni analíticas.</p>
+    </details>
 
-  <details>
-    <summary>¿Por qué la app pide permiso de Ubicación?</summary>
-    <p>Solo se usa en la pestaña Correr para trazar tu ruta y calcular distancia y ritmo. Puedes elegir "Mientras se usa" o "Siempre" si quieres que siga registrando con la pantalla bloqueada.</p>
-  </details>
+    <details>
+      <summary>¿Cómo borro mis datos?</summary>
+      <p>Ve a Ajustes dentro de la app y toca "Reiniciar todos los datos". Esto borra tu historial, carreras, alarmas y horario, y restablece tus preferencias.</p>
+    </details>
 
-  <details>
-    <summary>¿Por qué pide permiso de Notificaciones?</summary>
-    <p>Para avisarte cuando termina un período de concentración, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales, programadas en tu propio dispositivo.</p>
-  </details>
+    <details>
+      <summary>¿Por qué la app pide permiso de Ubicación?</summary>
+      <p>Solo se usa en la pestaña Correr para trazar tu ruta y calcular distancia y ritmo. Puedes elegir "Mientras se usa" o "Siempre" si quieres que siga registrando con la pantalla bloqueada.</p>
+    </details>
 
-  <details>
-    <summary>Reportar un error (bug)</summary>
-    <p>Escríbeme al correo de arriba contándome qué pasó, en qué pantalla y, si puedes, con una captura de pantalla. Ayuda mucho saber el modelo de tu iPhone y la versión de iOS.</p>
-  </details>
+    <details>
+      <summary>¿Por qué pide permiso de Notificaciones?</summary>
+      <p>Para avisarte cuando termina un período de concentración, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales, programadas en tu propio dispositivo.</p>
+    </details>
 
-  <footer>Focus Tempo · Política de privacidad disponible en la ficha de la App Store</footer>
+    <details>
+      <summary>Reportar un error (bug)</summary>
+      <p>Escríbeme al correo de arriba contándome qué pasó, en qué pantalla y, si puedes, con una captura de pantalla. Ayuda mucho saber el modelo de tu iPhone y la versión de iOS.</p>
+    </details>
+
+    <footer>Focus Tempo · Política de privacidad disponible en la ficha de la App Store</footer>
+  </section>
+
+  <hr class="big">
+
+  <section class="lang" id="en" lang="en">
+    <span class="badge">Support</span>
+    <h1>Focus Tempo</h1>
+    <p class="lead">Focus sessions, stopwatch, timer, GPS run tracking, alarm and schedule, all in one iPhone app.</p>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Found a problem, have a question, or an idea? Email me directly:</p>
+      <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">I usually reply within 1–2 days.</p>
+    </div>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>Everything you record (sessions, runs, alarms, schedule and your profile) is stored only on your device. The app has no accounts, no servers of its own, and no analytics.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <p>Go to Settings inside the app and tap "Reset all data". This deletes your history, runs, alarms and schedule, and resets your preferences.</p>
+    </details>
+
+    <details>
+      <summary>Why does the app ask for Location?</summary>
+      <p>It's only used in the Run tab to trace your route and calculate distance and pace. You can choose "While Using" or "Always" if you want it to keep recording with the screen locked.</p>
+    </details>
+
+    <details>
+      <summary>Why does it ask for Notifications?</summary>
+      <p>To let you know when a focus period ends, when an alarm goes off, and for your schedule reminders. These are local notifications, scheduled on your own device.</p>
+    </details>
+
+    <details>
+      <summary>Report a bug</summary>
+      <p>Email me at the address above with what happened, which screen it was on, and a screenshot if you can. It also helps to know your iPhone model and iOS version.</p>
+    </details>
+
+    <footer>Focus Tempo · Privacy policy available on the App Store listing</footer>
+  </section>
 </main>
 </body>
 </html>
