@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte · Support — Chicken Habit</title>
+<meta name="description" content="Soporte de Chicken Habit: preguntas frecuentes y contacto. Chicken Habit support: FAQ and contact.">
+<style>
+  :root {
+    --bg: #fbf9f4;
+    --text: #23201a;
+    --muted: #6b655a;
+    --line: #e4dfd2;
+    --accent: #d4a017;
+    --link: #8a6200;
+    --tab-bg: #f1ecdf;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17150f;
+      --text: #ece7da;
+      --muted: #a39c8b;
+      --line: #322e23;
+      --link: #e5b93c;
+      --tab-bg: #24211a;
+      --card: #1e1b14;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 18px/1.7 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  header p { margin: 0 0 .25rem; color: var(--muted); font: 15px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2.2rem 0 .4rem; }
+  h3 { font-size: 1.02rem; margin: 1.3rem 0 .3rem; }
+  p, li { max-width: 68ch; }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--link); }
+  .lead { font-size: 1.1rem; }
+  .langs { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem; }
+  .langs button {
+    font: 600 15px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: .65rem 1.1rem; border: 0; background: var(--tab-bg); color: var(--muted); cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { background: var(--accent); color: #1c1600; }
+  .langs button:focus-visible { outline: 3px solid var(--link); outline-offset: -3px; }
+  .doc[hidden] { display: none; }
+  .contact {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.25rem 1.4rem; margin: 1.5rem 0 2rem;
+  }
+  .contact p { margin: .3rem 0; }
+  .contact a { font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p>Chicken Habit</p>
+    <h1>Soporte · Support</h1>
+  </header>
+
+  <div class="langs" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">Español</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <article class="doc" id="es" lang="es">
+    <p class="lead">¿Tienes un problema, una pregunta o una sugerencia sobre Chicken Habit? Aquí encuentras respuestas a lo más común y cómo escribirnos directamente.</p>
+
+    <div class="contact">
+      <p>Contacto directo</p>
+      <p><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">Respondemos normalmente en 1 a 2 días hábiles.</p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+
+    <h3>¿Mis datos están seguros si cambio de iPhone?</h3>
+    <p>Si tienes iCloud activado, tus hábitos y tareas se sincronizan automáticamente a tu cuenta y aparecen en el nuevo dispositivo. Si no usas iCloud, los datos viven solo en el teléfono: antes de cambiar de equipo, exporta un respaldo desde Ajustes y restáuralo en el nuevo. Más detalles en la <a href="privacy.html">política de privacidad</a>.</p>
+
+    <h3>¿Por qué murió mi criatura?</h3>
+    <p>Cada hábito tiene una criatura que crece mientras lo practicas. Si pasan 30 días seguidos sin marcar el hábito como hecho ni usar "saltar hoy", la criatura muere y el crecimiento se reinicia desde el huevo, aunque tu historial anterior se conserva. Para evitarlo sin romper tu progreso cuando sabes que vas a estar fuera de rutina, usa <strong>pausar hábito</strong> desde su detalle.</p>
+
+    <h3>¿Cómo recupero un hábito que murió?</h3>
+    <p>Simplemente márcalo como hecho de nuevo. La criatura revive y muestra una animación especial durante unos días antes de volver a su apariencia normal, sin perder el progreso que ya tenía acumulado.</p>
+
+    <h3>No me llegan los recordatorios</h3>
+    <p>Revisa en Ajustes del iPhone &gt; Notificaciones &gt; Chicken Habit que estén permitidas. Dentro de la app, cada hábito y cada tarea tiene su propio interruptor de recordatorio: confirma que esté activado y que la hora configurada sea correcta.</p>
+
+    <h3>¿Cómo exporto o hago un respaldo de mis datos?</h3>
+    <p>Ve a Ajustes dentro de la app y elige exportar respaldo. Se genera un archivo que puedes guardar donde prefieras. Para restaurarlo, usa la opción de restaurar respaldo en esa misma pantalla; ten en cuenta que esto reemplaza los datos actuales.</p>
+
+    <h3>¿Los consejos de IA funcionan sin internet?</h3>
+    <p>Sí. Los consejos usan Apple Intelligence directamente en tu iPhone, sin enviar información a ningún servidor. Esta función solo aparece en dispositivos compatibles con Apple Intelligence y con la función activada en Ajustes del sistema.</p>
+
+    <h3>¿Puedo usar la app en iPad o sin iPhone?</h3>
+    <p>Por ahora Chicken Habit está diseñada solo para iPhone.</p>
+
+    <h3>Encontré un error o la app se cerró sola</h3>
+    <p>Escríbenos a <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a> contando qué estabas haciendo justo antes. Si puedes, incluye una captura de pantalla y el modelo de tu iPhone.</p>
+
+    <h2>Enlaces</h2>
+    <ul>
+      <li><a href="privacy.html">Política de privacidad</a></li>
+    </ul>
+  </article>
+
+  <!-- ENGLISH -->
+  <article class="doc" id="en" lang="en" hidden>
+    <p class="lead">Running into an issue, a question, or a suggestion about Chicken Habit? Here are answers to the most common ones and how to reach us directly.</p>
+
+    <div class="contact">
+      <p>Direct contact</p>
+      <p><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">We usually reply within 1–2 business days.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Is my data safe if I switch to a new iPhone?</h3>
+    <p>With iCloud on, your habits and tasks sync automatically to your account and show up on the new device. Without iCloud, data lives only on the phone: export a backup from Settings before switching, then restore it on the new one. More details in the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h3>Why did my creature die?</h3>
+    <p>Each habit has a creature that grows as you practice it. After 30 straight days without marking it done or using "skip today," the creature dies and growth restarts from an egg, though your earlier history stays intact. To avoid this without losing progress when you know your routine will be disrupted, use <strong>pause habit</strong> from its detail screen.</p>
+
+    <h3>How do I bring back a habit that died?</h3>
+    <p>Just mark it done again. The creature revives and shows a special celebration for a few days before settling back into its normal look, keeping all the progress it had already earned.</p>
+
+    <h3>I'm not getting reminders</h3>
+    <p>Check iPhone Settings &gt; Notifications &gt; Chicken Habit to confirm they're allowed. Inside the app, each habit and task has its own reminder toggle: make sure it's on and the time is set correctly.</p>
+
+    <h3>How do I export or back up my data?</h3>
+    <p>Go to Settings inside the app and choose export backup. A file is created that you can save wherever you like. To restore it, use the restore backup option on the same screen; note that this replaces your current data.</p>
+
+    <h3>Do the AI tips work without internet?</h3>
+    <p>Yes. Tips run on Apple Intelligence directly on your iPhone, with no information sent to any server. This feature only appears on Apple Intelligence-compatible devices with the feature turned on in system Settings.</p>
+
+    <h3>Can I use the app on iPad or without an iPhone?</h3>
+    <p>Right now Chicken Habit is designed for iPhone only.</p>
+
+    <h3>I found a bug or the app crashed</h3>
+    <p>Write to us at <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a> with what you were doing right before it happened. If you can, include a screenshot and your iPhone model.</p>
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </article>
+
+  <noscript>
+    <style>.doc[hidden] { display: block; } .langs { display: none; }</style>
+  </noscript>
+
+  <footer>&copy; 2026 Javier Pineda</footer>
+</main>
+
+<script>
+(function () {
+  var docs = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var buttons = document.querySelectorAll('.langs button');
+
+  function show(lang) {
+    Object.keys(docs).forEach(function (k) { docs[k].hidden = (k !== lang); });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang;
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.lang); });
+  });
+
+  var fromHash = location.hash.replace('#', '');
+  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
+  show(docs[fromHash] ? fromHash : pref);
+})();
+</script>
+</body>
+</html>
