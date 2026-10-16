@@ -3,163 +3,309 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Política de privacidad de Focus Tempo: tus datos se quedan en tu dispositivo. Privacy Policy for Focus Tempo: your data stays on your device.">
 <title>Política de privacidad / Privacy Policy — Focus Tempo</title>
 <style>
-  :root { --bg:#ffffff; --fg:#1b1f23; --muted:#5a636b; --line:#d9dee3; --accent:#0a7d4f; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0e1113; --fg:#e6e9ec; --muted:#9aa4ac; --line:#262c31; --accent:#4aff9e; } }
-  html { background:var(--bg); }
+  :root { --bg:#ffffff; --fg:#1b1f23; --muted:#5a636b; --line:#d9dee3; --accent:#0a7d4f; --card:#f3f6f4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1113; --fg:#e6e9ec; --muted:#9aa4ac; --line:#262c31; --accent:#4aff9e; --card:#161b1e; } }
+  html { background:var(--bg); scroll-behavior:smooth; }
   body { margin:0 auto; max-width:44rem; padding:2rem 1.25rem 4rem; color:var(--fg); background:var(--bg);
          font:17px/1.65 Georgia, "Times New Roman", serif; }
   h1 { font:700 2rem/1.2 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin:.2em 0 .1em; }
-  h2 { font:650 1.15rem/1.3 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin:2.2em 0 .5em; padding-top:1em; border-top:1px solid var(--line); }
+  h2 { font:650 1.15rem/1.3 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin:2.2em 0 .5em; padding-top:1em; border-top:1px solid var(--line); scroll-margin-top:1rem; }
+  h3 { font:650 1rem/1.3 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin:1.4em 0 .3em; }
   p, li { margin:.5em 0; }
   ul { padding-left:1.3em; }
+  a { color:var(--accent); }
   .meta { color:var(--muted); font-size:.95rem; }
-  nav a { color:var(--accent); font:600 .95rem -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin-right:1rem; }
+  nav { display:flex; gap:1rem; flex-wrap:wrap; }
+  nav a { font:600 .95rem -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; text-decoration:none; }
   section.lang { margin-top:2.5rem; }
   hr.big { border:0; border-top:3px solid var(--line); margin:4rem 0 0; }
   strong { font-weight:700; }
+  .resumen { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem 1.25rem; margin:1.5rem 0; }
+  .resumen p { margin:.3em 0; }
+  .tabla { width:100%; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font:.92rem/1.45 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; margin:.8em 0; }
+  th, td { text-align:left; vertical-align:top; padding:.55em .6em; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  ol.indice { font:.95rem/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; padding-left:1.4em; columns:2; column-gap:2rem; }
+  @media (max-width: 520px) { ol.indice { columns:1; } }
+  @media print { nav, ol.indice { display:none; } body { max-width:none; } }
 </style>
 </head>
 <body>
-
+ 
 <nav><a href="#es">Español</a><a href="#en">English</a></nav>
-
+ 
+<!-- ============================ ESPAÑOL ============================ -->
 <section class="lang" id="es" lang="es">
 <h1>Política de privacidad de Focus Tempo</h1>
-<p class="meta">Última actualización: 21 de septiembre de 2026</p>
-
-<p>Esta política describe cómo Focus Tempo ("la app") trata tu información. En resumen: <strong>Focus Tempo no recopila tus datos, no los envía a ningún servidor del desarrollador y no incluye analíticas, publicidad ni rastreo.</strong> Todo lo que registras se guarda únicamente en tu dispositivo.</p>
-
-<h2>1. Quién es el responsable</h2>
-<p>Focus Tempo es desarrollada por Javier Pineda. Para cualquier consulta sobre privacidad, escribe a level18studio@gmail.com.</p>
-
-<h2>2. Información que guarda la app en tu dispositivo</h2>
+<p class="meta">Última actualización: 16 de octubre de 2026</p>
+ 
+<div class="resumen">
+  <p><strong>En resumen:</strong></p>
+  <p>Focus Tempo no recopila tus datos, no los envía a ningún servidor del desarrollador y no tiene cuentas, analíticas, publicidad ni rastreo. Todo lo que registras se guarda solo en tu iPhone y, si lo usas, en tu Apple Watch.</p>
+  <p>Si activas el aviso de estrés, el Apple Watch lee tu ritmo cardíaco desde Salud únicamente durante la Concentración, lo usa en el momento y no lo guarda ni lo comparte.</p>
+</div>
+ 
+<ol class="indice">
+  <li><a href="#es-1">Responsable</a></li>
+  <li><a href="#es-2">Datos que se guardan</a></li>
+  <li><a href="#es-3">Permisos</a></li>
+  <li><a href="#es-4">Salud y Apple Watch</a></li>
+  <li><a href="#es-5">Apple Music</a></li>
+  <li><a href="#es-6">Widget, reloj y Live Activities</a></li>
+  <li><a href="#es-7">Servicios de Apple</a></li>
+  <li><a href="#es-8">Lo que no hacemos</a></li>
+  <li><a href="#es-9">Copias de seguridad</a></li>
+  <li><a href="#es-10">Borrar tus datos</a></li>
+  <li><a href="#es-11">Estimaciones, no medicina</a></li>
+  <li><a href="#es-12">Menores de edad</a></li>
+  <li><a href="#es-13">Tus derechos</a></li>
+  <li><a href="#es-14">Cambios</a></li>
+  <li><a href="#es-15">Contacto</a></li>
+</ol>
+ 
+<h2 id="es-1">1. Quién es el responsable</h2>
+<p>Focus Tempo es desarrollada por Javier Pineda. Para cualquier consulta sobre privacidad, escribe a <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+ 
+<h2 id="es-2">2. Información que guarda la app en tu dispositivo</h2>
 <p>La app guarda localmente, dentro de tu dispositivo, la información que tú generas al usarla:</p>
 <ul>
   <li><strong>Sesiones de concentración:</strong> actividad elegida (concentración, estudio, ocio o sueño), duración planificada y real, fecha y si la sesión se completó o se abandonó.</li>
+  <li><strong>Sesiones por temas:</strong> el nombre de cada materia, sus temas y la complejidad que les asignes.</li>
   <li><strong>Alarmas y horario:</strong> la hora, etiqueta o mensaje, repetición y estado de cada alarma o recordatorio que crees.</li>
   <li><strong>Carreras:</strong> fecha, duración, distancia, calorías estimadas, la ruta recorrida (coordenadas GPS) y una imagen en miniatura del mapa con tu ruta.</li>
-  <li><strong>Perfil opcional:</strong> apodo, peso, estatura, edad y tipo de cuerpo. Se usa solo para saludarte y para estimar las calorías quemadas al correr. Puedes omitirlo.</li>
-  <li><strong>Preferencias:</strong> color del reloj, sonido ambiental, videos de fondo, centésimas de segundo y sonidos de fin de período.</li>
+  <li><strong>Perfil opcional:</strong> apodo, peso, estatura, edad y tipo de cuerpo. Se usa solo para saludarte y para estimar las calorías al correr. Puedes omitirlo.</li>
+  <li><strong>Preferencias:</strong> color del reloj, fuente de música (sonido ambiental o Apple Music), videos de fondo, centésimas de segundo, sonidos de fin de período y si el aviso de estrés del Apple Watch está activado.</li>
 </ul>
 <p>Esta información no sale de tu dispositivo por acción de la app. No tenemos acceso a ella.</p>
-
-<h2>3. Permisos que solicita la app</h2>
+ 
+<div class="tabla">
+<table>
+  <thead><tr><th>Dato</th><th>Dónde se guarda</th><th>Para qué</th></tr></thead>
+  <tbody>
+    <tr><td>Sesiones, temas, alarmas, horario</td><td>Tu iPhone</td><td>Historial, estadísticas y recordatorios</td></tr>
+    <tr><td>Rutas de carrera (GPS)</td><td>Tu iPhone</td><td>Mostrar tu recorrido, distancia y ritmo</td></tr>
+    <tr><td>Perfil opcional</td><td>Tu iPhone</td><td>Saludo y estimación de calorías</td></tr>
+    <tr><td>Ritmo cardíaco (si activas el aviso)</td><td>No se guarda: solo se lee en el Apple Watch</td><td>Estimar estrés durante la Concentración</td></tr>
+    <tr><td>Estado de la sesión</td><td>iPhone, Apple Watch y widget</td><td>Mostrar y controlar el reloj desde cada uno</td></tr>
+  </tbody>
+</table>
+</div>
+ 
+<h2 id="es-3">3. Permisos que solicita la app</h2>
+<p>Cada permiso se pide solo cuando usas la función que lo necesita, y puedes cambiarlo o retirarlo en cualquier momento desde Ajustes de iOS o del Apple Watch.</p>
 <ul>
-  <li><strong>Ubicación (mientras se usa la app / siempre):</strong> se usa únicamente en la pestaña Correr para trazar tu ruta y calcular distancia y ritmo. Si eliges "Siempre", la app puede seguir registrando la ruta con la pantalla bloqueada; iOS muestra un indicador cuando esto ocurre. La ubicación solo se usa mientras estás corriendo (entre "Comenzar a correr" y "Detener"). Puedes cambiar o retirar este permiso en Ajustes de iOS.</li>
-  <li><strong>Notificaciones:</strong> se usan para avisarte cuando termina un período de concentración, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales programadas en tu dispositivo; la app no usa notificaciones push ni servidores. Las alarmas usan el nivel "Urgente" (Time Sensitive) de iOS.</li>
-  <li><strong>Actividades en vivo:</strong> muestran el tiempo restante de tu sesión en la pantalla de bloqueo y la Dynamic Island. Se generan y actualizan localmente.</li>
-  <li><strong>Audio en segundo plano:</strong> la app reproduce sonidos ambientales y alarmas incluidos en ella. No accede al micrófono.</li>
+  <li><strong>Ubicación (mientras se usa la app):</strong> solo en la pestaña Correr, entre "Comenzar a correr" y "Detener", para trazar tu ruta y calcular distancia y ritmo. Si bloqueas la pantalla durante una carrera, la app sigue registrando la ruta e iOS muestra un indicador azul mientras lo hace. La app no usa tu ubicación en ningún otro momento.</li>
+  <li><strong>Notificaciones:</strong> para avisarte cuando termina un período de concentración o un descanso, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales programadas en tu dispositivo; la app no usa notificaciones push ni servidores. Las alarmas usan el nivel "Urgente" (Time Sensitive) de iOS.</li>
+  <li><strong>Salud (opcional):</strong> solo si activas el aviso de estrés del Apple Watch. Ver la sección 4.</li>
+  <li><strong>Apple Music (opcional):</strong> solo si eliges Apple Music como fuente de música. Ver la sección 5.</li>
+  <li><strong>Audio en segundo plano:</strong> la app reproduce los sonidos ambientales y las alarmas incluidos en ella. No accede al micrófono.</li>
 </ul>
-<p>La app no accede a tu cámara, fotos, contactos, calendario, salud ni micrófono.</p>
-
-<h2>4. Servicios de Apple</h2>
-<p>Para mostrar el mapa en la pestaña Correr y generar la miniatura de tu ruta, la app usa Apple Maps (MapKit). Al hacerlo, tu dispositivo puede comunicarse con los servidores de Apple para descargar la imagen del mapa. Ese tratamiento lo realiza Apple conforme a su propia política de privacidad (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>); el desarrollador no recibe esa información.</p>
-
-<h2>5. Lo que no hacemos</h2>
+<p>La app no accede a tu cámara, fotos, contactos, calendario ni micrófono.</p>
+ 
+<h2 id="es-4">4. Salud y aviso de estrés del Apple Watch</h2>
+<p>El aviso de estrés viene <strong>apagado</strong>. Si lo activas en Ajustes de la app, ocurre lo siguiente:</p>
+<ul>
+  <li>Durante una sesión de Concentración, el Apple Watch lee tu <strong>ritmo cardíaco</strong> y tu <strong>ritmo cardíaco en reposo</strong> desde la app Salud de Apple (HealthKit).</li>
+  <li>Para recibir el pulso en vivo, el reloj abre una sesión de actividad de tipo "Mente y cuerpo" mientras dura la Concentración. Esa sesión <strong>se descarta al terminar</strong>: no se guarda ningún entrenamiento en Salud ni en Fitness.</li>
+  <li>El reloj usa también el acelerómetro para saber si estás quieto, y así no confundir el pulso alto con levantarte o caminar.</li>
+  <li>Estos datos se procesan <strong>solo en el Apple Watch y solo en ese momento</strong>. La app no los guarda, no los envía a tu iPhone ni a ningún servidor. Lo único que viaja al iPhone es la orden de pausar la sesión si aceptas tomar el descanso.</li>
+</ul>
+<p>Compromisos sobre los datos de Salud:</p>
+<ul>
+  <li>No usamos datos de Salud para publicidad, marketing ni minería de datos.</li>
+  <li>No los vendemos ni los compartimos con terceros.</li>
+  <li>No los guardamos en iCloud ni en ningún otro servicio en la nube.</li>
+</ul>
+<p>Puedes retirar el permiso en cualquier momento en Ajustes de iOS &gt; Salud &gt; Acceso a datos y dispositivos &gt; Focus Tempo, o apagar el aviso en Ajustes de la app.</p>
+ 
+<h2 id="es-5">5. Apple Music</h2>
+<p>Si eliges Apple Music como fuente de música, la app te pide permiso para usar Apple Music y así buscar y reproducir canciones durante la Concentración. Las búsquedas (el texto que escribes o el enlace que pegas) se envían a Apple para consultar su catálogo, y la reproducción la hace Apple Music con tu suscripción. La app no guarda tu historial de búsqueda ni de reproducción, y no lee tu biblioteca personal.</p>
+<p>El botón "Pegar link o texto" lee el portapapeles <strong>solo cuando lo tocas</strong>, para buscar lo que copiaste.</p>
+ 
+<h2 id="es-6">6. Widget, Apple Watch y Live Activities</h2>
+<ul>
+  <li><strong>Widget de pantalla de inicio:</strong> la app y el widget comparten el estado de la sesión (tiempo restante, fase, actividad) mediante un espacio de almacenamiento compartido dentro de tu iPhone.</li>
+  <li><strong>App del Apple Watch:</strong> el iPhone y el reloj intercambian el estado de la sesión y las órdenes de pausar, reanudar o terminar mediante la conexión directa entre tus dispositivos (WatchConnectivity de Apple). No pasa por servidores del desarrollador.</li>
+  <li><strong>Live Activities:</strong> muestran el tiempo restante en la pantalla de bloqueo y la Dynamic Island. Se crean y actualizan localmente.</li>
+</ul>
+ 
+<h2 id="es-7">7. Servicios de Apple</h2>
+<p>Para mostrar el mapa en la pestaña Correr y generar la miniatura de tu ruta, la app usa Apple Maps (MapKit). Tu dispositivo puede comunicarse con los servidores de Apple para descargar la imagen del mapa. Lo mismo ocurre con las búsquedas en Apple Music. Ese tratamiento lo realiza Apple conforme a su propia política de privacidad (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>); el desarrollador no recibe esa información.</p>
+ 
+<h2 id="es-8">8. Lo que no hacemos</h2>
 <ul>
   <li>No tenemos cuentas de usuario ni inicio de sesión.</li>
   <li>No incluimos SDK de terceros, analíticas, informes de fallos, publicidad ni herramientas de seguimiento.</li>
   <li>No vendemos, alquilamos ni compartimos tu información con terceros.</li>
   <li>No te rastreamos entre apps ni sitios web de otras empresas.</li>
 </ul>
-
-<h2>6. Copias de seguridad</h2>
-<p>Los datos de la app pueden incluirse en las copias de seguridad de tu dispositivo (por ejemplo, iCloud o tu ordenador) según la configuración que tengas en iOS. Esas copias las gestiona Apple y tú; el desarrollador no tiene acceso a ellas.</p>
-
-<h2>7. Conservación y eliminación de datos</h2>
+ 
+<h2 id="es-9">9. Copias de seguridad</h2>
+<p>Los datos de la app pueden incluirse en las copias de seguridad de tu dispositivo (por ejemplo, iCloud o tu ordenador) según tu configuración de iOS. Esas copias las gestionan Apple y tú; el desarrollador no tiene acceso a ellas. Los datos de Salud no forman parte de lo que guarda la app, porque la app no los almacena.</p>
+ 
+<h2 id="es-10">10. Conservación y eliminación de datos</h2>
 <p>Tus datos se conservan en tu dispositivo hasta que decidas borrarlos. Puedes eliminarlos de dos formas:</p>
 <ul>
-  <li>Desde la app: <strong>Ajustes &gt; Reiniciar todos los datos</strong> borra tu historial de sesiones, carreras, alarmas y horario, cancela las notificaciones pendientes y restablece tus preferencias y perfil.</li>
+  <li>Desde la app: <strong>Ajustes &gt; Reiniciar todos los datos</strong> borra tu historial de sesiones, sesiones por temas, carreras, alarmas y horario, cancela las notificaciones pendientes y restablece tus preferencias y perfil.</li>
   <li>Desinstalando la app, lo que elimina todos sus datos locales.</li>
 </ul>
 <p>Como no almacenamos tu información en ningún servidor, no hay datos tuyos que podamos consultar, exportar o eliminar desde nuestro lado.</p>
-
-<h2>8. Calorías y salud</h2>
-<p>Las calorías que muestra la app son una estimación basada en tu peso, ritmo y duración. No es una medición ni un consejo médico. Consulta a un profesional de la salud antes de iniciar o modificar un programa de ejercicio.</p>
-
-<h2>9. Menores de edad</h2>
+ 
+<h2 id="es-11">11. Estimaciones, no medicina</h2>
+<p>Las calorías de la pestaña Correr son una estimación basada en tu peso, ritmo y duración. El aviso de estrés es una estimación basada en tu ritmo cardíaco y tu movimiento. <strong>Ninguna de las dos es una medición médica ni un diagnóstico</strong>, y la app no es un dispositivo médico. Si tienes dudas sobre tu salud, consulta a un profesional.</p>
+ 
+<h2 id="es-12">12. Menores de edad</h2>
 <p>Focus Tempo no está dirigida a menores de 13 años y no recopila datos de ningún usuario, incluidos los menores. Si eres madre, padre o tutor y tienes dudas, escríbenos al correo de contacto.</p>
-
-<h2>10. Tus derechos</h2>
-<p>Según tu país (por ejemplo, RGPD en la Unión Europea, CCPA en California o la normativa de tu jurisdicción), puedes tener derecho a acceder, corregir o eliminar tus datos personales. Como la app guarda todo localmente y nosotros no recibimos tus datos, tú ejerces ese control directamente desde la app y desde los ajustes de iOS, tal como se explica arriba.</p>
-
-<h2>11. Cambios en esta política</h2>
+ 
+<h2 id="es-13">13. Tus derechos</h2>
+<p>Según tu país (por ejemplo, el RGPD en la Unión Europea, la CCPA en California o la normativa de tu jurisdicción), puedes tener derecho a acceder, corregir o eliminar tus datos personales. Como la app guarda todo localmente y nosotros no recibimos tus datos, tú ejerces ese control directamente desde la app y desde los ajustes de iOS y del Apple Watch, como se explica arriba.</p>
+ 
+<h2 id="es-14">14. Cambios en esta política</h2>
 <p>Si cambiamos la forma en que la app trata tu información, actualizaremos esta página y la fecha de "Última actualización". Los cambios importantes también se indicarán en las notas de la versión de la app.</p>
-
-<h2>12. Contacto</h2>
-<p>Javier Pineda<br>level18studio@gmail.com</p>
+ 
+<h2 id="es-15">15. Contacto</h2>
+<p>Javier Pineda<br><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
 </section>
-
+ 
 <hr class="big">
-
+ 
+<!-- ============================ ENGLISH ============================ -->
 <section class="lang" id="en" lang="en">
 <h1>Focus Tempo Privacy Policy</h1>
-<p class="meta">Last updated: September 21, 2026</p>
-
-<p>This policy describes how Focus Tempo ("the app") handles your information. In short: <strong>Focus Tempo does not collect your data, does not send it to any developer server, and includes no analytics, advertising or tracking.</strong> Everything you record stays on your device only.</p>
-
-<h2>1. Who is responsible</h2>
-<p>Focus Tempo is developed by Javier Pineda. For any privacy question, contact level18studio@gmail.com.</p>
-
-<h2>2. Information the app stores on your device</h2>
+<p class="meta">Last updated: October 16, 2026</p>
+ 
+<div class="resumen">
+  <p><strong>In short:</strong></p>
+  <p>Focus Tempo does not collect your data, does not send it to any developer server, and has no accounts, analytics, advertising or tracking. Everything you record stays only on your iPhone and, if you use it, your Apple Watch.</p>
+  <p>If you turn on the stress alert, Apple Watch reads your heart rate from Health only during Focus, uses it in the moment, and never stores or shares it.</p>
+</div>
+ 
+<ol class="indice">
+  <li><a href="#en-1">Who is responsible</a></li>
+  <li><a href="#en-2">Data stored</a></li>
+  <li><a href="#en-3">Permissions</a></li>
+  <li><a href="#en-4">Health and Apple Watch</a></li>
+  <li><a href="#en-5">Apple Music</a></li>
+  <li><a href="#en-6">Widget, Watch and Live Activities</a></li>
+  <li><a href="#en-7">Apple services</a></li>
+  <li><a href="#en-8">What we do not do</a></li>
+  <li><a href="#en-9">Backups</a></li>
+  <li><a href="#en-10">Deleting your data</a></li>
+  <li><a href="#en-11">Estimates, not medicine</a></li>
+  <li><a href="#en-12">Children</a></li>
+  <li><a href="#en-13">Your rights</a></li>
+  <li><a href="#en-14">Changes</a></li>
+  <li><a href="#en-15">Contact</a></li>
+</ol>
+ 
+<h2 id="en-1">1. Who is responsible</h2>
+<p>Focus Tempo is developed by Javier Pineda. For any privacy question, contact <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+ 
+<h2 id="en-2">2. Information the app stores on your device</h2>
 <p>The app stores locally, on your device, the information you generate while using it:</p>
 <ul>
   <li><strong>Focus sessions:</strong> chosen activity (focus, study, leisure or sleep), planned and actual duration, date, and whether the session was completed or abandoned.</li>
+  <li><strong>Topic sessions:</strong> the name of each subject, its topics and the complexity you assign them.</li>
   <li><strong>Alarms and schedule:</strong> the time, label or message, repeat setting and status of each alarm or reminder you create.</li>
   <li><strong>Runs:</strong> date, duration, distance, estimated calories, the route you ran (GPS coordinates) and a thumbnail image of the map with your route.</li>
-  <li><strong>Optional profile:</strong> nickname, weight, height, age and body type. It is used only to greet you and to estimate calories burned while running. You can skip it.</li>
-  <li><strong>Preferences:</strong> clock color, ambient sound, background videos, centiseconds and end-of-period sounds.</li>
+  <li><strong>Optional profile:</strong> nickname, weight, height, age and body type. It is used only to greet you and to estimate calories while running. You can skip it.</li>
+  <li><strong>Preferences:</strong> clock color, music source (ambient sound or Apple Music), background videos, centiseconds, end-of-period sounds, and whether the Apple Watch stress alert is on.</li>
 </ul>
 <p>This information does not leave your device through the app. We have no access to it.</p>
-
-<h2>3. Permissions the app requests</h2>
+ 
+<div class="tabla">
+<table>
+  <thead><tr><th>Data</th><th>Where it is kept</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Sessions, topics, alarms, schedule</td><td>Your iPhone</td><td>History, statistics and reminders</td></tr>
+    <tr><td>Run routes (GPS)</td><td>Your iPhone</td><td>Show your route, distance and pace</td></tr>
+    <tr><td>Optional profile</td><td>Your iPhone</td><td>Greeting and calorie estimate</td></tr>
+    <tr><td>Heart rate (if you turn on the alert)</td><td>Not stored: only read on Apple Watch</td><td>Estimate stress during Focus</td></tr>
+    <tr><td>Session state</td><td>iPhone, Apple Watch and widget</td><td>Show and control the timer from each one</td></tr>
+  </tbody>
+</table>
+</div>
+ 
+<h2 id="en-3">3. Permissions the app requests</h2>
+<p>Each permission is requested only when you use the feature that needs it, and you can change or withdraw it at any time in iOS or Apple Watch Settings.</p>
 <ul>
-  <li><strong>Location (while using the app / always):</strong> used only in the Run tab to trace your route and calculate distance and pace. If you choose "Always", the app can keep recording the route while the screen is locked; iOS shows an indicator when this happens. Location is used only while you are running (between "Start running" and "Stop"). You can change or withdraw this permission in iOS Settings.</li>
-  <li><strong>Notifications:</strong> used to alert you when a focus period ends, when an alarm rings and for your schedule reminders. They are local notifications scheduled on your device; the app does not use push notifications or servers. Alarms use the iOS Time Sensitive level.</li>
-  <li><strong>Live Activities:</strong> show the remaining time of your session on the Lock Screen and Dynamic Island. They are created and updated locally.</li>
-  <li><strong>Background audio:</strong> the app plays ambient sounds and alarms bundled with it. It does not access the microphone.</li>
+  <li><strong>Location (while using the app):</strong> only in the Run tab, between "Start running" and "Stop", to trace your route and calculate distance and pace. If you lock the screen during a run, the app keeps recording the route and iOS shows a blue indicator while it does. The app does not use your location at any other time.</li>
+  <li><strong>Notifications:</strong> to alert you when a focus period or a break ends, when an alarm rings, and for your schedule reminders. They are local notifications scheduled on your device; the app does not use push notifications or servers. Alarms use the iOS Time Sensitive level.</li>
+  <li><strong>Health (optional):</strong> only if you turn on the Apple Watch stress alert. See section 4.</li>
+  <li><strong>Apple Music (optional):</strong> only if you choose Apple Music as your music source. See section 5.</li>
+  <li><strong>Background audio:</strong> the app plays the ambient sounds and alarms bundled with it. It does not access the microphone.</li>
 </ul>
-<p>The app does not access your camera, photos, contacts, calendar, health data or microphone.</p>
-
-<h2>4. Apple services</h2>
-<p>To display the map in the Run tab and generate the route thumbnail, the app uses Apple Maps (MapKit). In doing so, your device may communicate with Apple's servers to download the map imagery. Apple handles that processing under its own privacy policy (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>); the developer does not receive that information.</p>
-
-<h2>5. What we do not do</h2>
+<p>The app does not access your camera, photos, contacts, calendar or microphone.</p>
+ 
+<h2 id="en-4">4. Health and the Apple Watch stress alert</h2>
+<p>The stress alert is <strong>off</strong> by default. If you turn it on in the app's Settings:</p>
+<ul>
+  <li>During a Focus session, Apple Watch reads your <strong>heart rate</strong> and <strong>resting heart rate</strong> from Apple's Health app (HealthKit).</li>
+  <li>To receive your pulse in real time, the watch opens a "Mind and Body" activity session for the length of the Focus session. That session is <strong>discarded when it ends</strong>: no workout is saved to Health or Fitness.</li>
+  <li>The watch also uses the accelerometer to tell whether you are still, so a raised pulse from standing up or walking is not mistaken for stress.</li>
+  <li>This data is processed <strong>only on Apple Watch and only in the moment</strong>. The app does not store it or send it to your iPhone or to any server. The only thing sent to the iPhone is the command to pause the session if you accept the break.</li>
+</ul>
+<p>Our commitments about Health data:</p>
+<ul>
+  <li>We do not use Health data for advertising, marketing or data mining.</li>
+  <li>We do not sell it or share it with third parties.</li>
+  <li>We do not store it in iCloud or any other cloud service.</li>
+</ul>
+<p>You can withdraw access at any time in iOS Settings &gt; Health &gt; Data Access &amp; Devices &gt; Focus Tempo, or turn off the alert in the app's Settings.</p>
+ 
+<h2 id="en-5">5. Apple Music</h2>
+<p>If you choose Apple Music as your music source, the app asks for permission to use Apple Music so it can search for and play songs during Focus. Searches (the text you type or the link you paste) are sent to Apple to query its catalog, and playback is handled by Apple Music under your subscription. The app does not keep your search or listening history and does not read your personal library.</p>
+<p>The "Paste link or text" button reads the clipboard <strong>only when you tap it</strong>, to search for what you copied.</p>
+ 
+<h2 id="en-6">6. Widget, Apple Watch and Live Activities</h2>
+<ul>
+  <li><strong>Home Screen widget:</strong> the app and the widget share the session state (time remaining, phase, activity) through a shared storage space on your iPhone.</li>
+  <li><strong>Apple Watch app:</strong> the iPhone and the watch exchange the session state and the pause, resume or end commands over the direct connection between your devices (Apple's WatchConnectivity). Nothing goes through developer servers.</li>
+  <li><strong>Live Activities:</strong> show the remaining time on the Lock Screen and Dynamic Island. They are created and updated locally.</li>
+</ul>
+ 
+<h2 id="en-7">7. Apple services</h2>
+<p>To display the map in the Run tab and generate the route thumbnail, the app uses Apple Maps (MapKit). Your device may communicate with Apple's servers to download the map imagery. The same applies to Apple Music searches. Apple handles that processing under its own privacy policy (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>); the developer does not receive that information.</p>
+ 
+<h2 id="en-8">8. What we do not do</h2>
 <ul>
   <li>We have no user accounts or sign-in.</li>
   <li>We include no third-party SDKs, analytics, crash reporting, advertising or tracking tools.</li>
   <li>We do not sell, rent or share your information with third parties.</li>
   <li>We do not track you across apps or websites owned by other companies.</li>
 </ul>
-
-<h2>6. Backups</h2>
-<p>The app's data may be included in your device backups (for example, iCloud or your computer) depending on your iOS settings. Those backups are managed by Apple and you; the developer has no access to them.</p>
-
-<h2>7. Retention and deletion</h2>
+ 
+<h2 id="en-9">9. Backups</h2>
+<p>The app's data may be included in your device backups (for example, iCloud or your computer) depending on your iOS settings. Those backups are managed by Apple and you; the developer has no access to them. Health data is not part of what the app saves, because the app does not store it.</p>
+ 
+<h2 id="en-10">10. Retention and deletion</h2>
 <p>Your data stays on your device until you delete it. You can delete it in two ways:</p>
 <ul>
-  <li>From the app: <strong>Settings &gt; Reset all data</strong> deletes your session history, runs, alarms and schedule, cancels pending notifications, and resets your preferences and profile.</li>
+  <li>From the app: <strong>Settings &gt; Reset all data</strong> deletes your session history, topic sessions, runs, alarms and schedule, cancels pending notifications, and resets your preferences and profile.</li>
   <li>By uninstalling the app, which removes all of its local data.</li>
 </ul>
 <p>Because we do not store your information on any server, there is no data of yours that we can look up, export or delete on our side.</p>
-
-<h2>8. Calories and health</h2>
-<p>The calories shown by the app are an estimate based on your weight, pace and duration. They are not a measurement or medical advice. Consult a health professional before starting or changing an exercise program.</p>
-
-<h2>9. Children</h2>
+ 
+<h2 id="en-11">11. Estimates, not medicine</h2>
+<p>The calories in the Run tab are an estimate based on your weight, pace and duration. The stress alert is an estimate based on your heart rate and movement. <strong>Neither is a medical measurement or diagnosis</strong>, and the app is not a medical device. If you have questions about your health, consult a professional.</p>
+ 
+<h2 id="en-12">12. Children</h2>
 <p>Focus Tempo is not directed to children under 13 and does not collect data from any user, including children. If you are a parent or guardian and have questions, contact us at the email below.</p>
-
-<h2>10. Your rights</h2>
-<p>Depending on your country (for example, GDPR in the European Union, CCPA in California or the laws of your jurisdiction), you may have the right to access, correct or delete your personal data. Since the app stores everything locally and we do not receive your data, you exercise that control directly in the app and in iOS settings, as explained above.</p>
-
-<h2>11. Changes to this policy</h2>
+ 
+<h2 id="en-13">13. Your rights</h2>
+<p>Depending on your country (for example, the GDPR in the European Union, the CCPA in California or the laws of your jurisdiction), you may have the right to access, correct or delete your personal data. Since the app stores everything locally and we do not receive your data, you exercise that control directly in the app and in iOS and Apple Watch settings, as explained above.</p>
+ 
+<h2 id="en-14">14. Changes to this policy</h2>
 <p>If we change how the app handles your information, we will update this page and the "Last updated" date. Significant changes will also be noted in the app's release notes.</p>
-
-<h2>12. Contact</h2>
-<p>Javier Pineda<br>level18studio@gmail.com</p>
+ 
+<h2 id="en-15">15. Contact</h2>
+<p>Javier Pineda<br><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
 </section>
-
+ 
 </body>
 </html>
