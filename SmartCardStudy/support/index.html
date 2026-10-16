@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>SmartCardStudy · Soporte / Support</title>
 <meta name="description" content="Soporte de la app SmartCardStudy para iPhone y iPad: preguntas frecuentes y contacto. Support for the SmartCardStudy iPhone and iPad app: FAQ and contact.">
 <style>
@@ -121,7 +122,7 @@
   <li>iPhone 15 Pro o más nuevo</li>
   <li>iPad con chip M (M1 o superior) o A17 Pro</li>
 </ul>
-<p>Además de tener uno de esos dispositivos, revisa en Ajustes del iPhone o iPad &gt; Apple Intelligence y Siri que esté activado y que el modelo ya se haya descargado (puede tardar unos minutos la primera vez, y necesita wifi). Dentro de SmartCardStudy, el menú de engranaje &gt; "Apple Intelligence" te muestra el estado exacto.</p>
+<p>Además de tener uno de esos dispositivos, revisa en Ajustes del iPhone o iPad &gt; Apple Intelligence y Siri que esté activado y que el modelo ya se haya descargado (puede tardar unos minutos la primera vez, y necesita wifi). Dentro de SmartCardStudy, en Ajustes (el engranaje de la pantalla Mazos) &gt; "Apple Intelligence" ves el estado exacto.</p>
 </details>
 
 <details>
@@ -130,17 +131,18 @@
 </details>
 
 <details>
-<summary>Importé un PDF o una imagen y no generó ninguna tarjeta</summary>
+<summary>Importé un PDF, una imagen o un audio y no generó ninguna tarjeta</summary>
 <p>Revisa esto:</p>
 <ul>
   <li>El PDF debe pesar menos de 5.1 MB y tener texto real, no ser solo una imagen escaneada (todavía no hay OCR para PDF).</li>
-  <li>En una foto, el texto tiene que verse claro y sin mucha inclinación; la app lee el texto con la cámara (OCR), no interpreta dibujos o diagramas sin texto.</li>
+  <li>En una foto, el texto tiene que verse claro y sin mucha inclinación. La app lee el texto de la foto (OCR); no interpreta dibujos o diagramas sin texto.</li>
+  <li>El audio debe ser .m4a (memo de voz), .mp3, .wav o .caf. Por ahora se transcribe solo en español: un audio en otro idioma puede salir vacío o con errores.</li>
 </ul>
 </details>
 
 <details>
 <summary>Importé un video de YouTube y no trajo nada</summary>
-<p>Esa función depende de que el video tenga subtítulos públicos disponibles. Si el video no tiene subtítulos, están desactivados por el creador, o es privado o de solo edad, no va a funcionar. Prueba con otro video o pégale el texto directamente.</p>
+<p>Esa función depende de que el video tenga subtítulos públicos. Si el video no tiene subtítulos, el creador los desactivó, o es privado o tiene restricción de edad, no va a funcionar. Prueba con otro video, descarga el audio con otra app e impórtalo desde la pestaña "Audio", o usa la pestaña "Tema" para que la IA arme el mazo sin material.</p>
 </details>
 
 <h3>iCloud y sincronización</h3>
@@ -150,7 +152,7 @@
 <p>Verifica, en los dos dispositivos, que:</p>
 <ul>
   <li>Hayas iniciado sesión con la misma cuenta de Apple (Ajustes &gt; tu nombre, arriba).</li>
-  <li>El interruptor "Sincronizar con iCloud", dentro de SmartCardStudy (menú de engranaje), esté activado.</li>
+  <li>El interruptor "Sincronizar con iCloud", en Ajustes de SmartCardStudy (el engranaje de la pantalla Mazos), esté activado.</li>
   <li>Tengas conexión a internet; la sincronización no es instantánea, puede tardar uno o dos minutos.</li>
 </ul>
 <p>Si cambiaste el interruptor, el cambio se aplica recién la próxima vez que abras la app, así que ciérrala completamente y vuelve a abrirla.</p>
@@ -165,24 +167,40 @@
 
 <details>
 <summary>¿Cómo importo mis mazos de Anki?</summary>
-<p>Desde el menú de engranaje en la pantalla de Mazos, elige "Importar .apkg" y selecciona el archivo exportado desde Anki. El contenido y tu progreso de estudio se importan; por ahora no se importan el audio ni las imágenes incluidas en las tarjetas de Anki.</p>
+<p>En la pantalla Mazos, toca el botón + (arriba a la izquierda) &gt; "Importar de Anki (.apkg)" y elige el archivo exportado desde Anki. La misma opción está en Ajustes. Se importan el contenido y tu progreso de estudio; por ahora no se importan el audio ni las imágenes incluidas en las tarjetas de Anki.</p>
+</details>
+
+<details>
+<summary>¿Cómo estudio todos mis mazos a la vez?</summary>
+<p>En la pantalla Mazos, arriba, la tarjeta "Para hoy" tiene el botón "Estudiar todo": repasa lo pendiente de todos tus mazos en una sola sesión, alternando entre ellos. Si quieres elegir solo algunos mazos, usa "Sesión mixta".</p>
+</details>
+
+<details>
+<summary>¿Qué significan los tiempos debajo de cada botón de calificación?</summary>
+<p>Indican cuándo vuelve a tocar la tarjeta según lo que elijas: "Bien · 3 d" quiere decir que la verás de nuevo en 3 días. "De nuevo" la vuelve a mostrar unas tarjetas más adelante en la misma sesión, para que la repases antes de terminar.</p>
 </details>
 
 <details>
 <summary>¿Por qué una tarjeta no aparece cuando debería tocarle repaso?</summary>
-<p>Revisa que no esté suspendida (se marca y se quita desde el buscador de tarjetas) y que esté en un mazo que no esté archivado. Si usas "Solo prioritarias" o una sesión mixta, el filtro aplicado también puede estar dejándola afuera.</p>
+<p>Revisa esto:</p>
+<ul>
+  <li>Que no esté oculta del repaso: en el mazo, abre "Organizar tarjetas", toca ••• en la tarjeta y elige "Volver al repaso".</li>
+  <li>Que su mazo no esté archivado (Ajustes &gt; "Mazos archivados").</li>
+  <li>Si usas una sesión mixta con "Repasar solo prioritarias", solo aparecen las tarjetas con estrella.</li>
+</ul>
+<p>Si ya la repasaste hoy, vuelve en la fecha que le tocó. Para repasarla igual, al terminar la sesión usa "Repasar todas de nuevo".</p>
 </details>
 
 <details>
 <summary>¿Cómo deshago una calificación que di por error?</summary>
-<p>Durante el repaso hay un botón de deshacer, que guarda hasta 20 pasos hacia atrás. Esa historia se pierde si cierras la app, así que deshazlo antes de salir de la sesión de estudio.</p>
+<p>Durante el repaso, toca la flecha curva de arriba a la derecha (o ⌘Z si usas teclado en el iPad). Guarda hasta 20 pasos hacia atrás. Esa historia se pierde si cierras la app, así que deshazlo antes de salir de la sesión de estudio.</p>
 </details>
 
 <h3>Notificaciones</h3>
 
 <details>
 <summary>No me llega el recordatorio diario</summary>
-<p>Revisa en Ajustes del sistema &gt; Notificaciones &gt; SmartCardStudy que las notificaciones estén permitidas, y dentro de la app, en el menú de engranaje &gt; "Recordatorio diario", que esté activado con la hora que quieras. Si el iPhone está en modo No Molestar o Enfoque a esa hora, puede silenciarla igual.</p>
+<p>Revisa en Ajustes del sistema &gt; Notificaciones &gt; SmartCardStudy que las notificaciones estén permitidas, y dentro de la app, en Ajustes (el engranaje) &gt; "Recordatorio diario", que esté activado con la hora que quieras. Si el iPhone está en modo No Molestar o Enfoque a esa hora, puede silenciarla igual.</p>
 </details>
 
 <h2>Antes de escribirme</h2>
@@ -196,7 +214,7 @@
 </section>
 
 <!-- ============================ ENGLISH ============================ -->
-<section id="en" lang="en" hidden>
+<section id="en" lang="en">
 
 <div class="contact">
   <p>Have a problem, a question, or a suggestion? Email me directly:</p>
@@ -215,7 +233,7 @@
   <li>iPhone 15 Pro or newer</li>
   <li>iPad with an M-series chip (M1 or later) or A17 Pro</li>
 </ul>
-<p>Besides having one of those devices, check Settings &gt; Apple Intelligence & Siri, make sure it's turned on and that the model has finished downloading (it can take a few minutes the first time, and needs Wi-Fi). Inside SmartCardStudy, the gear menu &gt; "Apple Intelligence" shows the exact status.</p>
+<p>Besides having one of those devices, check Settings &gt; Apple Intelligence &amp; Siri, make sure it's turned on and that the model has finished downloading (it can take a few minutes the first time, and needs Wi-Fi). Inside SmartCardStudy, Settings (the gear on the Decks screen) &gt; "Apple Intelligence" shows the exact status.</p>
 </details>
 
 <details>
@@ -224,17 +242,18 @@
 </details>
 
 <details>
-<summary>I imported a PDF or an image and no cards were generated</summary>
+<summary>I imported a PDF, an image or an audio file and no cards were generated</summary>
 <p>Check this:</p>
 <ul>
   <li>The PDF must be under 5.1 MB and contain real text, not just a scanned image (there's no OCR for PDFs yet).</li>
-  <li>In a photo, the text needs to be clear and not too tilted; the app reads text with the camera (OCR), it doesn't interpret drawings or diagrams with no text.</li>
+  <li>In a photo, the text needs to be clear and not too tilted. The app reads the text in the photo (OCR); it doesn't interpret drawings or diagrams with no text.</li>
+  <li>Audio must be .m4a (voice memo), .mp3, .wav or .caf. For now it is transcribed in Spanish only, so audio in another language may come out empty or with errors.</li>
 </ul>
 </details>
 
 <details>
 <summary>I imported a YouTube video and nothing came through</summary>
-<p>This feature depends on the video having public captions available. If the video has no captions, the creator disabled them, or it's private or age-restricted, it won't work. Try another video, or paste the text in directly instead.</p>
+<p>This feature depends on the video having public captions. If the video has no captions, the creator disabled them, or it's private or age-restricted, it won't work. Try another video, download the audio with another app and import it from the "Audio" tab, or use the "Topic" tab to have the AI build the deck without any material.</p>
 </details>
 
 <h3>iCloud and sync</h3>
@@ -244,7 +263,7 @@
 <p>On both devices, check that:</p>
 <ul>
   <li>You're signed in with the same Apple Account (Settings &gt; your name, at the top).</li>
-  <li>The "Sync with iCloud" switch inside SmartCardStudy (gear menu) is turned on.</li>
+  <li>The "Sync with iCloud" switch in SmartCardStudy's Settings (the gear on the Decks screen) is turned on.</li>
   <li>You have an internet connection; sync isn't instant and can take a minute or two.</li>
 </ul>
 <p>If you just changed the switch, the change only takes effect the next time you open the app, so fully close it and reopen it.</p>
@@ -259,24 +278,40 @@
 
 <details>
 <summary>How do I import my Anki decks?</summary>
-<p>From the gear menu on the Decks screen, choose "Import .apkg" and pick the file exported from Anki. Your content and study progress are imported; audio and images embedded in Anki cards aren't imported yet.</p>
+<p>On the Decks screen, tap the + button (top left) &gt; "Import from Anki (.apkg)" and pick the file exported from Anki. The same option is in Settings. Your content and study progress are imported; audio and images embedded in Anki cards aren't imported yet.</p>
+</details>
+
+<details>
+<summary>How do I study all my decks at once?</summary>
+<p>At the top of the Decks screen, the "Due today" card has a "Study all" button: it reviews everything due across all your decks in one session, alternating between them. To pick only some decks, use "Mixed session".</p>
+</details>
+
+<details>
+<summary>What do the times under each rating button mean?</summary>
+<p>They show when the card will come back depending on your choice: "Good · 3d" means you'll see it again in 3 days. "Again" shows it once more a few cards later in the same session, so you review it before you finish.</p>
 </details>
 
 <details>
 <summary>Why isn't a card showing up when it should be due?</summary>
-<p>Check that it isn't suspended (toggled from the card browser) and that it's in a deck that isn't archived. If you're using "Priority only" or a mixed session, the active filter may also be leaving it out.</p>
+<p>Check this:</p>
+<ul>
+  <li>That it isn't hidden from review: in the deck, open "Organize cards", tap ••• on the card and choose "Return to review".</li>
+  <li>That its deck isn't archived (Settings &gt; "Archived decks").</li>
+  <li>If you're using a mixed session with "Review priority cards only", only starred cards appear.</li>
+</ul>
+<p>If you already reviewed it today, it comes back on its scheduled date. To review it anyway, use "Review all again" at the end of the session.</p>
 </details>
 
 <details>
 <summary>How do I undo a rating I gave by mistake?</summary>
-<p>There's an undo button during review, which keeps up to 20 steps of history. That history is lost when you close the app, so undo before leaving the study session.</p>
+<p>During review, tap the curved arrow at the top right (or ⌘Z with a keyboard on iPad). It keeps up to 20 steps of history. That history is lost when you close the app, so undo before leaving the study session.</p>
 </details>
 
 <h3>Notifications</h3>
 
 <details>
 <summary>I'm not getting my daily reminder</summary>
-<p>Check Settings &gt; Notifications &gt; SmartCardStudy to make sure notifications are allowed, and inside the app, gear menu &gt; "Daily reminder", to make sure it's turned on at the time you want. If your iPhone is in Do Not Disturb or a Focus mode at that time, it can still be silenced.</p>
+<p>Check Settings &gt; Notifications &gt; SmartCardStudy to make sure notifications are allowed, and inside the app, Settings (the gear) &gt; "Daily reminder", to make sure it's turned on at the time you want. If your iPhone is in Do Not Disturb or a Focus mode at that time, it can still be silenced.</p>
 </details>
 
 <h2>Before you email me</h2>
@@ -291,7 +326,7 @@
 
 <footer>
   SmartCardStudy · <span lang="es">Soporte</span> / <span lang="en">Support</span>
-  · <a href="privacidad.html"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
+  · <a href="../"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
 </footer>
 </div>
 
