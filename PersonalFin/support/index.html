@@ -3,134 +3,162 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PersonalFin — Support / Soporte</title>
+<meta name="color-scheme" content="light dark">
+<title>PersonalFin — Support</title>
 <style>
 :root{--bg:#fff;--fg:#1d1d1f;--muted:#6e6e73;--accent:#0a7d4b;--line:#e5e5ea;--card:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f2f2f7;--muted:#a1a1a6;--accent:#4cd58f;--line:#2c2c2e;--card:#1c1c1e}}
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 main{max-width:760px;margin:0 auto;padding:32px 20px 64px}
 .lang{display:flex;gap:8px;margin-bottom:24px}
 .lang button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 16px;border-radius:999px;font:inherit;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0 32px}
+@media (prefers-color-scheme:dark){.lang button[aria-pressed="true"]{color:#06210f}}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:20px 0 28px}
 .contact p{margin:4px 0}
 .contact a{font-weight:600}
+.contact .label{color:var(--muted)}
 h1{font-size:2rem;line-height:1.2;margin:0 0 8px}
-h2{font-size:1.3rem;margin:36px 0 10px;padding-top:22px;border-top:1px solid var(--line)}
-h2:first-of-type{border-top:none;padding-top:0}
-p,li{color:var(--fg)} ul,ol{padding-left:22px} li{margin:4px 0}
-strong{display:block;margin-top:18px;font-weight:600}
-strong:first-child{margin-top:0}
-a{color:var(--accent)}
+h2{font-size:1.3rem;margin:40px 0 4px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:1rem;font-weight:600;margin:22px 0 4px}
+h3+p{margin-top:0}
+ul,ol{padding-left:22px} li{margin:4px 0}
+a{color:var(--accent);overflow-wrap:anywhere}
 section[hidden]{display:none}
-footer{margin-top:48px;color:var(--muted);font-size:.875rem}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
+footer a{color:var(--muted)}
 </style>
+<noscript><style>section[hidden]{display:block}.lang{display:none}</style></noscript>
 </head>
 <body>
 <main>
-<div class="lang" role="group" aria-label="Language">
+<div class="lang" role="group" aria-label="Language / Idioma">
 <button type="button" data-l="en" aria-pressed="true">English</button>
 <button type="button" data-l="es" aria-pressed="false">Español</button>
 </div>
-<section id="en" lang="en">
+
+<section id="sec-en" lang="en">
 <h1>PersonalFin — Support</h1>
-<p><strong>Contact:</strong> level18studio@gmail.com
-<strong>Response time:</strong> within 2 business days</p>
 <p>Need help with PersonalFin? Check the questions below, or write to us directly — tell us your iPhone model and iOS version so we can help faster.</p>
+<div class="contact">
+<p><span class="label">Email:</span> <a href="mailto:level18studio@gmail.com?subject=PersonalFin%20support">level18studio@gmail.com</a></p>
+<p><span class="label">Response time:</span> within 2 business days</p>
+</div>
+
 <h2>Getting started</h2>
-<p><strong>Do I need to create an account?</strong>
-No. You can use the app fully in guest mode. Signing in with Apple is optional and only adds your name (if you choose to share it) to sync your data across your own devices via iCloud.</p>
-<p><strong>Does PersonalFin need an internet connection?</strong>
-No for day-to-day use. All the AI features (financial tips, receipt scanning, voice entry, importing statements) run on your iPhone with Apple Intelligence. An internet connection is only used for iCloud sync, if you enable it, and the first time your iPhone downloads the Apple Intelligence model.</p>
-<p><strong>Why does a feature ask for Apple Intelligence?</strong>
-PersonalFin requires iOS 26.5 or later with Apple Intelligence turned on (Settings → Apple Intelligence &amp; Siri). Without it, AI features (tips, receipt scanning, voice entry, statement import) won't work; manual entry still works normally.</p>
+<h3>Do I need to create an account?</h3>
+<p>No. You can use the whole app in guest mode. Signing in with Apple is optional; it's what lets you see the same data on your other Apple devices through iCloud. If you start as a guest and sign in later, your guest data moves to your Apple account on that iPhone.</p>
+<h3>Does PersonalFin need an internet connection?</h3>
+<p>Not for day-to-day use. The AI features (financial tips, receipt scanning, statement import) run on your iPhone with Apple Intelligence. The internet is only used for iCloud sync (if enabled), for the first download of the Apple Intelligence model, and, depending on your device and language, for iOS speech recognition during voice entry.</p>
+<h3>Why does a feature ask for Apple Intelligence?</h3>
+<p>PersonalFin requires iOS 26.5 or later. The AI features also need an iPhone compatible with Apple Intelligence (iPhone 15 Pro or newer) with Apple Intelligence turned on in Settings → Apple Intelligence &amp; Siri. Without it, tips, receipt scanning, voice entry and statement import won't work, but manual entry and everything else still work normally.</p>
+
 <h2>AI features</h2>
-<p><strong>Voice entry doesn't understand me, or gets the amount or category wrong.</strong>
-Speak clearly and include the amount and what it was for, for example "I spent 12 dollars on lunch." You can always edit the detected amount, category or name before saving. If it consistently fails, check Settings → Apple Intelligence &amp; Siri is on and that Siri's language matches what you're speaking.</p>
-<p><strong>The receipt scanner isn't detecting the total or items.</strong>
-Make sure the receipt is well-lit, flat and in focus, with the total clearly visible. Review and correct any field before saving; nothing is saved automatically.</p>
-<p><strong>Importing a bank statement missed or duplicated transactions.</strong>
-Use a clear screenshot or a plain CSV. The app flags likely duplicates before importing; review the list carefully and deselect anything that shouldn't be added. If it's consistently wrong for your bank's format, write to us with (no real account numbers, please) a description of the format.</p>
-<p><strong>The AI financial tips don't seem accurate.</strong>
-Tips are generated from the transactions you've recorded in the app, so an incomplete history for the month can throw them off. Add any missing transactions and generate the tips again.</p>
+<h3>Voice entry doesn't understand me, or gets the amount or category wrong.</h3>
+<p>Speak clearly and include the amount and what it was for, for example "I spent 12 dollars on lunch." You can always edit the detected amount, category or name before saving. If it consistently fails, check that Apple Intelligence is on and that Siri's language matches the language you're speaking.</p>
+<h3>The receipt scanner isn't detecting the total or items.</h3>
+<p>Make sure the receipt is well-lit, flat and in focus, with the total clearly visible. Review and correct any field before saving; nothing is saved automatically.</p>
+<h3>Importing a bank statement missed or duplicated transactions.</h3>
+<p>Use a clear screenshot or a plain CSV. The app flags likely duplicates before importing; review the list carefully and deselect anything that shouldn't be added. If it's consistently wrong for your bank's format, write to us describing the format (no real account numbers, please).</p>
+<h3>The AI financial tips don't seem accurate.</h3>
+<p>Tips are generated from the transactions you've recorded in the app, so an incomplete month can throw them off. Add any missing transactions and generate the tips again.</p>
+
 <h2>Data and backup</h2>
-<p><strong>Where is my data stored?</strong>
-On your iPhone, and in your own private iCloud if iCloud sync is enabled for the app. We don't have a server and never see your financial data. See our <a href="#">Privacy Policy</a> for details.</p>
-<p><strong>How do I back up or move my data to a new iPhone?</strong>
-Go to Settings → Export Backup to save a JSON file, and restore it on the new device from Settings → Restore Backup. If you use Sign in with Apple with iCloud enabled, your data also syncs automatically.</p>
-<p><strong>I restored a backup and now I have duplicate transactions.</strong>
-Restoring is designed to not duplicate existing records. If you see duplicates, please write to us describing the steps you took so we can look into it.</p>
-<p><strong>How do I delete all my data?</strong>
-Settings → Reset All Data. This requires double confirmation and cannot be undone. Deleting the app also removes the data stored on that device; to remove it from iCloud, go to iPhone Settings → your name → iCloud → Manage Account Storage.</p>
+<h3>Where is my data stored?</h3>
+<p>On your iPhone, and in your own private iCloud if iCloud sync is enabled for the app. We don't have a server and never see your financial data. See our <a href="privacy.html" data-link="privacy.html">Privacy Policy</a> for details.</p>
+<h3>How do I back up or move my data to a new iPhone?</h3>
+<p>In the app, go to Settings → <em>Export full backup</em> to save a JSON file, then on the new device use Settings → <em>Restore from a backup</em>. If you use Sign in with Apple with iCloud enabled, your data also syncs automatically.</p>
+<h3>I restored a backup and now I have duplicate transactions.</h3>
+<p>Restoring is designed not to duplicate existing records, even if you restore the same backup twice. If you see duplicates, write to us describing the steps you took so we can look into it.</p>
+<h3>How do I delete all my data?</h3>
+<p>Settings → <em>Reset all data</em>. It asks for double confirmation and cannot be undone. Deleting the app also removes the data stored on that device; to remove it from iCloud, go to iPhone Settings → your name → iCloud → Manage Account Storage.</p>
+
 <h2>Notifications</h2>
-<p><strong>I'm not getting reminders for subscriptions or credit card due dates.</strong>
-Check that Notifications are allowed for PersonalFin in iPhone Settings, and that you've entered a due date/renewal date on that subscription or card. Reminders are scheduled locally on your device.</p>
+<h3>I'm not getting reminders for subscriptions or credit cards.</h3>
+<p>Check that Notifications are allowed for PersonalFin in iPhone Settings, and that the subscription has a renewal date or the card has a statement closing (cutoff) date entered. Card reminders arrive the day before the closing date. Reminders are scheduled locally on your device.</p>
+
 <h2>Report a problem</h2>
-<p>If something crashed, looked wrong, or behaved unexpectedly, email us with:</p>
+<p>If something crashed, looked wrong, or behaved unexpectedly, <a href="mailto:level18studio@gmail.com?subject=PersonalFin%20problem">email us</a> with:</p>
 <ul>
 <li>What you were doing when it happened.</li>
 <li>Your iPhone model and iOS version.</li>
 <li>A screenshot, if possible.</li>
 </ul>
 </section>
-<section id="es" lang="es" hidden>
+
+<section id="sec-es" lang="es" hidden>
 <h1>PersonalFin — Soporte</h1>
-<p><strong>Contacto:</strong> level18studio@gmail.com
-<strong>Tiempo de respuesta:</strong> hasta 2 días hábiles</p>
 <p>¿Necesitas ayuda con PersonalFin? Revisa las preguntas de abajo, o escríbenos directamente — cuéntanos tu modelo de iPhone y versión de iOS para ayudarte más rápido.</p>
+<div class="contact">
+<p><span class="label">Correo:</span> <a href="mailto:level18studio@gmail.com?subject=Soporte%20PersonalFin">level18studio@gmail.com</a></p>
+<p><span class="label">Tiempo de respuesta:</span> hasta 2 días hábiles</p>
+</div>
+
 <h2>Primeros pasos</h2>
-<p><strong>¿Necesito crear una cuenta?</strong>
-No. Puedes usar la app completa en modo invitado. Iniciar sesión con Apple es opcional y solo agrega tu nombre (si decides compartirlo) para sincronizar tus datos entre tus dispositivos vía iCloud.</p>
-<p><strong>¿PersonalFin necesita conexión a internet?</strong>
-No para el uso diario. Todas las funciones de IA (consejos financieros, escáner de recibos, agregar por voz, importar estados de cuenta) corren en tu iPhone con Apple Intelligence. La conexión solo se usa para la sincronización con iCloud, si la activas, y la primera vez que tu iPhone descarga el modelo de Apple Intelligence.</p>
-<p><strong>¿Por qué una función me pide Apple Intelligence?</strong>
-PersonalFin necesita iOS 26.5 o superior con Apple Intelligence activado (Ajustes → Apple Intelligence y Siri). Sin eso, las funciones de IA (consejos, escáner de recibos, voz, importar) no funcionan; el registro manual sigue funcionando normal.</p>
+<h3>¿Necesito crear una cuenta?</h3>
+<p>No. Puedes usar toda la app en modo invitado. Iniciar sesión con Apple es opcional; es lo que te permite ver los mismos datos en tus otros dispositivos Apple vía iCloud. Si empiezas como invitado e inicias sesión después, tus datos de invitado pasan a tu cuenta de Apple en ese iPhone.</p>
+<h3>¿PersonalFin necesita conexión a internet?</h3>
+<p>No para el uso diario. Las funciones de IA (consejos financieros, escáner de recibos, importar estados de cuenta) corren en tu iPhone con Apple Intelligence. Internet solo se usa para la sincronización con iCloud (si la activas), para la primera descarga del modelo de Apple Intelligence y, según tu dispositivo e idioma, para el reconocimiento de voz de iOS al agregar por voz.</p>
+<h3>¿Por qué una función me pide Apple Intelligence?</h3>
+<p>PersonalFin necesita iOS 26.5 o superior. Las funciones de IA además requieren un iPhone compatible con Apple Intelligence (iPhone 15 Pro o más reciente) con Apple Intelligence activado en Ajustes → Apple Intelligence y Siri. Sin eso, los consejos, el escáner de recibos, la voz y la importación no funcionan, pero el registro manual y todo lo demás sigue funcionando normal.</p>
+
 <h2>Funciones de IA</h2>
-<p><strong>Agregar por voz no me entiende, o detecta mal el monto o la categoría.</strong>
-Habla claro e incluye el monto y en qué fue, por ejemplo "gasté 12 dólares en almuerzo". Siempre puedes editar el monto, la categoría o el nombre detectados antes de guardar. Si falla seguido, revisa que Ajustes → Apple Intelligence y Siri esté activado y que el idioma de Siri coincida con el que hablas.</p>
-<p><strong>El escáner de recibos no detecta el total o los productos.</strong>
-Asegúrate de que el recibo esté bien iluminado, plano y enfocado, con el total visible. Revisa y corrige cualquier campo antes de guardar; no se guarda nada automáticamente.</p>
-<p><strong>Al importar un estado de cuenta, faltaron o se duplicaron movimientos.</strong>
-Usa una captura clara o un CSV simple. La app marca los posibles duplicados antes de importar; revisa bien la lista y desmarca lo que no deba agregarse. Si falla seguido con el formato de tu banco, escríbenos describiendo el formato (sin números de cuenta reales, por favor).</p>
-<p><strong>Los consejos financieros con IA no parecen acertados.</strong>
-Los consejos se generan a partir de los movimientos que has registrado en la app, así que un mes con pocos movimientos registrados puede afectarlos. Agrega lo que falte y vuelve a generar los consejos.</p>
+<h3>Agregar por voz no me entiende, o detecta mal el monto o la categoría.</h3>
+<p>Habla claro e incluye el monto y en qué fue, por ejemplo "gasté 12 dólares en almuerzo". Siempre puedes editar el monto, la categoría o el nombre detectados antes de guardar. Si falla seguido, revisa que Apple Intelligence esté activado y que el idioma de Siri coincida con el que hablas.</p>
+<h3>El escáner de recibos no detecta el total o los productos.</h3>
+<p>Asegúrate de que el recibo esté bien iluminado, plano y enfocado, con el total visible. Revisa y corrige cualquier campo antes de guardar; no se guarda nada automáticamente.</p>
+<h3>Al importar un estado de cuenta, faltaron o se duplicaron movimientos.</h3>
+<p>Usa una captura clara o un CSV simple. La app marca los posibles duplicados antes de importar; revisa bien la lista y desmarca lo que no deba agregarse. Si falla seguido con el formato de tu banco, escríbenos describiendo el formato (sin números de cuenta reales, por favor).</p>
+<h3>Los consejos financieros con IA no parecen acertados.</h3>
+<p>Los consejos se generan a partir de los movimientos que has registrado en la app, así que un mes con pocos movimientos registrados puede afectarlos. Agrega lo que falte y vuelve a generar los consejos.</p>
+
 <h2>Datos y respaldo</h2>
-<p><strong>¿Dónde se guardan mis datos?</strong>
-En tu iPhone, y en tu propio iCloud privado si activas la sincronización. No tenemos servidor y nunca vemos tus datos financieros. Más detalles en nuestra <a href="#">Política de Privacidad</a>.</p>
-<p><strong>¿Cómo respaldo o paso mis datos a un iPhone nuevo?</strong>
-Ve a Ajustes → Exportar respaldo para guardar un archivo JSON, y restáuralo en el dispositivo nuevo desde Ajustes → Restaurar respaldo. Si usas Iniciar sesión con Apple con iCloud activado, tus datos también se sincronizan automáticamente.</p>
-<p><strong>Restauré un respaldo y ahora tengo movimientos duplicados.</strong>
-Restaurar está diseñado para no duplicar registros existentes. Si ves duplicados, escríbenos describiendo los pasos que seguiste para poder revisarlo.</p>
-<p><strong>¿Cómo borro todos mis datos?</strong>
-Ajustes → Reiniciar todos los datos. Pide doble confirmación y no se puede deshacer. Desinstalar la app también elimina los datos guardados en ese dispositivo; para quitarlos de iCloud, ve a Ajustes del iPhone → tu nombre → iCloud → Administrar almacenamiento de la cuenta.</p>
+<h3>¿Dónde se guardan mis datos?</h3>
+<p>En tu iPhone, y en tu propio iCloud privado si activas la sincronización. No tenemos servidor y nunca vemos tus datos financieros. Más detalles en nuestra <a href="privacy.html" data-link="privacy.html">Política de Privacidad</a>.</p>
+<h3>¿Cómo respaldo o paso mis datos a un iPhone nuevo?</h3>
+<p>En la app, ve a Ajustes → <em>Exportar respaldo completo</em> para guardar un archivo JSON, y en el dispositivo nuevo usa Ajustes → <em>Restaurar desde un respaldo</em>. Si usas Iniciar sesión con Apple con iCloud activado, tus datos también se sincronizan automáticamente.</p>
+<h3>Restauré un respaldo y ahora tengo movimientos duplicados.</h3>
+<p>Restaurar está diseñado para no duplicar registros existentes, aunque restaures el mismo respaldo dos veces. Si ves duplicados, escríbenos describiendo los pasos que seguiste para poder revisarlo.</p>
+<h3>¿Cómo borro todos mis datos?</h3>
+<p>Ajustes → <em>Reiniciar todos los datos</em>. Pide doble confirmación y no se puede deshacer. Desinstalar la app también elimina los datos guardados en ese dispositivo; para quitarlos de iCloud, ve a Ajustes del iPhone → tu nombre → iCloud → Administrar almacenamiento de la cuenta.</p>
+
 <h2>Notificaciones</h2>
-<p><strong>No me llegan recordatorios de suscripciones o fechas de tarjetas de crédito.</strong>
-Revisa que las notificaciones estén permitidas para PersonalFin en Ajustes del iPhone, y que hayas ingresado una fecha de renovación o de corte en esa suscripción o tarjeta. Los recordatorios se programan localmente en tu dispositivo.</p>
+<h3>No me llegan recordatorios de suscripciones o tarjetas.</h3>
+<p>Revisa que las notificaciones estén permitidas para PersonalFin en Ajustes del iPhone, y que la suscripción tenga fecha de renovación o la tarjeta tenga fecha de corte. El aviso de la tarjeta llega el día antes del corte. Los recordatorios se programan localmente en tu dispositivo.</p>
+
 <h2>Reportar un problema</h2>
-<p>Si algo se cerró inesperadamente, se vio mal o se comportó distinto a lo esperado, escríbenos con:</p>
+<p>Si algo se cerró inesperadamente, se vio mal o se comportó distinto a lo esperado, <a href="mailto:level18studio@gmail.com?subject=Problema%20en%20PersonalFin">escríbenos</a> con:</p>
 <ul>
 <li>Qué estabas haciendo cuando pasó.</li>
 <li>Tu modelo de iPhone y versión de iOS.</li>
 <li>Una captura de pantalla, si es posible.</li>
 </ul>
 </section>
-<footer>© PersonalFin</footer>
+
+<footer>
+<a href="privacy.html" data-link="privacy.html" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a> · © 2026 PersonalFin
+</footer>
 </main>
-<noscript><style>section[hidden]{display:block}</style></noscript>
 <script>
 (function(){
+var titles={en:'PersonalFin — Support',es:'PersonalFin — Soporte'};
 var b=document.querySelectorAll('.lang button');
-function show(l){
-document.getElementById('en').hidden=l!=='en';
-document.getElementById('es').hidden=l!=='es';
+function show(l,push){
+document.getElementById("sec-en").hidden=l!=='en';
+document.getElementById("sec-es").hidden=l!=='es';
 document.documentElement.lang=l;
-b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.l===l)});
+document.title=titles[l];
+b.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.l===l))});
+document.querySelectorAll('[data-'+l+']').forEach(function(n){n.textContent=n.getAttribute('data-'+l)});
+document.querySelectorAll('[data-link]').forEach(function(n){n.href=n.getAttribute('data-link')+'#'+l});
+if(push&&history.replaceState)history.replaceState(null,'','#'+l);
 }
-b.forEach(function(x){x.addEventListener('click',function(){show(x.dataset.l)})});
+b.forEach(function(x){x.addEventListener('click',function(){show(x.dataset.l,true)})});
 var q=location.hash.replace('#','');
 if(q==='es'||q==='en')show(q);
-else if((navigator.language||'').toLowerCase().indexOf('es')===0)show('es');
+else show((navigator.language||'').toLowerCase().indexOf('es')===0?'es':'en');
 })();
 </script>
 </body>
