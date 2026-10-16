@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>SmartCardStudy · Política de privacidad / Privacy Policy</title>
 <meta name="description" content="Política de privacidad de la app SmartCardStudy para iPhone y iPad. Privacy policy for the SmartCardStudy iPhone and iPad app.">
 <style>
@@ -13,8 +14,6 @@
     --line: #dcdfe5;
     --accent: #1f4e8c;
     --soft: #eef2f8;
-    --todo-bg: #fff1b8;
-    --todo-ink: #5a4300;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -24,8 +23,6 @@
       --line: #2c3342;
       --accent: #8fb4ea;
       --soft: #1a2030;
-      --todo-bg: #4a3b0a;
-      --todo-ink: #ffe28a;
     }
   }
   * { box-sizing: border-box; }
@@ -71,9 +68,7 @@
   th, td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--line); }
   th { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: .9rem; color: var(--muted); font-weight: 600; }
   td:first-child { white-space: nowrap; font-weight: 600; }
-  mark.todo { background: var(--todo-bg); color: var(--todo-ink); padding: 0 .25rem; border-radius: 3px; }
   section[hidden] { display: none; }
-  hr.split { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
   footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
   @media (max-width: 480px) { h1 { font-size: 1.65rem; } td:first-child { white-space: normal; } }
   @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } }
@@ -84,7 +79,7 @@
 
 <header>
   <h1>SmartCardStudy</h1>
-  <p class="meta"><span lang="es">Política de privacidad · Última actualización: 21 de septiembre de 2026</span><br><span lang="en">Privacy Policy · Last updated: September 21, 2026</span></p>
+  <p class="meta"><span lang="es">Política de privacidad · Última actualización: 16 de octubre de 2026</span><br><span lang="en">Privacy Policy · Last updated: October 16, 2026</span></p>
   <div class="lang" role="group" aria-label="Idioma / Language">
     <button type="button" data-lang="es" aria-pressed="true">Español</button>
     <button type="button" data-lang="en" aria-pressed="false">English</button>
@@ -101,7 +96,7 @@
     <li>No hay cuentas ni inicio de sesión.</li>
     <li>No hay analítica, publicidad ni rastreo de terceros.</li>
     <li>La generación de tarjetas con IA corre en tu dispositivo con Apple Intelligence; tu contenido no se envía a ningún servidor del desarrollador.</li>
-    <li>El desarrollador (Javier Pineda (Level 18)) no tiene servidores propios ni acceso a tu contenido.</li>
+    <li>El desarrollador, Javier Pineda (Level 18), no tiene servidores propios ni acceso a tu contenido.</li>
   </ul>
 </div>
 <p>Esta política aplica a la app SmartCardStudy para iPhone y iPad, versión 1.0.</p>
@@ -109,7 +104,7 @@
 <h2>1. Datos que maneja la app y dónde viven</h2>
 <p>Toda la información que creas en SmartCardStudy se guarda en el almacenamiento local de tu iPhone o iPad. El desarrollador no la recibe.</p>
 <ul>
-  <li><strong>Contenido de estudio:</strong> mazos, tarjetas (pregunta, respuesta y etiquetas) y tipos de tarjeta.</li>
+  <li><strong>Contenido de estudio:</strong> mazos, tarjetas (pregunta, respuesta, etiquetas, la estrella de prioritaria y si están ocultas del repaso) y tipos de tarjeta.</li>
   <li><strong>Historial de repaso:</strong> la calificación de cada repaso, la fecha, el tiempo de respuesta y los valores del algoritmo de repetición espaciada (FSRS o SM2). Sirve solo para programar tus próximos repasos.</li>
   <li><strong>Ajustes:</strong> gestos personalizados, hora del recordatorio diario, duración del Pomodoro, búsqueda avanzada, preferencia de iCloud y si ya viste la bienvenida.</li>
   <li><strong>Dibujos con Apple Pencil:</strong> lo que escribes sobre una tarjeta durante el repaso no se guarda; se descarta al pasar a la siguiente.</li>
@@ -121,21 +116,22 @@
 <ul>
   <li><strong>Qué se sincroniza:</strong> mazos, tarjetas, tipos de tarjeta e historial de repaso.</li>
   <li><strong>Quién puede verlo:</strong> solo tú, con tu cuenta de Apple. El desarrollador no puede acceder a tu base de datos privada de iCloud.</li>
-  <li><strong>Cómo se controla:</strong> el interruptor "Sincronizar con iCloud" está en el menú de ajustes de la pantalla Mazos y viene activado por defecto. El cambio se aplica la próxima vez que abras la app.</li>
+  <li><strong>Cómo se controla:</strong> el interruptor "Sincronizar con iCloud" está en Ajustes (el engranaje de la pantalla Mazos), sección "Sincronización e IA", y viene activado por defecto. El cambio se aplica la próxima vez que abras la app.</li>
   <li><strong>Si lo apagas:</strong> tus datos siguen en el dispositivo y dejan de subirse. Lo que ya estaba en iCloud permanece hasta que lo borres desde los ajustes de iCloud de tu dispositivo.</li>
 </ul>
 <p>Apple procesa esos datos según su <a href="https://www.apple.com/legal/privacy/">Política de privacidad</a>. CloudKit también usa notificaciones de Apple para avisar a la app de que hay cambios; el desarrollador no opera ningún servidor de notificaciones.</p>
 
 <h2>3. IA en el dispositivo y contenido que importas</h2>
-<p>Las tarjetas con IA se generan con Apple Intelligence (el modelo del sistema), directamente en tu dispositivo y sin conexión a internet. Ningún texto, PDF, audio ni imagen que importes se envía a un servidor del desarrollador ni a un proveedor de IA externo.</p>
+<p>Las tarjetas con IA se generan con Apple Intelligence (el modelo del sistema), directamente en tu dispositivo y sin conexión a internet. Ningún texto, PDF, audio, imagen ni tema que importes se envía a un servidor del desarrollador ni a un proveedor de IA externo.</p>
 <div class="table-wrap">
 <table>
   <thead><tr><th>Origen</th><th>Cómo se procesa</th></tr></thead>
   <tbody>
     <tr><td>PDF</td><td>El texto se extrae en el dispositivo con PDFKit. Máximo 5.1 MB.</td></tr>
     <tr><td>Imagen</td><td>Eliges una foto con el selector del sistema; la app solo recibe esa foto. El texto se lee en el dispositivo con OCR de Apple (Vision).</td></tr>
-    <tr><td>Audio (.m4a, .mp3)</td><td>Se transcribe con el reconocimiento de voz de Apple (ver sección 5).</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Se transcribe con el reconocimiento de voz de Apple (ver sección 5).</td></tr>
     <tr><td>YouTube</td><td>Se descargan los subtítulos públicos del video (ver sección 5).</td></tr>
+    <tr><td>Tema</td><td>Escribes un tema y la IA arma las tarjetas con su propio conocimiento, en el dispositivo. No se sube ningún material.</td></tr>
   </tbody>
 </table>
 </div>
@@ -182,7 +178,7 @@
     <li>There are no accounts or sign-in.</li>
     <li>There is no analytics, advertising or third-party tracking.</li>
     <li>AI card generation runs on your device with Apple Intelligence. Your content is never sent to a server operated by the developer.</li>
-    <li>The developer (Javier Pineda (Level 18)) runs no servers and has no access to your content.</li>
+    <li>The developer, Javier Pineda (Level 18), runs no servers and has no access to your content.</li>
   </ul>
 </div>
 <p>This policy applies to the SmartCardStudy app for iPhone and iPad, version 1.0.</p>
@@ -190,7 +186,7 @@
 <h2>1. Data the app handles and where it lives</h2>
 <p>Everything you create in SmartCardStudy is stored locally on your iPhone or iPad. The developer does not receive it.</p>
 <ul>
-  <li><strong>Study content:</strong> decks, cards (question, answer and tags) and card types.</li>
+  <li><strong>Study content:</strong> decks, cards (question, answer, tags, the priority star and whether they are hidden from review) and card types.</li>
   <li><strong>Review history:</strong> the rating, date and response time of each review, plus the values of the spaced repetition algorithm (FSRS or SM2). It is used only to schedule your next reviews.</li>
   <li><strong>Settings:</strong> custom gestures, daily reminder time, Pomodoro durations, advanced search, iCloud preference and whether you have seen the welcome screens.</li>
   <li><strong>Apple Pencil drawings:</strong> what you write over a card during review is not saved and is discarded when you move to the next card.</li>
@@ -202,21 +198,22 @@
 <ul>
   <li><strong>What syncs:</strong> decks, cards, card types and review history.</li>
   <li><strong>Who can see it:</strong> only you, with your Apple account. The developer cannot access your private iCloud database.</li>
-  <li><strong>How to control it:</strong> the "Sync with iCloud" switch is in the settings menu of the Decks screen and is on by default. A change takes effect the next time you open the app.</li>
+  <li><strong>How to control it:</strong> the "Sync with iCloud" switch is in Settings (the gear on the Decks screen), under "Sync &amp; AI", and is on by default. A change takes effect the next time you open the app.</li>
   <li><strong>If you turn it off:</strong> your data stays on the device and stops uploading. Data already in iCloud remains until you delete it in your device's iCloud settings.</li>
 </ul>
 <p>Apple processes this data under its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>. CloudKit also uses Apple notifications to tell the app that changes are available; the developer runs no notification server.</p>
 
 <h2>3. On-device AI and the content you import</h2>
-<p>AI cards are generated with Apple Intelligence (the system model), directly on your device and without an internet connection. No text, PDF, audio or image you import is sent to a developer server or to an external AI provider.</p>
+<p>AI cards are generated with Apple Intelligence (the system model), directly on your device and without an internet connection. No text, PDF, audio, image or topic you import is sent to a developer server or to an external AI provider.</p>
 <div class="table-wrap">
 <table>
   <thead><tr><th>Source</th><th>How it is processed</th></tr></thead>
   <tbody>
     <tr><td>PDF</td><td>Text is extracted on the device with PDFKit. Maximum 5.1 MB.</td></tr>
     <tr><td>Image</td><td>You pick a photo with the system picker and the app receives only that photo. Text is read on the device with Apple's OCR (Vision).</td></tr>
-    <tr><td>Audio (.m4a, .mp3)</td><td>Transcribed with Apple's speech recognition (see section 5).</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Transcribed with Apple's speech recognition (see section 5).</td></tr>
     <tr><td>YouTube</td><td>The video's public captions are downloaded (see section 5).</td></tr>
+    <tr><td>Topic</td><td>You type a topic and the AI builds the cards from its own knowledge, on the device. No material is uploaded.</td></tr>
   </tbody>
 </table>
 </div>
@@ -253,17 +250,23 @@
 
 </section>
 
-<footer>SmartCardStudy · <span lang="es">Política de privacidad</span> / <span lang="en">Privacy Policy</span></footer>
+<footer>
+  SmartCardStudy · <span lang="es">Política de privacidad</span> / <span lang="en">Privacy Policy</span>
+  · <a href="support/"><span lang="es">Soporte</span><span lang="en" hidden>Support</span></a>
+</footer>
 </div>
 
 <script>
 (function () {
   var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
   var buttons = document.querySelectorAll('.lang button');
+  var footerEs = document.querySelector('footer a span[lang="es"]');
+  var footerEn = document.querySelector('footer a span[lang="en"]');
   function show(lang) {
     document.documentElement.lang = lang;
     Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
     buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
+    if (footerEs && footerEn) { footerEs.hidden = (lang !== 'es'); footerEn.hidden = (lang !== 'en'); }
     try { history.replaceState(null, '', '#' + lang); } catch (e) {}
   }
   buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
