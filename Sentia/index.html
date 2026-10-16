@@ -25,26 +25,26 @@
 </head>
 <body>
 <main>
-
+ 
 <nav><a href="#es">Español</a><a href="#en">English</a></nav>
-
+ 
 <!-- ===================== ESPAÑOL ===================== -->
 <section id="es">
 <h1>Sentia - Política de privacidad</h1>
-<p class="muted">Última actualización: 21 de septiembre de 2026</p>
-
-<p>Sentia es una app para parejas que permite enviarse gestos rápidos, mensajes, fotos, publicaciones, tareas y hábitos, y jugar juntos, con widget, Apple Watch y notificaciones. Esta política explica qué datos usa la app, para qué, dónde se guardan y qué control tienes sobre ellos.</p>
+<p class="muted">Última actualización: 16 de octubre de 2026</p>
+ 
+<p>Sentia es una app para parejas (iPhone, iPad y Apple Watch) que permite enviarse gestos rápidos, mensajes, fotos, publicaciones, tareas, hábitos y fechas importantes, jugar juntos, ver o escuchar contenido juntos y ver el clima, con widget y notificaciones. Esta política explica qué datos usa la app, para qué, dónde se guardan y qué control tienes sobre ellos.</p>
 <p>Responsable: Javier, Panamá. Contacto: level18studio@gmail.com.</p>
-
+ 
 <h2>1. Resumen</h2>
 <ul>
   <li>Sentia no tiene servidores propios: tus datos viven en tu cuenta de iCloud mediante Apple CloudKit.</li>
   <li>No usamos publicidad, no rastreamos tu actividad entre apps y no vendemos ni compartimos tus datos con terceros.</li>
   <li>No incluimos SDKs de analítica, publicidad ni de terceros.</li>
   <li>Una vez vinculados, solo tú y tu pareja pueden ver el contenido compartido del vínculo.</li>
-  <li>El único dato que puede llegar a nosotros es un registro temporal de invitación (código, enlace e identificador interno de iCloud), que se elimina al completarse el vínculo. Tu nombre, fotos, mensajes y demás contenido permanecen en tu iCloud y no podemos leerlos.</li>
+  <li>Los únicos datos que se guardan fuera de tu iCloud privado son registros técnicos temporales en la base de datos pública de CloudKit de la app: la invitación (código, enlace e identificador interno de iCloud), que se elimina al completarse el vínculo, y los avisos de notificación (identificador interno de iCloud del destinatario y tipo de aviso, sin ningún contenido), que se eliminan en unas 24 horas. Tu nombre, fotos, mensajes y demás contenido permanecen en iCloud y no podemos leerlos.</li>
 </ul>
-
+ 
 <h2>2. Datos que usa la app</h2>
 <div class="wrap">
 <table>
@@ -53,75 +53,83 @@
 <tr><td>Nombre que escribes y avatar (emoji o foto que eliges)</td><td>Mostrarte ante tu pareja y en el widget y el Watch</td><td>CloudKit y almacenamiento local</td></tr>
 <tr><td>Código de invitación de 6 letras, enlace de invitación e identificador interno de tu cuenta de iCloud (registro temporal)</td><td>Vincular a dos personas</td><td>Base de datos pública de CloudKit. Se elimina cuando tu pareja se une</td></tr>
 <tr><td>Gestos enviados y recibidos, contadores y racha</td><td>Funcionamiento principal, actividad reciente y widget</td><td>CloudKit y almacenamiento local</td></tr>
-<tr><td>Mensajes de chat</td><td>Conversar con tu pareja. Se borran automáticamente a las 24 horas</td><td>CloudKit</td></tr>
-<tr><td>Momentos (fotos con texto opcional), posts, tareas y hábitos</td><td>Contenido compartido con tu pareja</td><td>CloudKit</td></tr>
+<tr><td>Mensajes y fotos del chat</td><td>Conversar con tu pareja. Los mensajes de texto se borran automáticamente a las 24 horas y las fotos a la 1 hora. La zona del chat está protegida contra capturas y grabaciones de pantalla</td><td>CloudKit (copia temporal de las fotos en el dispositivo mientras siguen vigentes)</td></tr>
+<tr><td>Momentos (fotos con texto opcional), posts, tareas, hábitos, fechas importantes y flores enviadas</td><td>Contenido compartido con tu pareja y recordatorios de fechas</td><td>CloudKit (miniaturas en caché en el dispositivo)</td></tr>
+<tr><td>Estado de los juegos por turnos (tres en línea, damas, ajedrez, batalla naval)</td><td>Jugar con tu pareja</td><td>CloudKit</td></tr>
+<tr><td>Avisos de notificación (identificador interno de iCloud del destinatario y tipo de aviso, sin contenido)</td><td>Que tu pareja reciba la notificación aunque tenga la app cerrada</td><td>Base de datos pública de CloudKit. Se eliminan en unas 24 horas</td></tr>
 <tr><td>Ubicación aproximada (solo si activas "Compartir distancia")</td><td>Mostrar la distancia en km entre ambos y el mapa</td><td>CloudKit. Se elimina al desactivar la opción</td></tr>
+<tr><td>Ubicación aproximada a nivel de ciudad (solo si activas el clima)</td><td>Consultar el clima de tu zona para los efectos visuales y la sugerencia de "día perfecto para salir"</td><td>Se envía a Apple WeatherKit para obtener el clima. No se guarda en CloudKit ni se comparte con tu pareja</td></tr>
+<tr><td>Historial de "Ver juntos" (últimos videos, sitios y canciones) y favoritos</td><td>Retomar donde se quedaron</td><td>Solo en el dispositivo</td></tr>
 <tr><td>Preferencias (estilo de gestos, notificaciones, ocultar racha, etc.)</td><td>Personalizar la app</td><td>CloudKit y almacenamiento local</td></tr>
 </table>
 </div>
-
+ 
 <h2>3. Permisos del dispositivo</h2>
 <ul>
   <li><strong>Notificaciones:</strong> para avisarte cuando tu pareja te envía algo. Puedes desactivarlas en Ajustes del sistema.</li>
-  <li><strong>Ubicación (mientras usas la app):</strong> solo si activas "Compartir distancia". Se usa precisión baja (del orden de kilómetros). Es completamente opcional.</li>
+  <li><strong>Ubicación (mientras usas la app):</strong> solo si activas "Compartir distancia" o el clima. Se usa precisión baja (del orden de kilómetros, o nivel de ciudad para el clima). Es completamente opcional.</li>
   <li><strong>Fotos:</strong> Sentia usa el selector de fotos de Apple; solo accede a las imágenes que tú eliges y no lee tu biblioteca completa.</li>
   <li><strong>Micrófono:</strong> solo si activas la voz durante un juego. El audio se transmite en tiempo real a tu pareja mediante Game Center y no se graba ni se guarda.</li>
+  <li><strong>Apple Music:</strong> solo si usas "Escuchar juntos", para reproducir la misma canción en los dos dispositivos. Requiere una suscripción a Apple Music.</li>
 </ul>
-
+ 
 <h2>4. Servicios de Apple y de terceros</h2>
 <ul>
   <li><strong>iCloud / CloudKit y notificaciones push (APNs):</strong> almacenan y sincronizan tus datos. Se rigen por la política de privacidad de Apple.</li>
-  <li><strong>Game Center:</strong> se usa para conectar en tiempo real a los dos jugadores en la voz, Snake y Ping pong.</li>
+  <li><strong>Game Center:</strong> se usa para conectar en tiempo real a los dos jugadores en la voz, Snake y Ping pong. Los juegos por turnos (tres en línea, damas, ajedrez, batalla naval) se sincronizan por CloudKit.</li>
+  <li><strong>Apple WeatherKit (Clima de Apple):</strong> si activas el clima, tu ubicación aproximada se envía a Apple para obtener el pronóstico. Se rige por la política de privacidad de Apple.</li>
+  <li><strong>Apple Music (MusicKit):</strong> la búsqueda y reproducción de canciones en "Escuchar juntos" la gestiona Apple con tu cuenta de Apple Music.</li>
   <li><strong>SharePlay (Ver juntos):</strong> requiere una llamada de FaceTime o un hilo de Mensajes. Los enlaces que compartes se sincronizan con tu pareja durante la sesión.</li>
   <li><strong>YouTube y sitios web:</strong> al usar "Ver juntos" se carga contenido de YouTube o del sitio que elijas dentro de la app. Ese contenido lo gestionan sus propietarios y aplican sus propias políticas.</li>
   <li><strong>Apple Intelligence:</strong> las sugerencias para escribir un post se generan en tu dispositivo con el modelo de Apple. Tu texto no se envía a nuestros servidores ni a terceros. Es opcional y solo está disponible en dispositivos compatibles.</li>
   <li><strong>Compras:</strong> actualmente los estilos son gratuitos. Si en el futuro se ofrecen compras dentro de la app, las procesará Apple y nosotros no recibiremos datos de pago.</li>
 </ul>
-
+ 
 <h2>5. Conservación y eliminación</h2>
 <ul>
-  <li>Los mensajes de chat caducan a las 24 horas y se eliminan automáticamente.</li>
-  <li>Puedes eliminar tus posts y tus gestos fijados desde la app, y desactivar "Compartir distancia" para borrar tu ubicación.</li>
+  <li>Los mensajes de texto del chat caducan a las 24 horas y las fotos del chat a la 1 hora; se eliminan automáticamente.</li>
+  <li>Puedes editar o eliminar desde la app tus momentos, posts, tareas, hábitos, fechas importantes y gestos fijados, y desactivar "Compartir distancia" para borrar tu ubicación.</li>
+  <li>Los registros de invitación se eliminan cuando tu pareja se une, y los avisos de notificación en unas 24 horas.</li>
   <li>"Romper vínculo" te desconecta de tu pareja y termina el acceso compartido. "Cerrar sesión" borra los datos guardados localmente en tu dispositivo.</li>
   <li>Puedes gestionar o eliminar los datos de Sentia guardados en tu iCloud desde Ajustes &gt; [tu nombre] &gt; iCloud &gt; Gestionar almacenamiento de la cuenta &gt; Sentia.</li>
   <li>También puedes pedir la eliminación de tus datos escribiendo a level18studio@gmail.com.</li>
 </ul>
-
+ 
 <h2>6. Seguridad</h2>
 <p>Los datos se transmiten y almacenan mediante la infraestructura de Apple (iCloud), que aplica cifrado según su documentación. El contenido del vínculo solo es accesible para las dos cuentas vinculadas. Ningún sistema es 100 % infalible, pero aplicamos medidas razonables para proteger tu información.</p>
-
+ 
 <h2>7. Tus derechos</h2>
 <p>Puedes acceder, corregir, eliminar o limitar el uso de tus datos, y retirar tu consentimiento (por ejemplo, desactivando la ubicación o las notificaciones) en cualquier momento, según la normativa aplicable, incluida la Ley 81 de 2019 de Protección de Datos Personales de Panamá y, si corresponde, el RGPD. Para ejercerlos, escríbenos a level18studio@gmail.com.</p>
-
+ 
 <h2>8. Menores de edad</h2>
 <p>Sentia no está dirigida a menores de 13 años (o de la edad mínima que exija la ley de tu país) y no recopilamos datos de ellos a sabiendas. Si crees que un menor usa la app, escríbenos para eliminar sus datos.</p>
-
+ 
 <h2>9. Cambios a esta política</h2>
 <p>Podemos actualizar esta política. Publicaremos la versión vigente en esta misma dirección con su fecha de actualización.</p>
-
+ 
 <h2>10. Contacto</h2>
 <p>Javier · level18studio@gmail.com</p>
 </section>
-
+ 
 <hr>
-
+ 
 <!-- ===================== ENGLISH ===================== -->
 <section id="en" lang="en">
 <h1>Sentia - Privacy Policy</h1>
-<p class="muted">Last updated: September 21, 2026</p>
-
-<p>Sentia is a couples app to send quick gestures, messages, photos, posts, tasks and habits, and to play together, with a widget, Apple Watch and notifications. This policy explains what data the app uses, why, where it is stored and what control you have over it.</p>
+<p class="muted">Last updated: October 16, 2026</p>
+ 
+<p>Sentia is a couples app (iPhone, iPad and Apple Watch) to send quick gestures, messages, photos, posts, tasks, habits and important dates, play together, watch or listen together and see the weather, with a widget and notifications. This policy explains what data the app uses, why, where it is stored and what control you have over it.</p>
 <p>Controller: Javier, Panama. Contact: level18studio@gmail.com.</p>
-
+ 
 <h2>1. Summary</h2>
 <ul>
   <li>Sentia has no servers of its own: your data lives in your iCloud account through Apple CloudKit.</li>
   <li>We use no advertising, we do not track you across apps, and we do not sell or share your data with third parties.</li>
   <li>The app includes no analytics, advertising or third-party SDKs.</li>
   <li>Once paired, only you and your partner can see the content shared in your bond.</li>
-  <li>The only data that may reach us is a temporary invite record (code, link and internal iCloud identifier), which is deleted when the pairing is completed. Your name, photos, messages and other content stay in your iCloud and we cannot read them.</li>
+  <li>The only data stored outside your private iCloud are temporary technical records in the app's CloudKit public database: the invite (code, link and internal iCloud identifier), deleted when the pairing is completed, and notification notices (the recipient's internal iCloud identifier and the notice type, with no content), deleted within about 24 hours. Your name, photos, messages and other content stay in iCloud and we cannot read them.</li>
 </ul>
-
+ 
 <h2>2. Data the app uses</h2>
 <div class="wrap">
 <table>
@@ -130,56 +138,64 @@
 <tr><td>Name you enter and avatar (emoji or a photo you choose)</td><td>Show you to your partner, in the widget and on the Watch</td><td>CloudKit and local storage</td></tr>
 <tr><td>6-letter invite code, invite link and internal identifier of your iCloud account (temporary record)</td><td>Pair two people</td><td>CloudKit public database. Deleted when your partner joins</td></tr>
 <tr><td>Gestures sent and received, counters and streak</td><td>Core functionality, recent activity and widget</td><td>CloudKit and local storage</td></tr>
-<tr><td>Chat messages</td><td>Talk with your partner. Automatically deleted after 24 hours</td><td>CloudKit</td></tr>
-<tr><td>Moments (photos with optional caption), posts, tasks and habits</td><td>Content shared with your partner</td><td>CloudKit</td></tr>
+<tr><td>Chat messages and photos</td><td>Talk with your partner. Text messages are automatically deleted after 24 hours and photos after 1 hour. The chat area is protected against screenshots and screen recordings</td><td>CloudKit (temporary copy of photos on the device while they are active)</td></tr>
+<tr><td>Moments (photos with optional caption), posts, tasks, habits, important dates and flowers sent</td><td>Content shared with your partner and date reminders</td><td>CloudKit (thumbnails cached on the device)</td></tr>
+<tr><td>Turn-based game state (tic-tac-toe, checkers, chess, battleship)</td><td>Play with your partner</td><td>CloudKit</td></tr>
+<tr><td>Notification notices (recipient's internal iCloud identifier and notice type, no content)</td><td>Let your partner get the notification even with the app closed</td><td>CloudKit public database. Deleted within about 24 hours</td></tr>
 <tr><td>Approximate location (only if you turn on "Share distance")</td><td>Show the distance in km between you and the map</td><td>CloudKit. Removed when you turn the option off</td></tr>
+<tr><td>City-level approximate location (only if you turn on weather)</td><td>Get the weather in your area for visual effects and the "perfect day to go out" suggestion</td><td>Sent to Apple WeatherKit to get the weather. Not stored in CloudKit or shared with your partner</td></tr>
+<tr><td>"Watch together" history (recent videos, sites and songs) and favorites</td><td>Pick up where you left off</td><td>On the device only</td></tr>
 <tr><td>Preferences (gesture style, notifications, hide streak, etc.)</td><td>Personalize the app</td><td>CloudKit and local storage</td></tr>
 </table>
 </div>
-
+ 
 <h2>3. Device permissions</h2>
 <ul>
   <li><strong>Notifications:</strong> to let you know when your partner sends you something. You can turn them off in system Settings.</li>
-  <li><strong>Location (while using the app):</strong> only if you turn on "Share distance". Low accuracy is used (on the order of kilometers). It is completely optional.</li>
+  <li><strong>Location (while using the app):</strong> only if you turn on "Share distance" or weather. Low accuracy is used (on the order of kilometers, or city level for weather). It is completely optional.</li>
   <li><strong>Photos:</strong> Sentia uses Apple's photo picker; it only accesses the images you choose and does not read your whole library.</li>
   <li><strong>Microphone:</strong> only if you turn on voice during a game. Audio is streamed in real time to your partner through Game Center and is not recorded or stored.</li>
+  <li><strong>Apple Music:</strong> only if you use "Listen together", to play the same song on both devices. Requires an Apple Music subscription.</li>
 </ul>
-
+ 
 <h2>4. Apple and third-party services</h2>
 <ul>
   <li><strong>iCloud / CloudKit and push notifications (APNs):</strong> store and sync your data. They are governed by Apple's privacy policy.</li>
-  <li><strong>Game Center:</strong> used to connect both players in real time for voice, Snake and Ping pong.</li>
+  <li><strong>Game Center:</strong> used to connect both players in real time for voice, Snake and Ping pong. Turn-based games (tic-tac-toe, checkers, chess, battleship) sync through CloudKit.</li>
+  <li><strong>Apple WeatherKit (Apple Weather):</strong> if you turn on weather, your approximate location is sent to Apple to get the forecast. Governed by Apple's privacy policy.</li>
+  <li><strong>Apple Music (MusicKit):</strong> song search and playback in "Listen together" are handled by Apple with your Apple Music account.</li>
   <li><strong>SharePlay (Watch together):</strong> requires a FaceTime call or a Messages thread. Links you share are synced with your partner during the session.</li>
   <li><strong>YouTube and websites:</strong> when you use "Watch together", content from YouTube or the site you choose is loaded inside the app. That content is run by its owners and their own policies apply.</li>
   <li><strong>Apple Intelligence:</strong> writing suggestions for a post are generated on your device with Apple's model. Your text is not sent to our servers or to third parties. It is optional and only available on compatible devices.</li>
   <li><strong>Purchases:</strong> styles are currently free. If in-app purchases are offered in the future, Apple will process them and we will not receive payment data.</li>
 </ul>
-
+ 
 <h2>5. Retention and deletion</h2>
 <ul>
-  <li>Chat messages expire after 24 hours and are deleted automatically.</li>
-  <li>You can delete your posts and pinned gestures in the app, and turn off "Share distance" to remove your location.</li>
+  <li>Chat text messages expire after 24 hours and chat photos after 1 hour; they are deleted automatically.</li>
+  <li>You can edit or delete your moments, posts, tasks, habits, important dates and pinned gestures in the app, and turn off "Share distance" to remove your location.</li>
+  <li>Invite records are deleted when your partner joins, and notification notices within about 24 hours.</li>
   <li>"Break bond" disconnects you from your partner and ends shared access. "Sign out" clears the data stored locally on your device.</li>
   <li>You can manage or delete Sentia data stored in your iCloud from Settings &gt; [your name] &gt; iCloud &gt; Manage Account Storage &gt; Sentia.</li>
   <li>You can also request deletion of your data by writing to level18studio@gmail.com.</li>
 </ul>
-
+ 
 <h2>6. Security</h2>
 <p>Data is transmitted and stored through Apple's infrastructure (iCloud), which applies encryption as described in Apple's documentation. Bond content is only accessible to the two paired accounts. No system is 100% infallible, but we apply reasonable measures to protect your information.</p>
-
+ 
 <h2>7. Your rights</h2>
 <p>You may access, correct, delete or restrict the use of your data, and withdraw your consent (for example, by turning off location or notifications) at any time, under applicable law, including Panama's Law 81 of 2019 on Personal Data Protection and, where applicable, the GDPR. To exercise them, write to level18studio@gmail.com.</p>
-
+ 
 <h2>8. Children</h2>
 <p>Sentia is not directed to children under 13 (or the minimum age required by your country's law) and we do not knowingly collect their data. If you believe a child is using the app, contact us so we can delete their data.</p>
-
+ 
 <h2>9. Changes to this policy</h2>
 <p>We may update this policy. The current version will be published at this same address with its update date.</p>
-
+ 
 <h2>10. Contact</h2>
 <p>Javier · level18studio@gmail.com</p>
 </section>
-
+ 
 </main>
 </body>
 </html>
