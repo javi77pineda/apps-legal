@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Tratado · Soporte / Support</title>
+<meta name="description" content="Soporte de la app Tratado para iPhone y iPad: preguntas frecuentes y contacto. Support for the Tratado iPhone and iPad app: FAQ and contact.">
+<style>
+  :root {
+    --bg: #fbfbfa;
+    --ink: #1c2230;
+    --muted: #5b6373;
+    --line: #dcdfe5;
+    --accent: #1f4e8c;
+    --soft: #eef2f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151c;
+      --ink: #e6e9ef;
+      --muted: #9aa3b5;
+      --line: #2c3342;
+      --accent: #8fb4ea;
+      --soft: #1a2030;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.4rem 0 .6rem; }
+  h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.6rem 0 .45rem; }
+  p { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .lang {
+    display: flex; gap: .5rem; margin-top: 1.1rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .lang button {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    background: transparent; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 6px;
+    padding: .35rem .8rem;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .contact {
+    background: var(--soft); border-left: 4px solid var(--accent);
+    padding: 1.1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .contact a.mail {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600; font-size: 1.05rem;
+  }
+  details {
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: .85rem 1rem; margin-bottom: .7rem;
+  }
+  details[open] { padding-bottom: 1rem; }
+  summary {
+    cursor: pointer; font-weight: 600;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: .98rem;
+  }
+  summary::-webkit-details-marker { color: var(--accent); }
+  details p, details ul { margin-top: .7rem; margin-bottom: 0; }
+  details ul { margin-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .92em; background: var(--soft); padding: .1em .35em; border-radius: 4px;
+  }
+  section[hidden] { display: none; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 480px) { h1 { font-size: 1.65rem; } }
+  @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } details { border: none; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Tratado</h1>
+  <p class="meta"><span lang="es">Soporte · Actualizado: 18 de octubre de 2026</span><br><span lang="en">Support · Updated: October 18, 2026</span></p>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">Español</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<section id="es" lang="es">
+<p>Tratado te acompaña en tus primeros 30 días siguiendo a Jesús: 10 a 15 minutos al día con la Biblia, oración, un diario y la ayuda de un acompañante.</p>
+<div class="contact">
+  <p>¿Tienes un problema o una sugerencia? Escríbeme:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>Respondo normalmente en 2 o 3 días hábiles.</p>
+</div>
+<h2>Preguntas frecuentes</h2>
+<details>
+<summary>¿Cómo empiezo?</summary>
+<p>Al abrir la app por primera vez verás una breve bienvenida. Después, en la pestaña <strong>Hoy</strong> toca “Empezar el día 1”. Cada día tiene cinco pasos cortos: Lee, Entiende, Reflexiona, Ora y Ponlo en práctica. En Ajustes › Cómo usar Tratado tienes una guía de todas las pestañas.</p>
+</details>
+<details>
+<summary>¿Tengo que hacer una lección cada día?</summary>
+<p>Es lo ideal, pero no hay castigo si un día no puedes: la app te espera donde lo dejaste. Las lecciones se abren a medida que completas las anteriores.</p>
+</details>
+<details>
+<summary>La opción de preguntar a la IA no aparece o no funciona</summary>
+<p>La IA usa Apple Intelligence dentro del dispositivo. Necesitas un iPhone 15 Pro o posterior (o un iPad con chip M1 o posterior, o A17 Pro), iOS 26 o posterior y Apple Intelligence activado en Ajustes › Apple Intelligence y Siri, con un idioma compatible. Recién activado, el modelo puede tardar en descargarse. Mientras tanto, la pestaña Pregunta responde con las preguntas frecuentes.</p>
+</details>
+<details>
+<summary>¿Puedo confiar en las respuestas de la IA?</summary>
+<p>La IA puede equivocarse. Por eso cada respuesta muestra los versículos en los que se basa y la app comprueba que existan. Léelos en la Biblia y, para temas importantes o personales, habla con tu pastor o tu acompañante.</p>
+</details>
+<details>
+<summary>¿Puedo cambiar la versión de la Biblia?</summary>
+<p>Sí, en Ajustes › Biblia. En español puedes elegir la Reina-Valera 1909 o la Biblia libre para el mundo (español actual). En inglés se usa la King James Version.</p>
+</details>
+<details>
+<summary>¿Cómo cambio el idioma de la app?</summary>
+<p>Tratado usa el idioma de tu iPhone (español o inglés). Para cambiarlo solo en esta app, ve a Ajustes de iOS › Tratado › Idioma.</p>
+</details>
+<details>
+<summary>No me llega el recordatorio diario</summary>
+<p>Revisa que el recordatorio esté activado en Ajustes de la app y que las notificaciones de Tratado estén permitidas en Ajustes de iOS › Notificaciones › Tratado. Los modos de concentración también pueden silenciarlas.</p>
+</details>
+<details>
+<summary>¿Cómo paso mis datos a un iPhone nuevo?</summary>
+<p>Tus datos se guardan solo en el dispositivo. En Ajustes › Tus datos toca “Exportar copia de seguridad” y guarda el texto (por ejemplo, en Notas o enviándotelo por correo). En el iPhone nuevo, pega ese texto en el mismo lugar y toca “Importar copia (pega el texto de arriba)”. Si restauras tu iPhone desde una copia de iCloud o de tu computadora, los datos de la app también se restauran.</p>
+</details>
+<details>
+<summary>¿Qué es el botón rojo con el escudo?</summary>
+<p>Es la ayuda contra la tentación. Está disponible en todas las pantallas y te guía paso a paso: detente, ora, aléjate, recuerda la Palabra y busca a un creyente maduro.</p>
+</details>
+<details>
+<summary>¿Quién está detrás del contenido?</summary>
+<p>Las lecciones, preguntas frecuentes y el glosario fueron escritos para Tratado. La app recomienda y da crédito al material de discipulado <em>Nueva Vida en Cristo</em>, de Mark Robinson (Camino Global / Avant Ministries), que se descarga gratis en <a href="https://nuevavidaencristo.org">nuevavidaencristo.org</a>.</p>
+</details>
+<h2>Antes de escribirme</h2>
+<p>Cuéntame el modelo de tu iPhone o iPad, la versión de iOS (Ajustes › General › Información) y qué estabas haciendo cuando ocurrió el problema. Una captura de pantalla ayuda mucho. Nunca te pediré contraseñas ni datos de tu cuenta de Apple.</p>
+<p><a href="../">Política de privacidad</a></p>
+</section>
+
+<section id="en" lang="en" hidden>
+<p>Tratado walks with you through your first 30 days following Jesus: 10 to 15 minutes a day with the Bible, prayer, a journal and the help of a mentor.</p>
+<div class="contact">
+  <p>Having a problem or have a suggestion? Write to me:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>I usually reply within 2 or 3 business days.</p>
+</div>
+<h2>Frequently asked questions</h2>
+<details>
+<summary>How do I start?</summary>
+<p>The first time you open the app you'll see a short welcome. Then, on the <strong>Today</strong> tab, tap “Start day 1.” Each day has five short steps: Read, Understand, Reflect, Pray and Put it into practice. Settings › How to use Tratado has a guide to every tab.</p>
+</details>
+<details>
+<summary>Do I have to do a lesson every day?</summary>
+<p>That's ideal, but there's no penalty if you miss a day: the app waits for you where you left off. Lessons unlock as you complete the previous ones.</p>
+</details>
+<details>
+<summary>The option to ask the AI doesn't appear or doesn't work</summary>
+<p>The AI uses Apple Intelligence on the device. You need an iPhone 15 Pro or later (or an iPad with an M1 chip or later, or A17 Pro), iOS 26 or later, and Apple Intelligence turned on in Settings › Apple Intelligence &amp; Siri, with a supported language. Right after you turn it on, the model may take a while to download. Meanwhile, the Ask tab answers with the FAQ.</p>
+</details>
+<details>
+<summary>Can I trust the AI's answers?</summary>
+<p>AI can make mistakes. That's why every answer shows the verses it's based on, and the app checks that they exist. Read them in the Bible and, for important or personal matters, talk with your pastor or mentor.</p>
+</details>
+<details>
+<summary>Can I change the Bible version?</summary>
+<p>Yes, in Settings › Bible. In Spanish you can choose the Reina-Valera 1909 or the Biblia libre para el mundo (modern Spanish). In English the app uses the King James Version.</p>
+</details>
+<details>
+<summary>How do I change the app's language?</summary>
+<p>Tratado uses your iPhone's language (Spanish or English). To change it for this app only, go to iOS Settings › Tratado › Language.</p>
+</details>
+<details>
+<summary>I'm not getting the daily reminder</summary>
+<p>Check that the reminder is on in the app's Settings and that notifications for Tratado are allowed in iOS Settings › Notifications › Tratado. Focus modes can also silence them.</p>
+</details>
+<details>
+<summary>How do I move my data to a new iPhone?</summary>
+<p>Your data is stored only on the device. In Settings › Your data, tap “Export backup” and save the text (for example, in Notes or by emailing it to yourself). On the new iPhone, paste that text in the same place and tap “Import backup (paste the text above).” If you restore your iPhone from an iCloud or computer backup, the app's data is restored too.</p>
+</details>
+<details>
+<summary>What is the red shield button?</summary>
+<p>It's help in temptation. It's available on every screen and guides you step by step: stop, pray, step away, remember the Word and reach out to a mature believer.</p>
+</details>
+<details>
+<summary>Who is behind the content?</summary>
+<p>The lessons, FAQ and glossary were written for Tratado. The app recommends and credits the discipleship material <em>New Life in Christ</em> by Mark Robinson (Avant Ministries), available free at <a href="https://newlifediscipleship.com">newlifediscipleship.com</a>.</p>
+</details>
+<h2>Before you write</h2>
+<p>Tell me your iPhone or iPad model, your iOS version (Settings › General › About) and what you were doing when the problem happened. A screenshot helps a lot. I will never ask for passwords or Apple Account details.</p>
+<p><a href="../">Privacy Policy</a></p>
+</section>
+
+<footer>
+  Tratado · <span lang="es">Soporte</span> / <span lang="en">Support</span>
+  · <a href="../"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
+</footer>
+</div>
+
+<script>
+(function () {
+  var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var buttons = document.querySelectorAll('.lang button');
+  var footerEs = document.querySelector('footer a span[lang="es"]');
+  var footerEn = document.querySelector('footer a span[lang="en"]');
+  function show(lang) {
+    document.documentElement.lang = lang;
+    Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
+    if (footerEs && footerEn) { footerEs.hidden = (lang !== 'es'); footerEn.hidden = (lang !== 'en'); }
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  var hash = (location.hash || '').replace('#', '');
+  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
+  show(hash === 'en' || hash === 'es' ? hash : pref);
+})();
+</script>
+</body>
+</html>
