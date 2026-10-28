@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swamp Hop! — Soporte / Support</title>
+<meta name="description" content="Ayuda y contacto de Swamp Hop! para iPhone y iPad. Help and contact for Swamp Hop! on iPhone and iPad.">
+<style>
+  :root {
+    --bg: #eef6ef; --card: #ffffff; --text: #17301f; --muted: #4d6a56; --line: #d3e4d6;
+    --accent: #2f9e57; --accent-ink: #ffffff; --chip: #e0f1e4; --link: #1f7a43;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1a13; --card: #16251b; --text: #e5f2e8; --muted: #9fbca8; --line: #284034;
+      --accent: #46c072; --accent-ink: #0b160f; --chip: #1e3326; --link: #7fdca0;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .logo { width: 56px; height: 56px; border-radius: 14px; background: var(--accent); display: grid; place-items: center;
+          font-size: 32px; flex: none; }
+  h1 { font-size: 26px; line-height: 1.2; margin: 0; }
+  .sub { color: var(--muted); margin: 2px 0 0; font-size: 15px; }
+  .langs { margin: 18px 0 8px; display: flex; gap: 8px; }
+  .langs button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+                  padding: 6px 14px; font: inherit; font-size: 14px; cursor: pointer; }
+  .langs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 14px 0; }
+  h2 { font-size: 19px; margin: 0 0 8px; }
+  h3 { font-size: 16px; margin: 16px 0 4px; }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 20px; margin: 6px 0; }
+  a { color: var(--link); }
+  .contact { display: inline-block; margin-top: 6px; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+             padding: 10px 18px; border-radius: 12px; font-weight: 600; word-break: break-all; }
+  .note { color: var(--muted); font-size: 14px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
+  /* Sin JavaScript se ven los dos idiomas; con JavaScript, solo el elegido */
+  .js [lang="en"].block, .js [lang="es"].block { display: none; }
+  .js.show-es [lang="es"].block, .js.show-en [lang="en"].block { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true">🐸</div>
+    <div>
+      <h1>Swamp Hop!</h1>
+      <p class="sub"><span lang="es">Soporte</span> · <span lang="en">Support</span></p>
+    </div>
+  </header>
+
+  <div class="langs" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">Español</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+
+  <!-- ====================== ESPAÑOL ====================== -->
+  <div lang="es" class="block">
+    <section class="card">
+      <h2>¿Necesitas ayuda?</h2>
+      <p>Escríbenos y te respondemos lo antes posible (normalmente en 1 a 3 días hábiles). Cuéntanos tu modelo de iPhone o iPad, la versión de iOS y qué pasó.</p>
+      <a class="contact" href="mailto:level18studio@gmail.com?subject=Swamp%20Hop%20-%20Soporte">level18studio@gmail.com</a>
+    </section>
+
+    <section class="card">
+      <h2>Compras dentro del juego</h2>
+      <h3>Compré vidas y no aparecen</h3>
+      <ul>
+        <li>Revisa tu conexión a internet, cierra el juego por completo y vuelve a abrirlo: las compras pendientes se entregan solas al arrancar.</li>
+        <li>Si la compra necesita aprobación de un adulto (Pedir la compra / Ask to Buy), las vidas llegan cuando se aprueba.</li>
+        <li>Si después de eso no las ves, escríbenos con la fecha de la compra y el número de pedido que aparece en el recibo de Apple.</li>
+      </ul>
+      <h3>Borré el juego o cambié de iPhone</h3>
+      <p>Las vidas son de un solo uso, así que Apple no las "restaura". Para que no las pierdas, el juego guarda una copia de tus vidas, tu récord, tus moscas y tus ranas en <strong>tu propio iCloud</strong>. Usa la misma cuenta de Apple con iCloud activado y se recuperan solas al abrir el juego.</p>
+      <h3>Quiero un reembolso</h3>
+      <p>Los cobros los hace Apple. Pide el reembolso en <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+      <h3>Que mis hijos no compren sin permiso</h3>
+      <p>Activa <em>Pedir la compra</em> en En familia o limita las compras en <em>Configuración › Tiempo en pantalla › Restricciones de contenido y privacidad</em>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Ranking y duelos (Game Center)</h2>
+      <ul>
+        <li>Para salir en el ranking mundial y por región, y para jugar duelos y olimpiadas con amigos, inicia sesión en Game Center en <em>Configuración › Game Center</em>.</li>
+        <li>Para jugar con un amigo, comparte tu código de 6 letras desde el juego; los dos tienen que tener conexión a internet.</li>
+        <li>Tu récord se envía al ranking al terminar una partida. Si no aparece, revisa que Game Center esté activo y espera unos minutos.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Problemas comunes</h2>
+      <ul>
+        <li><strong>No se oye la música:</strong> sube el volumen y revisa el interruptor de silencio; también puedes activar el sonido desde el menú del juego.</li>
+        <li><strong>El juego va lento o se cierra:</strong> cierra otras apps, reinicia el dispositivo y actualiza a la última versión de Swamp Hop! en la App Store.</li>
+        <li><strong>Perdí mi progreso:</strong> abre el juego con iCloud activado y la misma cuenta de Apple; la copia se aplica al arrancar.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacidad</h2>
+      <p>Swamp Hop! no tiene cuentas, ni anuncios, ni rastreo. Lee la <a href="privacy.html">política de privacidad</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Créditos</h2>
+      <ul class="note">
+        <li>Música: «Puzzle Platformer Casual Free Music Loop Pack 01» de pck404 (licencia CC BY 4.0).</li>
+        <li>Efectos de sonido: Kenney (CC0).</li>
+        <li>Fuente: Fredoka (SIL Open Font License).</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- ====================== ENGLISH ====================== -->
+  <div lang="en" class="block">
+    <section class="card">
+      <h2>Need help?</h2>
+      <p>Email us and we'll get back to you as soon as we can (usually within 1–3 business days). Please include your iPhone or iPad model, your iOS version and what happened.</p>
+      <a class="contact" href="mailto:level18studio@gmail.com?subject=Swamp%20Hop%20-%20Support">level18studio@gmail.com</a>
+    </section>
+
+    <section class="card">
+      <h2>In-app purchases</h2>
+      <h3>I bought lives and they didn't show up</h3>
+      <ul>
+        <li>Check your internet connection, fully close the game and open it again: pending purchases are delivered automatically at launch.</li>
+        <li>If the purchase needs a parent's approval (Ask to Buy), the lives arrive once it's approved.</li>
+        <li>Still missing? Email us with the purchase date and the order ID from your Apple receipt.</li>
+      </ul>
+      <h3>I deleted the game or got a new iPhone</h3>
+      <p>Lives are consumable, so Apple doesn't "restore" them. To keep them safe, the game backs up your lives, best score, flies and frogs to <strong>your own iCloud</strong>. Use the same Apple Account with iCloud turned on and they come back automatically when you open the game.</p>
+      <h3>I want a refund</h3>
+      <p>Payments are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+      <h3>Stop my kids from buying without permission</h3>
+      <p>Turn on <em>Ask to Buy</em> in Family Sharing, or limit purchases in <em>Settings › Screen Time › Content &amp; Privacy Restrictions</em>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Leaderboards and duels (Game Center)</h2>
+      <ul>
+        <li>To appear on the world and regional leaderboards, and to play duels and olympics with friends, sign in to Game Center in <em>Settings › Game Center</em>.</li>
+        <li>To play with a friend, share your 6-letter code from the game; both players need an internet connection.</li>
+        <li>Your best score is sent when a run ends. If it doesn't show up, make sure Game Center is on and wait a few minutes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common issues</h2>
+      <ul>
+        <li><strong>No music:</strong> turn up the volume and check the silent switch; you can also turn sound on from the game menu.</li>
+        <li><strong>The game is slow or closes:</strong> close other apps, restart your device and update to the latest version of Swamp Hop! on the App Store.</li>
+        <li><strong>I lost my progress:</strong> open the game with iCloud on and the same Apple Account; the backup is applied at launch.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>Swamp Hop! has no accounts, no ads and no tracking. Read the <a href="privacy.html">privacy policy</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Credits</h2>
+      <ul class="note">
+        <li>Music: “Puzzle Platformer Casual Free Music Loop Pack 01” by pck404 (CC BY 4.0 license).</li>
+        <li>Sound effects: Kenney (CC0).</li>
+        <li>Font: Fredoka (SIL Open Font License).</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>© 2026 Level 18 · Swamp Hop!</footer>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    function setLang(l) {
+      root.classList.remove("show-es", "show-en");
+      root.classList.add("js", "show-" + l);
+      root.setAttribute("lang", l);
+      document.querySelectorAll(".langs button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.lang === l));
+      });
+      try { localStorage.setItem("swamphop-lang", l); } catch (e) {}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem("swamphop-lang"); } catch (e) {}
+    var q = new URLSearchParams(location.search).get("lang");
+    var nav = (navigator.language || "es").slice(0, 2);
+    setLang(q === "en" || q === "es" ? q : saved || (nav === "es" ? "es" : "en"));
+    document.querySelectorAll(".langs button").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.dataset.lang); });
+    });
+  })();
+</script>
+</body>
+</html>
