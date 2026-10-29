@@ -57,6 +57,8 @@
   .langs button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
   .langs button:focus-visible { outline: 3px solid var(--link); outline-offset: -3px; }
   .doc[hidden] { display: none; }
+  .langs { flex-wrap: wrap; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.3rem; }
   .contact {
     background: var(--card); border: 1px solid var(--line); border-radius: 14px;
     padding: 1.25rem 1.4rem; margin: 1.5rem 0 2rem;
@@ -71,12 +73,18 @@
 <main>
   <header>
     <p>Mama's Habit Farm</p>
-    <h1>Soporte · Support</h1>
+    <h1 id="page-title">Soporte</h1>
   </header>
 
   <div class="langs" role="group" aria-label="Idioma / Language">
     <button type="button" data-lang="es" aria-pressed="true">Español</button>
     <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
   </div>
 
   <!-- ESPAÑOL -->
@@ -104,7 +112,7 @@
     <p>Abre el detalle del hábito y mantén presionada la criatura: se abre una pantalla donde puedes tocarla y apapacharla. En el Apple Watch, abre el hábito y tócala.</p>
 
     <h3>¿Mis datos están seguros si cambio de iPhone?</h3>
-    <p>Si tienes iCloud activado, tus hábitos y tareas se sincronizan automáticamente a tu cuenta y aparecen en el nuevo dispositivo. Si no usas iCloud, los datos viven solo en el teléfono: antes de cambiar de equipo, exporta un respaldo y restáuralo en el nuevo. Más detalles en la <a href="../">política de privacidad</a>.</p>
+    <p>Si tienes iCloud activado, tus hábitos y tareas se sincronizan automáticamente a tu cuenta y aparecen en el nuevo dispositivo. Si no usas iCloud, los datos viven solo en el teléfono: antes de cambiar de equipo, exporta un respaldo y restáuralo en el nuevo. Más detalles en la <a href="../" data-base="../">política de privacidad</a>.</p>
 
     <h3>¿Cómo exporto o hago un respaldo de mis datos?</h3>
     <p>En la app ve a Ajustes → <strong>Exportar respaldo (JSON)</strong> y guarda el archivo donde prefieras (Archivos, iCloud Drive, correo…). Para recuperarlo, usa <strong>Restaurar desde archivo</strong> en esa misma pantalla; ten en cuenta que esto reemplaza los datos actuales.</p>
@@ -129,7 +137,7 @@
 
     <h2>Enlaces</h2>
     <ul>
-      <li><a href="../">Política de privacidad</a></li>
+      <li><a href="../" data-base="../">Política de privacidad</a></li>
     </ul>
   </article>
 
@@ -158,7 +166,7 @@
     <p>Open the habit's detail screen and press and hold the creature: a screen opens where you can tap and cuddle it. On Apple Watch, open the habit and tap it.</p>
 
     <h3>Is my data safe if I switch to a new iPhone?</h3>
-    <p>With iCloud on, your habits and tasks sync automatically to your account and show up on the new device. Without iCloud, data lives only on the phone: export a backup before switching, then restore it on the new one. More details in the <a href="../">privacy policy</a>.</p>
+    <p>With iCloud on, your habits and tasks sync automatically to your account and show up on the new device. Without iCloud, data lives only on the phone: export a backup before switching, then restore it on the new one. More details in the <a href="../" data-base="../">privacy policy</a>.</p>
 
     <h3>How do I export or back up my data?</h3>
     <p>In the app, go to Settings → <strong>Export backup (JSON)</strong> and save the file wherever you like (Files, iCloud Drive, email…). To get it back, use <strong>Restore from file</strong> on the same screen; note that this replaces your current data.</p>
@@ -183,7 +191,331 @@
 
     <h2>Links</h2>
     <ul>
-      <li><a href="../">Privacy Policy</a></li>
+      <li><a href="../" data-base="../">Privacy Policy</a></li>
+    </ul>
+  </article>
+
+  <!-- 中文 -->
+  <article class="doc" id="zh" lang="zh" hidden>
+    <p class="lead">关于 Mama's Habit Farm 遇到问题、有疑问或建议？这里有最常见问题的解答，以及直接联系我们的方式。</p>
+
+    <div class="contact">
+      <p>直接联系</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">我们通常在 1 到 2 个工作日内回复。你也可以在应用中通过 Settings → Contact us 联系我们。</p>
+    </div>
+
+    <h2>常见问题</h2>
+
+    <h3>农场是怎么运作的？</h3>
+    <p>你每创建一个习惯，Mama Farmer 就会交给你一颗小蛋。你每练习一天，它就会长大：从蛋到小鸡，再从小鸡到公鸡，一共需要 66 天的练习（不必连续）。在 My Farm 标签中，你可以按成长阶段看到所有的小动物。</p>
+
+    <h3>我的小动物为什么死了？</h3>
+    <p>如果某个习惯超过 30 天没有任何活动（既没有标记完成，也没有使用“Skip today”），小动物就会饿死：根据它长大的程度，会显示为臭蛋、倒下的小鸡或烤鸡。<strong>你已经取得的进度不会丢失。</strong>如果你知道自己会打乱作息（旅行、生病），请在习惯详情中使用 <strong>Pause habit</strong>：暂停期间不计时、不发提醒，并会在 45 天后自动恢复。</p>
+
+    <h3>怎样复活一个死掉的习惯？</h3>
+    <p>只要今天把它标记为完成即可。小动物会复活，庆祝一周，然后恢复正常的样子，之前的进度全部保留。</p>
+
+    <h3>怎样和我的小动物玩？</h3>
+    <p>打开习惯详情，按住小动物：会打开一个页面，你可以在那里点它、抱抱它。在 Apple Watch 上，打开习惯并点它即可。</p>
+
+    <h3>换新 iPhone 时我的数据安全吗？</h3>
+    <p>如果你开启了 iCloud，你的习惯和任务会自动同步到你的账户，并出现在新设备上。如果不使用 iCloud，数据只保存在手机上：换机前请先导出备份，再在新手机上恢复。详情请参阅<a href="../" data-base="../">隐私政策</a>。</p>
+
+    <h3>如何导出或备份我的数据？</h3>
+    <p>在应用中前往 Settings → <strong>Export backup (JSON)</strong>，把文件保存到你喜欢的位置（“文件”、iCloud 云盘、邮件……）。要恢复时，在同一页面使用 <strong>Restore from file</strong>；请注意这会替换当前的数据。</p>
+
+    <h3>我收不到提醒</h3>
+    <p>请在 iPhone 的“设置”→“通知”→ Mama's Habit Farm 中确认已允许通知。在应用内，每个习惯和任务都有自己的提醒：请确认已开启并且时间正确。暂停的习惯在恢复之前不会发送提醒。</p>
+
+    <h3>Apple Watch 没有显示我的习惯</h3>
+    <p>手表的习惯来自 iPhone。请在手表靠近时打开 iPhone 上的应用，然后在手表上点按 <strong>Sync</strong>。手表显示今天安排的习惯；暂停的习惯不会出现。</p>
+
+    <h3>如何从日历中删除一个习惯？</h3>
+    <p>出于隐私考虑，本应用只有向日历添加日程的权限，不能读取或删除。要删除它，请打开“日历”应用，点按该习惯的日程（以 🐔 开头），然后选择<strong>删除日程 → 删除所有将来日程</strong>。</p>
+
+    <h3>AI 功能可以离线使用吗？</h3>
+    <p>可以。建议、推荐和 Mama Farmer 的语句都直接在你的设备上使用 Apple 智能，不会向任何服务器发送信息。它们只会出现在兼容 Apple 智能、且已在系统设置中开启该功能的设备上；否则，Mama 会使用固定语句。</p>
+
+    <h3>可以在 iPad 上使用吗？</h3>
+    <p>目前 Mama's Habit Farm 专为 iPhone 设计，并配有 Apple Watch 配套应用。</p>
+
+    <h3>我发现了错误，或者应用自己关闭了</h3>
+    <p>请写信至 <a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a>，说明问题发生前你正在做什么。如果可以，请附上截图、你的 iPhone 机型和应用版本（在 Settings → About 中查看）。</p>
+
+    <h2>链接</h2>
+    <ul>
+      <li><a href="../" data-base="../">隐私政策</a></li>
+    </ul>
+  </article>
+
+  <!-- 日本語 -->
+  <article class="doc" id="ja" lang="ja" hidden>
+    <p class="lead">Mama's Habit Farm について問題、質問、提案はありますか？よくある質問の答えと、直接連絡する方法をまとめました。</p>
+
+    <div class="contact">
+      <p>直接のお問い合わせ</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">通常 1〜2 営業日以内に返信します。アプリの Settings → Contact us からも連絡できます。</p>
+    </div>
+
+    <h2>よくある質問</h2>
+
+    <h3>農場はどんな仕組みですか？</h3>
+    <p>習慣をひとつ作るたびに、Mama Farmer が小さな卵をひとつ預けてくれます。実践した日ごとに成長し、卵からヒヨコへ、ヒヨコからオンドリへと、66 日分の実践で育ちます（連続でなくても大丈夫です）。My Farm タブでは、すべての動物を成長段階ごとに見られます。</p>
+
+    <h3>どうして生き物が死んでしまったのですか？</h3>
+    <p>習慣に 30 日を超えて何の動きもない（完了にも「Skip today」にもしていない）と、生き物はお腹をすかせて死んでしまいます。育ち具合に応じて、腐った卵、倒れたヒヨコ、ローストチキンの姿になります。<strong>それまでの進捗は失われません。</strong>旅行や病気などでいつものペースが崩れるとわかっているときは、習慣の詳細から <strong>Pause habit</strong> を使ってください。一時停止中は時間が数えられず、リマインダーも届かず、45 日後に自動で再開します。</p>
+
+    <h3>死んでしまった習慣を生き返らせるには？</h3>
+    <p>今日その習慣を完了にするだけです。生き物は生き返って 1 週間お祝いをし、その後はそれまでの進捗を保ったまま、いつもの姿に戻ります。</p>
+
+    <h3>生き物と遊ぶには？</h3>
+    <p>習慣の詳細を開いて生き物を長押しすると、タップしたりなでたりできる画面が開きます。Apple Watch では、習慣を開いて生き物をタップします。</p>
+
+    <h3>iPhone を買い替えてもデータは大丈夫ですか？</h3>
+    <p>iCloud がオンなら、習慣とタスクは自動でアカウントに同期され、新しいデバイスに表示されます。iCloud を使わない場合、データは電話の中にしかありません。機種変更の前にバックアップを書き出し、新しい iPhone で復元してください。詳しくは<a href="../" data-base="../">プライバシーポリシー</a>をご覧ください。</p>
+
+    <h3>データを書き出す・バックアップするには？</h3>
+    <p>アプリで Settings → <strong>Export backup (JSON)</strong> を開き、好きな場所（ファイル、iCloud Drive、メールなど）に保存します。戻すときは同じ画面の <strong>Restore from file</strong> を使います。現在のデータは置き換えられるのでご注意ください。</p>
+
+    <h3>リマインダーが届かない</h3>
+    <p>iPhone の「設定」→「通知」→ Mama's Habit Farm で通知が許可されているか確認してください。アプリ内では、習慣とタスクごとにリマインダーがあります。オンになっていて時刻が正しいか確認してください。一時停止中の習慣は、再開するまでリマインダーを送りません。</p>
+
+    <h3>Apple Watch に習慣が表示されない</h3>
+    <p>Watch は iPhone から習慣を受け取ります。Watch を近くに置いた状態で iPhone のアプリを開き、Watch で <strong>Sync</strong> をタップしてください。Watch には今日予定の習慣が表示され、一時停止中の習慣は表示されません。</p>
+
+    <h3>カレンダーから習慣を削除するには？</h3>
+    <p>プライバシーのため、本アプリにはカレンダーにイベントを追加する許可しかなく、読み取りや削除はできません。削除するには、カレンダー App で習慣のイベント（🐔 で始まります）をタップし、<strong>イベントを削除 → 今後のすべてのイベントを削除</strong>を選びます。</p>
+
+    <h3>AI 機能はインターネットなしで使えますか？</h3>
+    <p>はい。アドバイス、提案、Mama Farmer のセリフは、デバイス上の Apple Intelligence を直接使い、どのサーバーにも情報を送りません。Apple Intelligence 対応デバイスで、システム設定でこの機能がオンになっている場合にのみ表示されます。それ以外の場合、Mama は決まったセリフを使います。</p>
+
+    <h3>iPad で使えますか？</h3>
+    <p>現在、Mama's Habit Farm は iPhone 向けに作られており、Apple Watch 用のコンパニオンアプリがあります。</p>
+
+    <h3>不具合を見つけた・アプリが勝手に終了した</h3>
+    <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a> まで、直前に何をしていたかをお知らせください。可能であれば、スクリーンショット、iPhone の機種、アプリのバージョン（Settings → About に表示）も添えてください。</p>
+
+    <h2>リンク</h2>
+    <ul>
+      <li><a href="../" data-base="../">プライバシーポリシー</a></li>
+    </ul>
+  </article>
+
+  <!-- 한국어 -->
+  <article class="doc" id="ko" lang="ko" hidden>
+    <p class="lead">Mama's Habit Farm에 대한 문제, 질문, 제안이 있나요? 가장 흔한 질문에 대한 답과 직접 연락하는 방법을 모았습니다.</p>
+
+    <div class="contact">
+      <p>직접 문의</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">보통 영업일 기준 1~2일 안에 답장합니다. 앱의 Settings → Contact us에서도 연락할 수 있습니다.</p>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+
+    <h3>농장은 어떻게 작동하나요?</h3>
+    <p>습관을 하나 만들 때마다 Mama Farmer가 작은 알을 하나 맡겨 줍니다. 실천한 날마다 자라서 알에서 병아리로, 병아리에서 수탉으로, 66일의 실천을 거쳐 성장합니다(연속일 필요는 없어요). My Farm 탭에서 모든 동물을 성장 단계별로 볼 수 있습니다.</p>
+
+    <h3>왜 동물이 죽었나요?</h3>
+    <p>습관에 30일 넘게 아무 활동이 없으면('완료' 표시도 'Skip today'도 하지 않으면) 동물이 배고파서 죽습니다. 자란 정도에 따라 썩은 알, 쓰러진 병아리, 통닭 모습으로 보입니다. <strong>이미 쌓은 진도는 사라지지 않습니다.</strong> 여행이나 아픈 일 등으로 생활 리듬이 깨질 걸 안다면 습관 상세에서 <strong>Pause habit</strong>을 사용하세요. 일시정지 중에는 시간이 세지지 않고, 리마인더도 오지 않으며, 45일 후 자동으로 다시 시작됩니다.</p>
+
+    <h3>죽은 습관을 되살리려면요?</h3>
+    <p>오늘 그 습관을 완료로 표시하기만 하면 됩니다. 동물이 되살아나 일주일 동안 축하한 뒤, 그동안의 진도를 그대로 유지한 채 원래 모습으로 돌아옵니다.</p>
+
+    <h3>동물과 어떻게 놀아요?</h3>
+    <p>습관 상세를 열고 동물을 길게 누르면, 탭하고 쓰다듬을 수 있는 화면이 열립니다. Apple Watch에서는 습관을 열고 동물을 탭하세요.</p>
+
+    <h3>iPhone을 바꿔도 데이터가 안전한가요?</h3>
+    <p>iCloud가 켜져 있으면 습관과 할 일이 자동으로 계정에 동기화되어 새 기기에 나타납니다. iCloud를 쓰지 않으면 데이터는 휴대폰에만 있으니, 기기를 바꾸기 전에 백업을 내보내고 새 휴대폰에서 복원하세요. 자세한 내용은 <a href="../" data-base="../">개인정보 처리방침</a>을 참고하세요.</p>
+
+    <h3>데이터를 내보내거나 백업하려면요?</h3>
+    <p>앱에서 Settings → <strong>Export backup (JSON)</strong>으로 이동해 원하는 곳(파일, iCloud Drive, 이메일 등)에 파일을 저장하세요. 되돌릴 때는 같은 화면의 <strong>Restore from file</strong>을 사용하세요. 현재 데이터가 대체된다는 점에 유의하세요.</p>
+
+    <h3>리마인더가 오지 않아요</h3>
+    <p>iPhone 설정 → 알림 → Mama's Habit Farm에서 알림이 허용되어 있는지 확인하세요. 앱 안에서는 습관과 할 일마다 각자의 리마인더가 있으니, 켜져 있고 시간이 맞는지 확인하세요. 일시정지한 습관은 다시 시작할 때까지 리마인더를 보내지 않습니다.</p>
+
+    <h3>Apple Watch에 습관이 보이지 않아요</h3>
+    <p>Watch는 iPhone에서 습관을 받아 옵니다. Watch를 가까이 둔 상태로 iPhone에서 앱을 연 다음, Watch에서 <strong>Sync</strong>를 탭하세요. Watch에는 오늘 예정된 습관이 표시되며, 일시정지한 습관은 나타나지 않습니다.</p>
+
+    <h3>캘린더에서 습관을 지우려면요?</h3>
+    <p>개인정보 보호를 위해 앱은 캘린더에 이벤트를 추가할 권한만 있고 읽거나 지울 수는 없습니다. 지우려면 캘린더 앱을 열고 습관 이벤트(🐔로 시작)를 탭한 뒤 <strong>이벤트 삭제 → 모든 이후 이벤트 삭제</strong>를 선택하세요.</p>
+
+    <h3>AI 기능은 인터넷 없이도 작동하나요?</h3>
+    <p>네. 조언, 제안, Mama Farmer의 말은 기기에서 직접 Apple Intelligence를 사용하며 어떤 서버에도 정보를 보내지 않습니다. Apple Intelligence를 지원하고 시스템 설정에서 기능을 켠 기기에서만 나타나며, 그렇지 않으면 Mama가 정해진 문구를 사용합니다.</p>
+
+    <h3>iPad에서 쓸 수 있나요?</h3>
+    <p>현재 Mama's Habit Farm은 iPhone용으로 만들어졌으며, Apple Watch용 보조 앱이 있습니다.</p>
+
+    <h3>버그를 발견했거나 앱이 저절로 꺼졌어요</h3>
+    <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a>으로 직전에 무엇을 하고 있었는지 알려 주세요. 가능하면 스크린샷, iPhone 모델, 앱 버전(Settings → About에서 확인)을 함께 보내 주세요.</p>
+
+    <h2>링크</h2>
+    <ul>
+      <li><a href="../" data-base="../">개인정보 처리방침</a></li>
+    </ul>
+  </article>
+
+  <!-- FRANÇAIS -->
+  <article class="doc" id="fr" lang="fr" hidden>
+    <p class="lead">Un problème, une question ou une suggestion à propos de Mama's Habit Farm ? Voici les réponses aux questions les plus courantes et comment nous écrire directement.</p>
+
+    <div class="contact">
+      <p>Contact direct</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">Nous répondons généralement sous 1 à 2 jours ouvrés. Vous pouvez aussi nous écrire depuis l'app, dans Settings → Contact us.</p>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Comment fonctionne la ferme ?</h3>
+    <p>Mama Farmer vous confie un petit œuf pour chaque habitude que vous créez. Chaque jour où vous la pratiquez, il grandit : de l'œuf au poussin, puis du poussin au coq, en 66 jours de pratique (pas forcément d'affilée). L'onglet My Farm montre tous vos animaux selon leur stade.</p>
+
+    <h3>Pourquoi ma créature est-elle morte ?</h3>
+    <p>Si plus de 30 jours passent sans aucune activité sur l'habitude (ni la marquer comme faite, ni utiliser « Skip today »), la créature meurt de faim : elle apparaît en œuf pourri, en poussin tombé ou en poulet rôti, selon sa croissance. <strong>Vous ne perdez pas la progression déjà acquise.</strong> Si vous savez que votre routine va être bousculée (un voyage, une maladie), utilisez <strong>Pause habit</strong> depuis sa fiche : en pause, le temps ne compte pas, aucun rappel n'est envoyé et elle reprend toute seule au bout de 45 jours.</p>
+
+    <h3>Comment ramener à la vie une habitude morte ?</h3>
+    <p>Marquez-la simplement comme faite aujourd'hui. La créature revit, fait la fête pendant une semaine, puis reprend son apparence normale, avec toute la progression qu'elle avait.</p>
+
+    <h3>Comment jouer avec ma créature ?</h3>
+    <p>Ouvrez la fiche de l'habitude et maintenez le doigt sur la créature : un écran s'ouvre où vous pouvez la toucher et la câliner. Sur l'Apple Watch, ouvrez l'habitude et touchez-la.</p>
+
+    <h3>Mes données sont-elles en sécurité si je change d'iPhone ?</h3>
+    <p>Avec iCloud activé, vos habitudes et tâches se synchronisent automatiquement avec votre compte et apparaissent sur le nouvel appareil. Sans iCloud, les données ne vivent que sur le téléphone : exportez une sauvegarde avant de changer, puis restaurez-la sur le nouveau. Plus de détails dans la <a href="../" data-base="../">politique de confidentialité</a>.</p>
+
+    <h3>Comment exporter ou sauvegarder mes données ?</h3>
+    <p>Dans l'app, allez dans Settings → <strong>Export backup (JSON)</strong> et enregistrez le fichier où vous voulez (Fichiers, iCloud Drive, e-mail…). Pour le récupérer, utilisez <strong>Restore from file</strong> sur le même écran ; attention, cela remplace les données actuelles.</p>
+
+    <h3>Je ne reçois pas les rappels</h3>
+    <p>Vérifiez dans Réglages de l'iPhone → Notifications → Mama's Habit Farm qu'elles sont autorisées. Dans l'app, chaque habitude et chaque tâche a son propre rappel : vérifiez qu'il est activé et que l'heure est correcte. Les habitudes en pause n'envoient pas de rappel tant que vous ne les reprenez pas.</p>
+
+    <h3>L'Apple Watch n'affiche pas mes habitudes</h3>
+    <p>La montre reçoit les habitudes depuis l'iPhone. Ouvrez l'app sur l'iPhone avec la montre à proximité, puis touchez <strong>Sync</strong> sur la montre. La montre affiche les habitudes prévues aujourd'hui ; les habitudes en pause n'apparaissent pas.</p>
+
+    <h3>Comment retirer une habitude du Calendrier ?</h3>
+    <p>Pour votre vie privée, l'app a seulement l'autorisation d'ajouter des événements au Calendrier, pas de les lire ni de les supprimer. Pour la retirer, ouvrez l'app Calendrier, touchez l'événement de l'habitude (il commence par 🐔) et choisissez <strong>Supprimer l'événement → Supprimer tous les événements futurs</strong>.</p>
+
+    <h3>Les fonctions d'IA marchent-elles sans Internet ?</h3>
+    <p>Oui. Les conseils, les suggestions et les phrases de Mama Farmer utilisent Apple Intelligence directement sur votre appareil, sans rien envoyer à aucun serveur. Elles n'apparaissent que sur les appareils compatibles avec Apple Intelligence, avec la fonction activée dans les Réglages du système ; sinon, Mama utilise des phrases fixes.</p>
+
+    <h3>Puis-je utiliser l'app sur iPad ?</h3>
+    <p>Pour l'instant, Mama's Habit Farm est conçue pour iPhone, avec une app compagnon pour Apple Watch.</p>
+
+    <h3>J'ai trouvé un bug ou l'app s'est fermée toute seule</h3>
+    <p>Écrivez-nous à <a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a> en expliquant ce que vous faisiez juste avant. Si possible, joignez une capture d'écran, le modèle de votre iPhone et la version de l'app (dans Settings → About).</p>
+
+    <h2>Liens</h2>
+    <ul>
+      <li><a href="../" data-base="../">Politique de confidentialité</a></li>
+    </ul>
+  </article>
+
+  <!-- DEUTSCH -->
+  <article class="doc" id="de" lang="de" hidden>
+    <p class="lead">Ein Problem, eine Frage oder ein Vorschlag zu Mama's Habit Farm? Hier findest du Antworten auf die häufigsten Fragen und wie du uns direkt erreichst.</p>
+
+    <div class="contact">
+      <p>Direkter Kontakt</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">Wir antworten meist innerhalb von 1–2 Werktagen. Du kannst uns auch aus der App schreiben, unter Settings → Contact us.</p>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+
+    <h3>Wie funktioniert die Farm?</h3>
+    <p>Mama Farmer vertraut dir für jede Gewohnheit, die du anlegst, ein kleines Ei an. Jeden Tag, an dem du sie übst, wächst es: vom Ei zum Küken und vom Küken zum Hahn, in 66 Übungstagen (sie müssen nicht am Stück sein). Im Tab My Farm siehst du alle deine Tierchen nach ihrer Entwicklungsstufe.</p>
+
+    <h3>Warum ist mein Tierchen gestorben?</h3>
+    <p>Wenn bei einer Gewohnheit mehr als 30 Tage lang nichts passiert (weder als erledigt markiert noch „Skip today“ benutzt), verhungert das Tierchen: Je nachdem, wie groß es schon war, erscheint es als faules Ei, umgefallenes Küken oder Brathähnchen. <strong>Deinen bisherigen Fortschritt verlierst du nicht.</strong> Wenn du weißt, dass deine Routine durcheinanderkommt (eine Reise, Krankheit), nutze <strong>Pause habit</strong> in den Details der Gewohnheit: Während der Pause zählt die Zeit nicht, es kommen keine Erinnerungen, und nach 45 Tagen geht es von selbst weiter.</p>
+
+    <h3>Wie belebe ich eine gestorbene Gewohnheit wieder?</h3>
+    <p>Markiere sie einfach heute als erledigt. Das Tierchen lebt wieder auf, feiert eine Woche lang und sieht danach wieder normal aus – mit dem ganzen Fortschritt, den es schon hatte.</p>
+
+    <h3>Wie spiele ich mit meinem Tierchen?</h3>
+    <p>Öffne die Details der Gewohnheit und halte das Tierchen gedrückt: Es öffnet sich ein Bildschirm, auf dem du es antippen und knuddeln kannst. Auf der Apple Watch öffnest du die Gewohnheit und tippst es an.</p>
+
+    <h3>Sind meine Daten sicher, wenn ich das iPhone wechsle?</h3>
+    <p>Mit aktivierter iCloud werden deine Gewohnheiten und Aufgaben automatisch mit deinem Account synchronisiert und erscheinen auf dem neuen Gerät. Ohne iCloud liegen die Daten nur auf dem Telefon: Exportiere vor dem Wechsel ein Backup und stelle es auf dem neuen wieder her. Mehr dazu in der <a href="../" data-base="../">Datenschutzerklärung</a>.</p>
+
+    <h3>Wie exportiere oder sichere ich meine Daten?</h3>
+    <p>Gehe in der App zu Settings → <strong>Export backup (JSON)</strong> und speichere die Datei, wo du möchtest (Dateien, iCloud Drive, E-Mail …). Zum Wiederherstellen nutze <strong>Restore from file</strong> auf demselben Bildschirm; beachte, dass dabei deine aktuellen Daten ersetzt werden.</p>
+
+    <h3>Ich bekomme keine Erinnerungen</h3>
+    <p>Prüfe unter iPhone-Einstellungen → Mitteilungen → Mama's Habit Farm, ob sie erlaubt sind. In der App hat jede Gewohnheit und jede Aufgabe ihre eigene Erinnerung: Prüfe, ob sie aktiviert und die Uhrzeit richtig ist. Pausierte Gewohnheiten senden keine Erinnerungen, bis du sie fortsetzt.</p>
+
+    <h3>Die Apple Watch zeigt meine Gewohnheiten nicht an</h3>
+    <p>Die Uhr bekommt die Gewohnheiten vom iPhone. Öffne die App auf dem iPhone, während die Uhr in der Nähe ist, und tippe dann auf der Uhr auf <strong>Sync</strong>. Die Uhr zeigt die für heute geplanten Gewohnheiten; pausierte erscheinen nicht.</p>
+
+    <h3>Wie entferne ich eine Gewohnheit aus dem Kalender?</h3>
+    <p>Aus Datenschutzgründen darf die App nur Ereignisse zum Kalender hinzufügen, sie aber weder lesen noch löschen. Um sie zu entfernen, öffne die Kalender-App, tippe auf das Ereignis der Gewohnheit (es beginnt mit 🐔) und wähle <strong>Ereignis löschen → Alle zukünftigen Ereignisse löschen</strong>.</p>
+
+    <h3>Funktionieren die KI-Funktionen ohne Internet?</h3>
+    <p>Ja. Tipps, Vorschläge und die Sätze von Mama Farmer nutzen Apple Intelligence direkt auf deinem Gerät und senden keine Informationen an einen Server. Sie erscheinen nur auf Geräten, die Apple Intelligence unterstützen und bei denen die Funktion in den Systemeinstellungen aktiviert ist; sonst nutzt Mama feste Sätze.</p>
+
+    <h3>Kann ich die App auf dem iPad nutzen?</h3>
+    <p>Derzeit ist Mama's Habit Farm für das iPhone gemacht, mit einer Begleit-App für die Apple Watch.</p>
+
+    <h3>Ich habe einen Fehler gefunden oder die App hat sich geschlossen</h3>
+    <p>Schreib uns an <a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a>, was du kurz davor gemacht hast. Wenn möglich, füge einen Screenshot, dein iPhone-Modell und die App-Version hinzu (unter Settings → About).</p>
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href="../" data-base="../">Datenschutzerklärung</a></li>
+    </ul>
+  </article>
+
+  <!-- العربية -->
+  <article class="doc" id="ar" lang="ar" dir="rtl" hidden>
+    <p class="lead">لديك مشكلة أو سؤال أو اقتراح بخصوص <bdi dir="ltr">Mama's Habit Farm</bdi>؟ ستجد هنا إجابات أكثر الأسئلة شيوعًا وطريقة مراسلتنا مباشرة.</p>
+
+    <div class="contact">
+      <p>تواصل مباشر</p>
+      <p><a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.6rem">نرد عادةً خلال يوم إلى يومَي عمل. ويمكنك أيضًا مراسلتنا من التطبيق عبر <bdi dir="ltr">Settings → Contact us</bdi>.</p>
+    </div>
+
+    <h2>الأسئلة الشائعة</h2>
+
+    <h3>كيف تعمل المزرعة؟</h3>
+    <p>تعطيك Mama Farmer بيضة صغيرة مقابل كل عادة تنشئها. وفي كل يوم تمارسها فيه تكبر: من بيضة إلى كتكوت، ومن كتكوت إلى ديك، خلال 66 يومًا من الممارسة (لا يلزم أن تكون متتالية). في تبويب My Farm ترى كل حيواناتك بحسب المرحلة التي وصلت إليها.</p>
+
+    <h3>لماذا مات مخلوقي؟</h3>
+    <p>إذا مرّ أكثر من 30 يومًا دون أي نشاط في العادة (لا تحديدها كمنجزة ولا استخدام «Skip today»)، يموت المخلوق جوعًا: يظهر كبيضة فاسدة أو كتكوت ساقط أو دجاجة مشوية، بحسب مقدار نموه. <strong>لن تفقد التقدم الذي حققته.</strong> إذا كنت تعلم أن روتينك سيضطرب (سفر أو مرض)، فاستخدم <strong>Pause habit</strong> من صفحة تفاصيلها: أثناء الإيقاف المؤقت لا يُحتسب الوقت، ولا تصل تذكيرات، وتُستأنف تلقائيًا بعد 45 يومًا.</p>
+
+    <h3>كيف أعيد عادة ماتت إلى الحياة؟</h3>
+    <p>ما عليك سوى تحديدها كمنجزة اليوم. يعود المخلوق إلى الحياة، ويحتفل لمدة أسبوع، ثم يعود إلى مظهره الطبيعي مع كل التقدم الذي كان لديه.</p>
+
+    <h3>كيف ألعب مع مخلوقي؟</h3>
+    <p>افتح تفاصيل العادة واضغط مطولًا على المخلوق: ستُفتح شاشة يمكنك فيها لمسه ومداعبته. وعلى Apple Watch افتح العادة واضغط عليه.</p>
+
+    <h3>هل بياناتي آمنة إذا غيّرت جهاز iPhone؟</h3>
+    <p>مع تفعيل iCloud تُزامَن عاداتك ومهامك تلقائيًا مع حسابك وتظهر على الجهاز الجديد. وبدون iCloud تبقى البيانات على الهاتف فقط: صدّر نسخة احتياطية قبل التغيير ثم استعدها على الجهاز الجديد. مزيد من التفاصيل في <a href="../" data-base="../">سياسة الخصوصية</a>.</p>
+
+    <h3>كيف أصدّر بياناتي أو أنسخها احتياطيًا؟</h3>
+    <p>في التطبيق انتقل إلى Settings ← <strong>Export backup (JSON)</strong> واحفظ الملف حيث تشاء (الملفات، iCloud Drive، البريد…). ولاستعادته استخدم <strong>Restore from file</strong> في الشاشة نفسها؛ مع العلم أن ذلك يستبدل بياناتك الحالية.</p>
+
+    <h3>لا تصلني التذكيرات</h3>
+    <p>تحقق في إعدادات iPhone ← الإشعارات ← <bdi dir="ltr">Mama's Habit Farm</bdi> من السماح بها. وداخل التطبيق، لكل عادة ومهمة تذكيرها الخاص: تأكد من تفعيله ومن صحة الوقت. العادات المتوقفة مؤقتًا لا ترسل تذكيرات حتى تستأنفها.</p>
+
+    <h3>لا تعرض Apple Watch عاداتي</h3>
+    <p>تتلقى الساعة العادات من iPhone. افتح التطبيق على iPhone والساعة قريبة، ثم اضغط <strong>Sync</strong> على الساعة. تعرض الساعة العادات المجدولة لليوم؛ ولا تظهر العادات المتوقفة مؤقتًا.</p>
+
+    <h3>كيف أحذف عادة من التقويم؟</h3>
+    <p>حفاظًا على خصوصيتك، لا يملك التطبيق إلا إذن إضافة الأحداث إلى التقويم، لا قراءتها ولا حذفها. لحذفها، افتح تطبيق التقويم، واضغط حدث العادة (يبدأ بـ 🐔) واختر <strong>حذف الحدث ← حذف كل الأحداث المستقبلية</strong>.</p>
+
+    <h3>هل تعمل ميزات الذكاء الاصطناعي دون إنترنت؟</h3>
+    <p>نعم. تستخدم النصائح والاقتراحات وعبارات Mama Farmer تقنية Apple Intelligence مباشرة على جهازك، دون إرسال أي معلومات إلى أي خادم. ولا تظهر إلا على الأجهزة المتوافقة مع Apple Intelligence مع تفعيل الميزة في إعدادات النظام؛ وإلا تستخدم Mama عبارات ثابتة.</p>
+
+    <h3>هل يمكنني استخدام التطبيق على iPad؟</h3>
+    <p>حاليًا صُمّم <bdi dir="ltr">Mama's Habit Farm</bdi> لجهاز iPhone، مع تطبيق مرافق لـ Apple Watch.</p>
+
+    <h3>وجدت خطأ أو أُغلق التطبيق من تلقاء نفسه</h3>
+    <p>راسلنا على <a href="mailto:level18studio@gmail.com?subject=Mama%27s%20Habit%20Farm%20%E2%80%94%20Bug">level18studio@gmail.com</a> واشرح ما كنت تفعله قبل حدوث ذلك مباشرة. وإن أمكن، أرفق لقطة شاشة وطراز iPhone وإصدار التطبيق (يظهر في <bdi dir="ltr">Settings → About</bdi>).</p>
+
+    <h2>روابط</h2>
+    <ul>
+      <li><a href="../" data-base="../">سياسة الخصوصية</a></li>
     </ul>
   </article>
 
@@ -191,28 +523,30 @@
     <style>.doc[hidden] { display: block; } .langs { display: none; }</style>
   </noscript>
 
-  <footer>&copy; 2026 Javier Pineda · <a href="../">Privacidad · Privacy</a></footer>
+  <footer>&copy; 2026 Javier Pineda · <a id="foot-link" href="../" data-base="../">Política de privacidad</a></footer>
 </main>
 
 <script>
 (function () {
-  var docs = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var langs = ["es", "en", "zh", "ja", "ko", "fr", "de", "ar"];
+  var I = {"es": {"title": "Soporte — Mama's Habit Farm", "h1": "Soporte", "other": "Política de privacidad"}, "en": {"title": "Support — Mama's Habit Farm", "h1": "Support", "other": "Privacy Policy"}, "zh": {"title": "支持 — Mama's Habit Farm", "h1": "支持", "other": "隐私政策"}, "ja": {"title": "サポート — Mama's Habit Farm", "h1": "サポート", "other": "プライバシーポリシー"}, "ko": {"title": "지원 — Mama's Habit Farm", "h1": "지원", "other": "개인정보 처리방침"}, "fr": {"title": "Assistance — Mama's Habit Farm", "h1": "Assistance", "other": "Politique de confidentialité"}, "de": {"title": "Support — Mama's Habit Farm", "h1": "Support", "other": "Datenschutzerklärung"}, "ar": {"title": "الدعم — Mama's Habit Farm", "h1": "الدعم", "other": "سياسة الخصوصية"}};
   var buttons = document.querySelectorAll('.langs button');
-
   function show(lang) {
-    Object.keys(docs).forEach(function (k) { docs[k].hidden = (k !== lang); });
+    langs.forEach(function (k) { document.getElementById(k).hidden = (k !== lang); });
     buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
     document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.title = I[lang].title;
+    document.getElementById('page-title').textContent = I[lang].h1;
+    document.getElementById('foot-link').textContent = I[lang].other;
+    document.querySelectorAll('a[data-base]').forEach(function (a) { a.href = a.getAttribute('data-base') + '#' + lang; });
     try { history.replaceState(null, '', '#' + lang); } catch (e) {}
   }
-
-  buttons.forEach(function (b) {
-    b.addEventListener('click', function () { show(b.dataset.lang); });
-  });
-
+  buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  // Prioridad: idioma en la URL (#ja); si no, el del navegador; por defecto español.
   var fromHash = location.hash.replace('#', '');
-  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
-  show(docs[fromHash] ? fromHash : pref);
+  var nav = (navigator.language || 'es').toLowerCase().slice(0, 2);
+  show(langs.indexOf(fromHash) !== -1 ? fromHash : (langs.indexOf(nav) !== -1 ? nav : 'es'));
 })();
 </script>
 </body>
