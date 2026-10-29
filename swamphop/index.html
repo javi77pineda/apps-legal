@@ -40,7 +40,10 @@
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
   .js .block { display: none; }
   .js.show-es [lang="es"].block, .js.show-en [lang="en"].block, .js.show-fr [lang="fr"].block,
-  .js.show-ja [lang="ja"].block, .js.show-ko [lang="ko"].block { display: block; }
+  .js.show-ja [lang="ja"].block, .js.show-ko [lang="ko"].block,
+  .js.show-zh [lang="zh"].block, .js.show-de [lang="de"].block, .js.show-ar [lang="ar"].block { display: block; }
+  [dir="rtl"] ul { padding-left: 0; padding-right: 20px; }
+  h1 { unicode-bidi: plaintext; }
   .langs { flex-wrap: wrap; }
 </style>
 </head>
@@ -50,7 +53,7 @@
     <div class="logo" aria-hidden="true">🐸</div>
     <div>
       <h1>Swamp Hop!</h1>
-      <p class="sub"><span lang="es">Política de privacidad</span> · <span lang="en">Privacy Policy</span> · <span lang="fr">Confidentialité</span> · <span lang="ja">プライバシー</span> · <span lang="ko">개인정보</span></p>
+      <p class="sub"><span lang="es">Política de privacidad</span> · <span lang="en">Privacy Policy</span> · <span lang="fr">Confidentialité</span> · <span lang="ja">プライバシー</span> · <span lang="ko">개인정보</span> · <span lang="zh">隐私</span> · <span lang="de">Datenschutz</span> · <span lang="ar">الخصوصية</span></p>
     </div>
   </header>
 
@@ -60,6 +63,9 @@
     <button type="button" data-lang="fr" aria-pressed="false">Français</button>
     <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
     <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
   </div>
 
   <!-- ====================== ESPAÑOL ====================== -->
@@ -339,15 +345,174 @@
     </section>
   </div>
 
-  <footer>© 2026 Level 18 · Swamp Hop! · <a href="support.html"><span lang="es">Soporte</span> / <span lang="en">Support</span></a></footer>
+
+  <!-- ====================== 中文 ====================== -->
+  <div lang="zh" class="block">
+    <p class="date">最后更新：2026年10月28日</p>
+    <section class="card summary">
+      <h2>简而言之</h2>
+      <ul>
+        <li>我们不要求你创建账户。</li>
+        <li>只有在你开启真实天气时，才会使用大致位置。</li>
+        <li>我们不展示广告，也不追踪你。</li>
+        <li>我们没有自己的服务器：不会接收或保存你的个人数据。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. 负责方</h2>
+      <p>Swamp Hop! 是由 Level 18 发行的 iPhone 和 iPad 游戏。如对本政策有任何疑问，请发邮件至 <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>。</p>
+    </section>
+    <section class="card">
+      <h2>2. 保存在你设备上的数据</h2>
+      <p>游戏会在你的 iPhone 或 iPad 上保存你的最高分、苍蝇、已解锁的青蛙、购买的生命、设置、好友代码和游戏内好友列表。这些数据不会发送给我们。</p>
+    </section>
+    <section class="card">
+      <h2>3. 游戏使用的 Apple 服务</h2>
+      <p>部分功能使用 Apple 的服务。这些数据由 Apple 根据其<a href="https://www.apple.com/legal/privacy/" rel="noopener">隐私政策</a>处理，我们无法访问。</p>
+      <ul>
+        <li><strong>iCloud（备份）：</strong>如果你开启了 iCloud，游戏会把你的进度和购买的生命备份到<em>你自己的</em> iCloud 账户中，这样换设备时也不会丢失。只有你能访问这份备份。</li>
+        <li><strong>Game Center（排行榜、对决和奥林匹克）：</strong>如果你登录 Game Center，你的分数会发送到 Apple 的排行榜，其他玩家可能会看到你的 Game Center 昵称和分数。在对决和奥林匹克中，Apple 会把你的对局与好友的对局连接起来；对局数据只在游戏进行时使用。你可以在<em>设置 › Game Center</em> 中停止使用 Game Center。</li>
+        <li><strong>真实天气（可选，默认关闭）：</strong>如果你在游戏设置中选择“Weather: Real”，游戏会请求仅在你游玩时使用你的<em>大致位置</em>。该位置会发送给 Apple WeatherKit，用来判断你所在地区是否下雨、下雪、刮风或是夜晚，并显示在河面上。我们不会接收或保存它。你可以在<em>设置 › 隐私与安全性 › 定位服务</em>中撤销权限，或在游戏中关闭此选项。</li>
+        <li><strong>App 内购买：</strong>付款由 Apple 通过 App Store 处理。我们永远看不到你的姓名、银行卡或 Apple 账户；我们只会从 Apple 收到不含个人数据的销售报告。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. 我们不做的事</h2>
+      <ul>
+        <li>我们不使用第三方广告、分析或追踪工具。</li>
+        <li>我们不出售或共享个人数据。</li>
+        <li>我们不会请求访问你的相机、麦克风、通讯录或照片。只有在你开启真实天气时才会请求位置，而且是大致位置。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. 儿童与青少年</h2>
+      <p>我们不收集任何人（包括未成年人）的个人数据。家长可以通过家人共享中的<em>购买前询问</em>和屏幕使用时间来管理购买。</p>
+    </section>
+    <section class="card">
+      <h2>6. 如何删除你的数据</h2>
+      <p>删除游戏会清除保存在设备上的数据。如需同时删除 iCloud 备份，请前往<em>设置 › [你的姓名] › iCloud › 管理储存空间</em>，删除 Swamp Hop! 的数据。你的 Game Center 分数由 Apple 在 Game Center 设置中管理。</p>
+    </section>
+    <section class="card">
+      <h2>7. 本政策的变更</h2>
+      <p>如果我们修改本政策，会在本页面发布新版本并注明更新日期。</p>
+    </section>
+  </div>
+
+  <!-- ====================== DEUTSCH ====================== -->
+  <div lang="de" class="block">
+    <p class="date">Letzte Aktualisierung: 28. Oktober 2026</p>
+    <section class="card summary">
+      <h2>Kurz gesagt</h2>
+      <ul>
+        <li>Du musst kein Konto erstellen.</li>
+        <li>Dein Standort wird nur ungefähr genutzt, und nur wenn du echtes Wetter aktivierst.</li>
+        <li>Wir zeigen keine Werbung und verfolgen dich nicht.</li>
+        <li>Wir haben keine eigenen Server: Wir erhalten und speichern keine personenbezogenen Daten von dir.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. Verantwortlich</h2>
+      <p>Swamp Hop! ist ein Spiel für iPhone und iPad, veröffentlicht von Level 18. Bei Fragen zu dieser Erklärung schreib uns an <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+    </section>
+    <section class="card">
+      <h2>2. Daten, die auf deinem Gerät bleiben</h2>
+      <p>Das Spiel speichert auf deinem iPhone oder iPad deinen Rekord, deine Fliegen, freigeschaltete Frösche, gekaufte Leben, deine Einstellungen, deinen Freundescode und deine Freundesliste im Spiel. Diese Daten werden nicht an uns gesendet.</p>
+    </section>
+    <section class="card">
+      <h2>3. Apple-Dienste, die das Spiel nutzt</h2>
+      <p>Einige Funktionen nutzen Dienste von Apple. Diese Daten verarbeitet Apple nach seiner <a href="https://www.apple.com/legal/privacy/" rel="noopener">Datenschutzrichtlinie</a>; wir haben keinen Zugriff darauf.</p>
+      <ul>
+        <li><strong>iCloud (Backup):</strong> Wenn iCloud aktiviert ist, speichert das Spiel eine Kopie deines Fortschritts und deiner gekauften Leben in <em>deinem eigenen</em> iCloud-Account, damit du sie beim Gerätewechsel nicht verlierst. Nur du kannst auf diese Kopie zugreifen.</li>
+        <li><strong>Game Center (Bestenlisten, Duelle und Olympiaden):</strong> Wenn du dich bei Game Center anmeldest, wird deine Punktzahl an die Bestenlisten von Apple gesendet, und andere Spieler können deinen Game-Center-Spitznamen und deine Punktzahl sehen. Bei Duellen und Olympiaden verbindet Apple deine Partie mit der deines Freundes; die Spieldaten werden nur während des Spielens genutzt. Du kannst Game Center unter <em>Einstellungen › Game Center</em> deaktivieren.</li>
+        <li><strong>Echtes Wetter (optional, standardmäßig aus):</strong> Wenn du in den Spieleinstellungen „Weather: Real“ wählst, fragt das Spiel um Erlaubnis, deinen <em>ungefähren Standort</em> nur während des Spielens zu nutzen. Dieser Standort wird an Apple WeatherKit gesendet, um herauszufinden, ob es in deiner Gegend regnet, schneit, windig oder Nacht ist, und das auf dem Fluss darzustellen. Wir erhalten oder speichern ihn nicht. Du kannst die Erlaubnis unter <em>Einstellungen › Datenschutz &amp; Sicherheit › Ortungsdienste</em> entziehen oder die Option im Spiel ausschalten.</li>
+        <li><strong>In-App-Käufe:</strong> Zahlungen wickelt Apple über den App Store ab. Wir sehen nie deinen Namen, deine Karte oder deinen Apple Account; wir erhalten von Apple nur Verkaufsberichte ohne personenbezogene Daten.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. Was wir nicht tun</h2>
+      <ul>
+        <li>Wir nutzen keine Werbe-, Analyse- oder Tracking-Tools von Drittanbietern.</li>
+        <li>Wir verkaufen oder teilen keine personenbezogenen Daten.</li>
+        <li>Wir fragen nicht nach Zugriff auf Kamera, Mikrofon, Kontakte oder Fotos. Der Standort wird nur abgefragt, wenn du echtes Wetter aktivierst, und er ist ungefähr.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. Kinder und Jugendliche</h2>
+      <p>Wir erheben von niemandem personenbezogene Daten, auch nicht von Minderjährigen. Eltern können Käufe mit <em>Kaufanfrage</em> (Familienfreigabe) und Bildschirmzeit steuern.</p>
+    </section>
+    <section class="card">
+      <h2>6. So löschst du deine Daten</h2>
+      <p>Wenn du das Spiel löschst, werden die auf dem Gerät gespeicherten Daten entfernt. Um auch die iCloud-Kopie zu löschen, öffne <em>Einstellungen › [dein Name] › iCloud › Speicher verwalten</em> und lösche die Daten von Swamp Hop!. Deine Game-Center-Punktzahlen verwaltet Apple in den Game-Center-Einstellungen.</p>
+    </section>
+    <section class="card">
+      <h2>7. Änderungen dieser Erklärung</h2>
+      <p>Wenn wir diese Erklärung ändern, veröffentlichen wir die neue Fassung mit ihrem Aktualisierungsdatum auf dieser Seite.</p>
+    </section>
+  </div>
+
+  <!-- ====================== العربية ====================== -->
+  <div lang="ar" dir="rtl" class="block">
+    <p class="date">آخر تحديث: 28 أكتوبر 2026</p>
+    <section class="card summary">
+      <h2>باختصار</h2>
+      <ul>
+        <li>لا نطلب منك إنشاء حساب.</li>
+        <li>لا يُستخدم الموقع، وبشكل تقريبي، إلا إذا فعّلت الطقس الحقيقي.</li>
+        <li>لا نعرض إعلانات ولا نتتبعك.</li>
+        <li>ليست لدينا خوادم خاصة: لا نتلقى بياناتك الشخصية ولا نحفظها.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. الجهة المسؤولة</h2>
+      <p><bdi dir="ltr">Swamp Hop!</bdi> لعبة لأجهزة iPhone و iPad تنشرها Level 18. لأي سؤال عن هذه السياسة، راسلنا على <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+    </section>
+    <section class="card">
+      <h2>2. بيانات تبقى على جهازك</h2>
+      <p>تحفظ اللعبة على جهاز iPhone أو iPad أفضل نتيجة لك، والذباب، والضفادع التي فتحتها، والأرواح التي اشتريتها، وإعداداتك، ورمز الصداقة، وقائمة أصدقائك في اللعبة. لا تُرسل هذه البيانات إلينا.</p>
+    </section>
+    <section class="card">
+      <h2>3. خدمات Apple التي تستخدمها اللعبة</h2>
+      <p>تستخدم بعض الميزات خدمات Apple. وتتعامل Apple مع هذه البيانات وفق <a href="https://www.apple.com/legal/privacy/" rel="noopener">سياسة الخصوصية</a> الخاصة بها؛ ولا يمكننا الوصول إليها.</p>
+      <ul>
+        <li><strong>iCloud (النسخ الاحتياطي):</strong> إذا كان iCloud مفعّلًا، تحفظ اللعبة نسخة من تقدمك وأرواحك المشتراة في حساب iCloud <em>الخاص بك</em>، حتى لا تفقدها عند تغيير الجهاز. لا يمكن لأحد غيرك الوصول إلى هذه النسخة.</li>
+        <li><strong>Game Center (لوحات الصدارة والمبارزات والأولمبياد):</strong> إذا سجلت الدخول إلى Game Center، تُرسل نتيجتك إلى لوحات الصدارة لدى Apple، وقد يرى لاعبون آخرون اسمك المستعار في Game Center ونتيجتك. في المبارزات والأولمبياد تربط Apple مباراتك بمباراة صديقك؛ ولا تُستخدم بيانات المباراة إلا أثناء اللعب. يمكنك التوقف عن استخدام Game Center من <em>الإعدادات › Game Center</em>.</li>
+        <li><strong>الطقس الحقيقي (اختياري، ومطفأ افتراضيًا):</strong> إذا اخترت «Weather: Real» في إعدادات اللعبة، تطلب اللعبة إذنًا لاستخدام <em>موقعك التقريبي</em> أثناء اللعب فقط. يُرسل هذا الموقع إلى Apple WeatherKit لمعرفة ما إذا كانت تمطر أو تثلج أو توجد رياح أو كان الوقت ليلًا في منطقتك، ثم يُعرض ذلك على النهر. نحن لا نتلقاه ولا نحفظه. يمكنك سحب الإذن من <em>الإعدادات › الخصوصية والأمن › خدمات الموقع</em> أو إيقاف الخيار داخل اللعبة.</li>
+        <li><strong>المشتريات داخل اللعبة:</strong> تعالج Apple المدفوعات عبر App Store. لا نرى أبدًا اسمك أو بطاقتك أو حساب Apple الخاص بك؛ ولا نتلقى من Apple سوى تقارير مبيعات خالية من البيانات الشخصية.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. ما لا نفعله</h2>
+      <ul>
+        <li>لا نستخدم أدوات إعلانات أو تحليلات أو تتبع من أطراف ثالثة.</li>
+        <li>لا نبيع البيانات الشخصية ولا نشاركها.</li>
+        <li>لا نطلب الوصول إلى الكاميرا أو الميكروفون أو جهات الاتصال أو الصور. ولا يُطلب الموقع إلا إذا فعّلت الطقس الحقيقي، وهو موقع تقريبي.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. الأطفال والمراهقون</h2>
+      <p>لا نجمع بيانات شخصية من أي أحد، بمن فيهم القاصرون. يمكن للوالدين التحكم في المشتريات باستخدام <em>طلب الشراء</em> (المشاركة العائلية) و«مدة استخدام الجهاز».</p>
+    </section>
+    <section class="card">
+      <h2>6. كيف تحذف بياناتك</h2>
+      <p>حذف اللعبة يمسح البيانات المحفوظة على الجهاز. لحذف نسخة iCloud أيضًا، انتقل إلى <em>الإعدادات › [اسمك] › iCloud › إدارة التخزين</em> واحذف بيانات <bdi dir="ltr">Swamp Hop!</bdi>. أما نتائجك في Game Center فتديرها Apple من إعدادات Game Center.</p>
+    </section>
+    <section class="card">
+      <h2>7. التغييرات على هذه السياسة</h2>
+      <p>إذا غيّرنا هذه السياسة، فسننشر النسخة الجديدة في هذه الصفحة مع تاريخ تحديثها.</p>
+    </section>
+  </div>
+
+  <footer>© 2026 Level 18 · Swamp Hop! · <a href="support.html" data-base="support.html"><span lang="es">Soporte</span> / <span lang="en">Support</span></a></footer>
 </div>
 <script>
   (function () {
     var root = document.documentElement;
     function setLang(l) {
-      root.classList.remove("show-es", "show-en", "show-fr", "show-ja", "show-ko");
+      root.classList.remove("show-es", "show-en", "show-fr", "show-ja", "show-ko", "show-zh", "show-de", "show-ar");
       root.classList.add("js", "show-" + l);
       root.setAttribute("lang", l);
+      root.setAttribute("dir", l === "ar" ? "rtl" : "ltr");
+      document.querySelectorAll("a[data-base]").forEach(function (a) { a.href = a.getAttribute("data-base") + "?lang=" + l; });
       document.querySelectorAll(".langs button").forEach(function (b) {
         b.setAttribute("aria-pressed", String(b.dataset.lang === l));
       });
@@ -356,7 +521,7 @@
     var saved = null;
     try { saved = localStorage.getItem("swamphop-lang"); } catch (e) {}
     var q = new URLSearchParams(location.search).get("lang");
-    var ok = ["es", "en", "fr", "ja", "ko"];
+    var ok = ["es", "en", "fr", "ja", "ko", "zh", "de", "ar"];
     var nav = (navigator.language || "en").slice(0, 2);
     setLang(ok.indexOf(q) >= 0 ? q : (ok.indexOf(saved) >= 0 ? saved : (ok.indexOf(nav) >= 0 ? nav : "en")));
     document.querySelectorAll(".langs button").forEach(function (b) {
