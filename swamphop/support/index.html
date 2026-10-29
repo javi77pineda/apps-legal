@@ -43,7 +43,10 @@
   /* Sin JavaScript se ven los dos idiomas; con JavaScript, solo el elegido */
   .js .block { display: none; }
   .js.show-es [lang="es"].block, .js.show-en [lang="en"].block, .js.show-fr [lang="fr"].block,
-  .js.show-ja [lang="ja"].block, .js.show-ko [lang="ko"].block { display: block; }
+  .js.show-ja [lang="ja"].block, .js.show-ko [lang="ko"].block,
+  .js.show-zh [lang="zh"].block, .js.show-de [lang="de"].block, .js.show-ar [lang="ar"].block { display: block; }
+  [dir="rtl"] ul { padding-left: 0; padding-right: 20px; }
+  h1 { unicode-bidi: plaintext; }
   .langs { flex-wrap: wrap; }
 </style>
 </head>
@@ -53,7 +56,7 @@
     <div class="logo" aria-hidden="true">🐸</div>
     <div>
       <h1>Swamp Hop!</h1>
-      <p class="sub"><span lang="es">Soporte</span> · <span lang="en">Support</span> · <span lang="fr">Assistance</span> · <span lang="ja">サポート</span> · <span lang="ko">지원</span></p>
+      <p class="sub"><span lang="es">Soporte</span> · <span lang="en">Support</span> · <span lang="fr">Assistance</span> · <span lang="ja">サポート</span> · <span lang="ko">지원</span> · <span lang="zh">支持</span> · <span lang="de">Hilfe</span> · <span lang="ar">الدعم</span></p>
     </div>
   </header>
 
@@ -63,6 +66,9 @@
     <button type="button" data-lang="fr" aria-pressed="false">Français</button>
     <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
     <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
   </div>
 
   <!-- ====================== ESPAÑOL ====================== -->
@@ -109,7 +115,7 @@
 
     <section class="card">
       <h2>Privacidad</h2>
-      <p>Swamp Hop! no tiene cuentas, ni anuncios, ni rastreo. Lee la <a href="privacy.html">política de privacidad</a>.</p>
+      <p>Swamp Hop! no tiene cuentas, ni anuncios, ni rastreo. Lee la <a href="privacy.html?lang=es">política de privacidad</a>.</p>
     </section>
 
     <section class="card">
@@ -166,7 +172,7 @@
 
     <section class="card">
       <h2>Privacy</h2>
-      <p>Swamp Hop! has no accounts, no ads and no tracking. Read the <a href="privacy.html">privacy policy</a>.</p>
+      <p>Swamp Hop! has no accounts, no ads and no tracking. Read the <a href="privacy.html?lang=en">privacy policy</a>.</p>
     </section>
 
     <section class="card">
@@ -336,15 +342,174 @@
     </section>
   </div>
 
+
+  <!-- ====================== 中文 ====================== -->
+  <div lang="zh" class="block">
+    <section class="card">
+      <h2>需要帮助？</h2>
+      <p>给我们发邮件，我们会尽快回复（通常在 1 到 3 个工作日内）。请告诉我们你的 iPhone 或 iPad 机型、iOS 版本以及发生了什么。</p>
+      <a class="contact" href="mailto:level18studio@gmail.com?subject=Swamp%20Hop%20-%20Support">level18studio@gmail.com</a>
+    </section>
+    <section class="card">
+      <h2>App 内购买</h2>
+      <h3>我买了生命，但没有到账</h3>
+      <ul>
+        <li>检查网络连接，完全关闭游戏后重新打开：待处理的购买会在启动时自动发放。</li>
+        <li>如果购买需要家长批准（购买前询问），生命会在批准后到账。</li>
+        <li>仍然没有？请发邮件告诉我们购买日期和 Apple 收据上的订单号。</li>
+      </ul>
+      <h3>我删除了游戏或换了新 iPhone</h3>
+      <p>生命是消耗型项目，所以 Apple 不会“恢复”它们。为了不让你丢失，游戏会把你的生命、最高分、苍蝇和青蛙备份到<strong>你自己的 iCloud</strong>。使用同一个 Apple 账户并开启 iCloud，打开游戏时它们就会自动回来。</p>
+      <h3>我想退款</h3>
+      <p>付款由 Apple 处理。请在 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> 申请退款。</p>
+      <h3>防止孩子未经允许购买</h3>
+      <p>在家人共享中开启<em>购买前询问</em>，或在<em>设置 › 屏幕使用时间 › 内容和隐私访问限制</em>中限制购买。</p>
+    </section>
+    <section class="card">
+      <h2>排行榜与对决（Game Center）</h2>
+      <ul>
+        <li>要登上全球和地区排行榜，并与好友进行对决和奥林匹克，请在<em>设置 › Game Center</em> 中登录。</li>
+        <li>要和好友一起玩，请在游戏中分享你的 6 位字母代码；两人都需要联网。</li>
+        <li>你的最高分会在一局结束时发送。如果没有显示，请确认 Game Center 已开启并等待几分钟。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>常见问题</h2>
+      <ul>
+        <li><strong>听不到音乐：</strong>调高音量并检查静音开关；你也可以在游戏菜单中打开声音。</li>
+        <li><strong>游戏卡顿或闪退：</strong>关闭其他应用，重新启动设备，并在 App Store 中把 Swamp Hop! 更新到最新版本。</li>
+        <li><strong>我的进度不见了：</strong>开启 iCloud 并使用同一个 Apple 账户打开游戏；备份会在启动时恢复。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>隐私</h2>
+      <p>Swamp Hop! 没有账户、没有广告、也没有追踪。请阅读<a href="privacy.html?lang=zh">隐私政策</a>。</p>
+    </section>
+    <section class="card">
+      <h2>致谢</h2>
+      <ul class="note">
+        <li>音乐：pck404 的“Puzzle Platformer Casual Free Music Loop Pack 01”（CC BY 4.0 许可）。</li>
+        <li>音效：Kenney（CC0）。</li>
+        <li>字体：Fredoka（SIL Open Font License）。</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- ====================== DEUTSCH ====================== -->
+  <div lang="de" class="block">
+    <section class="card">
+      <h2>Brauchst du Hilfe?</h2>
+      <p>Schreib uns, und wir antworten so schnell wie möglich (meist innerhalb von 1–3 Werktagen). Nenne uns dein iPhone- oder iPad-Modell, deine iOS-Version und was passiert ist.</p>
+      <a class="contact" href="mailto:level18studio@gmail.com?subject=Swamp%20Hop%20-%20Support">level18studio@gmail.com</a>
+    </section>
+    <section class="card">
+      <h2>In-App-Käufe</h2>
+      <h3>Ich habe Leben gekauft, aber sie sind nicht da</h3>
+      <ul>
+        <li>Prüfe deine Internetverbindung, schließ das Spiel ganz und öffne es erneut: Ausstehende Käufe werden beim Start automatisch gutgeschrieben.</li>
+        <li>Wenn der Kauf die Zustimmung eines Elternteils braucht (Kaufanfrage), kommen die Leben, sobald er genehmigt ist.</li>
+        <li>Immer noch nichts? Schreib uns mit dem Kaufdatum und der Bestellnummer aus deiner Apple-Rechnung.</li>
+      </ul>
+      <h3>Ich habe das Spiel gelöscht oder ein neues iPhone</h3>
+      <p>Leben sind Verbrauchsartikel, deshalb „stellt“ Apple sie nicht „wieder her“. Damit du sie nicht verlierst, sichert das Spiel deine Leben, deinen Rekord, deine Fliegen und deine Frösche in <strong>deiner eigenen iCloud</strong>. Nutze denselben Apple Account mit aktivierter iCloud, dann kommt alles beim Öffnen des Spiels automatisch zurück.</p>
+      <h3>Ich möchte eine Rückerstattung</h3>
+      <p>Zahlungen wickelt Apple ab. Fordere die Rückerstattung unter <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> an.</p>
+      <h3>Meine Kinder sollen nicht ohne Erlaubnis kaufen</h3>
+      <p>Aktiviere die <em>Kaufanfrage</em> in der Familienfreigabe oder schränke Käufe unter <em>Einstellungen › Bildschirmzeit › Beschränkungen</em> ein.</p>
+    </section>
+    <section class="card">
+      <h2>Bestenlisten und Duelle (Game Center)</h2>
+      <ul>
+        <li>Um in den weltweiten und regionalen Bestenlisten zu erscheinen und Duelle und Olympiaden mit Freunden zu spielen, melde dich unter <em>Einstellungen › Game Center</em> an.</li>
+        <li>Um mit einem Freund zu spielen, teile deinen 6-stelligen Buchstabencode aus dem Spiel; beide brauchen eine Internetverbindung.</li>
+        <li>Dein Rekord wird am Ende einer Runde gesendet. Wenn er nicht erscheint, prüfe, ob Game Center aktiv ist, und warte ein paar Minuten.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Häufige Probleme</h2>
+      <ul>
+        <li><strong>Keine Musik:</strong> Mach lauter und prüf den Stummschalter; du kannst den Ton auch im Spielmenü einschalten.</li>
+        <li><strong>Das Spiel ruckelt oder stürzt ab:</strong> Schließ andere Apps, starte dein Gerät neu und aktualisiere Swamp Hop! im App Store auf die neueste Version.</li>
+        <li><strong>Mein Fortschritt ist weg:</strong> Öffne das Spiel mit aktivierter iCloud und demselben Apple Account; das Backup wird beim Start übernommen.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Datenschutz</h2>
+      <p>Swamp Hop! hat keine Konten, keine Werbung und kein Tracking. Lies die <a href="privacy.html?lang=de">Datenschutzerklärung</a>.</p>
+    </section>
+    <section class="card">
+      <h2>Credits</h2>
+      <ul class="note">
+        <li>Musik: „Puzzle Platformer Casual Free Music Loop Pack 01“ von pck404 (Lizenz CC BY 4.0).</li>
+        <li>Soundeffekte: Kenney (CC0).</li>
+        <li>Schrift: Fredoka (SIL Open Font License).</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- ====================== العربية ====================== -->
+  <div lang="ar" dir="rtl" class="block">
+    <section class="card">
+      <h2>تحتاج مساعدة؟</h2>
+      <p>راسلنا وسنرد عليك في أقرب وقت ممكن (عادةً خلال يوم إلى ثلاثة أيام عمل). أخبرنا بطراز iPhone أو iPad، وإصدار iOS، وما الذي حدث.</p>
+      <a class="contact" href="mailto:level18studio@gmail.com?subject=Swamp%20Hop%20-%20Support">level18studio@gmail.com</a>
+    </section>
+    <section class="card">
+      <h2>المشتريات داخل اللعبة</h2>
+      <h3>اشتريت أرواحًا ولم تظهر</h3>
+      <ul>
+        <li>تحقق من اتصالك بالإنترنت، وأغلق اللعبة تمامًا ثم افتحها من جديد: تُسلَّم المشتريات المعلّقة تلقائيًا عند التشغيل.</li>
+        <li>إذا كان الشراء يحتاج إلى موافقة أحد الوالدين (طلب الشراء)، تصل الأرواح بعد الموافقة عليه.</li>
+        <li>ما زالت لا تظهر؟ راسلنا مع تاريخ الشراء ورقم الطلب الموجود في إيصال Apple.</li>
+      </ul>
+      <h3>حذفت اللعبة أو غيّرت جهاز iPhone</h3>
+      <p>الأرواح عناصر استهلاكية، لذلك لا «تستعيدها» Apple. وحتى لا تفقدها، تحفظ اللعبة نسخة من أرواحك وأفضل نتيجة لك والذباب والضفادع في <strong>iCloud الخاص بك</strong>. استخدم حساب Apple نفسه مع تفعيل iCloud وستعود تلقائيًا عند فتح اللعبة.</p>
+      <h3>أريد استرداد المبلغ</h3>
+      <p>تتولى Apple المدفوعات. اطلب الاسترداد من <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+      <h3>منع أطفالي من الشراء دون إذن</h3>
+      <p>فعّل <em>طلب الشراء</em> في المشاركة العائلية، أو قيّد المشتريات من <em>الإعدادات › مدة استخدام الجهاز › قيود المحتوى والخصوصية</em>.</p>
+    </section>
+    <section class="card">
+      <h2>لوحات الصدارة والمبارزات (Game Center)</h2>
+      <ul>
+        <li>للظهور في لوحات الصدارة العالمية والإقليمية، ولخوض المبارزات والأولمبياد مع أصدقائك، سجّل الدخول إلى Game Center من <em>الإعدادات › Game Center</em>.</li>
+        <li>للعب مع صديق، شارك رمزك المكوّن من 6 أحرف من داخل اللعبة؛ ويحتاج كلاكما إلى اتصال بالإنترنت.</li>
+        <li>تُرسل أفضل نتيجة لك عند انتهاء الجولة. إذا لم تظهر، تأكد من تفعيل Game Center وانتظر بضع دقائق.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>مشكلات شائعة</h2>
+      <ul>
+        <li><strong>لا أسمع الموسيقى:</strong> ارفع الصوت وتحقق من مفتاح الصامت؛ ويمكنك أيضًا تشغيل الصوت من قائمة اللعبة.</li>
+        <li><strong>اللعبة بطيئة أو تُغلق:</strong> أغلق التطبيقات الأخرى، وأعد تشغيل جهازك، وحدّث <bdi dir="ltr">Swamp Hop!</bdi> إلى أحدث إصدار من App Store.</li>
+        <li><strong>فقدت تقدّمي:</strong> افتح اللعبة مع تفعيل iCloud وبحساب Apple نفسه؛ تُطبَّق النسخة الاحتياطية عند التشغيل.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>الخصوصية</h2>
+      <p>لا توجد في <bdi dir="ltr">Swamp Hop!</bdi> حسابات ولا إعلانات ولا تتبع. اقرأ <a href="privacy.html?lang=ar">سياسة الخصوصية</a>.</p>
+    </section>
+    <section class="card">
+      <h2>الشكر والتقدير</h2>
+      <ul class="note">
+        <li>الموسيقى: «Puzzle Platformer Casual Free Music Loop Pack 01» من pck404 (ترخيص CC BY 4.0).</li>
+        <li>المؤثرات الصوتية: Kenney ‏(CC0).</li>
+        <li>الخط: Fredoka ‏(SIL Open Font License).</li>
+      </ul>
+    </section>
+  </div>
+
   <footer>© 2026 Level 18 · Swamp Hop!</footer>
 </div>
 <script>
   (function () {
     var root = document.documentElement;
     function setLang(l) {
-      root.classList.remove("show-es", "show-en", "show-fr", "show-ja", "show-ko");
+      root.classList.remove("show-es", "show-en", "show-fr", "show-ja", "show-ko", "show-zh", "show-de", "show-ar");
       root.classList.add("js", "show-" + l);
       root.setAttribute("lang", l);
+      root.setAttribute("dir", l === "ar" ? "rtl" : "ltr");
+      document.querySelectorAll("a[data-base]").forEach(function (a) { a.href = a.getAttribute("data-base") + "?lang=" + l; });
       document.querySelectorAll(".langs button").forEach(function (b) {
         b.setAttribute("aria-pressed", String(b.dataset.lang === l));
       });
@@ -353,7 +518,7 @@
     var saved = null;
     try { saved = localStorage.getItem("swamphop-lang"); } catch (e) {}
     var q = new URLSearchParams(location.search).get("lang");
-    var ok = ["es", "en", "fr", "ja", "ko"];
+    var ok = ["es", "en", "fr", "ja", "ko", "zh", "de", "ar"];
     var nav = (navigator.language || "en").slice(0, 2);
     setLang(ok.indexOf(q) >= 0 ? q : (ok.indexOf(saved) >= 0 ? saved : (ok.indexOf(nav) >= 0 ? nav : "en")));
     document.querySelectorAll(".langs button").forEach(function (b) {
