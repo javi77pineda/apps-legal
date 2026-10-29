@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>SmartCardStudy · Soporte / Support</title>
-<meta name="description" content="Soporte de la app SmartCardStudy para iPhone y iPad: preguntas frecuentes y contacto. Support for the SmartCardStudy iPhone and iPad app: FAQ and contact.">
+<title>SmartCardStudy · Política de privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de la app SmartCardStudy para iPhone y iPad. Privacy policy for the SmartCardStudy iPhone and iPad app.">
 <style>
   :root {
     --bg: #fbfbfa;
@@ -40,9 +40,9 @@
   header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
   h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -0.01em; }
   h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.4rem 0 .6rem; }
-  h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.6rem 0 .45rem; }
+  h3 { font-size: 1.1rem; line-height: 1.3; margin: 1.9rem 0 .5rem; }
   p { margin: 0 0 1rem; }
-  ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
   li { margin-bottom: .4rem; }
   a { color: var(--accent); text-underline-offset: 2px; }
   a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
@@ -58,36 +58,24 @@
     padding: .35rem .8rem;
   }
   .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-  .contact {
+  .summary {
     background: var(--soft); border-left: 4px solid var(--accent);
-    padding: 1.1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
   }
-  .contact p:last-child { margin-bottom: 0; }
-  .contact a.mail {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-weight: 600; font-size: 1.05rem;
-  }
-  details {
-    border: 1px solid var(--line); border-radius: 8px;
-    padding: .85rem 1rem; margin-bottom: .7rem;
-  }
-  details[open] { padding-bottom: 1rem; }
-  summary {
-    cursor: pointer; font-weight: 600;
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: .98rem;
-  }
-  summary::-webkit-details-marker { color: var(--accent); }
-  details p, details ul { margin-top: .7rem; margin-bottom: 0; }
-  details ul { margin-bottom: 0; }
-  code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: .92em; background: var(--soft); padding: .1em .35em; border-radius: 4px;
-  }
+  .summary p:last-child, .summary ul:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1.25rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .98rem; line-height: 1.5; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--line); }
+  th { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: .9rem; color: var(--muted); font-weight: 600; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
   section[hidden] { display: none; }
   footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
-  @media (max-width: 480px) { h1 { font-size: 1.65rem; } }
-  @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } details { border: none; padding: 0; } }
+  @media (max-width: 480px) { h1 { font-size: 1.65rem; } td:first-child { white-space: normal; } }
+  @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } }
+  .lang { flex-wrap: wrap; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.25rem; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+  [dir="rtl"] .summary, [dir="rtl"] .contact { border-left: 0; border-right: 4px solid var(--accent); border-radius: 6px 0 0 6px; }
 </style>
 </head>
 <body>
@@ -95,258 +83,702 @@
 
 <header>
   <h1>SmartCardStudy</h1>
-  <p class="meta"><span lang="es">Soporte</span><br><span lang="en">Support</span></p>
+  <p class="meta" id="meta">Política de privacidad · Última actualización: 16 de octubre de 2026</p>
   <div class="lang" role="group" aria-label="Idioma / Language">
     <button type="button" data-lang="es" aria-pressed="true">Español</button>
     <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
   </div>
 </header>
 
 <!-- ============================ ESPAÑOL ============================ -->
 <section id="es" lang="es">
 
-<div class="contact">
-  <p>¿Tienes un problema, una pregunta o una sugerencia? Escríbeme directamente:</p>
-  <p><a class="mail" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
-  <p>Respondo yo mismo, normalmente en 1 o 2 días hábiles. Si es un error, cuéntame qué pasó, qué dispositivo usas y, si puedes, adjunta una captura de pantalla.</p>
+<h2 style="margin-top:0">Resumen</h2>
+<div class="summary">
+  <p>SmartCardStudy no recopila, vende ni comparte datos personales: tus mazos y tarjetas viven en tu dispositivo y, si lo activas, en tu propio iCloud.</p>
+  <ul>
+    <li>No hay cuentas ni inicio de sesión.</li>
+    <li>No hay analítica, publicidad ni rastreo de terceros.</li>
+    <li>La generación de tarjetas con IA corre en tu dispositivo con Apple Intelligence; tu contenido no se envía a ningún servidor del desarrollador.</li>
+    <li>El desarrollador, Javier Pineda (Level 18), no tiene servidores propios ni acceso a tu contenido.</li>
+  </ul>
 </div>
+<p>Esta política aplica a la app SmartCardStudy para iPhone y iPad, versión 1.0.</p>
 
-<h2>Preguntas frecuentes</h2>
-
-<h3>Generación con IA</h3>
-
-<details>
-<summary>La generación de tarjetas con IA no está disponible</summary>
-<p>Esta función necesita Apple Intelligence, y solo funciona en:</p>
+<h2>1. Datos que maneja la app y dónde viven</h2>
+<p>Toda la información que creas en SmartCardStudy se guarda en el almacenamiento local de tu iPhone o iPad. El desarrollador no la recibe.</p>
 <ul>
-  <li>iPhone 15 Pro o más nuevo</li>
-  <li>iPad con chip M (M1 o superior) o A17 Pro</li>
+  <li><strong>Contenido de estudio:</strong> mazos, tarjetas (pregunta, respuesta, etiquetas, la estrella de prioritaria y si están ocultas del repaso) y tipos de tarjeta.</li>
+  <li><strong>Historial de repaso:</strong> la calificación de cada repaso, la fecha, el tiempo de respuesta y los valores del algoritmo de repetición espaciada (FSRS o SM2). Sirve solo para programar tus próximos repasos.</li>
+  <li><strong>Ajustes:</strong> gestos personalizados, hora del recordatorio diario, duración del Pomodoro, búsqueda avanzada, preferencia de iCloud y si ya viste la bienvenida.</li>
+  <li><strong>Dibujos con Apple Pencil:</strong> lo que escribes sobre una tarjeta durante el repaso no se guarda; se descarta al pasar a la siguiente.</li>
 </ul>
-<p>Además de tener uno de esos dispositivos, revisa en Ajustes del iPhone o iPad &gt; Apple Intelligence y Siri que esté activado y que el modelo ya se haya descargado (puede tardar unos minutos la primera vez, y necesita wifi). Dentro de SmartCardStudy, en Ajustes (el engranaje de la pantalla Mazos) &gt; "Apple Intelligence" ves el estado exacto.</p>
-</details>
+<p>No pedimos nombre, correo, teléfono, ubicación, contactos ni identificadores publicitarios, y la app no incluye SDKs de analítica, publicidad ni redes sociales.</p>
 
-<details>
-<summary>Las tarjetas que genera la IA tienen errores o no tienen sentido</summary>
-<p>Puede pasar, sobre todo con contenido muy técnico, mal escaneado o en un idioma distinto al español. Antes de estudiar, siempre puedes revisar, editar o borrar las tarjetas generadas en la misma pantalla de importación. Si notas un patrón de error repetido, cuéntamelo por correo con un ejemplo.</p>
-</details>
-
-<details>
-<summary>Importé un PDF, una imagen o un audio y no generó ninguna tarjeta</summary>
-<p>Revisa esto:</p>
+<h2>2. Sincronización con iCloud (opcional)</h2>
+<p>SmartCardStudy puede sincronizar tus datos entre tus dispositivos con CloudKit, la tecnología de iCloud de Apple, y lo hace en tu base de datos privada.</p>
 <ul>
-  <li>El PDF debe pesar menos de 5.1 MB y tener texto real, no ser solo una imagen escaneada (todavía no hay OCR para PDF).</li>
-  <li>En una foto, el texto tiene que verse claro y sin mucha inclinación. La app lee el texto de la foto (OCR); no interpreta dibujos o diagramas sin texto.</li>
-  <li>El audio debe ser .m4a (memo de voz), .mp3, .wav o .caf. Por ahora se transcribe solo en español: un audio en otro idioma puede salir vacío o con errores.</li>
+  <li><strong>Qué se sincroniza:</strong> mazos, tarjetas, tipos de tarjeta e historial de repaso.</li>
+  <li><strong>Quién puede verlo:</strong> solo tú, con tu cuenta de Apple. El desarrollador no puede acceder a tu base de datos privada de iCloud.</li>
+  <li><strong>Cómo se controla:</strong> el interruptor "Sincronizar con iCloud" está en Ajustes (el engranaje de la pantalla Mazos), sección "Sincronización e IA", y viene activado por defecto. El cambio se aplica la próxima vez que abras la app.</li>
+  <li><strong>Si lo apagas:</strong> tus datos siguen en el dispositivo y dejan de subirse. Lo que ya estaba en iCloud permanece hasta que lo borres desde los ajustes de iCloud de tu dispositivo.</li>
 </ul>
-</details>
+<p>Apple procesa esos datos según su <a href="https://www.apple.com/legal/privacy/">Política de privacidad</a>. CloudKit también usa notificaciones de Apple para avisar a la app de que hay cambios; el desarrollador no opera ningún servidor de notificaciones.</p>
 
-<details>
-<summary>Importé un video de YouTube y no trajo nada</summary>
-<p>Esa función depende de que el video tenga subtítulos públicos. Si el video no tiene subtítulos, el creador los desactivó, o es privado o tiene restricción de edad, no va a funcionar. Prueba con otro video, descarga el audio con otra app e impórtalo desde la pestaña "Audio", o usa la pestaña "Tema" para que la IA arme el mazo sin material.</p>
-</details>
+<h2>3. IA en el dispositivo y contenido que importas</h2>
+<p>Las tarjetas con IA se generan con Apple Intelligence (el modelo del sistema), directamente en tu dispositivo y sin conexión a internet. Ningún texto, PDF, audio, imagen ni tema que importes se envía a un servidor del desarrollador ni a un proveedor de IA externo.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Origen</th><th>Cómo se procesa</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>El texto se extrae en el dispositivo con PDFKit. Máximo 5.1 MB.</td></tr>
+    <tr><td>Imagen</td><td>Eliges una foto con el selector del sistema; la app solo recibe esa foto. El texto se lee en el dispositivo con OCR de Apple (Vision).</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Se transcribe con el reconocimiento de voz de Apple (ver sección 5).</td></tr>
+    <tr><td>YouTube</td><td>Se descargan los subtítulos públicos del video (ver sección 5).</td></tr>
+    <tr><td>Tema</td><td>Escribes un tema y la IA arma las tarjetas con su propio conocimiento, en el dispositivo. No se sube ningún material.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>La app no guarda copia de tus archivos: solo conserva las tarjetas que se generan, que puedes editar o borrar. Las tarjetas creadas por IA pueden contener errores; revísalas antes de estudiarlas.</p>
 
-<h3>iCloud y sincronización</h3>
+<h2>4. Permisos que solicita la app</h2>
+<p>SmartCardStudy pide solo dos permisos, y cada uno se solicita únicamente cuando usas la función que lo necesita. Puedes revocarlos en Ajustes del sistema.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permiso</th><th>Para qué se usa</th></tr></thead>
+  <tbody>
+    <tr><td>Reconocimiento de voz</td><td>Transcribir un memo de voz o MP3 que importes para convertirlo en tarjetas. La app no graba con el micrófono.</td></tr>
+    <tr><td>Notificaciones</td><td>Enviar el recordatorio diario de estudio. Es una notificación local programada en tu dispositivo, a la hora que elijas.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Las fotos se eligen con el selector del sistema, que no da a la app acceso a toda tu biblioteca. Los archivos PDF y de audio se abren con el selector de archivos, y solo se lee el que eliges. Si conectas un control de juego, la app lo usa únicamente para calificar tarjetas y no guarda información sobre él.</p>
 
-<details>
-<summary>Mis tarjetas no aparecen en mi otro iPhone o iPad</summary>
-<p>Verifica, en los dos dispositivos, que:</p>
+<h2>5. Servicios de terceros</h2>
+<p>SmartCardStudy no envía tu información a servicios propios. Estas son las únicas funciones que involucran a terceros:</p>
 <ul>
-  <li>Hayas iniciado sesión con la misma cuenta de Apple (Ajustes &gt; tu nombre, arriba).</li>
-  <li>El interruptor "Sincronizar con iCloud", en Ajustes de SmartCardStudy (el engranaje de la pantalla Mazos), esté activado.</li>
-  <li>Tengas conexión a internet; la sincronización no es instantánea, puede tardar uno o dos minutos.</li>
+  <li><strong>Apple, reconocimiento de voz:</strong> al transcribir un audio, el sistema puede procesarlo en los servidores de Apple, según tu dispositivo y el idioma. La app pide la transcripción en español. Aplica la <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>.</li>
+  <li><strong>Apple, iCloud:</strong> solo si dejas activada la sincronización (sección 2).</li>
+  <li><strong>YouTube (Google):</strong> al pedir la transcripción de un video, la app envía a YouTube el identificador del video que sacó de tu enlace. YouTube recibe además tu dirección IP, como en cualquier conexión a internet. Es la única conexión de red que hace la app por su cuenta. Aplica la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</li>
 </ul>
-<p>Si cambiaste el interruptor, el cambio se aplica recién la próxima vez que abras la app, así que ciérrala completamente y vuelve a abrirla.</p>
-</details>
+<p>El código de la app usa dos bibliotecas de código abierto que funcionan dentro del dispositivo, SwiftMath (fórmulas) y ZIPFoundation (importación de archivos .apkg), y ninguna envía datos a terceros.</p>
 
-<details>
-<summary>Desinstalé la app y perdí mis tarjetas</summary>
-<p>Si tenías iCloud activado antes de desinstalar, tus datos siguen en tu cuenta de iCloud: al reinstalar la app y entrar con la misma cuenta de Apple, deberían volver a aparecer. Si no tenías iCloud activado, los datos vivían solo en ese dispositivo y no hay forma de recuperarlos.</p>
-</details>
-
-<h3>Mazos y repaso</h3>
-
-<details>
-<summary>¿Cómo importo mis mazos de Anki?</summary>
-<p>En la pantalla Mazos, toca el botón + (arriba a la izquierda) &gt; "Importar de Anki (.apkg)" y elige el archivo exportado desde Anki. La misma opción está en Ajustes. Se importan el contenido y tu progreso de estudio; por ahora no se importan el audio ni las imágenes incluidas en las tarjetas de Anki.</p>
-</details>
-
-<details>
-<summary>¿Cómo estudio todos mis mazos a la vez?</summary>
-<p>En la pantalla Mazos, arriba, la tarjeta "Para hoy" tiene el botón "Estudiar todo": repasa lo pendiente de todos tus mazos en una sola sesión, alternando entre ellos. Si quieres elegir solo algunos mazos, usa "Sesión mixta".</p>
-</details>
-
-<details>
-<summary>¿Qué significan los tiempos debajo de cada botón de calificación?</summary>
-<p>Indican cuándo vuelve a tocar la tarjeta según lo que elijas: "Bien · 3 d" quiere decir que la verás de nuevo en 3 días. "De nuevo" la vuelve a mostrar unas tarjetas más adelante en la misma sesión, para que la repases antes de terminar.</p>
-</details>
-
-<details>
-<summary>¿Por qué una tarjeta no aparece cuando debería tocarle repaso?</summary>
-<p>Revisa esto:</p>
-<ul>
-  <li>Que no esté oculta del repaso: en el mazo, abre "Organizar tarjetas", toca ••• en la tarjeta y elige "Volver al repaso".</li>
-  <li>Que su mazo no esté archivado (Ajustes &gt; "Mazos archivados").</li>
-  <li>Si usas una sesión mixta con "Repasar solo prioritarias", solo aparecen las tarjetas con estrella.</li>
-</ul>
-<p>Si ya la repasaste hoy, vuelve en la fecha que le tocó. Para repasarla igual, al terminar la sesión usa "Repasar todas de nuevo".</p>
-</details>
-
-<details>
-<summary>¿Cómo deshago una calificación que di por error?</summary>
-<p>Durante el repaso, toca la flecha curva de arriba a la derecha (o ⌘Z si usas teclado en el iPad). Guarda hasta 20 pasos hacia atrás. Esa historia se pierde si cierras la app, así que deshazlo antes de salir de la sesión de estudio.</p>
-</details>
-
-<h3>Notificaciones</h3>
-
-<details>
-<summary>No me llega el recordatorio diario</summary>
-<p>Revisa en Ajustes del sistema &gt; Notificaciones &gt; SmartCardStudy que las notificaciones estén permitidas, y dentro de la app, en Ajustes (el engranaje) &gt; "Recordatorio diario", que esté activado con la hora que quieras. Si el iPhone está en modo No Molestar o Enfoque a esa hora, puede silenciarla igual.</p>
-</details>
-
-<h2>Antes de escribirme</h2>
-<p>Si vas a reportar un error, me ayuda mucho que incluyas:</p>
-<ul>
-  <li>Qué estabas haciendo cuando pasó</li>
-  <li>Modelo de iPhone o iPad y versión de iOS</li>
-  <li>Una captura de pantalla, si aplica</li>
-</ul>
+<h2>6. Conservación, menores, tus derechos y contacto</h2>
+<p><strong>Conservación y eliminación.</strong> Tus datos permanecen hasta que los borres. Puedes eliminar tarjetas y mazos dentro de la app, o archivar un mazo para ocultarlo sin borrarlo. Al desinstalar la app se elimina lo guardado en el dispositivo; lo que esté en iCloud se borra desde los ajustes de iCloud de tu dispositivo.</p>
+<p><strong>Tus derechos.</strong> Como el desarrollador no recibe ni almacena tus datos, no tiene información tuya que consultar, corregir o eliminar. Tienes control total desde la app y desde los ajustes de tu dispositivo. Esta política se rige por las leyes de la República de Panamá.</p>
+<p><strong>Menores de edad.</strong> SmartCardStudy no está dirigida a menores de 13 años y no recopila datos personales de nadie, incluidos los menores.</p>
+<p><strong>Cambios en esta política.</strong> Si la app cambia la forma en que trata los datos, actualizaremos esta política y la fecha de arriba. Los cambios importantes se avisarán en la descripción de la actualización en App Store.</p>
+<p><strong>Contacto.</strong> Para dudas sobre privacidad, escribe a <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
 
 </section>
 
 <!-- ============================ ENGLISH ============================ -->
 <section id="en" lang="en">
 
-<div class="contact">
-  <p>Have a problem, a question, or a suggestion? Email me directly:</p>
-  <p><a class="mail" href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
-  <p>I answer personally, usually within 1-2 business days. If it's a bug, tell me what happened, which device you're using, and attach a screenshot if you can.</p>
+<h2 style="margin-top:0">Summary</h2>
+<div class="summary">
+  <p>SmartCardStudy does not collect, sell or share personal data: your decks and cards stay on your device and, if you turn it on, in your own iCloud.</p>
+  <ul>
+    <li>There are no accounts or sign-in.</li>
+    <li>There is no analytics, advertising or third-party tracking.</li>
+    <li>AI card generation runs on your device with Apple Intelligence. Your content is never sent to a server operated by the developer.</li>
+    <li>The developer, Javier Pineda (Level 18), runs no servers and has no access to your content.</li>
+  </ul>
 </div>
+<p>This policy applies to the SmartCardStudy app for iPhone and iPad, version 1.0.</p>
 
-<h2>Frequently asked questions</h2>
-
-<h3>AI generation</h3>
-
-<details>
-<summary>AI card generation is not available</summary>
-<p>This feature needs Apple Intelligence, and only works on:</p>
+<h2>1. Data the app handles and where it lives</h2>
+<p>Everything you create in SmartCardStudy is stored locally on your iPhone or iPad. The developer does not receive it.</p>
 <ul>
-  <li>iPhone 15 Pro or newer</li>
-  <li>iPad with an M-series chip (M1 or later) or A17 Pro</li>
+  <li><strong>Study content:</strong> decks, cards (question, answer, tags, the priority star and whether they are hidden from review) and card types.</li>
+  <li><strong>Review history:</strong> the rating, date and response time of each review, plus the values of the spaced repetition algorithm (FSRS or SM2). It is used only to schedule your next reviews.</li>
+  <li><strong>Settings:</strong> custom gestures, daily reminder time, Pomodoro durations, advanced search, iCloud preference and whether you have seen the welcome screens.</li>
+  <li><strong>Apple Pencil drawings:</strong> what you write over a card during review is not saved and is discarded when you move to the next card.</li>
 </ul>
-<p>Besides having one of those devices, check Settings &gt; Apple Intelligence &amp; Siri, make sure it's turned on and that the model has finished downloading (it can take a few minutes the first time, and needs Wi-Fi). Inside SmartCardStudy, Settings (the gear on the Decks screen) &gt; "Apple Intelligence" shows the exact status.</p>
-</details>
+<p>We do not ask for your name, email, phone number, location or contacts, and we do not use advertising identifiers. The app contains no analytics, advertising or social media SDKs.</p>
 
-<details>
-<summary>The AI-generated cards have mistakes or don't make sense</summary>
-<p>This can happen, especially with very technical content, poorly scanned text, or a language other than Spanish. Before studying, you can always review, edit, or delete the generated cards on the same import screen. If you notice a repeated pattern of errors, email me with an example.</p>
-</details>
-
-<details>
-<summary>I imported a PDF, an image or an audio file and no cards were generated</summary>
-<p>Check this:</p>
+<h2>2. iCloud sync (optional)</h2>
+<p>SmartCardStudy can sync your data across your devices using CloudKit, Apple's iCloud technology, in your private database.</p>
 <ul>
-  <li>The PDF must be under 5.1 MB and contain real text, not just a scanned image (there's no OCR for PDFs yet).</li>
-  <li>In a photo, the text needs to be clear and not too tilted. The app reads the text in the photo (OCR); it doesn't interpret drawings or diagrams with no text.</li>
-  <li>Audio must be .m4a (voice memo), .mp3, .wav or .caf. For now it is transcribed in Spanish only, so audio in another language may come out empty or with errors.</li>
+  <li><strong>What syncs:</strong> decks, cards, card types and review history.</li>
+  <li><strong>Who can see it:</strong> only you, with your Apple account. The developer cannot access your private iCloud database.</li>
+  <li><strong>How to control it:</strong> the "Sync with iCloud" switch is in Settings (the gear on the Decks screen), under "Sync &amp; AI", and is on by default. A change takes effect the next time you open the app.</li>
+  <li><strong>If you turn it off:</strong> your data stays on the device and stops uploading. Data already in iCloud remains until you delete it in your device's iCloud settings.</li>
 </ul>
-</details>
+<p>Apple processes this data under its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>. CloudKit also uses Apple notifications to tell the app that changes are available; the developer runs no notification server.</p>
 
-<details>
-<summary>I imported a YouTube video and nothing came through</summary>
-<p>This feature depends on the video having public captions. If the video has no captions, the creator disabled them, or it's private or age-restricted, it won't work. Try another video, download the audio with another app and import it from the "Audio" tab, or use the "Topic" tab to have the AI build the deck without any material.</p>
-</details>
+<h2>3. On-device AI and the content you import</h2>
+<p>AI cards are generated with Apple Intelligence (the system model), directly on your device and without an internet connection. No text, PDF, audio, image or topic you import is sent to a developer server or to an external AI provider.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Source</th><th>How it is processed</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>Text is extracted on the device with PDFKit. Maximum 5.1 MB.</td></tr>
+    <tr><td>Image</td><td>You pick a photo with the system picker and the app receives only that photo. Text is read on the device with Apple's OCR (Vision).</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Transcribed with Apple's speech recognition (see section 5).</td></tr>
+    <tr><td>YouTube</td><td>The video's public captions are downloaded (see section 5).</td></tr>
+    <tr><td>Topic</td><td>You type a topic and the AI builds the cards from its own knowledge, on the device. No material is uploaded.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The app keeps no copy of your files, only the cards that are generated, which you can edit or delete. AI-generated cards may contain mistakes; review them before studying.</p>
 
-<h3>iCloud and sync</h3>
+<h2>4. Permissions the app requests</h2>
+<p>SmartCardStudy asks for only two permissions, each requested only when you use the feature that needs it. You can revoke them in system Settings.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permission</th><th>What it is used for</th></tr></thead>
+  <tbody>
+    <tr><td>Speech recognition</td><td>Transcribing a voice memo or MP3 you import so it can become cards. The app does not record with the microphone.</td></tr>
+    <tr><td>Notifications</td><td>Sending the daily study reminder. It is a local notification scheduled on your device at the time you choose.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Photos are chosen with the system picker, which does not give the app access to your whole library. PDF and audio files are opened with the file picker and only the file you choose is read. If you connect a game controller, the app uses it only to rate cards and stores no information about it.</p>
 
-<details>
-<summary>My cards aren't showing up on my other iPhone or iPad</summary>
-<p>On both devices, check that:</p>
+<h2>5. Third-party services</h2>
+<p>SmartCardStudy does not send your information to services of its own. These are the only features that involve third parties:</p>
 <ul>
-  <li>You're signed in with the same Apple Account (Settings &gt; your name, at the top).</li>
-  <li>The "Sync with iCloud" switch in SmartCardStudy's Settings (the gear on the Decks screen) is turned on.</li>
-  <li>You have an internet connection; sync isn't instant and can take a minute or two.</li>
+  <li><strong>Apple, speech recognition:</strong> when transcribing audio, the system may process it on Apple's servers, depending on your device and language. The app requests Spanish transcription. Apple's <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> applies.</li>
+  <li><strong>Apple, iCloud:</strong> only if you leave sync on (section 2).</li>
+  <li><strong>YouTube (Google):</strong> when you request a video's transcript, the app sends YouTube the video identifier taken from your link. YouTube also receives your IP address, as in any internet connection. This is the only network connection the app makes on its own. <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> applies.</li>
 </ul>
-<p>If you just changed the switch, the change only takes effect the next time you open the app, so fully close it and reopen it.</p>
-</details>
+<p>The app uses two open-source libraries that run inside the device, SwiftMath (formulas) and ZIPFoundation (.apkg import), and neither sends data to third parties.</p>
 
-<details>
-<summary>I deleted the app and lost my cards</summary>
-<p>If you had iCloud sync on before deleting, your data is still in your iCloud account: reinstalling the app and signing in with the same Apple Account should bring it back. If iCloud sync was off, the data only lived on that device and there's no way to recover it.</p>
-</details>
+<h2>6. Retention, children, your rights and contact</h2>
+<p><strong>Retention and deletion.</strong> Your data stays until you delete it. You can delete cards and decks inside the app, or archive a deck to hide it without deleting it. Uninstalling the app removes what is stored on the device; what is in iCloud is deleted from your device's iCloud settings.</p>
+<p><strong>Your rights.</strong> Because the developer neither receives nor stores your data, there is no information about you to access, correct or delete. You have full control from the app and from your device settings. This policy is governed by the laws of the Republic of Panama.</p>
+<p><strong>Children.</strong> SmartCardStudy is not directed to children under 13 and does not collect personal data from anyone, including children.</p>
+<p><strong>Changes to this policy.</strong> If the app changes how it handles data, we will update this policy and the date at the top. Significant changes will be noted in the App Store release notes.</p>
+<p><strong>Contact.</strong> For privacy questions, write to <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
 
-<h3>Decks and review</h3>
+</section>
 
-<details>
-<summary>How do I import my Anki decks?</summary>
-<p>On the Decks screen, tap the + button (top left) &gt; "Import from Anki (.apkg)" and pick the file exported from Anki. The same option is in Settings. Your content and study progress are imported; audio and images embedded in Anki cards aren't imported yet.</p>
-</details>
+<!-- ============================ 中文 ============================ -->
+<section id="zh" lang="zh" hidden>
 
-<details>
-<summary>How do I study all my decks at once?</summary>
-<p>At the top of the Decks screen, the "Due today" card has a "Study all" button: it reviews everything due across all your decks in one session, alternating between them. To pick only some decks, use "Mixed session".</p>
-</details>
+<h2 style="margin-top:0">摘要</h2>
+<div class="summary">
+  <p>SmartCardStudy 不会收集、出售或共享个人数据：您的卡组和卡片保存在您的设备上，如您开启，也会保存在您自己的 iCloud 中。</p>
+  <ul>
+    <li>没有账户，也无需登录。</li>
+    <li>没有分析、广告或第三方追踪。</li>
+    <li>AI 卡片生成通过 Apple 智能在您的设备上运行；您的内容不会发送到开发者的任何服务器。</li>
+    <li>开发者 Javier Pineda（Level 18）没有自有服务器，也无法访问您的内容。</li>
+  </ul>
+</div>
+<p>本政策适用于 iPhone 和 iPad 版 SmartCardStudy 应用 1.0 版。</p>
 
-<details>
-<summary>What do the times under each rating button mean?</summary>
-<p>They show when the card will come back depending on your choice: "Good · 3d" means you'll see it again in 3 days. "Again" shows it once more a few cards later in the same session, so you review it before you finish.</p>
-</details>
-
-<details>
-<summary>Why isn't a card showing up when it should be due?</summary>
-<p>Check this:</p>
+<h2>1. 应用处理的数据及其存储位置</h2>
+<p>您在 SmartCardStudy 中创建的所有信息都保存在 iPhone 或 iPad 的本地存储中。开发者不会收到这些信息。</p>
 <ul>
-  <li>That it isn't hidden from review: in the deck, open "Organize cards", tap ••• on the card and choose "Return to review".</li>
-  <li>That its deck isn't archived (Settings &gt; "Archived decks").</li>
-  <li>If you're using a mixed session with "Review priority cards only", only starred cards appear.</li>
+  <li><strong>学习内容：</strong>卡组、卡片（问题、答案、标签、优先星标以及是否从复习中隐藏）和卡片类型。</li>
+  <li><strong>复习记录：</strong>每次复习的评分、日期、作答时间，以及间隔重复算法（FSRS 或 SM2）的数值。仅用于安排您之后的复习。</li>
+  <li><strong>设置：</strong>自定义手势、每日提醒时间、番茄钟时长、高级搜索、iCloud 偏好以及是否已看过欢迎页面。</li>
+  <li><strong>Apple Pencil 绘图：</strong>复习时在卡片上书写的内容不会被保存，切换到下一张卡片时即被丢弃。</li>
 </ul>
-<p>If you already reviewed it today, it comes back on its scheduled date. To review it anyway, use "Review all again" at the end of the session.</p>
-</details>
+<p>我们不会索取您的姓名、电子邮件、电话、位置、联系人或广告标识符，应用也不包含任何分析、广告或社交网络 SDK。</p>
 
-<details>
-<summary>How do I undo a rating I gave by mistake?</summary>
-<p>During review, tap the curved arrow at the top right (or ⌘Z with a keyboard on iPad). It keeps up to 20 steps of history. That history is lost when you close the app, so undo before leaving the study session.</p>
-</details>
-
-<h3>Notifications</h3>
-
-<details>
-<summary>I'm not getting my daily reminder</summary>
-<p>Check Settings &gt; Notifications &gt; SmartCardStudy to make sure notifications are allowed, and inside the app, Settings (the gear) &gt; "Daily reminder", to make sure it's turned on at the time you want. If your iPhone is in Do Not Disturb or a Focus mode at that time, it can still be silenced.</p>
-</details>
-
-<h2>Before you email me</h2>
-<p>If you're reporting a bug, it helps a lot if you include:</p>
+<h2>2. iCloud 同步（可选）</h2>
+<p>SmartCardStudy 可以通过 Apple 的 iCloud 技术 CloudKit，在您的私有数据库中跨设备同步数据。</p>
 <ul>
-  <li>What you were doing when it happened</li>
-  <li>iPhone or iPad model and iOS version</li>
-  <li>A screenshot, if applicable</li>
+  <li><strong>同步内容：</strong>卡组、卡片、卡片类型和复习记录。</li>
+  <li><strong>谁能看到：</strong>只有您，通过您的 Apple 账户。开发者无法访问您的私有 iCloud 数据库。</li>
+  <li><strong>如何控制：</strong>“与 iCloud 同步”开关位于设置（卡组页面的齿轮图标）中的“同步与 AI”部分，默认开启。更改会在您下次打开应用时生效。</li>
+  <li><strong>如果关闭：</strong>您的数据仍保留在设备上，但不再上传。已在 iCloud 中的数据会一直保留，直到您在设备的 iCloud 设置中将其删除。</li>
 </ul>
+<p>Apple 根据其<a href="https://www.apple.com/legal/privacy/">隐私政策</a>处理这些数据。CloudKit 还会使用 Apple 的通知来告知应用有新的更改；开发者不运营任何通知服务器。</p>
+
+<h2>3. 设备端 AI 与您导入的内容</h2>
+<p>AI 卡片由 Apple 智能（系统模型）直接在您的设备上生成，无需联网。您导入的任何文字、PDF、音频、图片或主题都不会发送到开发者的服务器或外部 AI 提供商。</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>来源</th><th>处理方式</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>在设备上使用 PDFKit 提取文字。最大 5.1 MB。</td></tr>
+    <tr><td>图片</td><td>您通过系统选择器选择一张照片，应用只会收到这张照片。文字通过 Apple 的 OCR（Vision）在设备上识别。</td></tr>
+    <tr><td>音频（.m4a、.mp3、.wav、.caf）</td><td>使用 Apple 的语音识别转写（见第 5 节）。</td></tr>
+    <tr><td>YouTube</td><td>下载视频的公开字幕（见第 5 节）。</td></tr>
+    <tr><td>主题</td><td>您输入一个主题，AI 根据自身知识在设备上生成卡片。不上传任何资料。</td></tr>
+  </tbody>
+</table>
+</div>
+<p>应用不会保留您文件的副本，只保留生成的卡片，您可以编辑或删除它们。AI 生成的卡片可能有错误，请在学习前检查。</p>
+
+<h2>4. 应用请求的权限</h2>
+<p>SmartCardStudy 只请求两项权限，并且只在您使用需要该权限的功能时才会请求。您可以在系统设置中撤销。</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>权限</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td>语音识别</td><td>转写您导入的语音备忘录或 MP3，以便生成卡片。应用不会使用麦克风录音。</td></tr>
+    <tr><td>通知</td><td>发送每日学习提醒。这是在您设备上按您选择的时间安排的本地通知。</td></tr>
+  </tbody>
+</table>
+</div>
+<p>照片通过系统选择器选择，不会让应用访问您的整个图库。PDF 和音频文件通过文件选择器打开，只会读取您选择的文件。如果您连接游戏手柄，应用只用它来给卡片评分，不会保存有关它的任何信息。</p>
+
+<h2>5. 第三方服务</h2>
+<p>SmartCardStudy 不会将您的信息发送到自有服务。以下是仅有的涉及第三方的功能：</p>
+<ul>
+  <li><strong>Apple 语音识别：</strong>转写音频时，系统可能会根据您的设备和语言在 Apple 服务器上处理。应用请求以西班牙语转写。适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。</li>
+  <li><strong>Apple iCloud：</strong>仅在您保持同步开启时（第 2 节）。</li>
+  <li><strong>YouTube（Google）：</strong>请求视频字幕时，应用会把从您的链接中提取的视频标识符发送给 YouTube。与任何网络连接一样，YouTube 也会收到您的 IP 地址。这是应用自行发起的唯一网络连接。适用 <a href="https://policies.google.com/privacy">Google 隐私政策</a>。</li>
+</ul>
+<p>应用代码使用两个在设备内运行的开源库：SwiftMath（公式）和 ZIPFoundation（导入 .apkg 文件），它们都不会向第三方发送数据。</p>
+
+<h2>6. 保留、未成年人、您的权利与联系方式</h2>
+<p><strong>保留与删除。</strong>您的数据会一直保留，直到您删除。您可以在应用内删除卡片和卡组，或将卡组归档以隐藏而不删除。卸载应用会移除设备上保存的内容；iCloud 中的数据需在设备的 iCloud 设置中删除。</p>
+<p><strong>您的权利。</strong>由于开发者不接收也不存储您的数据，因此没有可供查询、更正或删除的您的信息。您可以通过应用和设备设置完全掌控。本政策受巴拿马共和国法律管辖。</p>
+<p><strong>未成年人。</strong>SmartCardStudy 并非面向 13 岁以下儿童，也不会收集任何人（包括未成年人）的个人数据。</p>
+<p><strong>本政策的变更。</strong>如果应用处理数据的方式发生变化，我们会更新本政策和顶部的日期。重要变更会在 App Store 的更新说明中告知。</p>
+<p><strong>联系方式。</strong>如有隐私方面的疑问，请写信至 <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>。</p>
+
+</section>
+
+<!-- ============================ 日本語 ============================ -->
+<section id="ja" lang="ja" hidden>
+
+<h2 style="margin-top:0">概要</h2>
+<div class="summary">
+  <p>SmartCardStudy は個人データを収集、販売、共有しません。デッキとカードはお使いのデバイス内と、オンにした場合はお客様自身の iCloud に保存されます。</p>
+  <ul>
+    <li>アカウントやサインインはありません。</li>
+    <li>アナリティクス、広告、サードパーティによるトラッキングはありません。</li>
+    <li>AI によるカード作成は Apple Intelligence でデバイス上で行われ、内容が開発者のサーバーに送られることはありません。</li>
+    <li>開発者の Javier Pineda（Level 18）は独自のサーバーを持たず、お客様の内容にアクセスできません。</li>
+  </ul>
+</div>
+<p>本ポリシーは iPhone および iPad 用 SmartCardStudy アプリのバージョン 1.0 に適用されます。</p>
+
+<h2>1. アプリが扱うデータとその保存場所</h2>
+<p>SmartCardStudy で作成した情報はすべて iPhone または iPad のローカルストレージに保存されます。開発者が受け取ることはありません。</p>
+<ul>
+  <li><strong>学習内容：</strong>デッキ、カード（問題、答え、タグ、優先のスター、復習から非表示かどうか）、カードタイプ。</li>
+  <li><strong>復習履歴：</strong>各復習の評価、日付、回答時間、間隔反復アルゴリズム（FSRS または SM2）の値。次回の復習を予定するためだけに使います。</li>
+  <li><strong>設定：</strong>カスタムジェスチャー、毎日のリマインダーの時刻、ポモドーロの時間、詳細検索、iCloud の設定、ようこそ画面を見たかどうか。</li>
+  <li><strong>Apple Pencil の描画：</strong>復習中にカードに書いた内容は保存されず、次のカードに進むと破棄されます。</li>
+</ul>
+<p>お名前、メールアドレス、電話番号、位置情報、連絡先、広告識別子は求めません。アプリにはアナリティクス、広告、SNS の SDK は含まれていません。</p>
+
+<h2>2. iCloud 同期（任意）</h2>
+<p>SmartCardStudy は、Apple の iCloud 技術である CloudKit を使い、お客様のプライベートデータベースでデバイス間のデータを同期できます。</p>
+<ul>
+  <li><strong>同期される内容：</strong>デッキ、カード、カードタイプ、復習履歴。</li>
+  <li><strong>見られる人：</strong>お客様の Apple アカウントを持つお客様のみ。開発者はお客様のプライベートな iCloud データベースにアクセスできません。</li>
+  <li><strong>管理方法：</strong>「iCloud と同期」スイッチは設定（デッキ画面の歯車）の「同期と AI」にあり、初期設定でオンです。変更は次にアプリを開いたときに反映されます。</li>
+  <li><strong>オフにした場合：</strong>データはデバイスに残り、アップロードされなくなります。すでに iCloud にあるデータは、デバイスの iCloud 設定で削除するまで残ります。</li>
+</ul>
+<p>Apple はこのデータを同社の<a href="https://www.apple.com/legal/privacy/">プライバシーポリシー</a>に従って処理します。CloudKit は変更があることをアプリに知らせるために Apple の通知も使用します。開発者は通知サーバーを運用していません。</p>
+
+<h2>3. デバイス上の AI とインポートする内容</h2>
+<p>AI カードは Apple Intelligence（システムのモデル）によってデバイス上で直接、インターネット接続なしで作成されます。インポートしたテキスト、PDF、音声、画像、テーマが開発者のサーバーや外部の AI プロバイダに送られることはありません。</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>ソース</th><th>処理方法</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>PDFKit でデバイス上でテキストを抽出します。最大 5.1 MB。</td></tr>
+    <tr><td>画像</td><td>システムのピッカーで写真を選ぶと、アプリはその写真だけを受け取ります。テキストは Apple の OCR（Vision）でデバイス上で読み取ります。</td></tr>
+    <tr><td>音声（.m4a、.mp3、.wav、.caf）</td><td>Apple の音声認識で文字起こしします（第 5 項参照）。</td></tr>
+    <tr><td>YouTube</td><td>動画の公開字幕をダウンロードします（第 5 項参照）。</td></tr>
+    <tr><td>テーマ</td><td>テーマを入力すると、AI が自身の知識からデバイス上でカードを作ります。資料はアップロードされません。</td></tr>
+  </tbody>
+</table>
+</div>
+<p>アプリはファイルのコピーを保持せず、作成されたカードだけを保存します。カードは編集・削除できます。AI が作ったカードには誤りが含まれることがあるため、学習前に確認してください。</p>
+
+<h2>4. アプリが求めるアクセス許可</h2>
+<p>SmartCardStudy が求める許可は 2 つだけで、それぞれ必要な機能を使うときにのみ求めます。システムの設定で取り消せます。</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>許可</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td>音声認識</td><td>インポートしたボイスメモや MP3 を文字起こしして、カードにするため。アプリがマイクで録音することはありません。</td></tr>
+    <tr><td>通知</td><td>毎日の学習リマインダーを送るため。お客様が選んだ時刻にデバイス上で予約されるローカル通知です。</td></tr>
+  </tbody>
+</table>
+</div>
+<p>写真はシステムのピッカーで選ぶため、アプリがライブラリ全体にアクセスすることはありません。PDF と音声ファイルはファイルピッカーで開き、選んだファイルだけを読み込みます。ゲームコントローラを接続した場合、アプリはカードの評価にのみ使用し、コントローラに関する情報は保存しません。</p>
+
+<h2>5. サードパーティのサービス</h2>
+<p>SmartCardStudy はお客様の情報を独自のサービスに送りません。サードパーティが関わる機能は次のものだけです：</p>
+<ul>
+  <li><strong>Apple の音声認識：</strong>音声を文字起こしする際、デバイスと言語によってはシステムが Apple のサーバーで処理する場合があります。アプリはスペイン語での文字起こしを要求します。<a href="https://www.apple.com/legal/privacy/">Apple のプライバシーポリシー</a>が適用されます。</li>
+  <li><strong>Apple の iCloud：</strong>同期をオンにしている場合のみ（第 2 項）。</li>
+  <li><strong>YouTube（Google）：</strong>動画の字幕を取得する際、アプリはリンクから取り出した動画の識別子を YouTube に送ります。通常のインターネット接続と同様、YouTube はお客様の IP アドレスも受け取ります。これはアプリが自ら行う唯一のネットワーク接続です。<a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>が適用されます。</li>
+</ul>
+<p>アプリのコードは、デバイス内で動作する 2 つのオープンソースライブラリ、SwiftMath（数式）と ZIPFoundation（.apkg ファイルのインポート）を使用しており、どちらも第三者にデータを送りません。</p>
+
+<h2>6. 保持、未成年者、お客様の権利、お問い合わせ</h2>
+<p><strong>保持と削除。</strong>データはお客様が削除するまで保持されます。アプリ内でカードやデッキを削除したり、デッキをアーカイブして削除せずに非表示にしたりできます。アプリを削除するとデバイスに保存された内容は消去されます。iCloud のデータはデバイスの iCloud 設定から削除してください。</p>
+<p><strong>お客様の権利。</strong>開発者はデータを受け取らず保存もしないため、照会、訂正、削除の対象となるお客様の情報を持っていません。アプリとデバイスの設定から完全に管理できます。本ポリシーはパナマ共和国の法律に準拠します。</p>
+<p><strong>未成年者。</strong>SmartCardStudy は 13 歳未満の子どもを対象としておらず、未成年者を含め誰の個人データも収集しません。</p>
+<p><strong>本ポリシーの変更。</strong>アプリのデータの扱い方が変わった場合は、本ポリシーと上部の日付を更新します。重要な変更は App Store のアップデート説明でお知らせします。</p>
+<p><strong>お問い合わせ。</strong>プライバシーに関するご質問は <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a> までお送りください。</p>
+
+</section>
+
+<!-- ============================ 한국어 ============================ -->
+<section id="ko" lang="ko" hidden>
+
+<h2 style="margin-top:0">요약</h2>
+<div class="summary">
+  <p>SmartCardStudy는 개인정보를 수집, 판매, 공유하지 않습니다. 덱과 카드는 사용자의 기기에, 켜 둔 경우 사용자 본인의 iCloud에 저장됩니다.</p>
+  <ul>
+    <li>계정이나 로그인이 없습니다.</li>
+    <li>분석, 광고, 제3자 추적이 없습니다.</li>
+    <li>AI 카드 생성은 Apple Intelligence로 기기에서 실행되며, 사용자의 콘텐츠는 개발자 서버로 전송되지 않습니다.</li>
+    <li>개발자 Javier Pineda(Level 18)는 자체 서버가 없으며 사용자의 콘텐츠에 접근할 수 없습니다.</li>
+  </ul>
+</div>
+<p>본 방침은 iPhone 및 iPad용 SmartCardStudy 앱 버전 1.0에 적용됩니다.</p>
+
+<h2>1. 앱이 다루는 데이터와 저장 위치</h2>
+<p>SmartCardStudy에서 만드는 모든 정보는 iPhone 또는 iPad의 로컬 저장소에 저장됩니다. 개발자는 이를 받지 않습니다.</p>
+<ul>
+  <li><strong>학습 콘텐츠:</strong> 덱, 카드(질문, 답, 태그, 우선순위 별표, 복습에서 숨김 여부), 카드 유형.</li>
+  <li><strong>복습 기록:</strong> 각 복습의 평가, 날짜, 응답 시간, 간격 반복 알고리즘(FSRS 또는 SM2)의 값. 다음 복습 일정을 잡는 데만 사용됩니다.</li>
+  <li><strong>설정:</strong> 사용자 지정 제스처, 일일 리마인더 시간, 뽀모도로 시간, 고급 검색, iCloud 설정, 환영 화면을 봤는지 여부.</li>
+  <li><strong>Apple Pencil 필기:</strong> 복습 중 카드 위에 쓴 내용은 저장되지 않으며 다음 카드로 넘어가면 삭제됩니다.</li>
+</ul>
+<p>이름, 이메일, 전화번호, 위치, 연락처, 광고 식별자를 요청하지 않으며, 앱에는 분석, 광고, 소셜 미디어 SDK가 없습니다.</p>
+
+<h2>2. iCloud 동기화(선택 사항)</h2>
+<p>SmartCardStudy는 Apple의 iCloud 기술인 CloudKit을 사용해 사용자의 비공개 데이터베이스에서 기기 간 데이터를 동기화할 수 있습니다.</p>
+<ul>
+  <li><strong>동기화되는 항목:</strong> 덱, 카드, 카드 유형, 복습 기록.</li>
+  <li><strong>볼 수 있는 사람:</strong> 사용자의 Apple 계정을 가진 사용자 본인뿐입니다. 개발자는 비공개 iCloud 데이터베이스에 접근할 수 없습니다.</li>
+  <li><strong>관리 방법:</strong> 'iCloud와 동기화' 스위치는 설정(덱 화면의 톱니바퀴)의 '동기화 및 AI' 섹션에 있으며 기본적으로 켜져 있습니다. 변경 사항은 다음에 앱을 열 때 적용됩니다.</li>
+  <li><strong>끄는 경우:</strong> 데이터는 기기에 남아 있고 더 이상 업로드되지 않습니다. 이미 iCloud에 있는 데이터는 기기의 iCloud 설정에서 삭제할 때까지 남아 있습니다.</li>
+</ul>
+<p>Apple은 이 데이터를 <a href="https://www.apple.com/legal/privacy/">개인정보 처리방침</a>에 따라 처리합니다. CloudKit은 변경 사항이 있음을 앱에 알리기 위해 Apple 알림도 사용하며, 개발자는 알림 서버를 운영하지 않습니다.</p>
+
+<h2>3. 기기 내 AI와 가져오는 콘텐츠</h2>
+<p>AI 카드는 Apple Intelligence(시스템 모델)로 기기에서 직접, 인터넷 연결 없이 생성됩니다. 가져온 텍스트, PDF, 오디오, 이미지, 주제는 개발자 서버나 외부 AI 제공업체로 전송되지 않습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>소스</th><th>처리 방식</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>PDFKit으로 기기에서 텍스트를 추출합니다. 최대 5.1MB.</td></tr>
+    <tr><td>이미지</td><td>시스템 선택기로 사진을 고르면 앱은 그 사진만 받습니다. 텍스트는 Apple의 OCR(Vision)로 기기에서 읽습니다.</td></tr>
+    <tr><td>오디오(.m4a, .mp3, .wav, .caf)</td><td>Apple 음성 인식으로 받아쓰기합니다(5항 참조).</td></tr>
+    <tr><td>YouTube</td><td>동영상의 공개 자막을 내려받습니다(5항 참조).</td></tr>
+    <tr><td>주제</td><td>주제를 입력하면 AI가 자체 지식으로 기기에서 카드를 만듭니다. 자료는 업로드되지 않습니다.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>앱은 파일 사본을 보관하지 않고 생성된 카드만 보관하며, 카드는 수정하거나 삭제할 수 있습니다. AI가 만든 카드에는 오류가 있을 수 있으니 학습 전에 검토하세요.</p>
+
+<h2>4. 앱이 요청하는 권한</h2>
+<p>SmartCardStudy는 두 가지 권한만 요청하며, 각각 해당 기능을 사용할 때만 요청합니다. 시스템 설정에서 철회할 수 있습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>권한</th><th>용도</th></tr></thead>
+  <tbody>
+    <tr><td>음성 인식</td><td>가져온 음성 메모나 MP3를 받아써서 카드로 만들기 위해. 앱은 마이크로 녹음하지 않습니다.</td></tr>
+    <tr><td>알림</td><td>일일 학습 리마인더를 보내기 위해. 사용자가 고른 시간에 기기에서 예약되는 로컬 알림입니다.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>사진은 시스템 선택기로 고르므로 앱이 전체 보관함에 접근하지 않습니다. PDF와 오디오 파일은 파일 선택기로 열며, 고른 파일만 읽습니다. 게임 컨트롤러를 연결하면 앱은 카드 평가에만 사용하고 컨트롤러에 관한 정보는 저장하지 않습니다.</p>
+
+<h2>5. 제3자 서비스</h2>
+<p>SmartCardStudy는 사용자의 정보를 자체 서비스로 보내지 않습니다. 제3자가 관련된 기능은 다음뿐입니다:</p>
+<ul>
+  <li><strong>Apple 음성 인식:</strong> 오디오를 받아쓸 때 기기와 언어에 따라 시스템이 Apple 서버에서 처리할 수 있습니다. 앱은 스페인어 받아쓰기를 요청합니다. <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>이 적용됩니다.</li>
+  <li><strong>Apple iCloud:</strong> 동기화를 켜 둔 경우에만(2항).</li>
+  <li><strong>YouTube(Google):</strong> 동영상 자막을 요청하면 앱은 링크에서 추출한 동영상 식별자를 YouTube로 보냅니다. 여느 인터넷 연결과 마찬가지로 YouTube는 IP 주소도 받습니다. 이것이 앱이 스스로 하는 유일한 네트워크 연결입니다. <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.</li>
+</ul>
+<p>앱 코드는 기기 안에서 작동하는 두 오픈소스 라이브러리, SwiftMath(수식)와 ZIPFoundation(.apkg 파일 가져오기)을 사용하며, 둘 다 제3자에게 데이터를 보내지 않습니다.</p>
+
+<h2>6. 보관, 미성년자, 사용자의 권리 및 문의</h2>
+<p><strong>보관 및 삭제.</strong> 데이터는 사용자가 삭제할 때까지 보관됩니다. 앱에서 카드와 덱을 삭제하거나, 덱을 보관하여 삭제하지 않고 숨길 수 있습니다. 앱을 삭제하면 기기에 저장된 내용이 지워지며, iCloud에 있는 데이터는 기기의 iCloud 설정에서 삭제합니다.</p>
+<p><strong>사용자의 권리.</strong> 개발자는 데이터를 받거나 저장하지 않으므로 열람, 정정, 삭제할 사용자 정보가 없습니다. 앱과 기기 설정에서 완전히 관리할 수 있습니다. 본 방침은 파나마 공화국 법률을 따릅니다.</p>
+<p><strong>미성년자.</strong> SmartCardStudy는 13세 미만 아동을 대상으로 하지 않으며, 미성년자를 포함해 누구의 개인정보도 수집하지 않습니다.</p>
+<p><strong>본 방침의 변경.</strong> 앱의 데이터 처리 방식이 바뀌면 본 방침과 상단의 날짜를 업데이트합니다. 중요한 변경은 App Store 업데이트 설명에서 안내합니다.</p>
+<p><strong>문의.</strong> 개인정보 관련 문의는 <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>으로 보내 주세요.</p>
+
+</section>
+
+<!-- ============================ FRANÇAIS ============================ -->
+<section id="fr" lang="fr" hidden>
+
+<h2 style="margin-top:0">Résumé</h2>
+<div class="summary">
+  <p>SmartCardStudy ne collecte, ne vend ni ne partage de données personnelles : vos paquets et vos cartes restent sur votre appareil et, si vous l'activez, dans votre propre iCloud.</p>
+  <ul>
+    <li>Pas de compte ni de connexion.</li>
+    <li>Pas d'outil d'analyse, de publicité ni de suivi par des tiers.</li>
+    <li>La génération de cartes par IA s'exécute sur votre appareil avec Apple Intelligence ; votre contenu n'est jamais envoyé à un serveur du développeur.</li>
+    <li>Le développeur, Javier Pineda (Level 18), n'a aucun serveur et aucun accès à votre contenu.</li>
+  </ul>
+</div>
+<p>Cette politique s'applique à l'app SmartCardStudy pour iPhone et iPad, version 1.0.</p>
+
+<h2>1. Données traitées par l'app et emplacement</h2>
+<p>Tout ce que vous créez dans SmartCardStudy est stocké localement sur votre iPhone ou iPad. Le développeur ne le reçoit pas.</p>
+<ul>
+  <li><strong>Contenu d'étude :</strong> paquets, cartes (question, réponse, étiquettes, étoile de priorité et masquage de la révision) et types de cartes.</li>
+  <li><strong>Historique de révision :</strong> la note, la date et le temps de réponse de chaque révision, ainsi que les valeurs de l'algorithme de répétition espacée (FSRS ou SM2). Il sert uniquement à planifier vos prochaines révisions.</li>
+  <li><strong>Réglages :</strong> gestes personnalisés, heure du rappel quotidien, durées du Pomodoro, recherche avancée, préférence iCloud et affichage ou non des écrans d'accueil.</li>
+  <li><strong>Dessins à l'Apple Pencil :</strong> ce que vous écrivez sur une carte pendant la révision n'est pas enregistré et disparaît quand vous passez à la carte suivante.</li>
+</ul>
+<p>Nous ne demandons ni nom, ni e-mail, ni téléphone, ni position, ni contacts, et n'utilisons pas d'identifiant publicitaire. L'app ne contient aucun SDK d'analyse, de publicité ou de réseaux sociaux.</p>
+
+<h2>2. Synchronisation iCloud (facultative)</h2>
+<p>SmartCardStudy peut synchroniser vos données entre vos appareils avec CloudKit, la technologie iCloud d'Apple, dans votre base de données privée.</p>
+<ul>
+  <li><strong>Ce qui est synchronisé :</strong> paquets, cartes, types de cartes et historique de révision.</li>
+  <li><strong>Qui peut le voir :</strong> vous seul, avec votre compte Apple. Le développeur ne peut pas accéder à votre base de données iCloud privée.</li>
+  <li><strong>Comment la contrôler :</strong> l'interrupteur « Synchroniser avec iCloud » se trouve dans Réglages (l'engrenage de l'écran Paquets), section « Synchronisation et IA », et il est activé par défaut. Le changement prend effet à la prochaine ouverture de l'app.</li>
+  <li><strong>Si vous la désactivez :</strong> vos données restent sur l'appareil et ne sont plus envoyées. Ce qui est déjà dans iCloud y reste jusqu'à ce que vous le supprimiez dans les réglages iCloud de votre appareil.</li>
+</ul>
+<p>Apple traite ces données conformément à sa <a href="https://www.apple.com/legal/privacy/">Politique de confidentialité</a>. CloudKit utilise aussi les notifications d'Apple pour signaler à l'app que des changements sont disponibles ; le développeur n'exploite aucun serveur de notifications.</p>
+
+<h2>3. IA sur l'appareil et contenu importé</h2>
+<p>Les cartes par IA sont générées avec Apple Intelligence (le modèle du système), directement sur votre appareil et sans connexion Internet. Aucun texte, PDF, audio, image ou thème que vous importez n'est envoyé à un serveur du développeur ni à un fournisseur d'IA externe.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Source</th><th>Traitement</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>Le texte est extrait sur l'appareil avec PDFKit. 5,1 Mo maximum.</td></tr>
+    <tr><td>Image</td><td>Vous choisissez une photo avec le sélecteur du système et l'app ne reçoit que cette photo. Le texte est lu sur l'appareil avec l'OCR d'Apple (Vision).</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Transcrit avec la reconnaissance vocale d'Apple (voir section 5).</td></tr>
+    <tr><td>YouTube</td><td>Les sous-titres publics de la vidéo sont téléchargés (voir section 5).</td></tr>
+    <tr><td>Thème</td><td>Vous saisissez un thème et l'IA crée les cartes à partir de ses propres connaissances, sur l'appareil. Aucun document n'est envoyé.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>L'app ne conserve aucune copie de vos fichiers, seulement les cartes générées, que vous pouvez modifier ou supprimer. Les cartes créées par l'IA peuvent contenir des erreurs ; vérifiez-les avant d'étudier.</p>
+
+<h2>4. Autorisations demandées</h2>
+<p>SmartCardStudy ne demande que deux autorisations, chacune uniquement lorsque vous utilisez la fonction qui en a besoin. Vous pouvez les retirer dans les Réglages du système.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Autorisation</th><th>Utilisation</th></tr></thead>
+  <tbody>
+    <tr><td>Reconnaissance vocale</td><td>Transcrire un mémo vocal ou un MP3 que vous importez pour le transformer en cartes. L'app n'enregistre pas avec le micro.</td></tr>
+    <tr><td>Notifications</td><td>Envoyer le rappel d'étude quotidien. C'est une notification locale programmée sur votre appareil à l'heure de votre choix.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Les photos sont choisies avec le sélecteur du système, qui ne donne pas accès à toute votre photothèque. Les fichiers PDF et audio s'ouvrent avec le sélecteur de fichiers et seul le fichier choisi est lu. Si vous connectez une manette de jeu, l'app l'utilise uniquement pour noter les cartes et ne conserve aucune information la concernant.</p>
+
+<h2>5. Services tiers</h2>
+<p>SmartCardStudy n'envoie pas vos informations à des services qui lui appartiennent. Voici les seules fonctions qui impliquent des tiers :</p>
+<ul>
+  <li><strong>Apple, reconnaissance vocale :</strong> lors de la transcription d'un audio, le système peut le traiter sur les serveurs d'Apple selon votre appareil et la langue. L'app demande une transcription en espagnol. La <a href="https://www.apple.com/legal/privacy/">Politique de confidentialité d'Apple</a> s'applique.</li>
+  <li><strong>Apple, iCloud :</strong> uniquement si vous laissez la synchronisation activée (section 2).</li>
+  <li><strong>YouTube (Google) :</strong> quand vous demandez la transcription d'une vidéo, l'app envoie à YouTube l'identifiant de la vidéo extrait de votre lien. YouTube reçoit aussi votre adresse IP, comme pour toute connexion Internet. C'est la seule connexion réseau que l'app établit d'elle-même. La <a href="https://policies.google.com/privacy">Politique de confidentialité de Google</a> s'applique.</li>
+</ul>
+<p>L'app utilise deux bibliothèques open source qui fonctionnent sur l'appareil, SwiftMath (formules) et ZIPFoundation (import de fichiers .apkg), et aucune n'envoie de données à des tiers.</p>
+
+<h2>6. Conservation, mineurs, vos droits et contact</h2>
+<p><strong>Conservation et suppression.</strong> Vos données restent jusqu'à ce que vous les supprimiez. Vous pouvez supprimer des cartes et des paquets dans l'app, ou archiver un paquet pour le masquer sans le supprimer. Désinstaller l'app efface ce qui est stocké sur l'appareil ; ce qui est dans iCloud se supprime depuis les réglages iCloud de votre appareil.</p>
+<p><strong>Vos droits.</strong> Comme le développeur ne reçoit ni ne stocke vos données, il ne détient aucune information vous concernant à consulter, rectifier ou supprimer. Vous avez le contrôle total depuis l'app et les réglages de votre appareil. Cette politique est régie par les lois de la République du Panama.</p>
+<p><strong>Mineurs.</strong> SmartCardStudy ne s'adresse pas aux enfants de moins de 13 ans et ne collecte de données personnelles sur personne, mineurs compris.</p>
+<p><strong>Modifications de cette politique.</strong> Si l'app change sa façon de traiter les données, nous mettrons à jour cette politique et la date en haut. Les changements importants seront signalés dans les notes de mise à jour de l'App Store.</p>
+<p><strong>Contact.</strong> Pour toute question sur la confidentialité, écrivez à <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+
+</section>
+
+<!-- ============================ DEUTSCH ============================ -->
+<section id="de" lang="de" hidden>
+
+<h2 style="margin-top:0">Zusammenfassung</h2>
+<div class="summary">
+  <p>SmartCardStudy sammelt, verkauft oder teilt keine personenbezogenen Daten: Deine Stapel und Karten bleiben auf deinem Gerät und, wenn du es aktivierst, in deiner eigenen iCloud.</p>
+  <ul>
+    <li>Keine Konten, keine Anmeldung.</li>
+    <li>Keine Analysen, keine Werbung, kein Tracking durch Dritte.</li>
+    <li>Die KI-Kartenerstellung läuft mit Apple Intelligence auf deinem Gerät; deine Inhalte werden nie an einen Server des Entwicklers gesendet.</li>
+    <li>Der Entwickler, Javier Pineda (Level 18), betreibt keine Server und hat keinen Zugriff auf deine Inhalte.</li>
+  </ul>
+</div>
+<p>Diese Erklärung gilt für die App SmartCardStudy für iPhone und iPad, Version 1.0.</p>
+
+<h2>1. Welche Daten die App verarbeitet und wo sie liegen</h2>
+<p>Alles, was du in SmartCardStudy erstellst, wird lokal auf deinem iPhone oder iPad gespeichert. Der Entwickler erhält es nicht.</p>
+<ul>
+  <li><strong>Lerninhalte:</strong> Stapel, Karten (Frage, Antwort, Tags, Prioritätsstern und ob sie von der Wiederholung ausgeblendet sind) und Kartentypen.</li>
+  <li><strong>Wiederholungsverlauf:</strong> Bewertung, Datum und Antwortzeit jeder Wiederholung sowie die Werte des Spaced-Repetition-Algorithmus (FSRS oder SM2). Er dient nur dazu, deine nächsten Wiederholungen zu planen.</li>
+  <li><strong>Einstellungen:</strong> eigene Gesten, Uhrzeit der täglichen Erinnerung, Pomodoro-Dauer, erweiterte Suche, iCloud-Einstellung und ob du die Willkommensbildschirme schon gesehen hast.</li>
+  <li><strong>Apple-Pencil-Zeichnungen:</strong> Was du während der Wiederholung auf eine Karte schreibst, wird nicht gespeichert und beim Wechsel zur nächsten Karte verworfen.</li>
+</ul>
+<p>Wir fragen nicht nach Name, E-Mail, Telefonnummer, Standort oder Kontakten und nutzen keine Werbe-IDs. Die App enthält keine Analyse-, Werbe- oder Social-Media-SDKs.</p>
+
+<h2>2. iCloud-Synchronisierung (optional)</h2>
+<p>SmartCardStudy kann deine Daten mit CloudKit, Apples iCloud-Technologie, in deiner privaten Datenbank zwischen deinen Geräten synchronisieren.</p>
+<ul>
+  <li><strong>Was synchronisiert wird:</strong> Stapel, Karten, Kartentypen und Wiederholungsverlauf.</li>
+  <li><strong>Wer es sehen kann:</strong> nur du, mit deinem Apple Account. Der Entwickler kann nicht auf deine private iCloud-Datenbank zugreifen.</li>
+  <li><strong>So steuerst du es:</strong> Der Schalter „Mit iCloud synchronisieren“ befindet sich in den Einstellungen (Zahnrad auf dem Bildschirm „Stapel“) im Abschnitt „Synchronisierung &amp; KI“ und ist standardmäßig aktiviert. Eine Änderung wird beim nächsten Öffnen der App wirksam.</li>
+  <li><strong>Wenn du sie deaktivierst:</strong> Deine Daten bleiben auf dem Gerät und werden nicht mehr hochgeladen. Was bereits in iCloud liegt, bleibt dort, bis du es in den iCloud-Einstellungen deines Geräts löschst.</li>
+</ul>
+<p>Apple verarbeitet diese Daten gemäß seiner <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie</a>. CloudKit nutzt außerdem Apple-Mitteilungen, um der App neue Änderungen zu melden; der Entwickler betreibt keinen Mitteilungsserver.</p>
+
+<h2>3. KI auf dem Gerät und importierte Inhalte</h2>
+<p>KI-Karten werden mit Apple Intelligence (dem Systemmodell) direkt auf deinem Gerät und ohne Internetverbindung erstellt. Kein Text, PDF, Audio, Bild oder Thema, das du importierst, wird an einen Server des Entwicklers oder an einen externen KI-Anbieter gesendet.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Quelle</th><th>Verarbeitung</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>Der Text wird auf dem Gerät mit PDFKit extrahiert. Maximal 5,1 MB.</td></tr>
+    <tr><td>Bild</td><td>Du wählst ein Foto mit der Systemauswahl, und die App erhält nur dieses Foto. Der Text wird auf dem Gerät mit Apples Texterkennung (Vision) gelesen.</td></tr>
+    <tr><td>Audio (.m4a, .mp3, .wav, .caf)</td><td>Wird mit Apples Spracherkennung transkribiert (siehe Abschnitt 5).</td></tr>
+    <tr><td>YouTube</td><td>Die öffentlichen Untertitel des Videos werden heruntergeladen (siehe Abschnitt 5).</td></tr>
+    <tr><td>Thema</td><td>Du gibst ein Thema ein, und die KI erstellt die Karten aus ihrem eigenen Wissen auf dem Gerät. Es wird kein Material hochgeladen.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Die App behält keine Kopie deiner Dateien, nur die erzeugten Karten, die du bearbeiten oder löschen kannst. KI-erstellte Karten können Fehler enthalten; prüfe sie vor dem Lernen.</p>
+
+<h2>4. Berechtigungen der App</h2>
+<p>SmartCardStudy fragt nur nach zwei Berechtigungen, jeweils erst wenn du die Funktion nutzt, die sie braucht. Du kannst sie in den Systemeinstellungen widerrufen.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead>
+  <tbody>
+    <tr><td>Spracherkennung</td><td>Ein importiertes Sprachmemo oder MP3 transkribieren, um daraus Karten zu machen. Die App nimmt nicht mit dem Mikrofon auf.</td></tr>
+    <tr><td>Mitteilungen</td><td>Die tägliche Lernerinnerung senden. Das ist eine lokale Mitteilung, die auf deinem Gerät zur gewählten Uhrzeit geplant wird.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Fotos werden mit der Systemauswahl gewählt, die der App keinen Zugriff auf deine gesamte Mediathek gibt. PDF- und Audiodateien werden über die Dateiauswahl geöffnet, und nur die gewählte Datei wird gelesen. Wenn du einen Gamecontroller verbindest, nutzt die App ihn nur zum Bewerten von Karten und speichert keine Informationen darüber.</p>
+
+<h2>5. Dienste Dritter</h2>
+<p>SmartCardStudy sendet deine Informationen nicht an eigene Dienste. Nur diese Funktionen betreffen Dritte:</p>
+<ul>
+  <li><strong>Apple, Spracherkennung:</strong> Beim Transkribieren von Audio kann das System es je nach Gerät und Sprache auf Apple-Servern verarbeiten. Die App fordert eine Transkription auf Spanisch an. Es gilt die <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</li>
+  <li><strong>Apple, iCloud:</strong> nur wenn du die Synchronisierung aktiviert lässt (Abschnitt 2).</li>
+  <li><strong>YouTube (Google):</strong> Wenn du das Transkript eines Videos anforderst, sendet die App YouTube die aus deinem Link entnommene Video-ID. YouTube erhält wie bei jeder Internetverbindung auch deine IP-Adresse. Das ist die einzige Netzwerkverbindung, die die App von sich aus herstellt. Es gilt die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</li>
+</ul>
+<p>Die App nutzt zwei Open-Source-Bibliotheken, die auf dem Gerät laufen, SwiftMath (Formeln) und ZIPFoundation (Import von .apkg-Dateien); keine davon sendet Daten an Dritte.</p>
+
+<h2>6. Aufbewahrung, Minderjährige, deine Rechte und Kontakt</h2>
+<p><strong>Aufbewahrung und Löschung.</strong> Deine Daten bleiben erhalten, bis du sie löschst. Du kannst Karten und Stapel in der App löschen oder einen Stapel archivieren, um ihn auszublenden, ohne ihn zu löschen. Beim Deinstallieren der App wird gelöscht, was auf dem Gerät gespeichert ist; was in iCloud liegt, löschst du in den iCloud-Einstellungen deines Geräts.</p>
+<p><strong>Deine Rechte.</strong> Da der Entwickler deine Daten weder erhält noch speichert, liegen ihm keine Informationen über dich vor, die abgefragt, berichtigt oder gelöscht werden könnten. Du hast über die App und die Geräteeinstellungen die volle Kontrolle. Diese Erklärung unterliegt den Gesetzen der Republik Panama.</p>
+<p><strong>Minderjährige.</strong> SmartCardStudy richtet sich nicht an Kinder unter 13 Jahren und erhebt von niemandem personenbezogene Daten, auch nicht von Minderjährigen.</p>
+<p><strong>Änderungen dieser Erklärung.</strong> Ändert die App die Art, wie sie Daten verarbeitet, aktualisieren wir diese Erklärung und das Datum oben. Wesentliche Änderungen werden in den Update-Hinweisen im App Store genannt.</p>
+<p><strong>Kontakt.</strong> Bei Fragen zum Datenschutz schreib an <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+
+</section>
+
+<!-- ============================ العربية ============================ -->
+<section id="ar" lang="ar" dir="rtl" hidden>
+
+<h2 style="margin-top:0">ملخص</h2>
+<div class="summary">
+  <p>لا يجمع SmartCardStudy بيانات شخصية ولا يبيعها ولا يشاركها: تبقى مجموعاتك وبطاقاتك على جهازك، وفي iCloud الخاص بك إن فعّلته.</p>
+  <ul>
+    <li>لا توجد حسابات ولا تسجيل دخول.</li>
+    <li>لا توجد تحليلات ولا إعلانات ولا تتبع من أطراف ثالثة.</li>
+    <li>يعمل إنشاء البطاقات بالذكاء الاصطناعي على جهازك باستخدام Apple Intelligence؛ ولا يُرسل محتواك إلى أي خادم تابع للمطور.</li>
+    <li>المطور، خافيير بينيدا (Javier Pineda) من Level 18، ليست لديه خوادم خاصة ولا وصول إلى محتواك.</li>
+  </ul>
+</div>
+<p>تنطبق هذه السياسة على تطبيق SmartCardStudy لأجهزة iPhone و iPad، الإصدار 1.0.</p>
+
+<h2>1. البيانات التي يتعامل معها التطبيق وأين تُحفظ</h2>
+<p>كل ما تنشئه في SmartCardStudy يُحفظ في التخزين المحلي لجهاز iPhone أو iPad. ولا يتلقاه المطور.</p>
+<ul>
+  <li><strong>محتوى الدراسة:</strong> المجموعات، والبطاقات (السؤال، والإجابة، والوسوم، ونجمة الأولوية، وما إذا كانت مخفية من المراجعة)، وأنواع البطاقات.</li>
+  <li><strong>سجل المراجعة:</strong> تقييم كل مراجعة وتاريخها ووقت الإجابة، وقيم خوارزمية التكرار المتباعد (FSRS أو SM2). ويُستخدم فقط لجدولة مراجعاتك القادمة.</li>
+  <li><strong>الإعدادات:</strong> الإيماءات المخصصة، ووقت التذكير اليومي، ومدد بومودورو، والبحث المتقدم، وتفضيل iCloud، وما إذا كنت قد شاهدت شاشات الترحيب.</li>
+  <li><strong>رسومات Apple Pencil:</strong> ما تكتبه على البطاقة أثناء المراجعة لا يُحفظ، ويُحذف عند الانتقال إلى البطاقة التالية.</li>
+</ul>
+<p>لا نطلب الاسم أو البريد الإلكتروني أو الهاتف أو الموقع أو جهات الاتصال أو معرّفات الإعلانات، ولا يحتوي التطبيق على حزم تطوير (SDK) للتحليلات أو الإعلانات أو الشبكات الاجتماعية.</p>
+
+<h2>2. المزامنة مع iCloud (اختيارية)</h2>
+<p>يمكن لـ SmartCardStudy مزامنة بياناتك بين أجهزتك باستخدام CloudKit، تقنية iCloud من Apple، في قاعدة بياناتك الخاصة.</p>
+<ul>
+  <li><strong>ما الذي يُزامَن:</strong> المجموعات، والبطاقات، وأنواع البطاقات، وسجل المراجعة.</li>
+  <li><strong>من يمكنه رؤيته:</strong> أنت فقط، بحساب Apple الخاص بك. لا يستطيع المطور الوصول إلى قاعدة بيانات iCloud الخاصة بك.</li>
+  <li><strong>كيف تتحكم بها:</strong> مفتاح «المزامنة مع iCloud» موجود في الإعدادات (الترس في شاشة المجموعات)، قسم «المزامنة والذكاء الاصطناعي»، وهو مفعّل افتراضيًا. يُطبَّق التغيير في المرة التالية التي تفتح فيها التطبيق.</li>
+  <li><strong>إذا أوقفتها:</strong> تبقى بياناتك على الجهاز وتتوقف عن الرفع. وما هو موجود في iCloud يبقى حتى تحذفه من إعدادات iCloud على جهازك.</li>
+</ul>
+<p>تعالج Apple هذه البيانات وفق <a href="https://www.apple.com/legal/privacy/">سياسة الخصوصية</a> الخاصة بها. ويستخدم CloudKit أيضًا إشعارات Apple لإبلاغ التطبيق بوجود تغييرات؛ ولا يشغّل المطور أي خادم إشعارات.</p>
+
+<h2>3. الذكاء الاصطناعي على الجهاز والمحتوى الذي تستورده</h2>
+<p>تُنشأ بطاقات الذكاء الاصطناعي باستخدام Apple Intelligence (نموذج النظام) مباشرة على جهازك ودون اتصال بالإنترنت. لا يُرسل أي نص أو PDF أو صوت أو صورة أو موضوع تستورده إلى خادم تابع للمطور أو إلى مزوّد ذكاء اصطناعي خارجي.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>المصدر</th><th>طريقة المعالجة</th></tr></thead>
+  <tbody>
+    <tr><td>PDF</td><td>يُستخرج النص على الجهاز باستخدام PDFKit. الحد الأقصى 5.1 ميغابايت.</td></tr>
+    <tr><td>صورة</td><td>تختار صورة بأداة الاختيار في النظام، ولا يتلقى التطبيق سوى تلك الصورة. يُقرأ النص على الجهاز باستخدام التعرف الضوئي على الحروف من Apple (Vision).</td></tr>
+    <tr><td>صوت (<bdi dir="ltr">.m4a</bdi>، <bdi dir="ltr">.mp3</bdi>، <bdi dir="ltr">.wav</bdi>، <bdi dir="ltr">.caf</bdi>)</td><td>يُفرَّغ نصيًا باستخدام التعرف على الكلام من Apple (انظر القسم 5).</td></tr>
+    <tr><td>YouTube</td><td>تُنزَّل الترجمات العامة للفيديو (انظر القسم 5).</td></tr>
+    <tr><td>موضوع</td><td>تكتب موضوعًا ويُنشئ الذكاء الاصطناعي البطاقات من معرفته الخاصة على الجهاز. لا تُرفع أي مواد.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>لا يحتفظ التطبيق بنسخة من ملفاتك، بل بالبطاقات المُنشأة فقط، ويمكنك تعديلها أو حذفها. قد تحتوي البطاقات المُنشأة بالذكاء الاصطناعي على أخطاء؛ راجعها قبل الدراسة.</p>
+
+<h2>4. الأذونات التي يطلبها التطبيق</h2>
+<p>يطلب SmartCardStudy إذنين فقط، ولا يُطلب كل منهما إلا عند استخدام الميزة التي تحتاجه. يمكنك سحبهما من إعدادات النظام.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>الإذن</th><th>الغرض</th></tr></thead>
+  <tbody>
+    <tr><td>التعرف على الكلام</td><td>تفريغ مذكرة صوتية أو ملف MP3 تستورده لتحويله إلى بطاقات. لا يسجّل التطبيق بالميكروفون.</td></tr>
+    <tr><td>الإشعارات</td><td>إرسال تذكير الدراسة اليومي. وهو إشعار محلي مجدول على جهازك في الوقت الذي تختاره.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>تُختار الصور بأداة الاختيار في النظام، التي لا تمنح التطبيق وصولًا إلى مكتبتك كاملة. تُفتح ملفات PDF والصوت بأداة اختيار الملفات، ولا يُقرأ إلا الملف الذي تختاره. إذا وصلت ذراع ألعاب، يستخدمها التطبيق فقط لتقييم البطاقات ولا يحفظ أي معلومات عنها.</p>
+
+<h2>5. خدمات الأطراف الثالثة</h2>
+<p>لا يرسل SmartCardStudy معلوماتك إلى خدمات خاصة به. هذه هي الميزات الوحيدة التي تشمل أطرافًا ثالثة:</p>
+<ul>
+  <li><strong>Apple، التعرف على الكلام:</strong> عند تفريغ صوت، قد يعالجه النظام على خوادم Apple بحسب جهازك واللغة. يطلب التطبيق التفريغ باللغة الإسبانية. تنطبق <a href="https://www.apple.com/legal/privacy/">سياسة خصوصية Apple</a>.</li>
+  <li><strong>Apple، iCloud:</strong> فقط إذا تركت المزامنة مفعّلة (القسم 2).</li>
+  <li><strong>YouTube (Google):</strong> عند طلب نص فيديو، يرسل التطبيق إلى YouTube معرّف الفيديو المأخوذ من رابطك. ويتلقى YouTube أيضًا عنوان IP الخاص بك كما في أي اتصال بالإنترنت. وهذا هو الاتصال الشبكي الوحيد الذي يجريه التطبيق من تلقاء نفسه. تنطبق <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</li>
+</ul>
+<p>يستخدم التطبيق مكتبتين مفتوحتَي المصدر تعملان داخل الجهاز، SwiftMath (المعادلات) و ZIPFoundation (استيراد ملفات <bdi dir="ltr">.apkg</bdi>)، ولا ترسل أي منهما بيانات إلى أطراف ثالثة.</p>
+
+<h2>6. الاحتفاظ، والقاصرون، وحقوقك، والتواصل</h2>
+<p><strong>الاحتفاظ والحذف.</strong> تبقى بياناتك حتى تحذفها. يمكنك حذف البطاقات والمجموعات داخل التطبيق، أو أرشفة مجموعة لإخفائها دون حذفها. إلغاء تثبيت التطبيق يحذف ما هو محفوظ على الجهاز؛ أما ما في iCloud فيُحذف من إعدادات iCloud على جهازك.</p>
+<p><strong>حقوقك.</strong> بما أن المطور لا يتلقى بياناتك ولا يخزنها، فليست لديه معلومات عنك للاطلاع عليها أو تصحيحها أو حذفها. لديك تحكم كامل من التطبيق ومن إعدادات جهازك. تخضع هذه السياسة لقوانين جمهورية بنما.</p>
+<p><strong>القاصرون.</strong> SmartCardStudy غير موجّه للأطفال دون 13 عامًا، ولا يجمع بيانات شخصية من أي أحد، بمن فيهم القاصرون.</p>
+<p><strong>التغييرات على هذه السياسة.</strong> إذا غيّر التطبيق طريقة تعامله مع البيانات، فسنحدّث هذه السياسة والتاريخ في الأعلى. وسنذكر التغييرات المهمة في وصف التحديث على App Store.</p>
+<p><strong>التواصل.</strong> للاستفسارات المتعلقة بالخصوصية، راسل <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
 
 </section>
 
 <footer>
-  SmartCardStudy · <span lang="es">Soporte</span> / <span lang="en">Support</span>
-  · <a href="../"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
+  SmartCardStudy · <span id="f-this">Política de privacidad</span>
+  · <a id="f-link" href="support/" data-base="support/">Soporte</a>
 </footer>
 </div>
 
 <script>
 (function () {
-  var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var langs = ["es", "en", "zh", "ja", "ko", "fr", "de", "ar"];
+  var I = {"es": {"title": "SmartCardStudy · Política de privacidad", "meta": "Política de privacidad · Última actualización: 16 de octubre de 2026", "self": "Política de privacidad", "other": "Soporte"}, "en": {"title": "SmartCardStudy · Privacy Policy", "meta": "Privacy Policy · Last updated: October 16, 2026", "self": "Privacy Policy", "other": "Support"}, "zh": {"title": "SmartCardStudy · 隐私政策", "meta": "隐私政策 · 最后更新：2026年10月16日", "self": "隐私政策", "other": "支持"}, "ja": {"title": "SmartCardStudy · プライバシーポリシー", "meta": "プライバシーポリシー · 最終更新日：2026年10月16日", "self": "プライバシーポリシー", "other": "サポート"}, "ko": {"title": "SmartCardStudy · 개인정보 처리방침", "meta": "개인정보 처리방침 · 최종 업데이트: 2026년 10월 16일", "self": "개인정보 처리방침", "other": "지원"}, "fr": {"title": "SmartCardStudy · Politique de confidentialité", "meta": "Politique de confidentialité · Dernière mise à jour : 16 octobre 2026", "self": "Politique de confidentialité", "other": "Assistance"}, "de": {"title": "SmartCardStudy · Datenschutzerklärung", "meta": "Datenschutzerklärung · Letzte Aktualisierung: 16. Oktober 2026", "self": "Datenschutzerklärung", "other": "Support"}, "ar": {"title": "SmartCardStudy · سياسة الخصوصية", "meta": "سياسة الخصوصية · آخر تحديث: 16 أكتوبر 2026", "self": "سياسة الخصوصية", "other": "الدعم"}};
   var buttons = document.querySelectorAll('.lang button');
-  var footerEs = document.querySelector('footer a span[lang="es"]');
-  var footerEn = document.querySelector('footer a span[lang="en"]');
   function show(lang) {
+    var d = I[lang];
     document.documentElement.lang = lang;
-    Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.title = d.title;
+    langs.forEach(function (k) { document.getElementById(k).hidden = (k !== lang); });
     buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
-    if (footerEs && footerEn) { footerEs.hidden = (lang !== 'es'); footerEn.hidden = (lang !== 'en'); }
+    document.getElementById('meta').textContent = d.meta;
+    document.getElementById('f-this').textContent = d.self;
+    var a = document.getElementById('f-link'); a.textContent = d.other; a.href = a.getAttribute('data-base') + '#' + lang;
     try { history.replaceState(null, '', '#' + lang); } catch (e) {}
   }
   buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
   var hash = (location.hash || '').replace('#', '');
-  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
-  show(hash === 'en' || hash === 'es' ? hash : pref);
+  var nav = (navigator.language || 'es').toLowerCase().slice(0, 2);
+  show(langs.indexOf(hash) !== -1 ? hash : (langs.indexOf(nav) !== -1 ? nav : 'es'));
 })();
 </script>
 </body>
