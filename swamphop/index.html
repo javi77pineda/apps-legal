@@ -38,8 +38,10 @@
   a { color: var(--link); }
   .date { color: var(--muted); font-size: 14px; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
-  .js [lang="en"].block, .js [lang="es"].block { display: none; }
-  .js.show-es [lang="es"].block, .js.show-en [lang="en"].block { display: block; }
+  .js .block { display: none; }
+  .js.show-es [lang="es"].block, .js.show-en [lang="en"].block, .js.show-fr [lang="fr"].block,
+  .js.show-ja [lang="ja"].block, .js.show-ko [lang="ko"].block { display: block; }
+  .langs { flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -48,13 +50,16 @@
     <div class="logo" aria-hidden="true">🐸</div>
     <div>
       <h1>Swamp Hop!</h1>
-      <p class="sub"><span lang="es">Política de privacidad</span> · <span lang="en">Privacy Policy</span></p>
+      <p class="sub"><span lang="es">Política de privacidad</span> · <span lang="en">Privacy Policy</span> · <span lang="fr">Confidentialité</span> · <span lang="ja">プライバシー</span> · <span lang="ko">개인정보</span></p>
     </div>
   </header>
 
   <div class="langs" role="group" aria-label="Idioma / Language">
     <button type="button" data-lang="es" aria-pressed="true">Español</button>
     <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
   </div>
 
   <!-- ====================== ESPAÑOL ====================== -->
@@ -177,13 +182,170 @@
     </section>
   </div>
 
+
+  <!-- ====================== FRANÇAIS ====================== -->
+  <div lang="fr" class="block">
+    <p class="date">Dernière mise à jour : 28 octobre 2026</p>
+    <section class="card summary">
+      <h2>En bref</h2>
+      <ul>
+        <li>Nous ne te demandons pas de créer de compte.</li>
+        <li>La position n'est utilisée, de façon approximative, que si tu actives la météo réelle.</li>
+        <li>Nous n'affichons pas de publicité et nous ne te pistons pas.</li>
+        <li>Nous n'avons pas de serveurs : nous ne recevons ni ne conservons tes données personnelles.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. Responsable</h2>
+      <p>Swamp Hop! est un jeu pour iPhone et iPad publié par Level 18. Pour toute question sur cette politique, écris-nous à <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>.</p>
+    </section>
+    <section class="card">
+      <h2>2. Données qui restent sur ton appareil</h2>
+      <p>Le jeu enregistre sur ton iPhone ou ton iPad ton record, tes mouches, tes grenouilles débloquées, tes vies achetées, tes réglages, ton code ami et ta liste d'amis du jeu. Ces données ne nous sont pas envoyées.</p>
+    </section>
+    <section class="card">
+      <h2>3. Services Apple utilisés par le jeu</h2>
+      <p>Certaines fonctions utilisent des services d'Apple. Ces données sont traitées par Apple selon sa <a href="https://www.apple.com/legal/privacy/" rel="noopener">politique de confidentialité</a> ; nous n'y avons pas accès.</p>
+      <ul>
+        <li><strong>iCloud (sauvegarde) :</strong> si iCloud est activé, le jeu conserve une copie de ta progression et de tes vies achetées dans <em>ton propre</em> compte iCloud, pour que tu ne les perdes pas en changeant d'appareil. Toi seul peux y accéder.</li>
+        <li><strong>Game Center (classements, duels et olympiades) :</strong> si tu te connectes à Game Center, ton score est envoyé aux classements d'Apple, et les autres joueurs peuvent voir ton pseudo Game Center et ton score. Pendant les duels et les olympiades, Apple relie ta partie à celle de ton ami ; les données de la partie ne servent que pendant le jeu. Tu peux arrêter d'utiliser Game Center dans <em>Réglages › Game Center</em>.</li>
+        <li><strong>Météo réelle (facultative, désactivée par défaut) :</strong> si tu choisis « Météo : Réelle » dans les réglages, le jeu demande l'autorisation d'utiliser ta <em>position approximative</em>, uniquement pendant que tu joues. Elle est envoyée à Apple WeatherKit pour savoir s'il pleut, neige, vente ou s'il fait nuit dans ta région et l'afficher sur la rivière. Nous ne la recevons ni ne la conservons. Tu peux retirer l'autorisation dans <em>Réglages › Confidentialité et sécurité › Service de localisation</em> ou désactiver l'option dans le jeu.</li>
+        <li><strong>Achats intégrés :</strong> les paiements sont traités par Apple via l'App Store. Nous ne voyons jamais ton nom, ta carte ni ton compte Apple ; nous recevons seulement d'Apple des rapports de ventes sans données personnelles.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. Ce que nous ne faisons pas</h2>
+      <ul>
+        <li>Nous n'utilisons aucun outil tiers de publicité, d'analyse ou de pistage.</li>
+        <li>Nous ne vendons ni ne partageons de données personnelles.</li>
+        <li>Nous ne demandons pas l'accès à ton appareil photo, ton micro, tes contacts ou tes photos. La position n'est demandée que si tu actives la météo réelle, et elle est approximative.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. Enfants</h2>
+      <p>Nous ne collectons de données personnelles de personne, y compris des enfants. Les parents peuvent contrôler les achats avec <em>Demander l'autorisation d'achat</em> (partage familial) et Temps d'écran.</p>
+    </section>
+    <section class="card">
+      <h2>6. Supprimer tes données</h2>
+      <p>Supprimer le jeu efface les données enregistrées sur l'appareil. Pour effacer aussi la copie iCloud, va dans <em>Réglages › [ton nom] › iCloud › Gérer le stockage</em> et supprime les données de Swamp Hop!. Tes scores Game Center sont gérés par Apple depuis les réglages de Game Center.</p>
+    </section>
+    <section class="card">
+      <h2>7. Modifications de cette politique</h2>
+      <p>Si nous modifions cette politique, nous publierons la nouvelle version sur cette page avec sa date de mise à jour.</p>
+    </section>
+  </div>
+
+  <!-- ====================== 日本語 ====================== -->
+  <div lang="ja" class="block">
+    <p class="date">最終更新日：2026年10月28日</p>
+    <section class="card summary">
+      <h2>概要</h2>
+      <ul>
+        <li>アカウントの作成は必要ありません。</li>
+        <li>位置情報は、リアルな天気をオンにした場合にのみ、おおよその位置として使用します。</li>
+        <li>広告の表示やトラッキングは行いません。</li>
+        <li>独自のサーバーを持っていないため、個人データを受け取ったり保存したりしません。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. 運営者</h2>
+      <p>Swamp Hop!はLevel 18が配信するiPhone・iPad向けゲームです。このポリシーに関するご質問は <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a> までお送りください。</p>
+    </section>
+    <section class="card">
+      <h2>2. 端末内に保存されるデータ</h2>
+      <p>最高記録、ハエ、解放したカエル、購入したライフ、設定、フレンドコード、ゲーム内の友だちリストは、お使いのiPhoneまたはiPadに保存されます。これらのデータが当方に送信されることはありません。</p>
+    </section>
+    <section class="card">
+      <h2>3. ゲームが利用するAppleのサービス</h2>
+      <p>一部の機能はAppleのサービスを利用します。これらのデータはAppleの<a href="https://www.apple.com/legal/privacy/" rel="noopener">プライバシーポリシー</a>に従ってAppleが取り扱い、当方はアクセスできません。</p>
+      <ul>
+        <li><strong>iCloud（バックアップ）：</strong>iCloudがオンの場合、端末を変えても失わないよう、進行状況と購入したライフのコピーを<em>あなた自身の</em>iCloudアカウントに保存します。このコピーにアクセスできるのはあなただけです。</li>
+        <li><strong>Game Center（ランキング・対戦・オリンピック）：</strong>Game Centerにサインインすると、スコアがAppleのランキングに送信され、Game Centerのニックネームとスコアがほかのプレイヤーに表示されることがあります。対戦やオリンピックでは、Appleがあなたと友だちのゲームをつなぎます。ゲームのデータはプレイ中にのみ使用されます。<em>設定 › Game Center</em>からいつでも利用をやめられます。</li>
+        <li><strong>リアルな天気（任意・初期設定はオフ）：</strong>設定で「天気：リアル」を選ぶと、プレイ中のみ<em>おおよその位置情報</em>の使用許可を求めます。位置情報はApple WeatherKitに送信され、お住まいの地域が雨・雪・風・夜かどうかを調べて川に表示するために使われます。当方が受け取ったり保存したりすることはありません。<em>設定 › プライバシーとセキュリティ › 位置情報サービス</em>で許可を取り消すか、ゲーム内でオプションをオフにできます。</li>
+        <li><strong>アプリ内課金：</strong>支払いはApp Storeを通じてAppleが処理します。当方があなたの名前、カード、Appleアカウントを見ることはなく、Appleから個人データを含まない売上レポートを受け取るだけです。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. 当方が行わないこと</h2>
+      <ul>
+        <li>第三者の広告、分析、トラッキングツールは使用しません。</li>
+        <li>個人データを販売・共有しません。</li>
+        <li>カメラ、マイク、連絡先、写真へのアクセスは求めません。位置情報はリアルな天気をオンにした場合にのみ、おおよその位置として求めます。</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. お子さま</h2>
+      <p>お子さまを含め、どなたの個人データも収集しません。保護者の方はファミリー共有の<em>承認と購入のリクエスト</em>やスクリーンタイムで購入を管理できます。</p>
+    </section>
+    <section class="card">
+      <h2>6. データの削除方法</h2>
+      <p>ゲームを削除すると、端末内のデータは消去されます。iCloudのコピーも削除するには、<em>設定 › [ユーザ名] › iCloud › ストレージを管理</em>でSwamp Hop!のデータを削除してください。Game CenterのスコアはGame Centerの設定からAppleが管理しています。</p>
+    </section>
+    <section class="card">
+      <h2>7. ポリシーの変更</h2>
+      <p>このポリシーを変更する場合は、更新日とともに新しい版をこのページに掲載します。</p>
+    </section>
+  </div>
+
+  <!-- ====================== 한국어 ====================== -->
+  <div lang="ko" class="block">
+    <p class="date">최종 업데이트: 2026년 10월 28일</p>
+    <section class="card summary">
+      <h2>요약</h2>
+      <ul>
+        <li>계정을 만들 필요가 없어요.</li>
+        <li>위치는 실제 날씨를 켰을 때만 대략적으로 사용해요.</li>
+        <li>광고를 보여 주거나 추적하지 않아요.</li>
+        <li>자체 서버가 없어서 개인정보를 받거나 저장하지 않아요.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>1. 운영자</h2>
+      <p>Swamp Hop!은 Level 18이 배포하는 iPhone 및 iPad용 게임이에요. 이 방침에 대한 문의는 <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a>로 보내 주세요.</p>
+    </section>
+    <section class="card">
+      <h2>2. 기기에만 저장되는 데이터</h2>
+      <p>최고 기록, 파리, 잠금 해제한 개구리, 구입한 목숨, 설정, 친구 코드, 게임 내 친구 목록은 iPhone 또는 iPad에 저장돼요. 이 데이터는 저희에게 전송되지 않아요.</p>
+    </section>
+    <section class="card">
+      <h2>3. 게임이 사용하는 Apple 서비스</h2>
+      <p>일부 기능은 Apple 서비스를 사용해요. 이 데이터는 Apple의 <a href="https://www.apple.com/legal/privacy/" rel="noopener">개인정보 처리방침</a>에 따라 Apple이 처리하며, 저희는 접근할 수 없어요.</p>
+      <ul>
+        <li><strong>iCloud(백업):</strong> iCloud가 켜져 있으면 기기를 바꿔도 잃어버리지 않도록 진행 상황과 구입한 목숨의 사본을 <em>본인의</em> iCloud 계정에 보관해요. 이 사본에는 본인만 접근할 수 있어요.</li>
+        <li><strong>Game Center(순위표, 대결, 올림픽):</strong> Game Center에 로그인하면 점수가 Apple 순위표로 전송되고, 다른 플레이어가 Game Center 닉네임과 점수를 볼 수 있어요. 대결과 올림픽에서는 Apple이 내 게임과 친구의 게임을 연결하며, 게임 데이터는 플레이하는 동안에만 사용돼요. <em>설정 › Game Center</em>에서 언제든 사용을 중단할 수 있어요.</li>
+        <li><strong>실제 날씨(선택, 기본값은 꺼짐):</strong> 설정에서 "날씨: 실제"를 선택하면 플레이하는 동안에만 <em>대략적인 위치</em> 사용 권한을 요청해요. 위치는 Apple WeatherKit으로 전송되어 내 지역에 비, 눈, 바람이 있는지 또는 밤인지 확인하고 강에 표시하는 데 쓰여요. 저희는 위치를 받거나 저장하지 않아요. <em>설정 › 개인정보 보호 및 보안 › 위치 서비스</em>에서 권한을 해제하거나 게임에서 옵션을 끌 수 있어요.</li>
+        <li><strong>앱 내 구입:</strong> 결제는 App Store를 통해 Apple이 처리해요. 저희는 이름, 카드, Apple 계정을 볼 수 없으며 Apple로부터 개인정보가 없는 판매 보고서만 받아요.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>4. 하지 않는 것</h2>
+      <ul>
+        <li>제3자 광고, 분석, 추적 도구를 사용하지 않아요.</li>
+        <li>개인정보를 판매하거나 공유하지 않아요.</li>
+        <li>카메라, 마이크, 연락처, 사진 접근 권한을 요청하지 않아요. 위치는 실제 날씨를 켰을 때만 대략적으로 요청해요.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>5. 어린이</h2>
+      <p>어린이를 포함해 누구의 개인정보도 수집하지 않아요. 보호자는 가족 공유의 <em>구입 요청</em>과 스크린 타임으로 구입을 관리할 수 있어요.</p>
+    </section>
+    <section class="card">
+      <h2>6. 데이터 삭제 방법</h2>
+      <p>게임을 삭제하면 기기에 저장된 데이터가 지워져요. iCloud 사본도 지우려면 <em>설정 › [사용자 이름] › iCloud › 저장 공간 관리</em>에서 Swamp Hop! 데이터를 삭제하세요. Game Center 점수는 Game Center 설정에서 Apple이 관리해요.</p>
+    </section>
+    <section class="card">
+      <h2>7. 방침 변경</h2>
+      <p>이 방침을 변경하면 새 버전을 업데이트 날짜와 함께 이 페이지에 게시할게요.</p>
+    </section>
+  </div>
+
   <footer>© 2026 Level 18 · Swamp Hop! · <a href="support.html"><span lang="es">Soporte</span> / <span lang="en">Support</span></a></footer>
 </div>
 <script>
   (function () {
     var root = document.documentElement;
     function setLang(l) {
-      root.classList.remove("show-es", "show-en");
+      root.classList.remove("show-es", "show-en", "show-fr", "show-ja", "show-ko");
       root.classList.add("js", "show-" + l);
       root.setAttribute("lang", l);
       document.querySelectorAll(".langs button").forEach(function (b) {
@@ -194,8 +356,9 @@
     var saved = null;
     try { saved = localStorage.getItem("swamphop-lang"); } catch (e) {}
     var q = new URLSearchParams(location.search).get("lang");
-    var nav = (navigator.language || "es").slice(0, 2);
-    setLang(q === "en" || q === "es" ? q : saved || (nav === "es" ? "es" : "en"));
+    var ok = ["es", "en", "fr", "ja", "ko"];
+    var nav = (navigator.language || "en").slice(0, 2);
+    setLang(ok.indexOf(q) >= 0 ? q : (ok.indexOf(saved) >= 0 ? saved : (ok.indexOf(nav) >= 0 ? nav : "en")));
     document.querySelectorAll(".langs button").forEach(function (b) {
       b.addEventListener("click", function () { setLang(b.dataset.lang); });
     });
