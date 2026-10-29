@@ -26,6 +26,8 @@ strong{font-weight:600}
 section[hidden]{display:none}
 footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
 footer a{color:var(--muted)}
+.lang{flex-wrap:wrap}
+[dir="rtl"] ul,[dir="rtl"] ol{padding-left:0;padding-right:22px}
 </style>
 <noscript><style>section[hidden]{display:block}.lang{display:none}</style></noscript>
 </head>
@@ -34,6 +36,12 @@ footer a{color:var(--muted)}
 <div class="lang" role="group" aria-label="Language / Idioma">
 <button type="button" data-l="en" aria-pressed="true">English</button>
 <button type="button" data-l="es" aria-pressed="false">Español</button>
+<button type="button" data-l="zh" aria-pressed="false">中文</button>
+<button type="button" data-l="ja" aria-pressed="false">日本語</button>
+<button type="button" data-l="ko" aria-pressed="false">한국어</button>
+<button type="button" data-l="fr" aria-pressed="false">Français</button>
+<button type="button" data-l="de" aria-pressed="false">Deutsch</button>
+<button type="button" data-l="ar" aria-pressed="false">العربية</button>
 </div>
 
 <section id="sec-en" lang="en">
@@ -206,18 +214,529 @@ footer a{color:var(--muted)}
 <p>Preguntas sobre privacidad: <a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
 </section>
 
+<section id="sec-zh" lang="zh" hidden>
+<h1>PersonalFin — 隐私政策</h1>
+<p class="meta"><strong>最后更新：</strong>2026年10月16日<br>
+<strong>联系方式：</strong><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>本政策说明 PersonalFin（“本应用”“我们”）处理哪些信息、这些信息保存在哪里以及如何使用。我们特意用通俗的语言撰写。</p>
+
+<h2>摘要</h2>
+<ul>
+<li>您的财务数据保留在您的 iPhone 上。我们（开发者）不会接收、收集、存储或访问这些数据。</li>
+<li>所有 AI 功能（理财建议、收据扫描、语音记账、导入账单）均由 Apple 智能运行，即 iPhone 内置的 AI 模型。</li>
+<li>我们不会出售或共享您的数据，不展示广告，也不会跨应用或网站追踪您。</li>
+<li>本应用不包含任何第三方分析或广告工具。</li>
+</ul>
+
+<h2>本应用保存的信息</h2>
+<p>以下所有内容均由您创建并保存在您的设备上：</p>
+<ul>
+<li>您记录的收入和支出（金额、类别、日期、可选名称）。</li>
+<li>每月预算和分类预算。</li>
+<li>储蓄和还债目标，以及您为其添加的记录。</li>
+<li>净资产信息（资产和负债）、您选择输入的信用卡信息、订阅、车辆保养记录、超市价格清单和食谱。</li>
+<li>应用偏好设置，例如是否已完成引导流程。</li>
+</ul>
+
+<h2>账户</h2>
+<p>您可以通过两种方式使用本应用：</p>
+<ul>
+<li><strong>访客模式：</strong>应用会创建一个随机标识符，仅保存在您的设备上。</li>
+<li><strong>通过 Apple 登录：</strong>应用会收到一个仅用于本应用的唯一标识符，以及（仅在您选择共享时）您的姓名。我们不会索取您的电子邮件地址。这些信息保留在您的设备上。我们绝不会看到或保存任何密码；身份验证由 Apple 处理。</li>
+</ul>
+<p>如果您先以访客模式开始，之后再通过 Apple 登录，应用会将您的访客数据转移到该设备上的 Apple 账户中，以免数据丢失。此过程完全在您的设备上进行。</p>
+
+<h2>iCloud</h2>
+<p>如果您在设备上为本应用启用了 iCloud，您的数据会通过 Apple 的 CloudKit 同步到您自己的私有 iCloud 容器中。我们在任何时候都无法访问该容器。Apple 会根据 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>对其进行加密和管理。如果您开启了设备的 iCloud 云备份，备份中也可能像其他应用一样包含本应用的数据。</p>
+
+<h2>人工智能（Apple 智能）</h2>
+<p>PersonalFin 使用您 iPhone 上的 Apple 智能模型（Apple 的 Foundation Models 和 Vision 框架）来实现：</p>
+<ol>
+<li>仪表板中的理财建议。</li>
+<li>使用相机或您的照片扫描收据和商品。</li>
+<li>在语音添加支出或收入时理解您所说的内容。</li>
+<li>识别您选择导入的银行账单截图或 CSV 文件中的交易。</li>
+</ol>
+<p>这些处理都在您的设备上进行。您的交易、照片和文字不会发送给我们或任何第三方 AI 提供商。您扫描或导入的任何内容在您检查并确认之前都不会被保存。</p>
+
+<h2>语音记账</h2>
+<p>使用语音输入时，iOS 语音识别会将您的语音转换为文字。根据您的设备、语言和设置，Apple 可能会在其服务器上处理音频。该处理由 Apple 根据其隐私政策负责，我们永远不会收到音频。转换后的文字随后在您的设备上进行解析。</p>
+
+<h2>权限</h2>
+<ul>
+<li><strong>相机：</strong>用于扫描收据和商品。</li>
+<li><strong>照片：</strong>仅限您自己选择的图片。</li>
+<li><strong>麦克风和语音识别：</strong>用于通过语音添加支出和收入。</li>
+<li><strong>通知：</strong>在信用卡账单日前一天以及订阅续费前发出的本地提醒。这些提醒在您的设备上安排，不使用任何服务器。</li>
+<li><strong>文件：</strong>用于导入 CSV 或恢复您选择的备份。</li>
+</ul>
+<p>您可以随时在 iPhone 的“设置”→ PersonalFin 中更改任何权限。只有依赖该权限的功能会停止工作。</p>
+
+<h2>您导出的备份</h2>
+<p>在应用的设置中，您可以导出包含全部数据的 JSON 文件（<em>导出完整备份</em>），并在之后恢复（<em>从备份恢复</em>）。该文件在您的设备上生成，由您决定保存位置或发送对象。一旦您共享了该文件，其保护即由您负责。</p>
+
+<h2>数据保留与删除</h2>
+<p>我们不持有您的数据，因此我们没有可删除的内容。数据由您掌控：</p>
+<ul>
+<li><strong>设置 → 重置所有数据</strong>会删除您在应用中的记录（如果开启了同步，也会删除 iCloud 容器中的记录）。</li>
+<li>删除应用会移除该设备上保存的数据。</li>
+<li>要从 iCloud 中删除数据，请前往 iPhone 的“设置”→ 您的姓名 → iCloud → 管理账户储存空间。</li>
+</ul>
+
+<h2>安全</h2>
+<p>您的数据保存在设备的受保护存储中，以及（如启用）您的私有 iCloud 中，二者均受 Apple 安全机制保护。本应用不会通过互联网将您的财务数据发送给我们。没有任何系统是绝对安全的，因此我们建议您保持 iPhone 为最新版本，并使用密码以及面容 ID 或触控 ID 进行保护。</p>
+
+<h2>儿童</h2>
+<p>PersonalFin 并非面向 13 岁以下儿童，我们也不会在知情的情况下收集儿童的数据。</p>
+
+<h2>您的权利</h2>
+<p>由于我们不收集也不持有您的个人数据，我们没有可供访问、更正或删除的副本。如果您对隐私有疑问，或希望依据适用于您的法律行使某项权利，请给我们写信，我们会予以回复。</p>
+
+<h2>本政策的变更</h2>
+<p>如本政策发生变更，我们会更新上方的日期；如变更重大，我们会在应用内通知您。</p>
+
+<h2>联系方式</h2>
+<p>隐私相关问题：<a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
+<section id="sec-ja" lang="ja" hidden>
+<h1>PersonalFin — プライバシーポリシー</h1>
+<p class="meta"><strong>最終更新日：</strong>2026年10月16日<br>
+<strong>連絡先：</strong><a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>本ポリシーは、PersonalFin（「本アプリ」「私たち」）がどのような情報を扱い、どこに保存し、どのように使用するかを説明します。あえて平易な言葉で書いています。</p>
+
+<h2>概要</h2>
+<ul>
+<li>お客様の家計データは iPhone 内にとどまります。開発者である私たちがそれを受け取ったり、収集・保存したり、アクセスしたりすることはありません。</li>
+<li>すべての AI 機能（家計のアドバイス、レシートのスキャン、音声入力、明細のインポート）は、iPhone に組み込まれた AI モデルである Apple Intelligence で動作します。</li>
+<li>データの販売や共有、広告の表示、アプリやウェブサイトをまたいだトラッキングは行いません。</li>
+<li>本アプリにはサードパーティの分析ツールや広告ツールは含まれていません。</li>
+</ul>
+
+<h2>本アプリが保存する情報</h2>
+<p>以下はすべてお客様が作成し、デバイスに保存されるものです：</p>
+<ul>
+<li>記録した収入と支出（金額、カテゴリ、日付、任意の名前）。</li>
+<li>月ごとの予算とカテゴリ別の予算。</li>
+<li>貯蓄・返済の目標と、そこに追加した記録。</li>
+<li>純資産の情報（資産と負債）、入力を選んだクレジットカード情報、サブスクリプション、車のメンテナンス記録、スーパーの価格リスト、レシピ。</li>
+<li>オンボーディングを完了したかどうかなどのアプリの設定。</li>
+</ul>
+
+<h2>アカウント</h2>
+<p>本アプリは次の 2 つの方法で使用できます：</p>
+<ul>
+<li><strong>ゲストモード：</strong>アプリがランダムな識別子を作成し、デバイスにのみ保存します。</li>
+<li><strong>Apple でサインイン：</strong>アプリは本アプリ専用の一意の識別子と、共有を選んだ場合に限りお名前を受け取ります。メールアドレスは求めません。これらの情報はデバイス内にとどまります。パスワードを見たり保存したりすることは一切なく、認証は Apple が行います。</li>
+</ul>
+<p>ゲストモードで始めて後から Apple でサインインした場合、データが失われないよう、アプリはそのデバイス上でゲストのデータを Apple アカウントに移行します。この処理はすべてデバイス上で行われます。</p>
+
+<h2>iCloud</h2>
+<p>デバイスで本アプリの iCloud が有効になっている場合、データは Apple の CloudKit を通じてお客様専用のプライベートな iCloud コンテナに同期されます。私たちがそのコンテナにアクセスすることはいかなる時もありません。Apple が <a href="https://www.apple.com/legal/privacy/">Apple のプライバシーポリシー</a>に基づいて暗号化・管理します。デバイスの iCloud バックアップをオンにしている場合、他のアプリと同様に本アプリのデータも含まれることがあります。</p>
+
+<h2>人工知能（Apple Intelligence）</h2>
+<p>PersonalFin は iPhone 上の Apple Intelligence モデル（Apple の Foundation Models および Vision フレームワーク）を次の目的で使用します：</p>
+<ol>
+<li>ダッシュボードでの家計のアドバイス。</li>
+<li>カメラや写真を使ったレシートと商品のスキャン。</li>
+<li>音声で支出や収入を追加する際の発話内容の理解。</li>
+<li>インポートを選んだ銀行明細のスクリーンショットや CSV ファイルからの取引の検出。</li>
+</ol>
+<p>これらの処理はデバイス上で行われます。取引、写真、テキストが私たちやサードパーティの AI プロバイダに送信されることはありません。スキャンやインポートした内容は、お客様が確認して確定するまで保存されません。</p>
+
+<h2>音声入力</h2>
+<p>音声入力を使うと、iOS の音声認識が話した内容をテキストに変換します。デバイス、言語、設定によっては、Apple がそのために Apple のサーバーで音声を処理する場合があります。この処理は Apple が自社のプライバシーポリシーに基づいて行い、私たちが音声を受け取ることはありません。変換されたテキストはその後デバイス上で解釈されます。</p>
+
+<h2>アクセス許可</h2>
+<ul>
+<li><strong>カメラ：</strong>レシートと商品のスキャンのため。</li>
+<li><strong>写真：</strong>お客様自身が選んだ画像のみ。</li>
+<li><strong>マイクと音声認識：</strong>音声で支出と収入を追加するため。</li>
+<li><strong>通知：</strong>クレジットカードの締め日の前日とサブスクリプションの更新前に届くローカルのリマインダー。デバイス上で予約され、サーバーは使用しません。</li>
+<li><strong>ファイル：</strong>CSV のインポートや、選択したバックアップの復元のため。</li>
+</ul>
+<p>iPhone の「設定」→ PersonalFin で、いつでも許可を変更できます。その許可に依存する機能だけが使えなくなります。</p>
+
+<h2>エクスポートするバックアップ</h2>
+<p>アプリの設定から、すべてのデータを含む JSON ファイルを書き出し（<em>完全なバックアップを書き出す</em>）、後で復元（<em>バックアップから復元</em>）できます。このファイルはデバイス上で作成され、保存先や送信先はお客様が決めます。共有した後のファイルの保護はお客様の責任となります。</p>
+
+<h2>データの保持と削除</h2>
+<p>私たちはお客様のデータを保持していないため、私たちの側で削除するものはありません。管理するのはお客様です：</p>
+<ul>
+<li><strong>設定 → すべてのデータをリセット</strong>で、アプリ内の記録（同期がオンの場合は iCloud コンテナ内の記録も）が削除されます。</li>
+<li>アプリを削除すると、そのデバイスに保存されたデータが削除されます。</li>
+<li>iCloud からデータを削除するには、iPhone の「設定」→ ユーザ名 → iCloud → アカウントのストレージを管理 を開いてください。</li>
+</ul>
+
+<h2>セキュリティ</h2>
+<p>データはデバイスの保護されたストレージと、有効にしている場合はお客様のプライベートな iCloud に保存され、いずれも Apple のセキュリティで保護されています。本アプリが家計データをインターネット経由で私たちに送信することはありません。完全に安全なシステムは存在しないため、iPhone を最新の状態に保ち、パスコードと Face ID または Touch ID で保護することをおすすめします。</p>
+
+<h2>子ども</h2>
+<p>PersonalFin は 13 歳未満の子どもを対象としておらず、子どものデータを故意に収集することはありません。</p>
+
+<h2>お客様の権利</h2>
+<p>私たちは個人データを収集・保持していないため、アクセス、訂正、削除の対象となる写しを持っていません。プライバシーに関するご質問や、適用される法律に基づく権利の行使をご希望の場合は、ご連絡いただければ対応します。</p>
+
+<h2>本ポリシーの変更</h2>
+<p>本ポリシーを変更した場合は上記の日付を更新し、重要な変更の場合はアプリ内でお知らせします。</p>
+
+<h2>お問い合わせ</h2>
+<p>プライバシーに関するご質問：<a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
+<section id="sec-ko" lang="ko" hidden>
+<h1>PersonalFin — 개인정보 처리방침</h1>
+<p class="meta"><strong>최종 업데이트:</strong> 2026년 10월 16일<br>
+<strong>문의:</strong> <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>본 방침은 PersonalFin('앱', '저희')이 어떤 정보를 다루고, 어디에 저장하며, 어떻게 사용하는지 설명합니다. 일부러 쉬운 말로 작성했습니다.</p>
+
+<h2>요약</h2>
+<ul>
+<li>사용자의 금융 데이터는 iPhone에 그대로 남아 있습니다. 개발자인 저희는 이를 받거나 수집하거나 저장하거나 접근하지 않습니다.</li>
+<li>모든 AI 기능(재정 조언, 영수증 스캔, 음성 입력, 거래 내역 가져오기)은 iPhone에 내장된 AI 모델인 Apple Intelligence로 작동합니다.</li>
+<li>데이터를 판매하거나 공유하지 않으며, 광고를 표시하지 않고, 앱이나 웹사이트를 넘나들며 추적하지 않습니다.</li>
+<li>앱에는 제3자 분석 도구나 광고 도구가 없습니다.</li>
+</ul>
+
+<h2>앱이 저장하는 정보</h2>
+<p>아래 항목은 모두 사용자가 직접 만들며 기기에 저장됩니다:</p>
+<ul>
+<li>기록한 수입과 지출(금액, 카테고리, 날짜, 선택 사항인 이름).</li>
+<li>월별 예산 및 카테고리별 예산.</li>
+<li>저축 및 부채 상환 목표와 여기에 추가한 기록.</li>
+<li>순자산 정보(자산과 부채), 직접 입력하기로 선택한 신용카드 정보, 구독, 차량 정비 기록, 마트 가격 목록과 레시피.</li>
+<li>온보딩 완료 여부 같은 앱 환경설정.</li>
+</ul>
+
+<h2>계정</h2>
+<p>앱은 두 가지 방식으로 사용할 수 있습니다:</p>
+<ul>
+<li><strong>게스트 모드:</strong> 앱이 무작위 식별자를 만들어 기기에만 저장합니다.</li>
+<li><strong>Apple로 로그인:</strong> 앱은 이 앱에만 해당하는 고유 식별자와, 사용자가 공유를 선택한 경우에 한해 이름을 받습니다. 이메일 주소는 요청하지 않습니다. 이 정보는 기기에 남아 있습니다. 저희는 어떤 비밀번호도 보거나 저장하지 않으며, 인증은 Apple이 처리합니다.</li>
+</ul>
+<p>게스트 모드로 시작한 뒤 나중에 Apple로 로그인하면, 데이터를 잃지 않도록 앱이 해당 기기에서 게스트 데이터를 Apple 계정으로 옮깁니다. 이 과정은 전부 기기에서 이루어집니다.</p>
+
+<h2>iCloud</h2>
+<p>기기에서 앱의 iCloud가 켜져 있으면, 데이터는 Apple의 CloudKit을 통해 사용자 본인의 비공개 iCloud 컨테이너와 동기화됩니다. 저희는 어떤 경우에도 그 컨테이너에 접근할 수 없습니다. Apple이 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>에 따라 암호화하고 관리합니다. 기기의 iCloud 백업을 켜 두었다면 다른 앱과 마찬가지로 이 앱의 데이터도 백업에 포함될 수 있습니다.</p>
+
+<h2>인공지능(Apple Intelligence)</h2>
+<p>PersonalFin은 iPhone의 Apple Intelligence 모델(Apple의 Foundation Models 및 Vision 프레임워크)을 다음 용도로 사용합니다:</p>
+<ol>
+<li>대시보드의 재정 조언.</li>
+<li>카메라나 사진으로 영수증과 상품 스캔.</li>
+<li>음성으로 지출이나 수입을 추가할 때 말한 내용 이해.</li>
+<li>가져오기로 선택한 은행 거래 내역 스크린샷이나 CSV 파일에서 거래 감지.</li>
+</ol>
+<p>이 처리는 기기에서 이루어집니다. 거래, 사진, 텍스트는 저희나 제3자 AI 제공업체로 전송되지 않습니다. 스캔하거나 가져온 내용은 사용자가 검토하고 확인하기 전까지 저장되지 않습니다.</p>
+
+<h2>음성 입력</h2>
+<p>음성 입력을 사용하면 iOS 음성 인식이 말한 내용을 텍스트로 변환합니다. 기기, 언어, 설정에 따라 Apple이 이를 위해 Apple 서버에서 오디오를 처리할 수 있습니다. 이 처리는 Apple이 자체 개인정보 처리방침에 따라 담당하며, 저희는 오디오를 받지 않습니다. 변환된 텍스트는 이후 기기에서 해석됩니다.</p>
+
+<h2>권한</h2>
+<ul>
+<li><strong>카메라:</strong> 영수증과 상품을 스캔하기 위해.</li>
+<li><strong>사진:</strong> 사용자가 직접 고른 이미지만.</li>
+<li><strong>마이크 및 음성 인식:</strong> 음성으로 지출과 수입을 추가하기 위해.</li>
+<li><strong>알림:</strong> 신용카드 결제일(마감일) 전날과 구독 갱신 전에 오는 로컬 리마인더. 기기에서 예약되며 서버를 사용하지 않습니다.</li>
+<li><strong>파일:</strong> CSV를 가져오거나 선택한 백업을 복원하기 위해.</li>
+</ul>
+<p>iPhone 설정 → PersonalFin에서 언제든지 권한을 변경할 수 있습니다. 해당 권한에 의존하는 기능만 작동하지 않게 됩니다.</p>
+
+<h2>내보내는 백업</h2>
+<p>앱 설정에서 모든 데이터가 담긴 JSON 파일을 내보내고(<em>전체 백업 내보내기</em>) 나중에 복원(<em>백업에서 복원</em>)할 수 있습니다. 이 파일은 기기에서 만들어지며 어디에 저장하거나 누구에게 보낼지는 사용자가 정합니다. 파일을 공유한 뒤에는 그 보호 책임이 사용자에게 있습니다.</p>
+
+<h2>데이터 보관 및 삭제</h2>
+<p>저희는 사용자의 데이터를 보관하지 않으므로 저희가 삭제할 것은 없습니다. 데이터는 사용자가 관리합니다:</p>
+<ul>
+<li><strong>설정 → 모든 데이터 초기화</strong>는 앱 안의 기록(동기화가 켜져 있으면 iCloud 컨테이너의 기록도)을 삭제합니다.</li>
+<li>앱을 삭제하면 해당 기기에 저장된 데이터가 제거됩니다.</li>
+<li>iCloud에서 데이터를 삭제하려면 iPhone 설정 → 사용자 이름 → iCloud → 계정 저장 공간 관리로 이동하세요.</li>
+</ul>
+
+<h2>보안</h2>
+<p>데이터는 기기의 보호된 저장소와, 켜 둔 경우 사용자의 비공개 iCloud에 저장되며 둘 다 Apple의 보안으로 보호됩니다. 앱은 금융 데이터를 인터넷을 통해 저희에게 보내지 않습니다. 완벽하게 안전한 시스템은 없으므로 iPhone을 최신 상태로 유지하고 암호와 Face ID 또는 Touch ID로 보호하시길 권장합니다.</p>
+
+<h2>아동</h2>
+<p>PersonalFin은 13세 미만 아동을 대상으로 하지 않으며, 아동의 데이터를 고의로 수집하지 않습니다.</p>
+
+<h2>사용자의 권리</h2>
+<p>저희는 개인정보를 수집하거나 보관하지 않으므로 열람, 정정, 삭제할 사본이 없습니다. 개인정보에 관해 궁금한 점이 있거나 적용되는 법률에 따른 권리를 행사하고 싶다면 연락해 주세요. 답변해 드리겠습니다.</p>
+
+<h2>본 방침의 변경</h2>
+<p>본 방침이 변경되면 위의 날짜를 업데이트하고, 중요한 변경인 경우 앱에서 알려 드립니다.</p>
+
+<h2>문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
+<section id="sec-fr" lang="fr" hidden>
+<h1>PersonalFin — Politique de confidentialité</h1>
+<p class="meta"><strong>Dernière mise à jour :</strong> 16 octobre 2026<br>
+<strong>Contact :</strong> <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>Cette politique explique quelles informations PersonalFin (« l'app », « nous ») traite, où elles sont stockées et comment elles sont utilisées. Nous l'avons volontairement rédigée en langage simple.</p>
+
+<h2>Résumé</h2>
+<ul>
+<li>Vos données financières restent sur votre iPhone. Nous, les développeurs, ne les recevons pas, ne les collectons pas, ne les stockons pas et n'y avons pas accès.</li>
+<li>Toutes les fonctions d'IA (conseils financiers, scan de reçus, saisie vocale, import de relevés) fonctionnent avec Apple Intelligence, le modèle d'IA intégré à votre iPhone.</li>
+<li>Nous ne vendons ni ne partageons vos données, nous n'affichons pas de publicité et nous ne vous suivons pas d'une app ou d'un site à l'autre.</li>
+<li>L'app ne contient aucun outil d'analyse ni de publicité tiers.</li>
+</ul>
+
+<h2>Informations stockées par l'app</h2>
+<p>Tout ce qui suit est créé par vous et stocké sur votre appareil :</p>
+<ul>
+<li>Les revenus et dépenses que vous enregistrez (montant, catégorie, date, nom facultatif).</li>
+<li>Les budgets mensuels et par catégorie.</li>
+<li>Les objectifs d'épargne et de remboursement de dettes, ainsi que les entrées que vous y ajoutez.</li>
+<li>Les informations de patrimoine (actifs et dettes), les informations de carte de crédit que vous choisissez de saisir, les abonnements, l'entretien du véhicule, les listes de prix des courses et les recettes.</li>
+<li>Les préférences de l'app, par exemple si vous avez terminé la prise en main.</li>
+</ul>
+
+<h2>Comptes</h2>
+<p>Vous pouvez utiliser l'app de deux façons :</p>
+<ul>
+<li><strong>Mode invité :</strong> l'app crée un identifiant aléatoire stocké uniquement sur votre appareil.</li>
+<li><strong>Se connecter avec Apple :</strong> l'app reçoit un identifiant propre à cette app et, seulement si vous choisissez de le partager, votre nom. Nous ne demandons pas votre adresse e-mail. Ces informations restent sur votre appareil. Nous ne voyons ni ne stockons jamais aucun mot de passe ; c'est Apple qui gère l'authentification.</li>
+</ul>
+<p>Si vous commencez en mode invité puis vous connectez avec Apple, l'app transfère vos données d'invité vers votre compte Apple sur cet appareil pour que vous ne les perdiez pas. Tout se passe sur votre appareil.</p>
+
+<h2>iCloud</h2>
+<p>Si iCloud est activé pour l'app sur votre appareil, vos données sont synchronisées dans votre propre conteneur iCloud privé via CloudKit d'Apple. Nous n'avons jamais accès à ce conteneur. Apple le chiffre et le gère conformément à la <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d'Apple</a>. La sauvegarde iCloud de votre appareil, si elle est activée, peut aussi inclure les données de cette app comme celles de n'importe quelle autre app.</p>
+
+<h2>Intelligence artificielle (Apple Intelligence)</h2>
+<p>PersonalFin utilise les modèles Apple Intelligence de votre iPhone (les frameworks Foundation Models et Vision d'Apple) pour :</p>
+<ol>
+<li>Les conseils financiers du tableau de bord.</li>
+<li>Le scan de reçus et de produits avec l'appareil photo ou vos photos.</li>
+<li>La compréhension de ce que vous dites lorsque vous ajoutez des dépenses ou des revenus à la voix.</li>
+<li>La détection des opérations dans une capture d'écran de relevé bancaire ou un fichier CSV que vous choisissez d'importer.</li>
+</ol>
+<p>Ce traitement a lieu sur votre appareil. Vos opérations, photos et textes ne sont envoyés ni à nous ni à aucun fournisseur d'IA tiers. Rien de ce que vous scannez ou importez n'est enregistré avant que vous l'ayez vérifié et confirmé.</p>
+
+<h2>Saisie vocale</h2>
+<p>Lorsque vous utilisez la saisie vocale, la reconnaissance vocale d'iOS convertit votre voix en texte. Selon votre appareil, votre langue et vos réglages, Apple peut traiter l'audio sur ses serveurs pour cela. Ce traitement est assuré par Apple selon sa propre politique de confidentialité, et nous ne recevons jamais l'audio. Le texte obtenu est ensuite interprété sur votre appareil.</p>
+
+<h2>Autorisations</h2>
+<ul>
+<li><strong>Appareil photo :</strong> pour scanner les reçus et les produits.</li>
+<li><strong>Photos :</strong> uniquement les images que vous choisissez vous-même.</li>
+<li><strong>Micro et Reconnaissance vocale :</strong> pour ajouter des dépenses et des revenus à la voix.</li>
+<li><strong>Notifications :</strong> rappels locaux la veille de la date d'arrêté de vos cartes de crédit et avant le renouvellement des abonnements. Ils sont programmés sur votre appareil et n'utilisent aucun serveur.</li>
+<li><strong>Fichiers :</strong> pour importer un CSV ou restaurer une sauvegarde que vous sélectionnez.</li>
+</ul>
+<p>Vous pouvez modifier chaque autorisation à tout moment dans Réglages de l'iPhone → PersonalFin. Seule la fonction qui en dépend cesse de fonctionner.</p>
+
+<h2>Sauvegardes que vous exportez</h2>
+<p>Dans les réglages de l'app, vous pouvez exporter un fichier JSON contenant toutes vos données (<em>Exporter une sauvegarde complète</em>) et le restaurer plus tard (<em>Restaurer depuis une sauvegarde</em>). Ce fichier est créé sur votre appareil et vous décidez où l'enregistrer ou à qui l'envoyer. Une fois partagé, sa protection relève de votre responsabilité.</p>
+
+<h2>Conservation et suppression des données</h2>
+<p>Nous ne détenons pas vos données, il n'y a donc rien à supprimer de notre côté. C'est vous qui les contrôlez :</p>
+<ul>
+<li><strong>Réglages → Réinitialiser toutes les données</strong> supprime vos enregistrements dans l'app (et dans votre conteneur iCloud si la synchronisation est activée).</li>
+<li>Supprimer l'app efface les données stockées sur cet appareil.</li>
+<li>Pour supprimer les données d'iCloud, allez dans Réglages de l'iPhone → votre nom → iCloud → Gérer le stockage du compte.</li>
+</ul>
+
+<h2>Sécurité</h2>
+<p>Vos données se trouvent dans le stockage protégé de votre appareil et, si vous l'activez, dans votre iCloud privé, tous deux protégés par la sécurité d'Apple. L'app n'envoie pas vos données financières sur Internet vers nous. Aucun système n'est parfaitement sûr ; nous vous recommandons donc de garder votre iPhone à jour et protégé par un code et Face ID ou Touch ID.</p>
+
+<h2>Enfants</h2>
+<p>PersonalFin ne s'adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données les concernant.</p>
+
+<h2>Vos droits</h2>
+<p>Comme nous ne collectons ni ne détenons vos données personnelles, nous n'en avons aucune copie à consulter, rectifier ou supprimer. Si vous avez des questions sur la confidentialité ou souhaitez exercer un droit prévu par la loi qui s'applique à vous, écrivez-nous et nous vous répondrons.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Si cette politique change, nous mettrons à jour la date ci-dessus et, en cas de changement important, nous vous en informerons dans l'app.</p>
+
+<h2>Contact</h2>
+<p>Questions sur la confidentialité : <a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
+<section id="sec-de" lang="de" hidden>
+<h1>PersonalFin — Datenschutzerklärung</h1>
+<p class="meta"><strong>Letzte Aktualisierung:</strong> 16. Oktober 2026<br>
+<strong>Kontakt:</strong> <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>Diese Erklärung beschreibt, welche Informationen PersonalFin („die App“, „wir“) verarbeitet, wo sie gespeichert werden und wie sie genutzt werden. Wir haben sie bewusst in einfacher Sprache geschrieben.</p>
+
+<h2>Zusammenfassung</h2>
+<ul>
+<li>Deine Finanzdaten bleiben auf deinem iPhone. Wir, die Entwickler, erhalten, sammeln oder speichern sie nicht und haben keinen Zugriff darauf.</li>
+<li>Alle KI-Funktionen (Finanztipps, Belegscan, Spracheingabe, Kontoauszug-Import) laufen mit Apple Intelligence, dem in dein iPhone integrierten KI-Modell.</li>
+<li>Wir verkaufen oder teilen deine Daten nicht, zeigen keine Werbung und verfolgen dich nicht über Apps oder Websites hinweg.</li>
+<li>Die App enthält keine Analyse- oder Werbetools von Drittanbietern.</li>
+</ul>
+
+<h2>Von der App gespeicherte Informationen</h2>
+<p>Alles Folgende erstellst du selbst, und es wird auf deinem Gerät gespeichert:</p>
+<ul>
+<li>Einnahmen und Ausgaben, die du erfasst (Betrag, Kategorie, Datum, optionaler Name).</li>
+<li>Monats- und Kategoriebudgets.</li>
+<li>Spar- und Schuldenziele sowie die Einträge, die du dazu hinzufügst.</li>
+<li>Vermögensinformationen (Vermögenswerte und Schulden), Kreditkartendaten, die du eingeben möchtest, Abos, Fahrzeugwartungen, Einkaufspreislisten und Rezepte.</li>
+<li>App-Einstellungen, zum Beispiel ob du die Einführung abgeschlossen hast.</li>
+</ul>
+
+<h2>Konten</h2>
+<p>Du kannst die App auf zwei Arten nutzen:</p>
+<ul>
+<li><strong>Gastmodus:</strong> Die App erstellt eine zufällige Kennung, die nur auf deinem Gerät gespeichert wird.</li>
+<li><strong>Mit Apple anmelden:</strong> Die App erhält eine nur für diese App gültige Kennung und, nur wenn du sie teilen möchtest, deinen Namen. Wir fragen nicht nach deiner E-Mail-Adresse. Diese Informationen bleiben auf deinem Gerät. Wir sehen oder speichern niemals ein Passwort; die Authentifizierung übernimmt Apple.</li>
+</ul>
+<p>Wenn du im Gastmodus beginnst und dich später mit Apple anmeldest, überträgt die App deine Gastdaten auf diesem Gerät in dein Apple-Konto, damit du sie nicht verlierst. Das geschieht vollständig auf deinem Gerät.</p>
+
+<h2>iCloud</h2>
+<p>Wenn iCloud für die App auf deinem Gerät aktiviert ist, werden deine Daten über Apples CloudKit mit deinem eigenen privaten iCloud-Container synchronisiert. Wir haben zu keinem Zeitpunkt Zugriff auf diesen Container. Apple verschlüsselt und verwaltet ihn gemäß der <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>. Das iCloud-Backup deines Geräts kann, falls aktiviert, wie bei jeder anderen App auch die Daten dieser App enthalten.</p>
+
+<h2>Künstliche Intelligenz (Apple Intelligence)</h2>
+<p>PersonalFin nutzt die Apple-Intelligence-Modelle auf deinem iPhone (Apples Frameworks Foundation Models und Vision) für:</p>
+<ol>
+<li>Finanztipps im Dashboard.</li>
+<li>Das Scannen von Belegen und Produkten mit der Kamera oder deinen Fotos.</li>
+<li>Das Verstehen dessen, was du sagst, wenn du Ausgaben oder Einnahmen per Sprache hinzufügst.</li>
+<li>Das Erkennen von Buchungen in einem Kontoauszug-Screenshot oder einer CSV-Datei, die du importierst.</li>
+</ol>
+<p>Diese Verarbeitung findet auf deinem Gerät statt. Deine Buchungen, Fotos und Texte werden weder an uns noch an einen KI-Drittanbieter gesendet. Nichts, was du scannst oder importierst, wird gespeichert, bevor du es geprüft und bestätigt hast.</p>
+
+<h2>Spracheingabe</h2>
+<p>Bei der Spracheingabe wandelt die iOS-Spracherkennung deine Sprache in Text um. Je nach Gerät, Sprache und Einstellungen kann Apple das Audio dafür auf Apple-Servern verarbeiten. Diese Verarbeitung erfolgt durch Apple nach Apples eigener Datenschutzrichtlinie, und wir erhalten das Audio nie. Der daraus entstandene Text wird anschließend auf deinem Gerät ausgewertet.</p>
+
+<h2>Berechtigungen</h2>
+<ul>
+<li><strong>Kamera:</strong> zum Scannen von Belegen und Produkten.</li>
+<li><strong>Fotos:</strong> nur die Bilder, die du selbst auswählst.</li>
+<li><strong>Mikrofon und Spracherkennung:</strong> um Ausgaben und Einnahmen per Sprache hinzuzufügen.</li>
+<li><strong>Mitteilungen:</strong> lokale Erinnerungen am Tag vor dem Abrechnungsstichtag deiner Kreditkarten und vor der Verlängerung von Abos. Sie werden auf deinem Gerät geplant und nutzen keinen Server.</li>
+<li><strong>Dateien:</strong> um eine CSV-Datei zu importieren oder ein ausgewähltes Backup wiederherzustellen.</li>
+</ul>
+<p>Du kannst jede Berechtigung jederzeit unter iPhone-Einstellungen → PersonalFin ändern. Nur die Funktion, die davon abhängt, funktioniert dann nicht mehr.</p>
+
+<h2>Backups, die du exportierst</h2>
+<p>In den Einstellungen der App kannst du eine JSON-Datei mit all deinen Daten exportieren (<em>Vollständiges Backup exportieren</em>) und später wiederherstellen (<em>Aus einem Backup wiederherstellen</em>). Diese Datei wird auf deinem Gerät erstellt, und du entscheidest, wo du sie speicherst oder an wen du sie sendest. Sobald du sie teilst, liegt ihr Schutz in deiner Verantwortung.</p>
+
+<h2>Aufbewahrung und Löschung von Daten</h2>
+<p>Wir speichern deine Daten nicht, daher gibt es bei uns nichts zu löschen. Du hast die Kontrolle:</p>
+<ul>
+<li><strong>Einstellungen → Alle Daten zurücksetzen</strong> löscht deine Einträge in der App (und in deinem iCloud-Container, wenn die Synchronisierung aktiv ist).</li>
+<li>Wenn du die App löschst, werden die auf diesem Gerät gespeicherten Daten entfernt.</li>
+<li>Um Daten aus iCloud zu entfernen, öffne iPhone-Einstellungen → dein Name → iCloud → Accountspeicher verwalten.</li>
+</ul>
+
+<h2>Sicherheit</h2>
+<p>Deine Daten liegen im geschützten Speicher deines Geräts und, falls aktiviert, in deiner privaten iCloud – beides durch Apples Sicherheitsmechanismen geschützt. Die App sendet deine Finanzdaten nicht über das Internet an uns. Kein System ist vollkommen sicher; wir empfehlen daher, dein iPhone aktuell zu halten und mit Code sowie Face ID oder Touch ID zu schützen.</p>
+
+<h2>Kinder</h2>
+<p>PersonalFin richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von Kindern.</p>
+
+<h2>Deine Rechte</h2>
+<p>Da wir deine personenbezogenen Daten weder erheben noch speichern, haben wir keine Kopie, auf die du zugreifen, die du berichtigen oder löschen lassen könntest. Wenn du Fragen zum Datenschutz hast oder ein Recht nach dem für dich geltenden Gesetz ausüben möchtest, schreib uns – wir antworten dir.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn sich diese Erklärung ändert, aktualisieren wir das Datum oben und informieren dich bei wesentlichen Änderungen in der App.</p>
+
+<h2>Kontakt</h2>
+<p>Fragen zum Datenschutz: <a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
+<section id="sec-ar" lang="ar" dir="rtl" hidden>
+<h1>PersonalFin — سياسة الخصوصية</h1>
+<p class="meta"><strong>آخر تحديث:</strong> 16 أكتوبر 2026<br>
+<strong>التواصل:</strong> <a href="mailto:level18studio@gmail.com">level18studio@gmail.com</a></p>
+<p>توضح هذه السياسة المعلومات التي يتعامل معها PersonalFin («التطبيق»، «نحن»)، وأين تُحفظ، وكيف تُستخدم. وقد كتبناها بلغة بسيطة عن قصد.</p>
+
+<h2>ملخص</h2>
+<ul>
+<li>تبقى بياناتك المالية على جهاز iPhone الخاص بك. نحن المطورين لا نتلقاها ولا نجمعها ولا نخزنها ولا نملك وصولًا إليها.</li>
+<li>تعمل جميع ميزات الذكاء الاصطناعي (النصائح المالية، ومسح الإيصالات، والإدخال الصوتي، واستيراد كشوف الحساب) باستخدام Apple Intelligence، وهو نموذج الذكاء الاصطناعي المدمج في iPhone.</li>
+<li>لا نبيع بياناتك ولا نشاركها، ولا نعرض إعلانات، ولا نتتبعك عبر التطبيقات أو المواقع.</li>
+<li>لا يحتوي التطبيق على أي أدوات تحليل أو إعلانات من أطراف ثالثة.</li>
+</ul>
+
+<h2>المعلومات التي يحفظها التطبيق</h2>
+<p>كل ما يلي تنشئه أنت ويُحفظ على جهازك:</p>
+<ul>
+<li>الدخل والمصروفات التي تسجلها (المبلغ، والفئة، والتاريخ، واسم اختياري).</li>
+<li>الميزانيات الشهرية وميزانيات الفئات.</li>
+<li>أهداف الادخار وسداد الديون، والإدخالات التي تضيفها إليها.</li>
+<li>معلومات صافي الثروة (الأصول والديون)، وبيانات بطاقات الائتمان التي تختار إدخالها، والاشتراكات، وسجلات صيانة المركبة، وقوائم أسعار البقالة، والوصفات.</li>
+<li>تفضيلات التطبيق، مثل ما إذا كنت قد أكملت خطوات البدء.</li>
+</ul>
+
+<h2>الحسابات</h2>
+<p>يمكنك استخدام التطبيق بطريقتين:</p>
+<ul>
+<li><strong>وضع الضيف:</strong> ينشئ التطبيق معرّفًا عشوائيًا يُحفظ على جهازك فقط.</li>
+<li><strong>تسجيل الدخول باستخدام Apple:</strong> يتلقى التطبيق معرّفًا فريدًا خاصًا بهذا التطبيق، واسمك فقط إذا اخترت مشاركته. لا نطلب عنوان بريدك الإلكتروني. تبقى هذه المعلومات على جهازك. لا نرى أي كلمة مرور ولا نحفظها أبدًا؛ فـ Apple هي من تتولى المصادقة.</li>
+</ul>
+<p>إذا بدأت في وضع الضيف ثم سجلت الدخول باستخدام Apple لاحقًا، ينقل التطبيق بيانات الضيف إلى حساب Apple على ذلك الجهاز حتى لا تفقدها. ويحدث ذلك بالكامل على جهازك.</p>
+
+<h2>iCloud</h2>
+<p>إذا كان iCloud مفعّلًا للتطبيق على جهازك، تُزامَن بياناتك مع حاوية iCloud الخاصة بك عبر CloudKit من Apple. لا نملك وصولًا إلى تلك الحاوية في أي وقت. تتولى Apple تشفيرها وإدارتها وفق <a href="https://www.apple.com/legal/privacy/">سياسة خصوصية Apple</a>. وقد تتضمن النسخة الاحتياطية على iCloud لجهازك، إن كانت مفعّلة، بيانات هذا التطبيق مثل أي تطبيق آخر.</p>
+
+<h2>الذكاء الاصطناعي (Apple Intelligence)</h2>
+<p>يستخدم PersonalFin نماذج Apple Intelligence على جهاز iPhone (أطر Foundation Models و Vision من Apple) من أجل:</p>
+<ol>
+<li>النصائح المالية في لوحة المعلومات.</li>
+<li>مسح الإيصالات والمنتجات بالكاميرا أو من صورك.</li>
+<li>فهم ما تقوله عند إضافة المصروفات أو الدخل بالصوت.</li>
+<li>اكتشاف المعاملات في لقطة شاشة لكشف حساب بنكي أو ملف CSV تختار استيراده.</li>
+</ol>
+<p>تتم هذه المعالجة على جهازك. لا تُرسَل معاملاتك وصورك ونصوصك إلينا ولا إلى أي مزوّد ذكاء اصطناعي خارجي. ولا يُحفظ أي شيء تمسحه أو تستورده حتى تراجعه وتؤكده.</p>
+
+<h2>الإدخال الصوتي</h2>
+<p>عند استخدام الإدخال الصوتي، يحوّل التعرف على الكلام في iOS كلامك إلى نص. وبحسب جهازك ولغتك وإعداداتك، قد تعالج Apple الصوت على خوادمها لهذا الغرض. تتولى Apple هذه المعالجة وفق سياسة الخصوصية الخاصة بها، ولا نتلقى الصوت أبدًا. ثم يُفسَّر النص الناتج على جهازك.</p>
+
+<h2>الأذونات</h2>
+<ul>
+<li><strong>الكاميرا:</strong> لمسح الإيصالات والمنتجات.</li>
+<li><strong>الصور:</strong> فقط الصور التي تختارها بنفسك.</li>
+<li><strong>الميكروفون والتعرف على الكلام:</strong> لإضافة المصروفات والدخل بالصوت.</li>
+<li><strong>الإشعارات:</strong> تذكيرات محلية قبل يوم من تاريخ إغلاق كشف بطاقة الائتمان وقبل تجديد الاشتراكات. تُجدوَل على جهازك ولا تستخدم أي خادم.</li>
+<li><strong>الملفات:</strong> لاستيراد ملف CSV أو استعادة نسخة احتياطية تختارها.</li>
+</ul>
+<p>يمكنك تغيير أي إذن في أي وقت من إعدادات iPhone ← PersonalFin. وستتوقف فقط الميزة التي تعتمد على ذلك الإذن.</p>
+
+<h2>النسخ الاحتياطية التي تصدّرها</h2>
+<p>من إعدادات التطبيق يمكنك تصدير ملف JSON يحتوي على جميع بياناتك (<em>تصدير نسخة احتياطية كاملة</em>) واستعادته لاحقًا (<em>الاستعادة من نسخة احتياطية</em>). يُنشأ هذا الملف على جهازك وأنت من يقرر أين تحفظه أو لمن ترسله. وبمجرد مشاركته، تصبح حمايته مسؤوليتك.</p>
+
+<h2>الاحتفاظ بالبيانات وحذفها</h2>
+<p>نحن لا نحتفظ ببياناتك، لذا لا يوجد ما نحذفه من جهتنا. أنت من يتحكم بها:</p>
+<ul>
+<li><strong>الإعدادات ← إعادة تعيين جميع البيانات</strong> تحذف سجلاتك في التطبيق (وفي حاوية iCloud إذا كانت المزامنة مفعّلة).</li>
+<li>حذف التطبيق يزيل البيانات المحفوظة على ذلك الجهاز.</li>
+<li>لإزالة البيانات من iCloud، انتقل إلى إعدادات iPhone ← اسمك ← iCloud ← إدارة تخزين الحساب.</li>
+</ul>
+
+<h2>الأمان</h2>
+<p>تُحفظ بياناتك في التخزين المحمي لجهازك، وفي iCloud الخاص بك إن فعّلته، وكلاهما محمي بأمان Apple. لا يرسل التطبيق بياناتك المالية عبر الإنترنت إلينا. لا يوجد نظام آمن تمامًا، لذا ننصحك بإبقاء جهاز iPhone محدّثًا ومحميًا برمز دخول و Face ID أو Touch ID.</p>
+
+<h2>الأطفال</h2>
+<p>PersonalFin غير موجّه للأطفال دون سن 13 عامًا، ولا نجمع بيانات منهم عن علم.</p>
+
+<h2>حقوقك</h2>
+<p>بما أننا لا نجمع بياناتك الشخصية ولا نحتفظ بها، فليست لدينا نسخة يمكنك الوصول إليها أو تصحيحها أو حذفها. إذا كانت لديك أسئلة عن الخصوصية أو أردت ممارسة حق بموجب القانون المطبّق عليك، فراسلنا وسنرد عليك.</p>
+
+<h2>التغييرات على هذه السياسة</h2>
+<p>إذا تغيرت هذه السياسة فسنحدّث التاريخ أعلاه، وإذا كان التغيير جوهريًا فسنبلغك داخل التطبيق.</p>
+
+<h2>التواصل</h2>
+<p>أسئلة الخصوصية: <a href="mailto:level18studio@gmail.com"><strong>level18studio@gmail.com</strong></a></p>
+</section>
+
 <footer>
-<span data-en="Need help? " data-es="¿Necesitas ayuda? ">Need help? </span><a href="support.html" data-link="support.html" data-en="Support" data-es="Soporte">Support</a> · © 2026 PersonalFin
+<span data-en="Need help? " data-es="¿Necesitas ayuda? " data-zh="需要帮助？" data-ja="お困りですか？" data-ko="도움이 필요하신가요? " data-fr="Besoin d'aide ? " data-de="Brauchst du Hilfe? " data-ar="تحتاج مساعدة؟ ">Need help? </span><a href="support.html" data-link="support.html" data-en="Support" data-es="Soporte" data-zh="支持" data-ja="サポート" data-ko="지원" data-fr="Assistance" data-de="Support" data-ar="الدعم">Support</a> · © 2026 PersonalFin
 </footer>
 </main>
 <script>
 (function(){
-var titles={en:'PersonalFin — Privacy Policy',es:'PersonalFin — Política de Privacidad'};
+var langs=["en", "es", "zh", "ja", "ko", "fr", "de", "ar"];
+var titles={"en": "PersonalFin — Privacy Policy", "es": "PersonalFin — Política de Privacidad", "zh": "PersonalFin — 隐私政策", "ja": "PersonalFin — プライバシーポリシー", "ko": "PersonalFin — 개인정보 처리방침", "fr": "PersonalFin — Politique de confidentialité", "de": "PersonalFin — Datenschutzerklärung", "ar": "PersonalFin — سياسة الخصوصية"};
 var b=document.querySelectorAll('.lang button');
 function show(l,push){
-document.getElementById("sec-en").hidden=l!=='en';
-document.getElementById("sec-es").hidden=l!=='es';
+langs.forEach(function(k){document.getElementById('sec-'+k).hidden=k!==l});
 document.documentElement.lang=l;
+document.documentElement.dir=l==='ar'?'rtl':'ltr';
 document.title=titles[l];
 b.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.l===l))});
 document.querySelectorAll('[data-'+l+']').forEach(function(n){n.textContent=n.getAttribute('data-'+l)});
@@ -226,8 +745,8 @@ if(push&&history.replaceState)history.replaceState(null,'','#'+l);
 }
 b.forEach(function(x){x.addEventListener('click',function(){show(x.dataset.l,true)})});
 var q=location.hash.replace('#','');
-if(q==='es'||q==='en')show(q);
-else show((navigator.language||'').toLowerCase().indexOf('es')===0?'es':'en');
+var nav=(navigator.language||'en').toLowerCase().slice(0,2);
+show(langs.indexOf(q)!==-1?q:(langs.indexOf(nav)!==-1?nav:'en'));
 })();
 </script>
 </body>
