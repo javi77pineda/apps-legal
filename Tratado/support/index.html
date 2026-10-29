@@ -88,6 +88,10 @@
   footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
   @media (max-width: 480px) { h1 { font-size: 1.65rem; } }
   @media print { .lang { display: none; } section[hidden] { display: block; } body { background: #fff; color: #000; } details { border: none; padding: 0; } }
+  .lang { flex-wrap: wrap; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.25rem; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+  [dir="rtl"] .summary, [dir="rtl"] .contact { border-left: 0; border-right: 4px solid var(--accent); border-radius: 6px 0 0 6px; }
 </style>
 </head>
 <body>
@@ -95,10 +99,16 @@
 
 <header>
   <h1>Tratado</h1>
-  <p class="meta"><span lang="es">Soporte · Actualizado: 18 de octubre de 2026</span><br><span lang="en">Support · Updated: October 18, 2026</span></p>
+  <p class="meta" id="meta">Soporte · Actualizado: 18 de octubre de 2026</p>
   <div class="lang" role="group" aria-label="Idioma / Language">
     <button type="button" data-lang="es" aria-pressed="true">Español</button>
     <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
   </div>
 </header>
 
@@ -152,7 +162,7 @@
 </details>
 <h2>Antes de escribirme</h2>
 <p>Cuéntame el modelo de tu iPhone o iPad, la versión de iOS (Ajustes › General › Información) y qué estabas haciendo cuando ocurrió el problema. Una captura de pantalla ayuda mucho. Nunca te pediré contraseñas ni datos de tu cuenta de Apple.</p>
-<p><a href="../">Política de privacidad</a></p>
+<p><a href="../#es">Política de privacidad</a></p>
 </section>
 
 <section id="en" lang="en" hidden>
@@ -205,32 +215,354 @@
 </details>
 <h2>Before you write</h2>
 <p>Tell me your iPhone or iPad model, your iOS version (Settings › General › About) and what you were doing when the problem happened. A screenshot helps a lot. I will never ask for passwords or Apple Account details.</p>
-<p><a href="../">Privacy Policy</a></p>
+<p><a href="../#en">Privacy Policy</a></p>
+</section>
+
+<section id="zh" lang="zh" hidden>
+<p>Tratado 陪伴您走过跟随耶稣的头 30 天：每天 10 到 15 分钟，与圣经、祷告、日记和一位陪伴者同行。</p>
+<div class="contact">
+  <p>遇到问题或有建议？请给我写信：</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>我通常会在 2 到 3 个工作日内回复。</p>
+</div>
+<h2>常见问题</h2>
+<details>
+<summary>我该如何开始？</summary>
+<p>第一次打开应用时，您会看到简短的欢迎介绍。之后，在 <strong>Today</strong> 标签中点按“Start day 1”。每天有五个简短步骤：Read（阅读）、Understand（理解）、Reflect（反思）、Pray（祷告）和 Put it into practice（付诸实践）。在 Settings › How to use Tratado 中有所有标签的使用指南。</p>
+</details>
+<details>
+<summary>我必须每天完成一课吗？</summary>
+<p>这是最理想的，但如果某天做不到也不会有任何惩罚：应用会在您停下的地方等您。完成前面的课程后，后面的课程才会解锁。</p>
+</details>
+<details>
+<summary>向 AI 提问的选项没有出现或无法使用</summary>
+<p>AI 使用设备内的 Apple 智能。您需要 iPhone 15 Pro 或更新机型（或配备 M1 或更新芯片、或 A17 Pro 的 iPad）、iOS 26 或更高版本，并在“设置”›“Apple 智能与 Siri”中开启 Apple 智能，且使用受支持的语言。刚开启时，模型可能需要一些时间下载。在此期间，Ask 标签会用常见问题来回答。</p>
+</details>
+<details>
+<summary>我可以相信 AI 的回答吗？</summary>
+<p>AI 可能会出错。因此，每个回答都会显示其依据的经文，应用也会核实这些经文确实存在。请在圣经中阅读这些经文；遇到重要或个人的问题，请与您的牧师或陪伴者交谈。</p>
+</details>
+<details>
+<summary>我可以更换圣经译本吗？</summary>
+<p>可以，在 Settings › Bible 中更换。西班牙语可选择 Reina-Valera 1909 或 Biblia libre para el mundo（现代西班牙语）。英语使用 King James Version。</p>
+</details>
+<details>
+<summary>如何更改应用的语言？</summary>
+<p>Tratado 使用您 iPhone 的语言（西班牙语或英语）。如只想更改此应用的语言，请前往 iOS“设置”› Tratado ›“语言”。</p>
+</details>
+<details>
+<summary>我收不到每日提醒</summary>
+<p>请确认应用设置中已开启提醒，并在 iOS“设置”›“通知”› Tratado 中允许通知。专注模式也可能将其静音。</p>
+</details>
+<details>
+<summary>如何把我的数据转移到新 iPhone？</summary>
+<p>您的数据只保存在设备上。在 Settings › Your data 中点按“Export backup”，并保存这段文字（例如保存到备忘录或发邮件给自己）。在新 iPhone 上，把这段文字粘贴到同一位置，然后点按“Import backup (paste the text above)”。如果您通过 iCloud 或电脑备份恢复 iPhone，应用的数据也会一并恢复。</p>
+</details>
+<details>
+<summary>带盾牌的红色按钮是什么？</summary>
+<p>这是面对试探时的帮助。它在每个页面都可使用，会一步步引导您：停下来、祷告、离开、想起神的话语，并寻求一位成熟的信徒。</p>
+</details>
+<details>
+<summary>内容是由谁撰写的？</summary>
+<p>课程、常见问题和词汇表都是专为 Tratado 编写的。应用推荐并致谢 Mark Robinson（Avant Ministries）的门徒训练资料 <em>New Life in Christ</em>，可在 <a href="https://newlifediscipleship.com">newlifediscipleship.com</a> 免费获取。</p>
+</details>
+<h2>写信前请注意</h2>
+<p>请告诉我您的 iPhone 或 iPad 机型、iOS 版本（“设置”›“通用”›“关于本机”），以及问题发生时您正在做什么。附上截图会很有帮助。我绝不会向您索取密码或 Apple 账户信息。</p>
+<p><a href="../#zh">隐私政策</a></p>
+</section>
+
+<section id="ja" lang="ja" hidden>
+<p>Tratado は、イエスに従い始めた最初の 30 日間に寄り添います。1 日 10〜15 分、聖書、祈り、日記、そして伴走者の助けとともに。</p>
+<div class="contact">
+  <p>問題や提案がありますか？メールしてください：</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>通常 2〜3 営業日以内に返信します。</p>
+</div>
+<h2>よくある質問</h2>
+<details>
+<summary>どうやって始めればいいですか？</summary>
+<p>初めてアプリを開くと、短いウェルカム画面が表示されます。その後、<strong>Today</strong> タブで「Start day 1」をタップします。毎日、Read（読む）、Understand（理解する）、Reflect（振り返る）、Pray（祈る）、Put it into practice（実践する）の 5 つの短いステップがあります。Settings › How to use Tratado に、すべてのタブのガイドがあります。</p>
+</details>
+<details>
+<summary>毎日レッスンをしなければいけませんか？</summary>
+<p>それが理想ですが、できない日があってもペナルティはありません。アプリは中断したところで待っています。レッスンは前のレッスンを終えるごとに開放されます。</p>
+</details>
+<details>
+<summary>AI に質問するオプションが表示されない、または使えない</summary>
+<p>AI はデバイス上の Apple Intelligence を使います。iPhone 15 Pro 以降（または M1 以降のチップか A17 Pro を搭載した iPad）、iOS 26 以降、そして「設定」›「Apple Intelligence と Siri」で Apple Intelligence をオンにし、対応言語を使用している必要があります。オンにした直後は、モデルのダウンロードに時間がかかることがあります。その間、Ask タブはよくある質問で回答します。</p>
+</details>
+<details>
+<summary>AI の回答は信頼できますか？</summary>
+<p>AI は間違えることがあります。そのため、各回答にはその根拠となる聖句が表示され、アプリはそれが実在するか確認しています。聖書でその箇所を読み、大切なことや個人的なことについては牧師や伴走者と話してください。</p>
+</details>
+<details>
+<summary>聖書の訳を変更できますか？</summary>
+<p>はい、Settings › Bible で変更できます。スペイン語では Reina-Valera 1909 または Biblia libre para el mundo（現代スペイン語）を選べます。英語では King James Version を使います。</p>
+</details>
+<details>
+<summary>アプリの言語を変えるには？</summary>
+<p>Tratado は iPhone の言語（スペイン語または英語）を使います。このアプリだけ変更するには、iOS の「設定」› Tratado ›「言語」を開いてください。</p>
+</details>
+<details>
+<summary>毎日のリマインダーが届かない</summary>
+<p>アプリの設定でリマインダーがオンになっているか、iOS の「設定」›「通知」› Tratado で通知が許可されているかを確認してください。集中モードによって消音されることもあります。</p>
+</details>
+<details>
+<summary>新しい iPhone にデータを移すには？</summary>
+<p>データはデバイスにのみ保存されます。Settings › Your data で「Export backup」をタップし、そのテキストを保存してください（例：メモに貼る、自分宛てにメールする）。新しい iPhone では、同じ場所にそのテキストを貼り付けて「Import backup (paste the text above)」をタップします。iCloud やコンピュータのバックアップから iPhone を復元した場合は、アプリのデータも復元されます。</p>
+</details>
+<details>
+<summary>盾の付いた赤いボタンは何ですか？</summary>
+<p>誘惑に直面したときの助けです。どの画面からでも使え、立ち止まる、祈る、その場を離れる、みことばを思い出す、成熟した信者に助けを求める、という順に一歩ずつ導きます。</p>
+</details>
+<details>
+<summary>内容は誰が書いていますか？</summary>
+<p>レッスン、よくある質問、用語集は Tratado のために書かれたものです。アプリは Mark Robinson（Avant Ministries）による弟子訓練の教材 <em>New Life in Christ</em> を推薦し、クレジットを記載しています。<a href="https://newlifediscipleship.com">newlifediscipleship.com</a> から無料で入手できます。</p>
+</details>
+<h2>メールの前に</h2>
+<p>iPhone または iPad の機種、iOS のバージョン（「設定」›「一般」›「情報」）、問題が起きたときに何をしていたかを教えてください。スクリーンショットがあるととても助かります。パスワードや Apple アカウントの情報を求めることは決してありません。</p>
+<p><a href="../#ja">プライバシーポリシー</a></p>
+</section>
+
+<section id="ko" lang="ko" hidden>
+<p>Tratado는 예수님을 따르기 시작한 처음 30일을 함께합니다. 하루 10~15분, 성경과 기도, 일기, 그리고 동반자의 도움과 함께요.</p>
+<div class="contact">
+  <p>문제가 있거나 제안이 있나요? 이메일을 보내 주세요:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>보통 영업일 기준 2~3일 안에 답장합니다.</p>
+</div>
+<h2>자주 묻는 질문</h2>
+<details>
+<summary>어떻게 시작하나요?</summary>
+<p>앱을 처음 열면 짧은 환영 화면이 나옵니다. 그다음 <strong>Today</strong> 탭에서 'Start day 1'을 탭하세요. 매일 Read(읽기), Understand(이해하기), Reflect(묵상하기), Pray(기도하기), Put it into practice(실천하기)의 다섯 가지 짧은 단계가 있습니다. Settings › How to use Tratado에 모든 탭의 안내가 있습니다.</p>
+</details>
+<details>
+<summary>매일 레슨을 해야 하나요?</summary>
+<p>그게 가장 좋지만, 하루를 놓쳐도 불이익은 없습니다. 앱은 멈춘 곳에서 기다립니다. 레슨은 이전 레슨을 마치면 차례로 열립니다.</p>
+</details>
+<details>
+<summary>AI에게 질문하는 옵션이 보이지 않거나 작동하지 않아요</summary>
+<p>AI는 기기 내 Apple Intelligence를 사용합니다. iPhone 15 Pro 이상(또는 M1 이상 칩이나 A17 Pro를 탑재한 iPad), iOS 26 이상이 필요하며, 설정 › Apple Intelligence 및 Siri에서 Apple Intelligence를 켜고 지원되는 언어를 사용해야 합니다. 막 켠 경우 모델 다운로드에 시간이 걸릴 수 있습니다. 그동안 Ask 탭은 자주 묻는 질문으로 답합니다.</p>
+</details>
+<details>
+<summary>AI의 답변을 믿어도 되나요?</summary>
+<p>AI는 실수할 수 있습니다. 그래서 각 답변에는 근거가 된 성경 구절이 표시되고, 앱은 그 구절이 실제로 있는지 확인합니다. 성경에서 직접 읽어 보고, 중요한 일이나 개인적인 문제는 목사님이나 동반자와 이야기하세요.</p>
+</details>
+<details>
+<summary>성경 번역본을 바꿀 수 있나요?</summary>
+<p>네, Settings › Bible에서 바꿀 수 있습니다. 스페인어는 Reina-Valera 1909 또는 Biblia libre para el mundo(현대 스페인어)를 고를 수 있습니다. 영어는 King James Version을 사용합니다.</p>
+</details>
+<details>
+<summary>앱 언어는 어떻게 바꾸나요?</summary>
+<p>Tratado는 iPhone의 언어(스페인어 또는 영어)를 사용합니다. 이 앱만 바꾸려면 iOS 설정 › Tratado › 언어로 이동하세요.</p>
+</details>
+<details>
+<summary>일일 리마인더가 오지 않아요</summary>
+<p>앱 설정에서 리마인더가 켜져 있는지, iOS 설정 › 알림 › Tratado에서 알림이 허용되어 있는지 확인하세요. 집중 모드도 알림을 무음으로 만들 수 있습니다.</p>
+</details>
+<details>
+<summary>새 iPhone으로 데이터를 옮기려면요?</summary>
+<p>데이터는 기기에만 저장됩니다. Settings › Your data에서 'Export backup'을 탭하고 그 텍스트를 저장하세요(예: 메모에 붙여 넣거나 자신에게 이메일로 보내기). 새 iPhone에서는 같은 곳에 그 텍스트를 붙여 넣고 'Import backup (paste the text above)'을 탭하세요. iCloud나 컴퓨터 백업으로 iPhone을 복원하면 앱 데이터도 함께 복원됩니다.</p>
+</details>
+<details>
+<summary>방패가 있는 빨간 버튼은 무엇인가요?</summary>
+<p>유혹을 받을 때를 위한 도움입니다. 모든 화면에서 사용할 수 있으며, 멈추기, 기도하기, 자리 피하기, 말씀 기억하기, 성숙한 신자에게 도움 청하기의 순서로 한 단계씩 안내합니다.</p>
+</details>
+<details>
+<summary>콘텐츠는 누가 만들었나요?</summary>
+<p>레슨, 자주 묻는 질문, 용어집은 Tratado를 위해 작성되었습니다. 앱은 Mark Robinson(Avant Ministries)의 제자훈련 자료 <em>New Life in Christ</em>를 추천하고 출처를 밝히며, 이 자료는 <a href="https://newlifediscipleship.com">newlifediscipleship.com</a>에서 무료로 받을 수 있습니다.</p>
+</details>
+<h2>이메일을 보내기 전에</h2>
+<p>iPhone 또는 iPad 모델, iOS 버전(설정 › 일반 › 정보), 문제가 생겼을 때 무엇을 하고 있었는지 알려 주세요. 스크린샷이 있으면 큰 도움이 됩니다. 비밀번호나 Apple 계정 정보는 절대 요청하지 않습니다.</p>
+<p><a href="../#ko">개인정보 처리방침</a></p>
+</section>
+
+<section id="fr" lang="fr" hidden>
+<p>Tratado vous accompagne pendant vos 30 premiers jours à la suite de Jésus : 10 à 15 minutes par jour avec la Bible, la prière, un journal et l'aide d'un accompagnateur.</p>
+<div class="contact">
+  <p>Un problème ou une suggestion ? Écrivez-moi :</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>Je réponds généralement sous 2 à 3 jours ouvrés.</p>
+</div>
+<h2>Questions fréquentes</h2>
+<details>
+<summary>Comment commencer ?</summary>
+<p>À la première ouverture de l'app, vous verrez un court accueil. Ensuite, dans l'onglet <strong>Today</strong>, touchez « Start day 1 ». Chaque jour comporte cinq étapes courtes : Read (lire), Understand (comprendre), Reflect (méditer), Pray (prier) et Put it into practice (mettre en pratique). Settings › How to use Tratado contient un guide de tous les onglets.</p>
+</details>
+<details>
+<summary>Dois-je faire une leçon chaque jour ?</summary>
+<p>C'est l'idéal, mais il n'y a aucune pénalité si vous manquez un jour : l'app vous attend là où vous vous êtes arrêté. Les leçons se débloquent au fur et à mesure que vous terminez les précédentes.</p>
+</details>
+<details>
+<summary>L'option pour poser une question à l'IA n'apparaît pas ou ne fonctionne pas</summary>
+<p>L'IA utilise Apple Intelligence sur l'appareil. Il vous faut un iPhone 15 Pro ou plus récent (ou un iPad avec puce M1 ou ultérieure, ou A17 Pro), iOS 26 ou ultérieur et Apple Intelligence activé dans Réglages › Apple Intelligence et Siri, avec une langue prise en charge. Juste après l'activation, le modèle peut mettre un moment à se télécharger. En attendant, l'onglet Ask répond avec la FAQ.</p>
+</details>
+<details>
+<summary>Puis-je faire confiance aux réponses de l'IA ?</summary>
+<p>L'IA peut se tromper. C'est pourquoi chaque réponse indique les versets sur lesquels elle s'appuie, et l'app vérifie qu'ils existent. Lisez-les dans la Bible et, pour les sujets importants ou personnels, parlez-en à votre pasteur ou à votre accompagnateur.</p>
+</details>
+<details>
+<summary>Puis-je changer de version de la Bible ?</summary>
+<p>Oui, dans Settings › Bible. En espagnol, vous pouvez choisir la Reina-Valera 1909 ou la Biblia libre para el mundo (espagnol actuel). En anglais, l'app utilise la King James Version.</p>
+</details>
+<details>
+<summary>Comment changer la langue de l'app ?</summary>
+<p>Tratado utilise la langue de votre iPhone (espagnol ou anglais). Pour la changer uniquement pour cette app, allez dans Réglages d'iOS › Tratado › Langue.</p>
+</details>
+<details>
+<summary>Je ne reçois pas le rappel quotidien</summary>
+<p>Vérifiez que le rappel est activé dans les réglages de l'app et que les notifications de Tratado sont autorisées dans Réglages d'iOS › Notifications › Tratado. Les modes de concentration peuvent aussi les rendre silencieuses.</p>
+</details>
+<details>
+<summary>Comment transférer mes données vers un nouvel iPhone ?</summary>
+<p>Vos données sont stockées uniquement sur l'appareil. Dans Settings › Your data, touchez « Export backup » et conservez le texte (par exemple dans Notes ou en vous l'envoyant par e-mail). Sur le nouvel iPhone, collez ce texte au même endroit et touchez « Import backup (paste the text above) ». Si vous restaurez votre iPhone depuis une sauvegarde iCloud ou un ordinateur, les données de l'app sont restaurées aussi.</p>
+</details>
+<details>
+<summary>À quoi sert le bouton rouge avec un bouclier ?</summary>
+<p>C'est l'aide face à la tentation. Il est disponible sur tous les écrans et vous guide pas à pas : arrêtez-vous, priez, éloignez-vous, souvenez-vous de la Parole et tournez-vous vers un croyant mûr.</p>
+</details>
+<details>
+<summary>Qui est derrière le contenu ?</summary>
+<p>Les leçons, la FAQ et le glossaire ont été écrits pour Tratado. L'app recommande et cite le matériel de formation de disciples <em>New Life in Christ</em> de Mark Robinson (Avant Ministries), disponible gratuitement sur <a href="https://newlifediscipleship.com">newlifediscipleship.com</a>.</p>
+</details>
+<h2>Avant de m'écrire</h2>
+<p>Indiquez-moi le modèle de votre iPhone ou iPad, votre version d'iOS (Réglages › Général › Informations) et ce que vous faisiez quand le problème est survenu. Une capture d'écran aide beaucoup. Je ne vous demanderai jamais de mot de passe ni d'informations sur votre compte Apple.</p>
+<p><a href="../#fr">Politique de confidentialité</a></p>
+</section>
+
+<section id="de" lang="de" hidden>
+<p>Tratado begleitet dich durch deine ersten 30 Tage in der Nachfolge Jesu: 10 bis 15 Minuten am Tag mit der Bibel, Gebet, einem Tagebuch und der Hilfe einer Begleitperson.</p>
+<div class="contact">
+  <p>Hast du ein Problem oder einen Vorschlag? Schreib mir:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>Ich antworte meist innerhalb von 2 bis 3 Werktagen.</p>
+</div>
+<h2>Häufige Fragen</h2>
+<details>
+<summary>Wie fange ich an?</summary>
+<p>Beim ersten Öffnen der App siehst du eine kurze Begrüßung. Tippe danach im Tab <strong>Today</strong> auf „Start day 1“. Jeder Tag hat fünf kurze Schritte: Read (Lesen), Understand (Verstehen), Reflect (Nachdenken), Pray (Beten) und Put it into practice (Umsetzen). Unter Settings › How to use Tratado findest du eine Anleitung zu allen Tabs.</p>
+</details>
+<details>
+<summary>Muss ich jeden Tag eine Lektion machen?</summary>
+<p>Das wäre ideal, aber es gibt keine Strafe, wenn du einen Tag nicht schaffst: Die App wartet dort auf dich, wo du aufgehört hast. Die Lektionen werden freigeschaltet, sobald du die vorherigen abgeschlossen hast.</p>
+</details>
+<details>
+<summary>Die Option, der KI eine Frage zu stellen, erscheint nicht oder funktioniert nicht</summary>
+<p>Die KI nutzt Apple Intelligence auf dem Gerät. Du brauchst ein iPhone 15 Pro oder neuer (oder ein iPad mit M1-Chip oder neuer bzw. A17 Pro), iOS 26 oder neuer und Apple Intelligence aktiviert unter Einstellungen › Apple Intelligence &amp; Siri, mit einer unterstützten Sprache. Direkt nach dem Aktivieren kann der Download des Modells eine Weile dauern. In der Zwischenzeit antwortet der Tab Ask mit den häufigen Fragen.</p>
+</details>
+<details>
+<summary>Kann ich den Antworten der KI vertrauen?</summary>
+<p>KI kann sich irren. Deshalb zeigt jede Antwort die Bibelverse, auf denen sie beruht, und die App prüft, ob es sie gibt. Lies sie in der Bibel nach und sprich bei wichtigen oder persönlichen Themen mit deinem Pastor oder deiner Begleitperson.</p>
+</details>
+<details>
+<summary>Kann ich die Bibelübersetzung ändern?</summary>
+<p>Ja, unter Settings › Bible. Auf Spanisch kannst du zwischen der Reina-Valera 1909 und der Biblia libre para el mundo (modernes Spanisch) wählen. Auf Englisch nutzt die App die King James Version.</p>
+</details>
+<details>
+<summary>Wie ändere ich die Sprache der App?</summary>
+<p>Tratado verwendet die Sprache deines iPhones (Spanisch oder Englisch). Um sie nur für diese App zu ändern, öffne die iOS-Einstellungen › Tratado › Sprache.</p>
+</details>
+<details>
+<summary>Ich bekomme die tägliche Erinnerung nicht</summary>
+<p>Prüfe, ob die Erinnerung in den Einstellungen der App aktiviert ist und ob Mitteilungen für Tratado unter iOS-Einstellungen › Mitteilungen › Tratado erlaubt sind. Auch ein Fokus kann sie stummschalten.</p>
+</details>
+<details>
+<summary>Wie übertrage ich meine Daten auf ein neues iPhone?</summary>
+<p>Deine Daten liegen nur auf dem Gerät. Tippe unter Settings › Your data auf „Export backup“ und speichere den Text (zum Beispiel in Notizen oder indem du ihn dir per E-Mail schickst). Füge den Text auf dem neuen iPhone an derselben Stelle ein und tippe auf „Import backup (paste the text above)“. Wenn du dein iPhone aus einem iCloud- oder Computer-Backup wiederherstellst, werden auch die Daten der App wiederhergestellt.</p>
+</details>
+<details>
+<summary>Was ist die rote Taste mit dem Schild?</summary>
+<p>Das ist die Hilfe bei Versuchung. Sie ist auf jedem Bildschirm verfügbar und führt dich Schritt für Schritt: innehalten, beten, dich entfernen, dich an das Wort erinnern und dich an einen reifen Gläubigen wenden.</p>
+</details>
+<details>
+<summary>Wer steht hinter den Inhalten?</summary>
+<p>Die Lektionen, die häufigen Fragen und das Glossar wurden für Tratado geschrieben. Die App empfiehlt und nennt das Jüngerschaftsmaterial <em>New Life in Christ</em> von Mark Robinson (Avant Ministries), das kostenlos auf <a href="https://newlifediscipleship.com">newlifediscipleship.com</a> erhältlich ist.</p>
+</details>
+<h2>Bevor du mir schreibst</h2>
+<p>Nenne mir dein iPhone- oder iPad-Modell, deine iOS-Version (Einstellungen › Allgemein › Info) und was du gerade gemacht hast, als das Problem auftrat. Ein Screenshot hilft sehr. Ich werde dich niemals nach Passwörtern oder Daten deines Apple Accounts fragen.</p>
+<p><a href="../#de">Datenschutzerklärung</a></p>
+</section>
+
+<section id="ar" lang="ar" dir="rtl" hidden>
+<p>يرافقك Tratado في أيامك الثلاثين الأولى في اتباع يسوع: من 10 إلى 15 دقيقة يوميًا مع الكتاب المقدس والصلاة واليوميات ومساعدة مرافق.</p>
+<div class="contact">
+  <p>لديك مشكلة أو اقتراح؟ راسلني:</p>
+  <p><a class="mail" href="mailto:level18studio@gmail.com?subject=Tratado">level18studio@gmail.com</a></p>
+  <p>أرد عادةً خلال يومين إلى ثلاثة أيام عمل.</p>
+</div>
+<h2>الأسئلة الشائعة</h2>
+<details>
+<summary>كيف أبدأ؟</summary>
+<p>عند فتح التطبيق لأول مرة سترى ترحيبًا قصيرًا. بعد ذلك، في تبويب <strong>Today</strong> اضغط «Start day 1». لكل يوم خمس خطوات قصيرة: Read (اقرأ)، و Understand (افهم)، و Reflect (تأمّل)، و Pray (صلِّ)، و Put it into practice (طبّق). وفي Settings › How to use Tratado دليل لجميع التبويبات.</p>
+</details>
+<details>
+<summary>هل عليّ إنجاز درس كل يوم؟</summary>
+<p>هذا هو الأفضل، لكن لا عقوبة إذا لم تستطع في يوم ما: ينتظرك التطبيق حيث توقفت. تُفتح الدروس كلما أكملت الدروس السابقة.</p>
+</details>
+<details>
+<summary>خيار سؤال الذكاء الاصطناعي لا يظهر أو لا يعمل</summary>
+<p>يستخدم الذكاء الاصطناعي Apple Intelligence داخل الجهاز. تحتاج إلى iPhone 15 Pro أو أحدث (أو iPad بشريحة M1 أو أحدث، أو A17 Pro)، ونظام iOS 26 أو أحدث، وتفعيل Apple Intelligence من الإعدادات › Apple Intelligence و Siri، مع لغة مدعومة. بعد التفعيل مباشرة قد يستغرق تنزيل النموذج بعض الوقت. وفي الأثناء يجيب تبويب Ask من الأسئلة الشائعة.</p>
+</details>
+<details>
+<summary>هل يمكنني الوثوق بإجابات الذكاء الاصطناعي؟</summary>
+<p>قد يخطئ الذكاء الاصطناعي. لذلك تعرض كل إجابة الآيات التي تستند إليها، ويتحقق التطبيق من وجودها. اقرأها في الكتاب المقدس، وفي الأمور المهمة أو الشخصية تحدّث مع راعيك أو مرافقك.</p>
+</details>
+<details>
+<summary>هل يمكنني تغيير ترجمة الكتاب المقدس؟</summary>
+<p>نعم، من Settings › Bible. بالإسبانية يمكنك اختيار Reina-Valera 1909 أو Biblia libre para el mundo (الإسبانية الحديثة). وبالإنجليزية يستخدم التطبيق King James Version.</p>
+</details>
+<details>
+<summary>كيف أغيّر لغة التطبيق؟</summary>
+<p>يستخدم Tratado لغة جهاز iPhone (الإسبانية أو الإنجليزية). ولتغييرها لهذا التطبيق فقط، انتقل إلى إعدادات iOS › Tratado › اللغة.</p>
+</details>
+<details>
+<summary>لا يصلني التذكير اليومي</summary>
+<p>تحقق من تفعيل التذكير في إعدادات التطبيق ومن السماح بإشعارات Tratado في إعدادات iOS › الإشعارات › Tratado. وقد تكتمها أوضاع التركيز أيضًا.</p>
+</details>
+<details>
+<summary>كيف أنقل بياناتي إلى iPhone جديد؟</summary>
+<p>تُحفظ بياناتك على الجهاز فقط. في Settings › Your data اضغط «Export backup» واحفظ النص (مثلًا في الملاحظات أو بإرساله إلى بريدك). وعلى الـ iPhone الجديد، الصق النص في المكان نفسه واضغط «Import backup (paste the text above)». إذا استعدت جهاز iPhone من نسخة iCloud أو من الكمبيوتر، تُستعاد بيانات التطبيق أيضًا.</p>
+</details>
+<details>
+<summary>ما الزر الأحمر الذي عليه درع؟</summary>
+<p>إنه المساعدة عند التجربة. متاح في كل الشاشات ويرشدك خطوة بخطوة: توقّف، صلِّ، ابتعد، تذكّر الكلمة، واطلب مؤمنًا ناضجًا.</p>
+</details>
+<details>
+<summary>من وراء المحتوى؟</summary>
+<p>كُتبت الدروس والأسئلة الشائعة والمسرد خصيصًا لـ Tratado. ويوصي التطبيق بمادة التلمذة <em>New Life in Christ</em> لمارك روبنسون (Avant Ministries) وينسب إليها الفضل، وهي متاحة مجانًا على <a href="https://newlifediscipleship.com">newlifediscipleship.com</a>.</p>
+</details>
+<h2>قبل أن تراسلني</h2>
+<p>أخبرني بطراز iPhone أو iPad، وإصدار iOS (الإعدادات › عام › حول)، وما كنت تفعله عندما حدثت المشكلة. لقطة الشاشة تساعد كثيرًا. لن أطلب منك أبدًا كلمات مرور أو بيانات حساب Apple.</p>
+<p><a href="../#ar">سياسة الخصوصية</a></p>
 </section>
 
 <footer>
-  Tratado · <span lang="es">Soporte</span> / <span lang="en">Support</span>
-  · <a href="../"><span lang="es">Política de privacidad</span><span lang="en" hidden>Privacy Policy</span></a>
+  Tratado · <span id="f-this">Soporte</span>
+  · <a id="f-link" href="../" data-base="../">Política de privacidad</a>
 </footer>
 </div>
 
 <script>
 (function () {
-  var sections = { es: document.getElementById('es'), en: document.getElementById('en') };
+  var langs = ["es", "en", "zh", "ja", "ko", "fr", "de", "ar"];
+  var I = {"es": {"title": "Tratado · Soporte", "meta": "Soporte · Actualizado: 18 de octubre de 2026", "self": "Soporte", "other": "Política de privacidad"}, "en": {"title": "Tratado · Support", "meta": "Support · Updated: October 18, 2026", "self": "Support", "other": "Privacy Policy"}, "zh": {"title": "Tratado · 支持", "meta": "支持 · 更新：2026年10月18日", "self": "支持", "other": "隐私政策"}, "ja": {"title": "Tratado · サポート", "meta": "サポート · 更新日：2026年10月18日", "self": "サポート", "other": "プライバシーポリシー"}, "ko": {"title": "Tratado · 지원", "meta": "지원 · 업데이트: 2026년 10월 18일", "self": "지원", "other": "개인정보 처리방침"}, "fr": {"title": "Tratado · Assistance", "meta": "Assistance · Mis à jour : 18 octobre 2026", "self": "Assistance", "other": "Politique de confidentialité"}, "de": {"title": "Tratado · Support", "meta": "Support · Aktualisiert: 18. Oktober 2026", "self": "Support", "other": "Datenschutzerklärung"}, "ar": {"title": "Tratado · الدعم", "meta": "الدعم · تاريخ التحديث: 18 أكتوبر 2026", "self": "الدعم", "other": "سياسة الخصوصية"}};
   var buttons = document.querySelectorAll('.lang button');
-  var footerEs = document.querySelector('footer a span[lang="es"]');
-  var footerEn = document.querySelector('footer a span[lang="en"]');
   function show(lang) {
+    var d = I[lang];
     document.documentElement.lang = lang;
-    Object.keys(sections).forEach(function (k) { sections[k].hidden = (k !== lang); });
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.title = d.title;
+    langs.forEach(function (k) { document.getElementById(k).hidden = (k !== lang); });
     buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'); });
-    if (footerEs && footerEn) { footerEs.hidden = (lang !== 'es'); footerEn.hidden = (lang !== 'en'); }
+    document.getElementById('meta').textContent = d.meta;
+    document.getElementById('f-this').textContent = d.self;
+    var a = document.getElementById('f-link'); a.textContent = d.other; a.href = a.getAttribute('data-base') + '#' + lang;
     try { history.replaceState(null, '', '#' + lang); } catch (e) {}
   }
   buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
   var hash = (location.hash || '').replace('#', '');
-  var pref = (navigator.language || 'es').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
-  show(hash === 'en' || hash === 'es' ? hash : pref);
+  var nav = (navigator.language || 'es').toLowerCase().slice(0, 2);
+  show(langs.indexOf(hash) !== -1 ? hash : (langs.indexOf(nav) !== -1 ? nav : 'es'));
 })();
 </script>
 </body>
