@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<meta name="description" content="Soporte de Focus Tempo: contacto y preguntas frecuentes. Focus Tempo support: contact and FAQ.">
+<meta name="description" content="Soporte de Focus Tempo: contacto y preguntas frecuentes. Focus Tempo support: contact and FAQ. 支持 · サポート · 지원 · Assistance · Support · الدعم">
 <title>Soporte / Support — Focus Tempo</title>
 <style>
   :root { --bg:#0b0f11; --card:#12171a; --fg:#eef2f3; --muted:#9aa7ac; --accent:#35e58c; --line:#1f2a2e; }
@@ -13,46 +13,16 @@
   html,body { margin:0; background:var(--bg); color:var(--fg); }
   body { font:16px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; display:flex; justify-content:center; padding:3rem 1.25rem; }
   main { max-width:38rem; width:100%; }
-  nav.lang { margin-bottom:1.6rem; display: flex; flex-wrap: wrap; gap: .75rem; }
-  nav.lang a { color:var(--accent); font-weight:600; font-size:.9rem; text-decoration:none; padding: .2rem .4rem; border-radius: 4px; background: var(--card); border: 1px solid var(--line); }
+  nav.lang { margin-bottom:1.6rem; }
+  nav.lang a { color:var(--accent); font-weight:600; font-size:.9rem; text-decoration:none; margin-right:1.2rem; }
   nav.lang a:hover { text-decoration:underline; }
-  
-  /* Lógica para mostrar/ocultar idiomas según el navegador o selección manual */
-  section.lang { display: none; }
-  
-  html:lang(es) #es,
-  html:lang(en) #en,
-  html:lang(zh) #zh,
-  html:lang(ja) #ja,
-  html:lang(ko) #ko,
-  html:lang(fr) #fr,
-  html:lang(de) #de,
-  html:lang(ar) #ar { display: block; }
-
-  body:has(#es:target) section.lang { display: none; }
-  body:has(#es:target) #es { display: block; }
-  body:has(#en:target) section.lang { display: none; }
-  body:has(#en:target) #en { display: block; }
-  body:has(#zh:target) section.lang { display: none; }
-  body:has(#zh:target) #zh { display: block; }
-  body:has(#ja:target) section.lang { display: none; }
-  body:has(#ja:target) #ja { display: block; }
-  body:has(#ko:target) section.lang { display: none; }
-  body:has(#ko:target) #ko { display: block; }
-  body:has(#fr:target) section.lang { display: none; }
-  body:has(#fr:target) #fr { display: block; }
-  body:has(#de:target) section.lang { display: none; }
-  body:has(#de:target) #de { display: block; }
-  body:has(#ar:target) section.lang { display: none; }
-  body:has(#ar:target) #ar { display: block; }
-
   .badge { display:inline-flex; align-items:center; gap:.4em; font-size:.8rem; font-weight:600; color:var(--accent); letter-spacing:.02em; text-transform:uppercase; margin-bottom:.8rem; }
   .badge::before { content:""; width:.5em; height:.5em; border-radius:50%; background:var(--accent); display:inline-block; }
   h1 { font-size:2rem; margin:.1em 0 .2em; letter-spacing:-.01em; }
   h3 { font-size:.8rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:2rem 0 .8rem; }
   p.lead { color:var(--muted); margin:0 0 2.2rem; font-size:1.05rem; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.5rem 1.6rem; margin-bottom:1.1rem; }
-  .card h2 { font-size:1.05rem; margin:0 0 .5rem; }
+  .card h2 { font-size:1rem; margin:0 0 .5rem; }
   .card p { margin:0; color:var(--muted); }
   a.contact { color:var(--accent); font-weight:600; text-decoration:none; word-break:break-all; }
   a.contact:hover { text-decoration:underline; }
@@ -69,42 +39,42 @@
   footer { margin-top:2.5rem; color:var(--muted); font-size:.85rem; text-align:center; }
   footer a { color:var(--accent); text-decoration:none; }
   footer a:hover { text-decoration:underline; }
-  hr.big { border:0; border-top:1px solid var(--line); margin:3rem 0 0; }
+  nav.lang { display:flex; flex-wrap:wrap; gap:.4rem 1.1rem; }
+  nav.lang a { margin-right:0; }
+  section.lang { display:none; }
+  html:lang(es) #es, html:lang(en) #en, html:lang(zh) #zh, html:lang(ja) #ja,
+  html:lang(ko) #ko, html:lang(fr) #fr, html:lang(de) #de, html:lang(ar) #ar { display:block; }
+  body:has(section.lang:target) section.lang { display:none; }
+  body:has(section.lang:target) section.lang:target { display:block; }
+  [dir="rtl"] summary { padding-right:0; padding-left:1.5rem; }
+  [dir="rtl"] summary::after { right:auto; left:0; }
+  [dir="rtl"] details ol { padding-left:0; padding-right:1.2em; }
 </style>
 <script>
-  (function() {
-    const userLang = navigator.language || navigator.userLanguage;
-    const langCode = userLang ? userLang.substring(0, 2) : 'es';
-    const supported = ['es', 'en', 'zh', 'ja', 'ko', 'fr', 'de', 'ar'];
-    if (!window.location.hash && supported.includes(langCode)) {
-      document.documentElement.setAttribute('lang', langCode);
-    } else if (window.location.hash) {
-      const hashLang = window.location.hash.substring(1);
-      if (supported.includes(hashLang)) {
-        document.documentElement.setAttribute('lang', hashLang);
-      }
+  // Muestra el idioma del hash (#en) o, si no hay, el del navegador. Por defecto: español.
+  (function () {
+    var supported = ['es', 'en', 'zh', 'ja', 'ko', 'fr', 'de', 'ar'];
+    function fromHash() {
+      var h = (window.location.hash || '').substring(1).split('-')[0];
+      return supported.indexOf(h) !== -1 ? h : null;
     }
+    function fromBrowser() {
+      var l = (navigator.language || navigator.userLanguage || 'es').substring(0, 2).toLowerCase();
+      return supported.indexOf(l) !== -1 ? l : 'es';
+    }
+    document.documentElement.setAttribute('lang', fromHash() || fromBrowser());
+    window.addEventListener('hashchange', function () {
+      var h = fromHash();
+      if (h) document.documentElement.setAttribute('lang', h);
+    });
   })();
-  window.addEventListener('hashchange', () => {
-    const hashLang = window.location.hash.substring(1);
-    const supported = ['es', 'en', 'zh', 'ja', 'ko', 'fr', 'de', 'ar'];
-    if (supported.includes(hashLang)) {
-      document.documentElement.setAttribute('lang', hashLang);
-    }
-  });
 </script>
 </head>
 <body>
 <main>
   <nav class="lang">
-    <a href="#es">Español</a>
-    <a href="#en">English</a>
-    <a href="#zh">中文</a>
-    <a href="#ja">日本語</a>
-    <a href="#ko">한국어</a>
-    <a href="#fr">Français</a>
-    <a href="#de">Deutsch</a>
-    <a href="#ar">العربية</a>
+    <a href="#es">Español</a><a href="#en">English</a><a href="#zh">中文</a><a href="#ja">日本語</a>
+    <a href="#ko">한국어</a><a href="#fr">Français</a><a href="#de">Deutsch</a><a href="#ar">العربية</a>
   </nav>
 
   <!-- ============================ ESPAÑOL ============================ -->
@@ -121,126 +91,391 @@
     </div>
 
     <h3>Tus datos</h3>
-    <details>
-      <summary>¿Dónde se guardan mis datos?</summary>
-      <p>Todo lo que registras se guarda únicamente en tu dispositivo. La app no tiene cuentas, no usa servidores propios ni analíticas.</p>
-    </details>
-    <details>
-      <summary>¿Cómo borro mis datos?</summary>
-      <p>Ve a <strong>Ajustes</strong> dentro de la app y toca <strong>Reiniciar todos los datos</strong>.</p>
-    </details>
+    <details><summary>¿Dónde se guardan mis datos?</summary>
+      <p>Todo lo que registras (sesiones, sesiones por temas, carreras, alarmas, horario y tu perfil) se guarda únicamente en tu dispositivo. La app no tiene cuentas, no usa servidores propios ni analíticas.</p></details>
+    <details><summary>¿Cómo borro mis datos?</summary>
+      <p>Ve a <strong>Ajustes</strong> dentro de la app y toca <strong>Reiniciar todos los datos</strong>. Esto borra tu historial, sesiones por temas, carreras, alarmas y horario, y restablece tus preferencias. No se puede deshacer.</p></details>
 
     <h3>Permisos</h3>
-    <details>
-      <summary>¿Por qué la app pide permiso de Ubicación?</summary>
-      <p>Solo se usa en la pestaña <strong>Correr</strong> para trazar tu ruta y calcular distancia y ritmo.</p>
-    </details>
-    <details>
-      <summary>¿Por qué pide permiso de Notificaciones?</summary>
-      <p>Para avisarte cuando termina un período de concentración, un descanso o alarmas.</p>
-    </details>
-    <details>
-      <summary>¿Por qué pide permiso de Salud?</summary>
-      <p>Solo si activas el aviso de estrés del Apple Watch para leer tu ritmo cardíaco temporalmente.</p>
-    </details>
+    <details><summary>¿Por qué la app pide permiso de Ubicación?</summary>
+      <p>Solo se usa en la pestaña <strong>Correr</strong> para trazar tu ruta y calcular distancia y ritmo. Basta con elegir <strong>Mientras se usa</strong>: si bloqueas la pantalla durante la carrera, la ruta se sigue registrando y verás un indicador azul arriba.</p></details>
+    <details><summary>¿Por qué pide permiso de Notificaciones?</summary>
+      <p>Para avisarte cuando termina un período de concentración o un descanso, cuando suena una alarma y para tus recordatorios de horario. Son notificaciones locales, programadas en tu propio dispositivo.</p></details>
+    <details><summary>¿Por qué pide permiso de Salud?</summary>
+      <p>Solo si activas el aviso de estrés del Apple Watch. El reloj lee tu ritmo cardíaco durante la Concentración para estimar tu estrés. Esos datos no se guardan ni salen del reloj. Si no usas el aviso, la app nunca pide este permiso.</p></details>
 
     <h3>Funciones</h3>
-    <details>
-      <summary>¿Cómo funciona el aviso de estrés del Apple Watch?</summary>
-      <p>Si tu pulso se mantiene alto durante 5 minutos mientras estás quieto, el reloj vibra y te sugiere un descanso.</p>
-    </details>
-    <details>
-      <summary>El reloj dice "iPhone no alcanzable"</summary>
-      <p>Asegúrate de que el iPhone esté cerca con Bluetooth activado y la app abierta en segundo plano.</p>
-    </details>
+    <details><summary>¿Cómo funciona el aviso de estrés del Apple Watch?</summary>
+      <ol>
+        <li>En el iPhone, ve a <strong>Ajustes &gt; Apple Watch</strong> y activa <strong>Aviso de estrés en el Apple Watch</strong>. Acepta el permiso de Salud.</li>
+        <li>Empieza una Concentración. La app del reloj se abre sola y empieza a leer tu pulso.</li>
+        <li>Si tu pulso se mantiene alto durante 5 minutos mientras estás quieto, el reloj vibra y te sugiere un descanso de 5 minutos.</li>
+        <li>Si tocas <strong>Tomar descanso</strong>, la sesión se pausa y se reanuda sola a los 5 minutos.</li>
+      </ol>
+      <p>Es una estimación basada en tu ritmo cardíaco, no una medición médica.</p></details>
+    <details><summary>El reloj dice "iPhone no alcanzable"</summary>
+      <p>El Apple Watch controla la sesión a través del iPhone. Abre Focus Tempo en el iPhone (puede quedar en segundo plano) y asegúrate de que el teléfono esté cerca con Bluetooth activado. Luego vuelve a intentarlo.</p></details>
+    <details><summary>¿Cómo pongo música de Apple Music?</summary>
+      <p>En la pestaña <strong>Concentración</strong>, en <strong>Fuente de música</strong>, elige <strong>Apple Music</strong>. Luego busca una canción por nombre, artista o álbum, o pega el link que copiaste desde la app Música. Necesitas una suscripción activa a Apple Music.</p></details>
+    <details><summary>¿Cómo agrego el widget a la pantalla de inicio?</summary>
+      <p>Mantén presionado un espacio vacío de la pantalla de inicio, toca <strong>Editar &gt; Agregar widget</strong> y busca <strong>Focus Tempo</strong>. Desde el widget puedes pausar, reanudar o terminar la sesión, o empezar una de 25 minutos sin abrir la app.</p></details>
 
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">Política de privacidad</a></footer>
+    <h3>Problemas</h3>
+    <details><summary>Reportar un error (bug)</summary>
+      <p>Escríbeme al correo de arriba contándome qué pasó, en qué pantalla y, si puedes, con una captura de pantalla. Ayuda mucho saber el modelo de tu iPhone, la versión de iOS y la versión de la app (la ves en <strong>Ajustes &gt; Versión</strong>).</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#es">Política de privacidad</a></footer>
   </section>
 
   <!-- ============================ ENGLISH ============================ -->
   <section class="lang" id="en" lang="en">
     <span class="badge">Support</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">Built for minds that get distracted easily. Focus sessions, GPS run tracking, and Apple Watch app.</p>
+    <p class="lead">Built for minds that get distracted easily. Focus sessions with ambient sound or Apple Music, topic-based study sessions, stopwatch, timer, GPS run tracking, alarm and schedule. For iPhone, with a widget and an Apple Watch app.</p>
 
     <div class="card">
       <h2>Contact</h2>
       <p>Found a problem, have a question, or an idea? Email me directly:</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">I usually reply within 1–2 days. You can also email me from the app, in <strong>Settings &gt; Contact us</strong>.</p>
     </div>
 
     <h3>Your data</h3>
-    <details>
-      <summary>Where is my data stored?</summary>
-      <p>Everything is stored only on your device. The app has no accounts or servers.</p>
-    </details>
-    
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">Privacy Policy</a></footer>
+    <details><summary>Where is my data stored?</summary>
+      <p>Everything you record (sessions, topic sessions, runs, alarms, schedule and your profile) is stored only on your device. The app has no accounts, no servers of its own, and no analytics.</p></details>
+    <details><summary>How do I delete my data?</summary>
+      <p>Go to <strong>Settings</strong> inside the app and tap <strong>Reset all data</strong>. This deletes your history, topic sessions, runs, alarms and schedule, and resets your preferences. It can't be undone.</p></details>
+
+    <h3>Permissions</h3>
+    <details><summary>Why does the app ask for Location?</summary>
+      <p>It's only used in the <strong>Run</strong> tab to trace your route and calculate distance and pace. <strong>While Using the App</strong> is enough: if you lock the screen during a run, the route keeps recording and you'll see a blue indicator at the top.</p></details>
+    <details><summary>Why does it ask for Notifications?</summary>
+      <p>To let you know when a focus period or a break ends, when an alarm goes off, and for your schedule reminders. These are local notifications, scheduled on your own device.</p></details>
+    <details><summary>Why does it ask for Health access?</summary>
+      <p>Only if you turn on the Apple Watch stress alert. The watch reads your heart rate during Focus to estimate your stress. That data is never stored and never leaves the watch. If you don't use the alert, the app never asks for this permission.</p></details>
+
+    <h3>Features</h3>
+    <details><summary>How does the Apple Watch stress alert work?</summary>
+      <ol>
+        <li>On your iPhone, go to <strong>Settings &gt; Apple Watch</strong> and turn on <strong>Stress alert on Apple Watch</strong>. Allow Health access.</li>
+        <li>Start a Focus session. The watch app opens on its own and starts reading your pulse.</li>
+        <li>If your pulse stays high for 5 minutes while you're still, the watch vibrates and suggests a 5-minute break.</li>
+        <li>If you tap <strong>Take a break</strong>, the session pauses and resumes on its own after 5 minutes.</li>
+      </ol>
+      <p>It's an estimate based on your heart rate, not a medical measurement.</p></details>
+    <details><summary>The watch says "iPhone unreachable"</summary>
+      <p>Apple Watch controls the session through your iPhone. Open Focus Tempo on your iPhone (it can stay in the background) and make sure the phone is nearby with Bluetooth on. Then try again.</p></details>
+    <details><summary>How do I play music from Apple Music?</summary>
+      <p>In the <strong>Focus</strong> tab, under <strong>Music source</strong>, choose <strong>Apple Music</strong>. Then search for a song by name, artist or album, or paste a link you copied from the Music app. You need an active Apple Music subscription.</p></details>
+    <details><summary>How do I add the widget to my Home Screen?</summary>
+      <p>Touch and hold an empty area of your Home Screen, tap <strong>Edit &gt; Add Widget</strong>, and search for <strong>Focus Tempo</strong>. From the widget you can pause, resume or end your session, or start a 25-minute one without opening the app.</p></details>
+
+    <h3>Problems</h3>
+    <details><summary>Report a bug</summary>
+      <p>Email me at the address above with what happened, which screen it was on, and a screenshot if you can. It also helps to know your iPhone model, iOS version and app version (shown in <strong>Settings &gt; Version</strong>).</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#en">Privacy Policy</a></footer>
   </section>
 
-  <!-- ============================ MANDARÍN (ZH) ============================ -->
+  <!-- ============================ 中文 (ZH) ============================ -->
   <section class="lang" id="zh" lang="zh">
     <span class="badge">支持</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">专为容易分心的思维而设计。支持环境音或 Apple Music 专注、GPS 跑步追踪及 Apple Watch 应用。</p>
+    <p class="lead">为容易分心的头脑而设计。可搭配环境音或 Apple Music 专注，支持主题学习时段、秒表、计时器、GPS 跑步、闹钟和日程。适用于 iPhone，并提供小组件和 Apple Watch 应用。</p>
+
     <div class="card">
-      <h2>联系方式</h2>
-      <p>如有任何问题、疑问或建议，请直接给我发邮件：</p>
+      <h2>联系我</h2>
+      <p>遇到问题、有疑问或建议？请直接给我发邮件：</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">我通常会在 1–2 天内回复。您也可以在应用的<strong>设置 &gt; 联系我们</strong>中给我写信。</p>
     </div>
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">隐私政策</a></footer>
+
+    <h3>您的数据</h3>
+    <details><summary>我的数据保存在哪里？</summary>
+      <p>您记录的一切（时段、主题时段、跑步、闹钟、日程和个人资料）都只保存在您的设备上。应用没有账户，不使用自有服务器，也没有分析工具。</p></details>
+    <details><summary>如何删除我的数据？</summary>
+      <p>在应用中进入<strong>设置</strong>，点按<strong>重置所有数据</strong>。这会删除您的历史记录、主题时段、跑步、闹钟和日程，并重置偏好设置。此操作无法撤销。</p></details>
+
+    <h3>权限</h3>
+    <details><summary>为什么应用需要位置权限？</summary>
+      <p>仅在<strong>跑步</strong>标签中用于绘制路线并计算距离和配速。选择<strong>使用 App 期间</strong>即可：跑步时锁定屏幕，路线仍会继续记录，屏幕顶部会显示蓝色指示器。</p></details>
+    <details><summary>为什么需要通知权限？</summary>
+      <p>用于在专注或休息结束、闹钟响起时提醒您，以及发送日程提醒。这些都是在您设备上安排的本地通知。</p></details>
+    <details><summary>为什么需要健康权限？</summary>
+      <p>仅在您开启 Apple Watch 压力提醒时需要。手表会在专注期间读取您的心率以估算压力。这些数据不会被保存，也不会离开手表。如果您不使用该提醒，应用永远不会请求此权限。</p></details>
+
+    <h3>功能</h3>
+    <details><summary>Apple Watch 压力提醒如何工作？</summary>
+      <ol>
+        <li>在 iPhone 上前往<strong>设置 &gt; Apple Watch</strong>，开启<strong>Apple Watch 压力提醒</strong>，并允许健康权限。</li>
+        <li>开始一次专注。手表应用会自动打开并开始读取您的脉搏。</li>
+        <li>如果您静止时脉搏持续偏高 5 分钟，手表会振动并建议您休息 5 分钟。</li>
+        <li>点按<strong>休息一下</strong>后，时段会暂停，并在 5 分钟后自动继续。</li>
+      </ol>
+      <p>这是基于心率的估算，并非医学测量。</p></details>
+    <details><summary>手表显示“无法连接 iPhone”</summary>
+      <p>Apple Watch 通过 iPhone 控制时段。请在 iPhone 上打开 Focus Tempo（可保持在后台），并确保手机就在附近且已开启蓝牙，然后重试。</p></details>
+    <details><summary>如何播放 Apple Music 的音乐？</summary>
+      <p>在<strong>专注</strong>标签的<strong>音乐来源</strong>中选择 <strong>Apple Music</strong>。然后按歌曲名、艺人或专辑搜索，或粘贴从“音乐”App 复制的链接。需要有效的 Apple Music 订阅。</p></details>
+    <details><summary>如何将小组件添加到主屏幕？</summary>
+      <p>按住主屏幕的空白处，点按<strong>编辑 &gt; 添加小组件</strong>，然后搜索 <strong>Focus Tempo</strong>。无需打开应用，即可在小组件中暂停、继续或结束时段，或开始一个 25 分钟的时段。</p></details>
+
+    <h3>问题</h3>
+    <details><summary>报告错误</summary>
+      <p>请发邮件到上方地址，告诉我发生了什么、在哪个界面，如可能请附上截图。注明您的 iPhone 机型、iOS 版本和应用版本（在<strong>设置 &gt; 版本</strong>中查看）会很有帮助。</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#zh">隐私政策</a></footer>
   </section>
 
-  <!-- ============================ JAPONÉS (JA) ============================ -->
+  <!-- ============================ 日本語 (JA) ============================ -->
   <section class="lang" id="ja" lang="ja">
     <span class="badge">サポート</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">気が散りやすい人のために作られました。環境音やApple Musicでの集中セッション、GPSランニング記録、Apple Watch対応。</p>
+    <p class="lead">気が散りやすい人のためのアプリです。環境音や Apple Music での集中、テーマ別セッション、ストップウォッチ、タイマー、GPS ランニング、目覚まし、スケジュール。iPhone 用で、ウィジェットと Apple Watch アプリ付き。</p>
+
     <div class="card">
       <h2>お問い合わせ</h2>
-      <p>問題やご質問、アイデアがございましたら、直接メールでお問い合わせください：</p>
+      <p>不具合、ご質問、ご提案はこちらへ直接メールしてください：</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">通常 1〜2 日以内に返信します。アプリの<strong>設定 &gt; お問い合わせ</strong>からも送れます。</p>
     </div>
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">プライバシーポリシー</a></footer>
+
+    <h3>データについて</h3>
+    <details><summary>データはどこに保存されますか？</summary>
+      <p>記録したもの（セッション、テーマ別セッション、ランニング、アラーム、スケジュール、プロフィール）はすべてお使いのデバイスにのみ保存されます。アカウントはなく、独自サーバーやアナリティクスも使用しません。</p></details>
+    <details><summary>データを削除するには？</summary>
+      <p>アプリの<strong>設定</strong>で<strong>すべてのデータをリセット</strong>をタップします。履歴、テーマ別セッション、ランニング、アラーム、スケジュールが削除され、設定が初期化されます。元に戻すことはできません。</p></details>
+
+    <h3>アクセス許可</h3>
+    <details><summary>なぜ位置情報の許可が必要ですか？</summary>
+      <p><strong>ラン</strong>タブでのみ、ルートの記録と距離・ペースの計算に使います。<strong>App の使用中</strong>で十分です。ランニング中に画面をロックしてもルートは記録され続け、上部に青いインジケータが表示されます。</p></details>
+    <details><summary>なぜ通知の許可が必要ですか？</summary>
+      <p>集中時間や休憩の終了、アラーム、スケジュールのリマインダーをお知らせするためです。デバイス上で予約されるローカル通知です。</p></details>
+    <details><summary>なぜヘルスケアの許可が必要ですか？</summary>
+      <p>Apple Watch のストレス通知をオンにした場合のみです。集中中に Watch が心拍数を読み取り、ストレスを推定します。このデータは保存されず、Watch の外にも出ません。通知を使わない場合、この許可は求められません。</p></details>
+
+    <h3>機能</h3>
+    <details><summary>Apple Watch のストレス通知の仕組みは？</summary>
+      <ol>
+        <li>iPhone で<strong>設定 &gt; Apple Watch</strong> を開き、<strong>Apple Watch のストレス通知</strong>をオンにして、ヘルスケアへのアクセスを許可します。</li>
+        <li>集中を開始します。Watch アプリが自動で開き、脈拍の読み取りを始めます。</li>
+        <li>安静時に脈拍が 5 分間高いままだと、Watch が振動して 5 分間の休憩を提案します。</li>
+        <li><strong>休憩する</strong>をタップすると、セッションが一時停止し、5 分後に自動で再開します。</li>
+      </ol>
+      <p>心拍数に基づく推定値であり、医療用の測定ではありません。</p></details>
+    <details><summary>Watch に「iPhone に接続できません」と表示される</summary>
+      <p>Apple Watch は iPhone を通じてセッションを操作します。iPhone で Focus Tempo を開き（バックグラウンドのままで構いません）、Bluetooth をオンにした iPhone が近くにあることを確認して、もう一度お試しください。</p></details>
+    <details><summary>Apple Music の音楽を流すには？</summary>
+      <p><strong>集中</strong>タブの<strong>音楽ソース</strong>で <strong>Apple Music</strong> を選びます。曲名、アーティスト、アルバムで検索するか、ミュージック App でコピーしたリンクを貼り付けてください。Apple Music の有効なサブスクリプションが必要です。</p></details>
+    <details><summary>ホーム画面にウィジェットを追加するには？</summary>
+      <p>ホーム画面の空いている場所を長押しし、<strong>編集 &gt; ウィジェットを追加</strong>をタップして <strong>Focus Tempo</strong> を検索します。ウィジェットからアプリを開かずにセッションの一時停止・再開・終了や、25 分のセッション開始ができます。</p></details>
+
+    <h3>トラブル</h3>
+    <details><summary>不具合を報告する</summary>
+      <p>上記のアドレスに、何が起きたか、どの画面だったかを、可能ならスクリーンショット付きでお送りください。iPhone の機種、iOS のバージョン、アプリのバージョン（<strong>設定 &gt; バージョン</strong>で確認できます）も教えていただけると助かります。</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#ja">プライバシーポリシー</a></footer>
   </section>
 
-  <!-- ============================ COREANO (KO) ============================ -->
+  <!-- ============================ 한국어 (KO) ============================ -->
   <section class="lang" id="ko" lang="ko">
     <span class="badge">지원</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">쉽게 산만해지는 마음을 위해 설계되었습니다. 집중 세션, GPS 러닝 추적 및 Apple Watch 앱.</p>
+    <p class="lead">쉽게 산만해지는 사람을 위해 만들었습니다. 배경음이나 Apple Music과 함께하는 집중, 주제별 세션, 스톱워치, 타이머, GPS 달리기, 알람, 일정. iPhone용이며 위젯과 Apple Watch 앱을 제공합니다.</p>
+
     <div class="card">
-      <h2>연락처</h2>
-      <p>문제가 있거나 질문이나 아이디어가 있으신가요? 이메일로 직접 문의해 주세요:</p>
+      <h2>문의</h2>
+      <p>문제가 있거나 궁금한 점, 제안이 있나요? 직접 이메일을 보내 주세요:</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">보통 1~2일 안에 답장합니다. 앱의 <strong>설정 &gt; 문의하기</strong>에서도 보낼 수 있습니다.</p>
     </div>
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">개인정보 처리방침</a></footer>
+
+    <h3>내 데이터</h3>
+    <details><summary>데이터는 어디에 저장되나요?</summary>
+      <p>기록한 모든 것(세션, 주제별 세션, 달리기, 알람, 일정, 프로필)은 기기에만 저장됩니다. 앱에는 계정이 없으며 자체 서버나 분석 도구를 사용하지 않습니다.</p></details>
+    <details><summary>데이터는 어떻게 삭제하나요?</summary>
+      <p>앱의 <strong>설정</strong>에서 <strong>모든 데이터 초기화</strong>를 탭하세요. 기록, 주제별 세션, 달리기, 알람, 일정이 삭제되고 환경설정이 초기화됩니다. 되돌릴 수 없습니다.</p></details>
+
+    <h3>권한</h3>
+    <details><summary>앱이 왜 위치 권한을 요청하나요?</summary>
+      <p><strong>달리기</strong> 탭에서만 경로를 기록하고 거리와 페이스를 계산하는 데 사용합니다. <strong>App을 사용하는 동안</strong>으로 충분합니다. 달리는 중 화면을 잠가도 경로는 계속 기록되며 상단에 파란색 표시가 나타납니다.</p></details>
+    <details><summary>왜 알림 권한이 필요한가요?</summary>
+      <p>집중 시간이나 휴식이 끝날 때, 알람이 울릴 때, 일정 리마인더를 알려 드리기 위해서입니다. 기기에서 예약되는 로컬 알림입니다.</p></details>
+    <details><summary>왜 건강 권한이 필요한가요?</summary>
+      <p>Apple Watch 스트레스 알림을 켠 경우에만 필요합니다. 집중하는 동안 Watch가 심박수를 읽어 스트레스를 추정합니다. 이 데이터는 저장되지 않으며 Watch 밖으로 나가지 않습니다. 알림을 사용하지 않으면 이 권한을 요청하지 않습니다.</p></details>
+
+    <h3>기능</h3>
+    <details><summary>Apple Watch 스트레스 알림은 어떻게 작동하나요?</summary>
+      <ol>
+        <li>iPhone에서 <strong>설정 &gt; Apple Watch</strong>로 이동해 <strong>Apple Watch 스트레스 알림</strong>을 켜고 건강 권한을 허용하세요.</li>
+        <li>집중을 시작하세요. Watch 앱이 자동으로 열리고 맥박을 읽기 시작합니다.</li>
+        <li>가만히 있는데 맥박이 5분 동안 높게 유지되면 Watch가 진동하며 5분 휴식을 제안합니다.</li>
+        <li><strong>휴식하기</strong>를 탭하면 세션이 일시정지되고 5분 후 자동으로 다시 시작됩니다.</li>
+      </ol>
+      <p>심박수에 기반한 추정치이며 의학적 측정이 아닙니다.</p></details>
+    <details><summary>Watch에 "iPhone에 연결할 수 없음"이라고 표시돼요</summary>
+      <p>Apple Watch는 iPhone을 통해 세션을 제어합니다. iPhone에서 Focus Tempo를 열고(백그라운드에 두어도 됩니다) Bluetooth가 켜진 iPhone이 가까이 있는지 확인한 뒤 다시 시도하세요.</p></details>
+    <details><summary>Apple Music 음악은 어떻게 재생하나요?</summary>
+      <p><strong>집중</strong> 탭의 <strong>음악 소스</strong>에서 <strong>Apple Music</strong>을 선택하세요. 그런 다음 곡명, 아티스트, 앨범으로 검색하거나 음악 앱에서 복사한 링크를 붙여 넣으세요. 유효한 Apple Music 구독이 필요합니다.</p></details>
+    <details><summary>홈 화면에 위젯은 어떻게 추가하나요?</summary>
+      <p>홈 화면의 빈 곳을 길게 누르고 <strong>편집 &gt; 위젯 추가</strong>를 탭한 뒤 <strong>Focus Tempo</strong>를 검색하세요. 위젯에서 앱을 열지 않고도 세션을 일시정지, 재개, 종료하거나 25분 세션을 시작할 수 있습니다.</p></details>
+
+    <h3>문제 해결</h3>
+    <details><summary>버그 신고</summary>
+      <p>위 주소로 무슨 일이 있었는지, 어느 화면이었는지 알려 주시고 가능하면 스크린샷도 보내 주세요. iPhone 모델, iOS 버전, 앱 버전(<strong>설정 &gt; 버전</strong>에서 확인)을 알려 주시면 큰 도움이 됩니다.</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#ko">개인정보 처리방침</a></footer>
   </section>
 
-  <!-- ============================ FRANCÉS (FR) ============================ -->
+  <!-- ============================ FRANÇAIS (FR) ============================ -->
   <section class="lang" id="fr" lang="fr">
-    <span class="badge">Support</span>
+    <span class="badge">Assistance</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">Conçu pour les esprits facilement distraites. Sessions de concentration, suivi de course GPS et app Apple Watch.</p>
+    <p class="lead">Pensée pour les esprits facilement distraits. Concentration avec sons d'ambiance ou Apple Music, sessions par thème, chronomètre, minuteur, courses GPS, réveil et emploi du temps. Pour iPhone, avec widget et app Apple Watch.</p>
+
     <div class="card">
       <h2>Contact</h2>
-      <p>Vous avez un problème, une question ou une idée ? Écrivez-moi directement :</p>
+      <p>Un problème, une question ou une idée ? Écrivez-moi directement :</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">Je réponds généralement sous 1 à 2 jours. Vous pouvez aussi m'écrire depuis l'app, dans <strong>Réglages &gt; Nous contacter</strong>.</p>
     </div>
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">Politique de confidentialité</a></footer>
+
+    <h3>Vos données</h3>
+    <details><summary>Où sont stockées mes données ?</summary>
+      <p>Tout ce que vous enregistrez (sessions, sessions par thème, courses, alarmes, emploi du temps et profil) reste uniquement sur votre appareil. L'app n'a pas de compte, pas de serveur propre et pas d'outil d'analyse.</p></details>
+    <details><summary>Comment supprimer mes données ?</summary>
+      <p>Allez dans <strong>Réglages</strong> dans l'app et touchez <strong>Réinitialiser toutes les données</strong>. Cela supprime votre historique, vos sessions par thème, vos courses, vos alarmes et votre emploi du temps, et réinitialise vos préférences. Action irréversible.</p></details>
+
+    <h3>Autorisations</h3>
+    <details><summary>Pourquoi l'app demande-t-elle la localisation ?</summary>
+      <p>Uniquement dans l'onglet <strong>Course</strong>, pour tracer votre parcours et calculer la distance et l'allure. <strong>Lorsque l'app est active</strong> suffit : si vous verrouillez l'écran pendant une course, le tracé continue et un indicateur bleu s'affiche en haut.</p></details>
+    <details><summary>Pourquoi les notifications ?</summary>
+      <p>Pour vous prévenir de la fin d'une période de concentration ou d'une pause, quand une alarme sonne, et pour les rappels de votre emploi du temps. Ce sont des notifications locales, programmées sur votre appareil.</p></details>
+    <details><summary>Pourquoi l'accès à Santé ?</summary>
+      <p>Uniquement si vous activez l'alerte de stress de l'Apple Watch. La montre lit votre fréquence cardiaque pendant la concentration pour estimer votre stress. Ces données ne sont jamais enregistrées et ne quittent jamais la montre. Sans l'alerte, l'app ne demande jamais cette autorisation.</p></details>
+
+    <h3>Fonctions</h3>
+    <details><summary>Comment fonctionne l'alerte de stress de l'Apple Watch ?</summary>
+      <ol>
+        <li>Sur l'iPhone, allez dans <strong>Réglages &gt; Apple Watch</strong> et activez <strong>Alerte de stress sur l'Apple Watch</strong>. Autorisez l'accès à Santé.</li>
+        <li>Lancez une session de concentration. L'app de la montre s'ouvre seule et commence à lire votre pouls.</li>
+        <li>Si votre pouls reste élevé pendant 5 minutes alors que vous êtes immobile, la montre vibre et vous suggère une pause de 5 minutes.</li>
+        <li>Si vous touchez <strong>Faire une pause</strong>, la session se met en pause et reprend seule au bout de 5 minutes.</li>
+      </ol>
+      <p>C'est une estimation basée sur votre fréquence cardiaque, pas une mesure médicale.</p></details>
+    <details><summary>La montre affiche « iPhone injoignable »</summary>
+      <p>L'Apple Watch contrôle la session via l'iPhone. Ouvrez Focus Tempo sur l'iPhone (il peut rester en arrière-plan) et vérifiez que le téléphone est à proximité avec le Bluetooth activé. Puis réessayez.</p></details>
+    <details><summary>Comment écouter de la musique Apple Music ?</summary>
+      <p>Dans l'onglet <strong>Concentration</strong>, sous <strong>Source musicale</strong>, choisissez <strong>Apple Music</strong>. Recherchez ensuite un titre par nom, artiste ou album, ou collez un lien copié depuis l'app Musique. Un abonnement Apple Music actif est nécessaire.</p></details>
+    <details><summary>Comment ajouter le widget à l'écran d'accueil ?</summary>
+      <p>Maintenez le doigt sur une zone vide de l'écran d'accueil, touchez <strong>Modifier &gt; Ajouter un widget</strong> et recherchez <strong>Focus Tempo</strong>. Depuis le widget, vous pouvez mettre en pause, reprendre ou terminer la session, ou en lancer une de 25 minutes sans ouvrir l'app.</p></details>
+
+    <h3>Problèmes</h3>
+    <details><summary>Signaler un bug</summary>
+      <p>Écrivez-moi à l'adresse ci-dessus en expliquant ce qui s'est passé, sur quel écran et, si possible, avec une capture d'écran. Indiquez aussi le modèle de votre iPhone, la version d'iOS et la version de l'app (visible dans <strong>Réglages &gt; Version</strong>).</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#fr">Politique de confidentialité</a></footer>
   </section>
 
-  <!-- ============================ ALEMÁN (DE) ============================ -->
+  <!-- ============================ DEUTSCH (DE) ============================ -->
   <section class="lang" id="de" lang="de">
     <span class="badge">Support</span>
     <h1>Focus Tempo</h1>
-    <p class="lead">Entwickelt für leicht ablenkbare Köpfe. Fokussierungssitzungen, GPS-Lauftracking und Apple Watch App.</p>
+    <p class="lead">Gemacht für Köpfe, die sich leicht ablenken lassen. Fokus mit Umgebungsklängen oder Apple Music, Themen-Sitzungen, Stoppuhr, Timer, GPS-Läufe, Wecker und Zeitplan. Für iPhone, mit Widget und Apple-Watch-App.</p>
+
     <div class="card">
       <h2>Kontakt</h2>
-      <p>Haben Sie ein Problem, eine Frage oder eine Idee? Schreiben Sie mir direkt:</p>
+      <p>Ein Problem, eine Frage oder eine Idee? Schreib mir direkt:</p>
       <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">Ich antworte meist innerhalb von 1–2 Tagen. Du kannst mir auch aus der App schreiben, unter <strong>Einstellungen &gt; Kontakt</strong>.</p>
     </div>
-    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/">Datenschutzerklärung</a></footer>
+
+    <h3>Deine Daten</h3>
+    <details><summary>Wo werden meine Daten gespeichert?</summary>
+      <p>Alles, was du aufzeichnest (Sitzungen, Themen-Sitzungen, Läufe, Wecker, Zeitplan und Profil), wird nur auf deinem Gerät gespeichert. Die App hat keine Konten, keine eigenen Server und keine Analysen.</p></details>
+    <details><summary>Wie lösche ich meine Daten?</summary>
+      <p>Öffne in der App <strong>Einstellungen</strong> und tippe auf <strong>Alle Daten zurücksetzen</strong>. Damit werden Verlauf, Themen-Sitzungen, Läufe, Wecker und Zeitplan gelöscht und die Einstellungen zurückgesetzt. Das kann nicht rückgängig gemacht werden.</p></details>
+
+    <h3>Berechtigungen</h3>
+    <details><summary>Warum fragt die App nach dem Standort?</summary>
+      <p>Nur im Tab <strong>Laufen</strong>, um deine Route aufzuzeichnen und Distanz und Tempo zu berechnen. <strong>Beim Verwenden der App</strong> genügt: Wenn du während eines Laufs den Bildschirm sperrst, wird die Route weiter aufgezeichnet und oben erscheint eine blaue Anzeige.</p></details>
+    <details><summary>Warum Mitteilungen?</summary>
+      <p>Um dich zu informieren, wenn eine Fokus- oder Pausenphase endet, ein Wecker klingelt, und für Zeitplan-Erinnerungen. Es sind lokale Mitteilungen, die auf deinem Gerät geplant werden.</p></details>
+    <details><summary>Warum Health-Zugriff?</summary>
+      <p>Nur wenn du den Stresshinweis der Apple Watch aktivierst. Die Uhr liest während des Fokus deine Herzfrequenz, um deinen Stress zu schätzen. Diese Daten werden nie gespeichert und verlassen nie die Uhr. Ohne den Hinweis fragt die App nie nach dieser Berechtigung.</p></details>
+
+    <h3>Funktionen</h3>
+    <details><summary>Wie funktioniert der Stresshinweis der Apple Watch?</summary>
+      <ol>
+        <li>Öffne auf dem iPhone <strong>Einstellungen &gt; Apple Watch</strong> und aktiviere <strong>Stresshinweis auf der Apple Watch</strong>. Erlaube den Health-Zugriff.</li>
+        <li>Starte eine Fokus-Sitzung. Die Watch-App öffnet sich von selbst und beginnt, deinen Puls zu lesen.</li>
+        <li>Bleibt dein Puls 5 Minuten lang hoch, während du ruhig bist, vibriert die Uhr und schlägt eine 5-minütige Pause vor.</li>
+        <li>Tippst du auf <strong>Pause machen</strong>, wird die Sitzung pausiert und nach 5 Minuten automatisch fortgesetzt.</li>
+      </ol>
+      <p>Es ist eine Schätzung auf Basis deiner Herzfrequenz, keine medizinische Messung.</p></details>
+    <details><summary>Die Uhr zeigt „iPhone nicht erreichbar“</summary>
+      <p>Die Apple Watch steuert die Sitzung über das iPhone. Öffne Focus Tempo auf dem iPhone (es kann im Hintergrund bleiben) und achte darauf, dass das Telefon in der Nähe und Bluetooth aktiviert ist. Versuche es dann erneut.</p></details>
+    <details><summary>Wie spiele ich Musik aus Apple Music ab?</summary>
+      <p>Wähle im Tab <strong>Fokus</strong> unter <strong>Musikquelle</strong> die Option <strong>Apple Music</strong>. Suche dann einen Titel nach Name, Künstler oder Album oder füge einen Link ein, den du in der Musik-App kopiert hast. Ein aktives Apple-Music-Abo ist erforderlich.</p></details>
+    <details><summary>Wie füge ich das Widget zum Home-Bildschirm hinzu?</summary>
+      <p>Halte eine leere Stelle auf dem Home-Bildschirm gedrückt, tippe auf <strong>Bearbeiten &gt; Widget hinzufügen</strong> und suche nach <strong>Focus Tempo</strong>. Im Widget kannst du die Sitzung pausieren, fortsetzen oder beenden oder eine 25-Minuten-Sitzung starten, ohne die App zu öffnen.</p></details>
+
+    <h3>Probleme</h3>
+    <details><summary>Fehler melden</summary>
+      <p>Schreib mir an die Adresse oben, was passiert ist, auf welchem Bildschirm und wenn möglich mit einem Screenshot. Hilfreich sind auch dein iPhone-Modell, die iOS-Version und die App-Version (unter <strong>Einstellungen &gt; Version</strong>).</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#de">Datenschutzerklärung</a></footer>
   </section>
 
-  <!-- =
+  <!-- ============================ العربية (AR) ============================ -->
+  <section class="lang" id="ar" lang="ar" dir="rtl">
+    <span class="badge">الدعم</span>
+    <h1>Focus Tempo</h1>
+    <p class="lead">مصمم للعقول التي تتشتت بسهولة. تركيز مع أصوات محيطة أو Apple Music، وجلسات حسب الموضوع، وساعة إيقاف، ومؤقت، وجري بنظام GPS، ومنبه، وجدول. لجهاز iPhone، مع أداة وتطبيق لـ Apple Watch.</p>
+
+    <div class="card">
+      <h2>التواصل</h2>
+      <p>لديك مشكلة أو سؤال أو اقتراح؟ راسلني مباشرة:</p>
+      <p style="margin-top:.8rem"><a class="contact" href="mailto:level18studio@gmail.com?subject=Focus%20Tempo%20%E2%80%94%20Support">level18studio@gmail.com</a></p>
+      <p style="margin-top:.8rem">أرد عادةً خلال يوم إلى يومين. يمكنك أيضًا مراسلتي من داخل التطبيق عبر <strong>الإعدادات &gt; تواصل معنا</strong>.</p>
+    </div>
+
+    <h3>بياناتك</h3>
+    <details><summary>أين تُحفظ بياناتي؟</summary>
+      <p>كل ما تسجله (الجلسات، والجلسات حسب الموضوع، وجولات الجري، والمنبهات، والجدول، وملفك الشخصي) يُحفظ على جهازك فقط. لا يحتوي التطبيق على حسابات، ولا يستخدم خوادم خاصة أو أدوات تحليل.</p></details>
+    <details><summary>كيف أحذف بياناتي؟</summary>
+      <p>افتح <strong>الإعدادات</strong> داخل التطبيق واضغط <strong>إعادة تعيين جميع البيانات</strong>. يحذف ذلك سجلك والجلسات حسب الموضوع وجولات الجري والمنبهات والجدول، ويعيد ضبط تفضيلاتك. لا يمكن التراجع عن ذلك.</p></details>
+
+    <h3>الأذونات</h3>
+    <details><summary>لماذا يطلب التطبيق إذن الموقع؟</summary>
+      <p>يُستخدم فقط في تبويب <strong>الجري</strong> لرسم مسارك وحساب المسافة والوتيرة. يكفي خيار <strong>أثناء استخدام التطبيق</strong>: إذا قفلت الشاشة أثناء الجري يستمر تسجيل المسار وسترى مؤشرًا أزرق في الأعلى.</p></details>
+    <details><summary>لماذا يطلب إذن الإشعارات؟</summary>
+      <p>لتنبيهك عند انتهاء فترة التركيز أو الاستراحة، وعند رنين المنبه، ولتذكيرات الجدول. وهي إشعارات محلية مجدولة على جهازك.</p></details>
+    <details><summary>لماذا يطلب إذن الصحة؟</summary>
+      <p>فقط إذا فعّلت تنبيه التوتر في Apple Watch. تقرأ الساعة معدل ضربات قلبك أثناء التركيز لتقدير توترك. لا تُحفظ هذه البيانات ولا تغادر الساعة. إذا لم تستخدم التنبيه، فلن يطلب التطبيق هذا الإذن أبدًا.</p></details>
+
+    <h3>الميزات</h3>
+    <details><summary>كيف يعمل تنبيه التوتر في Apple Watch؟</summary>
+      <ol>
+        <li>على iPhone، افتح <strong>الإعدادات &gt; Apple Watch</strong> وفعّل <strong>تنبيه التوتر على Apple Watch</strong>، ثم اسمح بالوصول إلى «الصحة».</li>
+        <li>ابدأ جلسة تركيز. يفتح تطبيق الساعة تلقائيًا ويبدأ بقراءة نبضك.</li>
+        <li>إذا بقي نبضك مرتفعًا لمدة 5 دقائق وأنت ساكن، تهتز الساعة وتقترح عليك استراحة لمدة 5 دقائق.</li>
+        <li>إذا ضغطت <strong>خذ استراحة</strong>، تتوقف الجلسة مؤقتًا وتُستأنف تلقائيًا بعد 5 دقائق.</li>
+      </ol>
+      <p>هذا تقدير قائم على معدل ضربات قلبك، وليس قياسًا طبيًا.</p></details>
+    <details><summary>تعرض الساعة «تعذّر الوصول إلى iPhone»</summary>
+      <p>تتحكم Apple Watch في الجلسة عبر iPhone. افتح Focus Tempo على iPhone (يمكن أن يبقى في الخلفية)، وتأكد من أن الهاتف قريب وأن البلوتوث مفعّل، ثم حاول مرة أخرى.</p></details>
+    <details><summary>كيف أشغّل موسيقى من Apple Music؟</summary>
+      <p>في تبويب <strong>التركيز</strong>، ضمن <strong>مصدر الموسيقى</strong>، اختر <strong>Apple Music</strong>. ثم ابحث عن أغنية بالاسم أو الفنان أو الألبوم، أو الصق رابطًا نسخته من تطبيق «الموسيقى». يلزم اشتراك فعّال في Apple Music.</p></details>
+    <details><summary>كيف أضيف الأداة إلى الشاشة الرئيسية؟</summary>
+      <p>المس مطولًا مكانًا فارغًا في الشاشة الرئيسية، واضغط <strong>تعديل &gt; إضافة أداة</strong>، وابحث عن <strong>Focus Tempo</strong>. من الأداة يمكنك إيقاف الجلسة مؤقتًا أو استئنافها أو إنهاؤها، أو بدء جلسة مدتها 25 دقيقة دون فتح التطبيق.</p></details>
+
+    <h3>المشكلات</h3>
+    <details><summary>الإبلاغ عن خطأ</summary>
+      <p>راسلني على العنوان أعلاه واشرح ما حدث وفي أي شاشة، ومع لقطة شاشة إن أمكن. ويفيد كثيرًا معرفة طراز iPhone وإصدار iOS وإصدار التطبيق (يظهر في <strong>الإعدادات &gt; الإصدار</strong>).</p></details>
+
+    <footer>Focus Tempo · <a href="https://javi77pineda.github.io/apps-legal/FocusTempo/#ar">سياسة الخصوصية</a></footer>
+  </section>
+</main>
+</body>
+</html>
