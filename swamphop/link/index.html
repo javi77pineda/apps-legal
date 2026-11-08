@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swamp Hop! 🐸</title>
+<meta property="og:title" content="Swamp Hop! 🐸⚔️">
+<meta property="og:description" content="Toca para entrar a la sala · Tap to join the room">
+<style>
+  :root { --cream:#fff8e0; --brown:#5c3b1c; --green:#59c74d; --red:#e8613d; --blue:#4099e6; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "PingFang SC", "Hiragino Maru Gothic ProN", sans-serif;
+         background: linear-gradient(#298c94, #0f4d52); color: var(--brown); padding: 24px; }
+  .card { background: var(--cream); border: 3px solid var(--brown); border-radius: 24px; padding: 28px 22px;
+          max-width: 380px; width: 100%; text-align: center; box-shadow: 0 5px 0 rgba(0,0,0,.25); }
+  .frog { font-size: 64px; animation: hop .76s ease-in-out infinite alternate; display:inline-block; }
+  @keyframes hop { from { transform: translateY(0) scale(1.05,.95); } to { transform: translateY(-14px) scale(.94,1.06); } }
+  h1 { margin: 6px 0 4px; color: var(--red); font-size: 30px; }
+  p { margin: 8px 0; font-size: 16px; line-height: 1.35; }
+  .code { font-size: 40px; font-weight: 800; color: var(--red); letter-spacing: 4px; margin: 10px 0 18px; }
+  .btn { display:block; width:100%; padding: 15px; margin: 10px 0 0; border-radius: 16px; border: 2.5px solid var(--brown);
+         color:#fff; font-size: 19px; font-weight: 800; text-decoration:none; box-shadow: 0 4px 0 var(--brown); }
+  .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--brown); }
+  .open { background: var(--green); }
+  .store { background: var(--blue); }
+  .small { font-size: 13px; opacity: .75; margin-top: 16px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="frog">🐸</div>
+  <h1 id="title">Swamp Hop!</h1>
+  <p id="msg"></p>
+  <div class="code" id="code"></div>
+  <a class="btn open" id="open" href="#"></a>
+  <a class="btn store hidden" id="store" href="#"></a>
+  <p class="small" id="hint"></p>
+</div>
+<script>
+  // ⬇️ Cuando el juego esté publicado, pega aquí su enlace del App Store (https://apps.apple.com/app/id…)
+  var APP_STORE_URL = "";
+
+  var q = new URLSearchParams(location.search);
+  var code = (q.get("code") || q.get("c") || "").toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 8);
+  var olympics = (q.get("mode") || q.get("m")) === "olympics";
+  var app = "swamphop://duel/" + code + (olympics ? "?mode=olympics" : "");
+
+  var T = {
+    es: ["¡Te retaron a un duelo!", "¡Te invitaron a unas Olimpiadas!", "ABRIR SWAMP HOP", "DESCARGAR EL JUEGO",
+         "Si el juego no se abrió solo, toca el botón verde. También puedes entrar con este código en Multijugador → Unirse con código."],
+    en: ["You've been challenged to a duel!", "You've been invited to the Olympics!", "OPEN SWAMP HOP", "GET THE GAME",
+         "If the game didn't open by itself, tap the green button. You can also join with this code in Multiplayer → Join with a code."],
+    ja: ["対戦を申し込まれたよ！", "オリンピックに招待されたよ！", "SWAMP HOPを開く", "ゲームを入手",
+         "ゲームが自動で開かないときは緑のボタンをタップ。マルチプレイ → コードで参加 からこのコードでも入れます。"],
+    fr: ["On te défie en duel !", "Tu es invité aux Olympiades !", "OUVRIR SWAMP HOP", "TÉLÉCHARGER LE JEU",
+         "Si le jeu ne s'est pas ouvert tout seul, touche le bouton vert. Tu peux aussi entrer avec ce code dans Multijoueur → Rejoindre avec un code."],
+    ko: ["대결 신청이 왔어요!", "올림픽에 초대받았어요!", "SWAMP HOP 열기", "게임 받기",
+         "게임이 자동으로 열리지 않으면 초록 버튼을 누르세요. 멀티플레이 → 코드로 참가에서 이 코드로도 들어갈 수 있어요."],
+    de: ["Du wurdest zum Duell herausgefordert!", "Du bist zur Olympiade eingeladen!", "SWAMP HOP ÖFFNEN", "SPIEL LADEN",
+         "Falls sich das Spiel nicht von selbst geöffnet hat, tippe auf den grünen Knopf. Du kannst auch mit diesem Code unter Mehrspieler → Mit Code beitreten mitmachen."],
+    zh: ["有人向你发起对战！", "你被邀请参加奥运会！", "打开 SWAMP HOP", "下载游戏",
+         "如果游戏没有自动打开，请点击绿色按钮。也可以在 多人游戏 → 用代码加入 里输入这个代码。"]
+  };
+  var lang = (navigator.language || "en").slice(0, 2).toLowerCase();
+  var t = T[lang] || T.en;
+  document.documentElement.lang = lang;
+
+  document.getElementById("msg").textContent = olympics ? t[1] : t[0];
+  document.getElementById("code").textContent = code.length === 6 ? code.slice(0, 3) + " " + code.slice(3) : code;
+  var open = document.getElementById("open");
+  open.textContent = t[2];
+  open.href = app;
+  document.getElementById("hint").textContent = t[4];
+  if (APP_STORE_URL) {
+    var store = document.getElementById("store");
+    store.textContent = t[3];
+    store.href = APP_STORE_URL;
+    store.classList.remove("hidden");
+  }
+  // intenta abrir el juego solo (iOS pregunta "¿Abrir en Swamp Hop?")
+  if (code) setTimeout(function () { location.href = app; }, 250);
+</script>
+</body>
+</html>
